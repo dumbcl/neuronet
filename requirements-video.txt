@@ -1,0 +1,3 @@
+-r requirements-core.txt
+opencv-python-headless
+mediapipe
