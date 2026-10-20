@@ -2,5 +2,5 @@
 __pycache__/
 *.pyc
 .DS_Store
-data/sessions/*
-!data/sessions/.gitkeep
+.idea
+/data/sessions/**/*.mp4
