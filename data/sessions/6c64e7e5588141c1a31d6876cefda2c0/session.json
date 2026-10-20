@@ -1,0 +1,5023 @@
+{
+  "id": "6c64e7e5588141c1a31d6876cefda2c0",
+  "name": "00012 — komarov",
+  "created": "2026-10-20T18:46:10.975461+00:00",
+  "video": {
+    "filename": "video.mp4",
+    "size": 1139162229,
+    "duration": 1060.384
+  },
+  "signal": {
+    "channels": [
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow",
+      "HeartRate",
+      "PPG",
+      "SpO2",
+      "Event"
+    ],
+    "sample_count": 1111590,
+    "sample_rate_hz": 1000.0,
+    "start": 0.0,
+    "end": 1111.589,
+    "duration": 1111.589,
+    "malformed_rows": 0,
+    "format": "decimal_comma"
+  },
+  "markers": {
+    "video": {
+      "baseline_start": 0.0,
+      "dialog_start": 120.8,
+      "dialog_end": 920.0,
+      "post_end": null
+    },
+    "signal": {
+      "baseline_start": 32.0,
+      "dialog_start": 152.8,
+      "dialog_end": 952.0,
+      "post_end": null
+    }
+  },
+  "turns": [
+    {
+      "start": 0.0,
+      "end": 0.62,
+      "speaker": "interviewer",
+      "text": "Запись пошла.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01133,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2863.5
+      }
+    },
+    {
+      "start": 124.61,
+      "end": 125.09,
+      "speaker": "respondent",
+      "text": "Здравствуйте.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0093,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2022.6
+      }
+    },
+    {
+      "start": 129.46,
+      "end": 130.78,
+      "speaker": "respondent",
+      "text": "Тогда, пожалуйста, представьтесь.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0094,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 2797.6
+      }
+    },
+    {
+      "start": 131.32,
+      "end": 132.82,
+      "speaker": "interviewer",
+      "text": "Меня зовут Комаров Александров.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00699,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2032.9
+      }
+    },
+    {
+      "start": 133.5,
+      "end": 134.06,
+      "speaker": "interviewer",
+      "text": "Александров.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00653,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 3588.7
+      }
+    },
+    {
+      "start": 134.3,
+      "end": 136.22,
+      "speaker": "respondent",
+      "text": "А готовы ли вы начать?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01338,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1474.2
+      }
+    },
+    {
+      "start": 136.4,
+      "end": 137.42,
+      "speaker": "interviewer",
+      "text": "Как у вас сегодня самочувствие?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0067,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 3142.6
+      }
+    },
+    {
+      "start": 138.76,
+      "end": 139.88,
+      "speaker": "interviewer",
+      "text": "Чувствую себя хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00554,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2722.4
+      }
+    },
+    {
+      "start": 140.2,
+      "end": 141.0,
+      "speaker": "interviewer",
+      "text": "Немного не выспался.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00919,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1538.0
+      }
+    },
+    {
+      "start": 141.96,
+      "end": 143.1,
+      "speaker": "interviewer",
+      "text": "Сильно не выспался достаточно.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00635,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2346.1
+      }
+    },
+    {
+      "start": 143.72,
+      "end": 144.96,
+      "speaker": "interviewer",
+      "text": "Было смотря на ничего.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00471,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2341.2
+      }
+    },
+    {
+      "start": 146.66,
+      "end": 146.86,
+      "speaker": "interviewer",
+      "text": "Хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0155,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1387.2
+      }
+    },
+    {
+      "start": 147.06,
+      "end": 148.32,
+      "speaker": "respondent",
+      "text": "Кроме этого, какие-то вот сегодня",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0112,
+        "pitch_hz": 137.9,
+        "spectral_centroid_hz": 1953.1
+      }
+    },
+    {
+      "start": 148.32,
+      "end": 150.08,
+      "speaker": "respondent",
+      "text": "жизненные обстоятельства, которые мешать,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01015,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2485.9
+      }
+    },
+    {
+      "start": 150.3,
+      "end": 152.8,
+      "speaker": "respondent",
+      "text": "я вам надо лекать, не спокоить прямо сейчас",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00683,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2526.8
+      }
+    },
+    {
+      "start": 152.8,
+      "end": 153.98,
+      "speaker": "interviewer",
+      "text": "в моменте.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00458,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2323.6
+      }
+    },
+    {
+      "start": 157.72,
+      "end": 159.98,
+      "speaker": "respondent",
+      "text": "Ну, тогда предлагаю начать.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01161,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 1413.6
+      }
+    },
+    {
+      "start": 160.44,
+      "end": 161.48,
+      "speaker": "respondent",
+      "text": "Расскажите ему, что я себе.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00962,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2259.8
+      }
+    },
+    {
+      "start": 163.6,
+      "end": 165.56,
+      "speaker": "respondent",
+      "text": "Как я сказал, у меня зовут Комаров Александров.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00919,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2013.7
+      }
+    },
+    {
+      "start": 165.88,
+      "end": 167.42,
+      "speaker": "respondent",
+      "text": "Я студент Гитмо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00837,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2023.1
+      }
+    },
+    {
+      "start": 168.44,
+      "end": 169.96,
+      "speaker": "respondent",
+      "text": "Учусь на направлении энергии",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00846,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2255.7
+      }
+    },
+    {
+      "start": 169.96,
+      "end": 171.24,
+      "speaker": "interviewer",
+      "text": "программы и инженерия.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00798,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1961.7
+      }
+    },
+    {
+      "start": 172.34,
+      "end": 175.84,
+      "speaker": "respondent",
+      "text": "Работаю в компании Хилби,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00952,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1642.4
+      }
+    },
+    {
+      "start": 176.04,
+      "end": 177.14,
+      "speaker": "respondent",
+      "text": "инженером и следователем.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00795,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2207.3
+      }
+    },
+    {
+      "start": 178.42,
+      "end": 179.8,
+      "speaker": "respondent",
+      "text": "Разрабатываю алгоритмы",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0092,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1698.2
+      }
+    },
+    {
+      "start": 180.42,
+      "end": 182.12,
+      "speaker": "respondent",
+      "text": "для носимого устройства,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00962,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2539.2
+      }
+    },
+    {
+      "start": 182.3,
+      "end": 183.72,
+      "speaker": "interviewer",
+      "text": "для конкретно браслета.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00855,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2099.5
+      }
+    },
+    {
+      "start": 186.0,
+      "end": 187.48,
+      "speaker": "respondent",
+      "text": "Занимаюсь стрессом",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00844,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2651.9
+      }
+    },
+    {
+      "start": 187.48,
+      "end": 189.82,
+      "speaker": "respondent",
+      "text": "и исследованием и стимуляцией",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0089,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2240.2
+      }
+    },
+    {
+      "start": 189.82,
+      "end": 191.94,
+      "speaker": "respondent",
+      "text": "шной ветви ВАГУСа",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00681,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2244.9
+      }
+    },
+    {
+      "start": 191.94,
+      "end": 192.68,
+      "speaker": "interviewer",
+      "text": "неинвозивной.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0081,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1822.5
+      }
+    },
+    {
+      "start": 194.92,
+      "end": 196.42,
+      "speaker": "respondent",
+      "text": "Также детекция ритми",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00864,
+        "pitch_hz": 222.2,
+        "spectral_centroid_hz": 2032.9
+      }
+    },
+    {
+      "start": 196.42,
+      "end": 198.04,
+      "speaker": "respondent",
+      "text": "и еще есть проекты,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0078,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2408.8
+      }
+    },
+    {
+      "start": 198.14,
+      "end": 200.14,
+      "speaker": "interviewer",
+      "text": "которые чуть меньше времени находят, поэтому",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0057,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2102.9
+      }
+    },
+    {
+      "start": 200.14,
+      "end": 202.04,
+      "speaker": "interviewer",
+      "text": "их не буду переследовать.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00382,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2181.4
+      }
+    },
+    {
+      "start": 202.32,
+      "end": 202.64,
+      "speaker": "interviewer",
+      "text": "Понятно.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00725,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1561.2
+      }
+    },
+    {
+      "start": 202.9,
+      "end": 203.9,
+      "speaker": "interviewer",
+      "text": "На самом деле, крайне интересно.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00909,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1837.4
+      }
+    },
+    {
+      "start": 204.62,
+      "end": 205.94,
+      "speaker": "respondent",
+      "text": "А если мы говорим про ритмо,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01139,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 1989.5
+      }
+    },
+    {
+      "start": 206.02,
+      "end": 207.52,
+      "speaker": "interviewer",
+      "text": "вы уже сказали, что вы студент Гитмо,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0071,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2574.8
+      }
+    },
+    {
+      "start": 208.52,
+      "end": 209.62,
+      "speaker": "respondent",
+      "text": "почему именно Гитмо?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0109,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 1796.3
+      }
+    },
+    {
+      "start": 212.3,
+      "end": 212.86,
+      "speaker": "respondent",
+      "text": "Изначально,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0146,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2355.4
+      }
+    },
+    {
+      "start": 213.04,
+      "end": 214.3,
+      "speaker": "respondent",
+      "text": "когда я поступал,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00991,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1759.0
+      }
+    },
+    {
+      "start": 214.64,
+      "end": 216.46,
+      "speaker": "respondent",
+      "text": "как я думал, о том, куда поступить,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00694,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1534.9
+      }
+    },
+    {
+      "start": 216.46,
+      "end": 218.58,
+      "speaker": "respondent",
+      "text": "я думал про направление",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00777,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1629.9
+      }
+    },
+    {
+      "start": 218.58,
+      "end": 219.4,
+      "speaker": "interviewer",
+      "text": "машинного обучения,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00891,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 2363.2
+      }
+    },
+    {
+      "start": 219.68,
+      "end": 221.9,
+      "speaker": "interviewer",
+      "text": "про бигдата.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00743,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1769.4
+      }
+    },
+    {
+      "start": 222.38,
+      "end": 227.35,
+      "speaker": "interviewer",
+      "text": "И в процессе просмотра",
+      "pause_seconds": 2.17,
+      "acoustic": {
+        "rms": 0.00442,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2371.8
+      }
+    },
+    {
+      "start": 227.35,
+      "end": 228.71,
+      "speaker": "respondent",
+      "text": "программ я обнаруживал",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01194,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 1581.8
+      }
+    },
+    {
+      "start": 228.71,
+      "end": 230.63,
+      "speaker": "respondent",
+      "text": "нейротехнологии, еще о баклогряде,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01234,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1959.5
+      }
+    },
+    {
+      "start": 231.57,
+      "end": 233.37,
+      "speaker": "respondent",
+      "text": "где это все совмещалось.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01194,
+        "pitch_hz": 133.3,
+        "spectral_centroid_hz": 1863.7
+      }
+    },
+    {
+      "start": 233.53,
+      "end": 234.93,
+      "speaker": "respondent",
+      "text": "Там в программе было пересислено",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00818,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1651.0
+      }
+    },
+    {
+      "start": 235.17,
+      "end": 236.83,
+      "speaker": "respondent",
+      "text": "и машинное обучение, и бигдата,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01144,
+        "pitch_hz": 181.8,
+        "spectral_centroid_hz": 2180.4
+      }
+    },
+    {
+      "start": 237.07,
+      "end": 238.83,
+      "speaker": "respondent",
+      "text": "и биосигналы, то есть",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01333,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1877.5
+      }
+    },
+    {
+      "start": 238.83,
+      "end": 240.43,
+      "speaker": "respondent",
+      "text": "какая-то карелляция с",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01077,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1603.3
+      }
+    },
+    {
+      "start": 240.43,
+      "end": 242.65,
+      "speaker": "respondent",
+      "text": "медициной, эта сфера",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01069,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2035.2
+      }
+    },
+    {
+      "start": 242.65,
+      "end": 244.27,
+      "speaker": "interviewer",
+      "text": "мне с детства было интересно,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00646,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2255.4
+      }
+    },
+    {
+      "start": 244.43,
+      "end": 246.25,
+      "speaker": "interviewer",
+      "text": "поскольку у меня больше",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00584,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2141.1
+      }
+    },
+    {
+      "start": 246.25,
+      "end": 247.09,
+      "speaker": "interviewer",
+      "text": "часть семьи, наверное,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00777,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2777.0
+      }
+    },
+    {
+      "start": 248.85,
+      "end": 250.13,
+      "speaker": "interviewer",
+      "text": "из медицины.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00551,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2247.1
+      }
+    },
+    {
+      "start": 250.27,
+      "end": 251.87,
+      "speaker": "interviewer",
+      "text": "Ага, все равно не хорошо.",
+      "pause_seconds": 0.26,
+      "acoustic": {
+        "rms": 0.00556,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2402.4
+      }
+    },
+    {
+      "start": 252.59,
+      "end": 253.63,
+      "speaker": "respondent",
+      "text": "А если мы говорим",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01202,
+        "pitch_hz": 142.9,
+        "spectral_centroid_hz": 2496.9
+      }
+    },
+    {
+      "start": 253.63,
+      "end": 256.19,
+      "speaker": "respondent",
+      "text": "о юниорг учебе, о работе,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00915,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1771.4
+      }
+    },
+    {
+      "start": 256.35,
+      "end": 257.15,
+      "speaker": "interviewer",
+      "text": "о увлечении у вас есть?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00677,
+        "pitch_hz": 125.0,
+        "spectral_centroid_hz": 2581.5
+      }
+    },
+    {
+      "start": 259.01,
+      "end": 260.17,
+      "speaker": "respondent",
+      "text": "На данный момент",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00949,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1617.6
+      }
+    },
+    {
+      "start": 260.17,
+      "end": 261.55,
+      "speaker": "respondent",
+      "text": "как-то на них особо не хватает",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00905,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2176.6
+      }
+    },
+    {
+      "start": 262.05,
+      "end": 263.85,
+      "speaker": "interviewer",
+      "text": "времени, поскольку я учусь",
+      "pause_seconds": 0.38,
+      "acoustic": {
+        "rms": 0.00714,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2022.8
+      }
+    },
+    {
+      "start": 263.85,
+      "end": 265.97,
+      "speaker": "respondent",
+      "text": "и работаю, но в целом",
+      "pause_seconds": 0.3,
+      "acoustic": {
+        "rms": 0.01068,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1770.1
+      }
+    },
+    {
+      "start": 265.97,
+      "end": 268.15,
+      "speaker": "respondent",
+      "text": "люблю активный отдых,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00898,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1946.7
+      }
+    },
+    {
+      "start": 268.47,
+      "end": 269.43,
+      "speaker": "interviewer",
+      "text": "кататься на велосипеде,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00947,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2541.9
+      }
+    },
+    {
+      "start": 269.93,
+      "end": 271.35,
+      "speaker": "respondent",
+      "text": "марафон прибежал недавно,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00956,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1617.2
+      }
+    },
+    {
+      "start": 272.21,
+      "end": 273.29,
+      "speaker": "respondent",
+      "text": "начале сентября",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00792,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2414.6
+      }
+    },
+    {
+      "start": 273.29,
+      "end": 275.41,
+      "speaker": "interviewer",
+      "text": "из Пушкина, в Санкт-Петербург.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00554,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2391.9
+      }
+    },
+    {
+      "start": 277.53,
+      "end": 279.31,
+      "speaker": "interviewer",
+      "text": "Так же занимался",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00789,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2322.1
+      }
+    },
+    {
+      "start": 279.31,
+      "end": 280.83,
+      "speaker": "respondent",
+      "text": "хоккейм, кандидат мастера",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00939,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1803.6
+      }
+    },
+    {
+      "start": 280.83,
+      "end": 281.33,
+      "speaker": "interviewer",
+      "text": "спорта.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01112,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1445.0
+      }
+    },
+    {
+      "start": 283.27,
+      "end": 285.05,
+      "speaker": "respondent",
+      "text": "А вы, кроме",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00787,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1960.1
+      }
+    },
+    {
+      "start": 285.89,
+      "end": 287.71,
+      "speaker": "interviewer",
+      "text": "КМС, каких достижений еще",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00677,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2822.3
+      }
+    },
+    {
+      "start": 287.71,
+      "end": 287.91,
+      "speaker": "interviewer",
+      "text": "есть?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01144,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1813.8
+      }
+    },
+    {
+      "start": 289.43,
+      "end": 290.75,
+      "speaker": "respondent",
+      "text": "Смотря, что четыре достижения.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01165,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 3031.7
+      }
+    },
+    {
+      "start": 292.05,
+      "end": 293.19,
+      "speaker": "respondent",
+      "text": "Наверное, какие-то",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01813,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1587.1
+      }
+    },
+    {
+      "start": 293.19,
+      "end": 295.11,
+      "speaker": "respondent",
+      "text": "есть, но я не особо",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00978,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1884.7
+      }
+    },
+    {
+      "start": 295.11,
+      "end": 295.91,
+      "speaker": "interviewer",
+      "text": "люблю хвастаться.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00704,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1943.8
+      }
+    },
+    {
+      "start": 297.05,
+      "end": 298.77,
+      "speaker": "respondent",
+      "text": "Поэтому я не особое",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00991,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1812.7
+      }
+    },
+    {
+      "start": 298.77,
+      "end": 300.13,
+      "speaker": "respondent",
+      "text": "значение, я изначально продаю",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01057,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2179.3
+      }
+    },
+    {
+      "start": 300.13,
+      "end": 301.85,
+      "speaker": "interviewer",
+      "text": "каким-то своим достижением,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00741,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2559.0
+      }
+    },
+    {
+      "start": 301.97,
+      "end": 303.91,
+      "speaker": "interviewer",
+      "text": "как только что-то у меня получается",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00763,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2301.5
+      }
+    },
+    {
+      "start": 303.91,
+      "end": 305.83,
+      "speaker": "respondent",
+      "text": "и я, наверное, практически сразу начинаю",
+      "pause_seconds": 0.4,
+      "acoustic": {
+        "rms": 0.0078,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2401.2
+      }
+    },
+    {
+      "start": 305.83,
+      "end": 307.35,
+      "speaker": "interviewer",
+      "text": "думать о том, чтобы",
+      "pause_seconds": 0.62,
+      "acoustic": {
+        "rms": 0.00491,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2163.1
+      }
+    },
+    {
+      "start": 307.35,
+      "end": 308.77,
+      "speaker": "interviewer",
+      "text": "такого сделать дальше.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00483,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 1918.5
+      }
+    },
+    {
+      "start": 309.13,
+      "end": 309.91,
+      "speaker": "interviewer",
+      "text": "Куда отберется дальше?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00793,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2551.5
+      }
+    },
+    {
+      "start": 310.75,
+      "end": 313.03,
+      "speaker": "respondent",
+      "text": "Хорошо, а если мы говорим",
+      "pause_seconds": 0.88,
+      "acoustic": {
+        "rms": 0.0089,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2458.5
+      }
+    },
+    {
+      "start": 313.03,
+      "end": 314.55,
+      "speaker": "respondent",
+      "text": "про всю вашу жизнь,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00644,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1962.3
+      }
+    },
+    {
+      "start": 314.69,
+      "end": 316.19,
+      "speaker": "respondent",
+      "text": "что бы вы назвали главным вызовом",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.009,
+        "pitch_hz": 142.9,
+        "spectral_centroid_hz": 1724.2
+      }
+    },
+    {
+      "start": 316.19,
+      "end": 317.03,
+      "speaker": "interviewer",
+      "text": "в своей жизни?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00311,
+        "pitch_hz": 87.0,
+        "spectral_centroid_hz": 2925.5
+      }
+    },
+    {
+      "start": 320.69,
+      "end": 322.21,
+      "speaker": "interviewer",
+      "text": "Наверное, этот вызов еще",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00821,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2218.9
+      }
+    },
+    {
+      "start": 323.27,
+      "end": 325.79,
+      "speaker": "respondent",
+      "text": "в процессе реализации",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01003,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2433.6
+      }
+    },
+    {
+      "start": 325.79,
+      "end": 328.07,
+      "speaker": "interviewer",
+      "text": "стать лучше,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00437,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2845.5
+      }
+    },
+    {
+      "start": 328.29,
+      "end": 329.75,
+      "speaker": "interviewer",
+      "text": "сильнее построить",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00789,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1780.7
+      }
+    },
+    {
+      "start": 329.75,
+      "end": 331.93,
+      "speaker": "interviewer",
+      "text": "вокруг себя семью,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00646,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2067.4
+      }
+    },
+    {
+      "start": 331.97,
+      "end": 333.43,
+      "speaker": "interviewer",
+      "text": "которая будет жить в комфорте",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00648,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2735.8
+      }
+    },
+    {
+      "start": 333.43,
+      "end": 333.93,
+      "speaker": "interviewer",
+      "text": "до статки",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0051,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2321.5
+      }
+    },
+    {
+      "start": 337.35,
+      "end": 338.65,
+      "speaker": "respondent",
+      "text": "заниматься тем, что",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00937,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2530.1
+      }
+    },
+    {
+      "start": 338.65,
+      "end": 339.41,
+      "speaker": "interviewer",
+      "text": "мне интересно",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00885,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2634.5
+      }
+    },
+    {
+      "start": 339.41,
+      "end": 341.17,
+      "speaker": "interviewer",
+      "text": "и позволить людям",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00588,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2002.7
+      }
+    },
+    {
+      "start": 341.75,
+      "end": 342.57,
+      "speaker": "interviewer",
+      "text": "рядом с собой",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00588,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2374.1
+      }
+    },
+    {
+      "start": 342.57,
+      "end": 344.35,
+      "speaker": "interviewer",
+      "text": "делать то же самое.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00417,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2565.2
+      }
+    },
+    {
+      "start": 345.01,
+      "end": 347.57,
+      "speaker": "respondent",
+      "text": "Хорошо, Александр, если",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0065,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2740.5
+      }
+    },
+    {
+      "start": 347.57,
+      "end": 348.95,
+      "speaker": "respondent",
+      "text": "вы готовы, я предлагаю",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01216,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1704.6
+      }
+    },
+    {
+      "start": 348.95,
+      "end": 350.75,
+      "speaker": "interviewer",
+      "text": "прийти к первой тени",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00749,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2010.9
+      }
+    },
+    {
+      "start": 350.75,
+      "end": 351.51,
+      "speaker": "interviewer",
+      "text": "в нашу интервью.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0067,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 3144.0
+      }
+    },
+    {
+      "start": 351.89,
+      "end": 353.59,
+      "speaker": "respondent",
+      "text": "Это будет тема алкоголь",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00739,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2312.5
+      }
+    },
+    {
+      "start": 353.59,
+      "end": 356.07,
+      "speaker": "respondent",
+      "text": "и скажите, пожалуйста, как",
+      "pause_seconds": 0.26,
+      "acoustic": {
+        "rms": 0.00873,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 2238.3
+      }
+    },
+    {
+      "start": 356.07,
+      "end": 357.73,
+      "speaker": "interviewer",
+      "text": "вы относитесь к алкоголям?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00599,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2876.0
+      }
+    },
+    {
+      "start": 359.67,
+      "end": 360.69,
+      "speaker": "interviewer",
+      "text": "Резко негативно.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0074,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2704.7
+      }
+    },
+    {
+      "start": 361.39,
+      "end": 361.95,
+      "speaker": "interviewer",
+      "text": "Хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00441,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2096.4
+      }
+    },
+    {
+      "start": 362.23,
+      "end": 363.69,
+      "speaker": "respondent",
+      "text": "А вот в чем положено мнение",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01157,
+        "pitch_hz": 166.7,
+        "spectral_centroid_hz": 2059.5
+      }
+    },
+    {
+      "start": 363.69,
+      "end": 366.05,
+      "speaker": "respondent",
+      "text": "могут быть плюсы под алкоголем?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00951,
+        "pitch_hz": 125.0,
+        "spectral_centroid_hz": 2509.3
+      }
+    },
+    {
+      "start": 367.53,
+      "end": 368.33,
+      "speaker": "interviewer",
+      "text": "Мне кажется,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00755,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2135.2
+      }
+    },
+    {
+      "start": 368.69,
+      "end": 370.17,
+      "speaker": "respondent",
+      "text": "есть сейчас особо ты и нету,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00815,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1954.4
+      }
+    },
+    {
+      "start": 370.45,
+      "end": 371.51,
+      "speaker": "respondent",
+      "text": "то, что многие называют",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00999,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1840.4
+      }
+    },
+    {
+      "start": 371.51,
+      "end": 372.69,
+      "speaker": "respondent",
+      "text": "виселие, на самом деле это",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01125,
+        "pitch_hz": 222.2,
+        "spectral_centroid_hz": 2062.0
+      }
+    },
+    {
+      "start": 373.69,
+      "end": 375.55,
+      "speaker": "interviewer",
+      "text": "иллюзия и даже",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00877,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1767.7
+      }
+    },
+    {
+      "start": 375.55,
+      "end": 377.97,
+      "speaker": "interviewer",
+      "text": "по каким-то",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00497,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2439.6
+      }
+    },
+    {
+      "start": 377.97,
+      "end": 379.71,
+      "speaker": "respondent",
+      "text": "может поводам, которые люди",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01167,
+        "pitch_hz": 235.3,
+        "spectral_centroid_hz": 1318.5
+      }
+    },
+    {
+      "start": 379.71,
+      "end": 381.59,
+      "speaker": "respondent",
+      "text": "сами себе придумывают, я не вижу",
+      "pause_seconds": 0.32,
+      "acoustic": {
+        "rms": 0.00999,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1535.4
+      }
+    },
+    {
+      "start": 381.59,
+      "end": 382.53,
+      "speaker": "interviewer",
+      "text": "в этом смысла, поскольку",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00611,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2503.8
+      }
+    },
+    {
+      "start": 382.53,
+      "end": 385.53,
+      "speaker": "respondent",
+      "text": "это все не правда, это все фикция.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00482,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2165.3
+      }
+    },
+    {
+      "start": 385.93,
+      "end": 387.13,
+      "speaker": "respondent",
+      "text": "Так, а главный минус",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.012,
+        "pitch_hz": 133.3,
+        "spectral_centroid_hz": 1449.4
+      }
+    },
+    {
+      "start": 387.13,
+      "end": 387.99,
+      "speaker": "interviewer",
+      "text": "употребления алкоголя",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00379,
+        "pitch_hz": 93.0,
+        "spectral_centroid_hz": 2238.4
+      }
+    },
+    {
+      "start": 387.99,
+      "end": 388.85,
+      "speaker": "interviewer",
+      "text": "по вашим делам?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00283,
+        "pitch_hz": 81.6,
+        "spectral_centroid_hz": 2857.5
+      }
+    },
+    {
+      "start": 392.36,
+      "end": 393.58,
+      "speaker": "respondent",
+      "text": "Наверное, что от него",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00978,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1734.4
+      }
+    },
+    {
+      "start": 393.58,
+      "end": 394.54,
+      "speaker": "interviewer",
+      "text": "слишком весело.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00854,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2750.4
+      }
+    },
+    {
+      "start": 395.99,
+      "end": 396.4,
+      "speaker": "interviewer",
+      "text": "Понятно.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0037,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 1969.2
+      }
+    },
+    {
+      "start": 397.36,
+      "end": 399.92,
+      "speaker": "interviewer",
+      "text": "И вот если предположить,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01019,
+        "pitch_hz": 142.9,
+        "spectral_centroid_hz": 2309.7
+      }
+    },
+    {
+      "start": 400.2,
+      "end": 401.46,
+      "speaker": "interviewer",
+      "text": "какие эмоции может",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00881,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 3121.5
+      }
+    },
+    {
+      "start": 401.46,
+      "end": 403.42,
+      "speaker": "respondent",
+      "text": "доступить человек под воздействием",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00601,
+        "pitch_hz": 400.0,
+        "spectral_centroid_hz": 2027.4
+      }
+    },
+    {
+      "start": 403.42,
+      "end": 403.88,
+      "speaker": "interviewer",
+      "text": "алкоголя?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00368,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 1847.8
+      }
+    },
+    {
+      "start": 405.24,
+      "end": 407.3,
+      "speaker": "interviewer",
+      "text": "Думаю, в основном депрессивное,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00853,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2053.8
+      }
+    },
+    {
+      "start": 408.4,
+      "end": 409.12,
+      "speaker": "respondent",
+      "text": "слезы,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0111,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1867.7
+      }
+    },
+    {
+      "start": 409.68,
+      "end": 409.98,
+      "speaker": "interviewer",
+      "text": "горя,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01347,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1288.7
+      }
+    },
+    {
+      "start": 412.14,
+      "end": 413.18,
+      "speaker": "interviewer",
+      "text": "отсутствие желания",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.008,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2299.7
+      }
+    },
+    {
+      "start": 413.18,
+      "end": 414.1,
+      "speaker": "interviewer",
+      "text": "с кем-либо коммуницировать.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00723,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2001.0
+      }
+    },
+    {
+      "start": 415.08,
+      "end": 416.56,
+      "speaker": "interviewer",
+      "text": "А какие эмоции",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00861,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1849.0
+      }
+    },
+    {
+      "start": 416.56,
+      "end": 417.68,
+      "speaker": "respondent",
+      "text": "пьяный человек вызывает",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01208,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2172.2
+      }
+    },
+    {
+      "start": 417.68,
+      "end": 418.06,
+      "speaker": "interviewer",
+      "text": "алкоголь?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00558,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 1757.8
+      }
+    },
+    {
+      "start": 420.02,
+      "end": 421.34,
+      "speaker": "interviewer",
+      "text": "Исключительно позитивные.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0046,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2711.7
+      }
+    },
+    {
+      "start": 421.96,
+      "end": 422.98,
+      "speaker": "interviewer",
+      "text": "Понятно, хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0064,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1792.5
+      }
+    },
+    {
+      "start": 423.78,
+      "end": 425.46,
+      "speaker": "respondent",
+      "text": "Но вы видели когда-нибудь",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01356,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1590.1
+      }
+    },
+    {
+      "start": 425.46,
+      "end": 426.78,
+      "speaker": "respondent",
+      "text": "своих знакомых пьяных?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00968,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2102.8
+      }
+    },
+    {
+      "start": 427.56,
+      "end": 428.32,
+      "speaker": "interviewer",
+      "text": "Нет.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00505,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2412.6
+      }
+    },
+    {
+      "start": 429.96,
+      "end": 431.54,
+      "speaker": "respondent",
+      "text": "А что бы, если",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01078,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2016.2
+      }
+    },
+    {
+      "start": 431.54,
+      "end": 433.02,
+      "speaker": "interviewer",
+      "text": "такая ситуация произошла,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00732,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2861.3
+      }
+    },
+    {
+      "start": 433.1,
+      "end": 434.5,
+      "speaker": "interviewer",
+      "text": "вы бы почувствовали этот момент?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00649,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2929.9
+      }
+    },
+    {
+      "start": 436.92,
+      "end": 439.06,
+      "speaker": "respondent",
+      "text": "Зависит ситуации, но",
+      "pause_seconds": 0.66,
+      "acoustic": {
+        "rms": 0.0082,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2444.5
+      }
+    },
+    {
+      "start": 440.16,
+      "end": 441.8,
+      "speaker": "respondent",
+      "text": "скорее всего, резко",
+      "pause_seconds": 0.26,
+      "acoustic": {
+        "rms": 0.01105,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2430.6
+      }
+    },
+    {
+      "start": 441.8,
+      "end": 443.16,
+      "speaker": "interviewer",
+      "text": "отращение человека пересал",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00499,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2663.3
+      }
+    },
+    {
+      "start": 443.16,
+      "end": 444.56,
+      "speaker": "interviewer",
+      "text": "быть мне знакомым.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00402,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2165.6
+      }
+    },
+    {
+      "start": 445.32,
+      "end": 447.42,
+      "speaker": "respondent",
+      "text": "Вы сами когда-нибудь употребляли",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00812,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 3196.6
+      }
+    },
+    {
+      "start": 447.42,
+      "end": 448.7,
+      "speaker": "interviewer",
+      "text": "алкоголь в компании друзей?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00776,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 1728.5
+      }
+    },
+    {
+      "start": 449.06,
+      "end": 449.38,
+      "speaker": "interviewer",
+      "text": "Никогда.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00571,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1946.1
+      }
+    },
+    {
+      "start": 450.22,
+      "end": 452.32,
+      "speaker": "interviewer",
+      "text": "Вообще когда-нибудь употребляли алкоголь?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0062,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2699.2
+      }
+    },
+    {
+      "start": 452.46,
+      "end": 452.64,
+      "speaker": "interviewer",
+      "text": "Нет.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00584,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1767.7
+      }
+    },
+    {
+      "start": 453.56,
+      "end": 456.56,
+      "speaker": "interviewer",
+      "text": "Так, да, скажите пожалуйста,",
+      "pause_seconds": 1.44,
+      "acoustic": {
+        "rms": 0.00679,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2193.2
+      }
+    },
+    {
+      "start": 456.92,
+      "end": 458.68,
+      "speaker": "respondent",
+      "text": "лично вы считаете",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01028,
+        "pitch_hz": 142.9,
+        "spectral_centroid_hz": 1972.9
+      }
+    },
+    {
+      "start": 458.68,
+      "end": 460.6,
+      "speaker": "respondent",
+      "text": "правильный запрет на употребление",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01087,
+        "pitch_hz": 137.9,
+        "spectral_centroid_hz": 1777.8
+      }
+    },
+    {
+      "start": 460.6,
+      "end": 463.22,
+      "speaker": "respondent",
+      "text": "алкоголя, который есть в некоторых странах?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00794,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 2692.9
+      }
+    },
+    {
+      "start": 466.54,
+      "end": 466.92,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00864,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1978.2
+      }
+    },
+    {
+      "start": 468.86,
+      "end": 470.66,
+      "speaker": "respondent",
+      "text": "Запрет на продажу алкоголя",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01037,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1674.8
+      }
+    },
+    {
+      "start": 470.66,
+      "end": 471.48,
+      "speaker": "interviewer",
+      "text": "по начальному.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00606,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2394.9
+      }
+    },
+    {
+      "start": 473.63,
+      "end": 474.85,
+      "speaker": "respondent",
+      "text": "Тоже считаю, что это",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00752,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2762.9
+      }
+    },
+    {
+      "start": 475.93,
+      "end": 477.05,
+      "speaker": "interviewer",
+      "text": "очень правильный.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00546,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2684.6
+      }
+    },
+    {
+      "start": 477.53,
+      "end": 478.01,
+      "speaker": "interviewer",
+      "text": "Хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0047,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1960.5
+      }
+    },
+    {
+      "start": 478.91,
+      "end": 481.03,
+      "speaker": "respondent",
+      "text": "А как вы считаете, стоит увеличивать",
+      "pause_seconds": 0.28,
+      "acoustic": {
+        "rms": 0.00981,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 2373.1
+      }
+    },
+    {
+      "start": 481.03,
+      "end": 482.83,
+      "speaker": "interviewer",
+      "text": "наказание для лиц, которые совершают",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00614,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2864.0
+      }
+    },
+    {
+      "start": 482.83,
+      "end": 484.43,
+      "speaker": "interviewer",
+      "text": "противоправные действия,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00673,
+        "pitch_hz": 129.0,
+        "spectral_centroid_hz": 1603.7
+      }
+    },
+    {
+      "start": 484.53,
+      "end": 486.19,
+      "speaker": "interviewer",
+      "text": "или в ДТП, в состояниях",
+      "pause_seconds": 0.44,
+      "acoustic": {
+        "rms": 0.00483,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2898.2
+      }
+    },
+    {
+      "start": 486.19,
+      "end": 487.05,
+      "speaker": "interviewer",
+      "text": "выгодного тренирования?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00328,
+        "pitch_hz": 88.9,
+        "spectral_centroid_hz": 2141.6
+      }
+    },
+    {
+      "start": 487.65,
+      "end": 489.74,
+      "speaker": "respondent",
+      "text": "Нет, у меня нет вопросов.",
+      "pause_seconds": 0.5,
+      "acoustic": {
+        "rms": 0.00474,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2090.6
+      }
+    },
+    {
+      "start": 489.75,
+      "end": 490.97,
+      "speaker": "interviewer",
+      "text": "Я помню, хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00748,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1745.9
+      }
+    },
+    {
+      "start": 492.17,
+      "end": 494.29,
+      "speaker": "interviewer",
+      "text": "При этом, у кого-то из ваших",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.011,
+        "pitch_hz": 137.9,
+        "spectral_centroid_hz": 1480.0
+      }
+    },
+    {
+      "start": 494.29,
+      "end": 496.17,
+      "speaker": "interviewer",
+      "text": "знакомых был когда-нибудь",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00735,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1427.0
+      }
+    },
+    {
+      "start": 496.17,
+      "end": 497.17,
+      "speaker": "interviewer",
+      "text": "негативный опыт",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00926,
+        "pitch_hz": 71.4,
+        "spectral_centroid_hz": 1912.1
+      }
+    },
+    {
+      "start": 497.17,
+      "end": 499.17,
+      "speaker": "interviewer",
+      "text": "из-за употребления алкоголь?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00555,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2253.2
+      }
+    },
+    {
+      "start": 500.32,
+      "end": 500.85,
+      "speaker": "respondent",
+      "text": "Не было.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00628,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1738.9
+      }
+    },
+    {
+      "start": 501.25,
+      "end": 502.13,
+      "speaker": "interviewer",
+      "text": "Нет, я помню.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00354,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2316.9
+      }
+    },
+    {
+      "start": 502.63,
+      "end": 504.39,
+      "speaker": "interviewer",
+      "text": "Может быть, кто-то из них рассказывал,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01501,
+        "pitch_hz": 133.3,
+        "spectral_centroid_hz": 2128.9
+      }
+    },
+    {
+      "start": 504.61,
+      "end": 506.33,
+      "speaker": "interviewer",
+      "text": "что вспоминая произошедшим,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00828,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2043.7
+      }
+    },
+    {
+      "start": 506.91,
+      "end": 507.63,
+      "speaker": "interviewer",
+      "text": "сожалею я это сделаю?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0105,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2037.2
+      }
+    },
+    {
+      "start": 508.55,
+      "end": 509.85,
+      "speaker": "respondent",
+      "text": "Не припоминаю.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00636,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1798.8
+      }
+    },
+    {
+      "start": 511.37,
+      "end": 513.31,
+      "speaker": "interviewer",
+      "text": "Но вот, если говорить про вас,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01022,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2203.0
+      }
+    },
+    {
+      "start": 513.83,
+      "end": 514.79,
+      "speaker": "interviewer",
+      "text": "все-таки, может быть,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00852,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1766.5
+      }
+    },
+    {
+      "start": 514.89,
+      "end": 516.85,
+      "speaker": "interviewer",
+      "text": "были ситуации связаны с алкоголем,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00811,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 3079.8
+      }
+    },
+    {
+      "start": 517.09,
+      "end": 518.87,
+      "speaker": "interviewer",
+      "text": "которые стыдно теперь вспоминать?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00647,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 3016.0
+      }
+    },
+    {
+      "start": 519.66,
+      "end": 521.23,
+      "speaker": "respondent",
+      "text": "Не было этих ситуаций.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00659,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1862.5
+      }
+    },
+    {
+      "start": 521.49,
+      "end": 522.6,
+      "speaker": "respondent",
+      "text": "Не было таких ситуаций.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00406,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2721.7
+      }
+    },
+    {
+      "start": 522.63,
+      "end": 523.79,
+      "speaker": "interviewer",
+      "text": "Понятно, спасибо, хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00619,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 3184.3
+      }
+    },
+    {
+      "start": 523.79,
+      "end": 524.91,
+      "speaker": "respondent",
+      "text": "Ну, давайте так.",
+      "pause_seconds": 0.5,
+      "acoustic": {
+        "rms": 0.01241,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 1767.2
+      }
+    },
+    {
+      "start": 525.03,
+      "end": 526.81,
+      "speaker": "respondent",
+      "text": "По алкогольам своему пополарии",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01758,
+        "pitch_hz": 133.3,
+        "spectral_centroid_hz": 2834.6
+      }
+    },
+    {
+      "start": 526.81,
+      "end": 528.11,
+      "speaker": "respondent",
+      "text": "поговорим еще про конфликт.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01339,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 2094.2
+      }
+    },
+    {
+      "start": 528.39,
+      "end": 530.81,
+      "speaker": "respondent",
+      "text": "Вот, что такой конфликт в вашем мире?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00974,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2127.0
+      }
+    },
+    {
+      "start": 534.35,
+      "end": 535.19,
+      "speaker": "respondent",
+      "text": "Наверное,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01496,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1424.1
+      }
+    },
+    {
+      "start": 536.29,
+      "end": 536.77,
+      "speaker": "interviewer",
+      "text": "слишком",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00707,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 4238.8
+      }
+    },
+    {
+      "start": 537.69,
+      "end": 539.49,
+      "speaker": "respondent",
+      "text": "ярко и агрессивное",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01059,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1800.5
+      }
+    },
+    {
+      "start": 541.33,
+      "end": 542.17,
+      "speaker": "respondent",
+      "text": "выражение",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01494,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1661.1
+      }
+    },
+    {
+      "start": 542.17,
+      "end": 543.83,
+      "speaker": "interviewer",
+      "text": "мнений",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00738,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2247.9
+      }
+    },
+    {
+      "start": 543.83,
+      "end": 545.11,
+      "speaker": "interviewer",
+      "text": "противоположных",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00823,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2008.3
+      }
+    },
+    {
+      "start": 545.65,
+      "end": 547.29,
+      "speaker": "respondent",
+      "text": "двумя сторонами, двумя тремя",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00811,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2043.6
+      }
+    },
+    {
+      "start": 547.29,
+      "end": 548.81,
+      "speaker": "respondent",
+      "text": "или двумя или более сторонами.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00832,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1805.6
+      }
+    },
+    {
+      "start": 549.39,
+      "end": 550.77,
+      "speaker": "respondent",
+      "text": "Есть утверждение,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01262,
+        "pitch_hz": 173.9,
+        "spectral_centroid_hz": 2298.1
+      }
+    },
+    {
+      "start": 550.77,
+      "end": 553.13,
+      "speaker": "respondent",
+      "text": "что конфликт это две противоположные",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01485,
+        "pitch_hz": 137.9,
+        "spectral_centroid_hz": 1521.4
+      }
+    },
+    {
+      "start": 553.13,
+      "end": 554.93,
+      "speaker": "respondent",
+      "text": "точки зрения на произошедшем.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01039,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1908.3
+      }
+    },
+    {
+      "start": 555.19,
+      "end": 555.59,
+      "speaker": "interviewer",
+      "text": "Это правда?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01187,
+        "pitch_hz": 173.9,
+        "spectral_centroid_hz": 1403.7
+      }
+    },
+    {
+      "start": 560.08,
+      "end": 562.12,
+      "speaker": "respondent",
+      "text": "Да, но это, наверное,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00899,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1628.7
+      }
+    },
+    {
+      "start": 562.44,
+      "end": 563.5,
+      "speaker": "interviewer",
+      "text": "одна из составляющих конфликтов.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00643,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2484.5
+      }
+    },
+    {
+      "start": 563.9,
+      "end": 565.44,
+      "speaker": "respondent",
+      "text": "Хорошо, а по каким признакам",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01173,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1599.5
+      }
+    },
+    {
+      "start": 565.44,
+      "end": 567.08,
+      "speaker": "respondent",
+      "text": "по вашему опыту можно понять,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01147,
+        "pitch_hz": 400.0,
+        "spectral_centroid_hz": 1655.9
+      }
+    },
+    {
+      "start": 567.18,
+      "end": 568.12,
+      "speaker": "interviewer",
+      "text": "что человек конфликтный?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00864,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1832.2
+      }
+    },
+    {
+      "start": 570.69,
+      "end": 573.25,
+      "speaker": "respondent",
+      "text": "Наверное, по слишком резким реакциям",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.014,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2333.8
+      }
+    },
+    {
+      "start": 573.25,
+      "end": 574.75,
+      "speaker": "respondent",
+      "text": "на противоположную",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00892,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2168.7
+      }
+    },
+    {
+      "start": 575.55,
+      "end": 576.21,
+      "speaker": "interviewer",
+      "text": "позицию.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00526,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2101.1
+      }
+    },
+    {
+      "start": 577.69,
+      "end": 579.49,
+      "speaker": "respondent",
+      "text": "А среди ваших знакомых конфликтных",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0092,
+        "pitch_hz": 133.3,
+        "spectral_centroid_hz": 2404.0
+      }
+    },
+    {
+      "start": 579.49,
+      "end": 580.23,
+      "speaker": "interviewer",
+      "text": "люди встречались?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00652,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 2644.8
+      }
+    },
+    {
+      "start": 581.51,
+      "end": 582.17,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00586,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2495.5
+      }
+    },
+    {
+      "start": 583.45,
+      "end": 585.37,
+      "speaker": "respondent",
+      "text": "А что их может спровоцировать",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01008,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 2261.9
+      }
+    },
+    {
+      "start": 585.37,
+      "end": 585.81,
+      "speaker": "interviewer",
+      "text": "на сон?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00602,
+        "pitch_hz": 90.9,
+        "spectral_centroid_hz": 3980.4
+      }
+    },
+    {
+      "start": 589.28,
+      "end": 590.46,
+      "speaker": "interviewer",
+      "text": "Да, практически все, что угодно.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00837,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2997.7
+      }
+    },
+    {
+      "start": 590.54,
+      "end": 590.9,
+      "speaker": "interviewer",
+      "text": "Но таким",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00798,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1825.7
+      }
+    },
+    {
+      "start": 592.42,
+      "end": 592.98,
+      "speaker": "interviewer",
+      "text": "людям",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00769,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1879.7
+      }
+    },
+    {
+      "start": 594.3,
+      "end": 595.94,
+      "speaker": "respondent",
+      "text": "особого мотивация для этого не нужно.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0084,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2042.1
+      }
+    },
+    {
+      "start": 596.56,
+      "end": 598.26,
+      "speaker": "respondent",
+      "text": "Это конфликтный человек, но если он получает",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00905,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2022.9
+      }
+    },
+    {
+      "start": 598.26,
+      "end": 599.32,
+      "speaker": "interviewer",
+      "text": "от этого, будет удовольствие.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00637,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1775.2
+      }
+    },
+    {
+      "start": 599.58,
+      "end": 601.6,
+      "speaker": "respondent",
+      "text": "Хорошо, а вас самого можно назвать",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01005,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2796.5
+      }
+    },
+    {
+      "start": 601.6,
+      "end": 602.3,
+      "speaker": "interviewer",
+      "text": "конфликтный человек?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00405,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2409.3
+      }
+    },
+    {
+      "start": 603.16,
+      "end": 603.56,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00713,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1990.1
+      }
+    },
+    {
+      "start": 604.88,
+      "end": 607.08,
+      "speaker": "respondent",
+      "text": "То есть, вы сами становились",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01355,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 2987.2
+      }
+    },
+    {
+      "start": 607.08,
+      "end": 608.14,
+      "speaker": "interviewer",
+      "text": "инициатором конфликта?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00648,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2396.0
+      }
+    },
+    {
+      "start": 609.2,
+      "end": 609.72,
+      "speaker": "interviewer",
+      "text": "Никогда.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00598,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1866.7
+      }
+    },
+    {
+      "start": 610.86,
+      "end": 612.4,
+      "speaker": "respondent",
+      "text": "Хорошо, а лично",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00881,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2334.2
+      }
+    },
+    {
+      "start": 612.4,
+      "end": 613.78,
+      "speaker": "interviewer",
+      "text": "вы когда-нибудь конфликтовали",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00751,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1712.6
+      }
+    },
+    {
+      "start": 614.3,
+      "end": 614.72,
+      "speaker": "interviewer",
+      "text": "с кем-то?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00724,
+        "pitch_hz": 142.9,
+        "spectral_centroid_hz": 2759.7
+      }
+    },
+    {
+      "start": 616.88,
+      "end": 617.36,
+      "speaker": "interviewer",
+      "text": "Никогда.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00846,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1808.5
+      }
+    },
+    {
+      "start": 618.34,
+      "end": 620.24,
+      "speaker": "interviewer",
+      "text": "Понятно. При этом,",
+      "pause_seconds": 0.58,
+      "acoustic": {
+        "rms": 0.00928,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2054.0
+      }
+    },
+    {
+      "start": 620.5,
+      "end": 621.98,
+      "speaker": "respondent",
+      "text": "какие, по вашей оценке,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01179,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1976.7
+      }
+    },
+    {
+      "start": 623.04,
+      "end": 624.24,
+      "speaker": "interviewer",
+      "text": "обычные испытывает человек",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00942,
+        "pitch_hz": 137.9,
+        "spectral_centroid_hz": 2854.2
+      }
+    },
+    {
+      "start": 624.24,
+      "end": 625.34,
+      "speaker": "interviewer",
+      "text": "в конфликтной ситуации?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00708,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 2786.3
+      }
+    },
+    {
+      "start": 626.72,
+      "end": 628.42,
+      "speaker": "interviewer",
+      "text": "Какие эмоции испытывает человек",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00739,
+        "pitch_hz": 125.0,
+        "spectral_centroid_hz": 2809.7
+      }
+    },
+    {
+      "start": 628.42,
+      "end": 629.32,
+      "speaker": "interviewer",
+      "text": "в конфликтной ситуации?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00341,
+        "pitch_hz": 76.9,
+        "spectral_centroid_hz": 3250.4
+      }
+    },
+    {
+      "start": 630.92,
+      "end": 634.33,
+      "speaker": "interviewer",
+      "text": "Книев, в первую очередь.",
+      "pause_seconds": 2.01,
+      "acoustic": {
+        "rms": 0.00651,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2285.8
+      }
+    },
+    {
+      "start": 635.37,
+      "end": 636.27,
+      "speaker": "interviewer",
+      "text": "Не знаю,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00556,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2093.2
+      }
+    },
+    {
+      "start": 636.45,
+      "end": 638.37,
+      "speaker": "respondent",
+      "text": "скорее всего, но негативная.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00923,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2153.3
+      }
+    },
+    {
+      "start": 639.13,
+      "end": 640.31,
+      "speaker": "respondent",
+      "text": "А по вашему мнению,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01152,
+        "pitch_hz": 133.3,
+        "spectral_centroid_hz": 2154.8
+      }
+    },
+    {
+      "start": 640.31,
+      "end": 641.43,
+      "speaker": "respondent",
+      "text": "в конфликте проявляется",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01079,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1945.8
+      }
+    },
+    {
+      "start": 641.43,
+      "end": 642.59,
+      "speaker": "respondent",
+      "text": "истинная лицо в человек?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00822,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 2064.1
+      }
+    },
+    {
+      "start": 648.63,
+      "end": 650.17,
+      "speaker": "respondent",
+      "text": "Сложно сказать. Наверное, оно",
+      "pause_seconds": 0.26,
+      "acoustic": {
+        "rms": 0.01302,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1580.7
+      }
+    },
+    {
+      "start": 650.17,
+      "end": 652.19,
+      "speaker": "respondent",
+      "text": "становится более многогранным, но",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01484,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1625.8
+      }
+    },
+    {
+      "start": 652.19,
+      "end": 654.21,
+      "speaker": "respondent",
+      "text": "не всегда на истинном, потому что",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0083,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2424.2
+      }
+    },
+    {
+      "start": 654.21,
+      "end": 656.21,
+      "speaker": "respondent",
+      "text": "человек как-то агрессивно сполит.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00914,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2180.9
+      }
+    },
+    {
+      "start": 656.23,
+      "end": 657.63,
+      "speaker": "interviewer",
+      "text": "Это не значит, что это плохой человек.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00737,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2438.9
+      }
+    },
+    {
+      "start": 657.83,
+      "end": 659.35,
+      "speaker": "interviewer",
+      "text": "Может, просто так могло",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00371,
+        "pitch_hz": 93.0,
+        "spectral_centroid_hz": 2412.7
+      }
+    },
+    {
+      "start": 659.35,
+      "end": 660.51,
+      "speaker": "interviewer",
+      "text": "экспорить, так его воспитать.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00427,
+        "pitch_hz": 93.0,
+        "spectral_centroid_hz": 2037.8
+      }
+    },
+    {
+      "start": 661.47,
+      "end": 663.21,
+      "speaker": "respondent",
+      "text": "А как у вашей друзья",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.009,
+        "pitch_hz": 166.7,
+        "spectral_centroid_hz": 1585.2
+      }
+    },
+    {
+      "start": 663.21,
+      "end": 664.55,
+      "speaker": "interviewer",
+      "text": "обычные эмоции в конфликте?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0077,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2834.1
+      }
+    },
+    {
+      "start": 666.94,
+      "end": 668.74,
+      "speaker": "respondent",
+      "text": "Это зависит от конкретного человека.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00829,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2159.2
+      }
+    },
+    {
+      "start": 669.26,
+      "end": 670.82,
+      "speaker": "respondent",
+      "text": "Не могу сказать. В среднем, наверное,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00949,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2406.9
+      }
+    },
+    {
+      "start": 674.54,
+      "end": 677.52,
+      "speaker": "respondent",
+      "text": "без какого-то явного негатива,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0087,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1707.8
+      }
+    },
+    {
+      "start": 677.52,
+      "end": 678.64,
+      "speaker": "interviewer",
+      "text": "без истинной агрессии.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00678,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 3054.8
+      }
+    },
+    {
+      "start": 679.14,
+      "end": 680.06,
+      "speaker": "respondent",
+      "text": "Но это отличается",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01143,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2136.4
+      }
+    },
+    {
+      "start": 680.06,
+      "end": 681.2,
+      "speaker": "interviewer",
+      "text": "от поведения обычных?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00834,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1797.4
+      }
+    },
+    {
+      "start": 682.08,
+      "end": 684.16,
+      "speaker": "interviewer",
+      "text": "Да. Хорошо.",
+      "pause_seconds": 0.98,
+      "acoustic": {
+        "rms": 0.00586,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2000.3
+      }
+    },
+    {
+      "start": 684.42,
+      "end": 686.22,
+      "speaker": "respondent",
+      "text": "Но могут ситуации быть, что",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00846,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 2110.8
+      }
+    },
+    {
+      "start": 686.22,
+      "end": 687.46,
+      "speaker": "interviewer",
+      "text": "они в конфликте ведут себя",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00644,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1863.1
+      }
+    },
+    {
+      "start": 687.46,
+      "end": 689.42,
+      "speaker": "interviewer",
+      "text": "импульсивно, необдуманно?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00647,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2094.5
+      }
+    },
+    {
+      "start": 691.37,
+      "end": 691.76,
+      "speaker": "respondent",
+      "text": "Плывает.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01579,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1213.0
+      }
+    },
+    {
+      "start": 692.52,
+      "end": 693.02,
+      "speaker": "interviewer",
+      "text": "Хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00728,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1858.1
+      }
+    },
+    {
+      "start": 693.42,
+      "end": 696.34,
+      "speaker": "respondent",
+      "text": "А вы сами в ходе конфликта",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00962,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2759.4
+      }
+    },
+    {
+      "start": 696.34,
+      "end": 697.58,
+      "speaker": "respondent",
+      "text": "когда-нибудь говорили, что",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01187,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 1387.0
+      }
+    },
+    {
+      "start": 697.58,
+      "end": 699.04,
+      "speaker": "respondent",
+      "text": "о чем впоследствии сожалели?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00888,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 3037.5
+      }
+    },
+    {
+      "start": 699.56,
+      "end": 700.1,
+      "speaker": "interviewer",
+      "text": "Никогда.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00664,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1955.2
+      }
+    },
+    {
+      "start": 701.36,
+      "end": 704.04,
+      "speaker": "respondent",
+      "text": "Может быть, вы в ходе конфликта",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00873,
+        "pitch_hz": 129.0,
+        "spectral_centroid_hz": 2711.1
+      }
+    },
+    {
+      "start": 704.04,
+      "end": 706.04,
+      "speaker": "respondent",
+      "text": "обидели кого-то из своей знакомых?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00734,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2617.1
+      }
+    },
+    {
+      "start": 706.68,
+      "end": 707.62,
+      "speaker": "interviewer",
+      "text": "Не буду.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00458,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2037.9
+      }
+    },
+    {
+      "start": 708.48,
+      "end": 709.24,
+      "speaker": "interviewer",
+      "text": "Хорошо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00557,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2483.8
+      }
+    },
+    {
+      "start": 709.78,
+      "end": 710.2,
+      "speaker": "interviewer",
+      "text": "Смотрите.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00713,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2479.8
+      }
+    },
+    {
+      "start": 710.9,
+      "end": 714.5,
+      "speaker": "respondent",
+      "text": "Давайте поговорим еще про обман.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01041,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1914.5
+      }
+    },
+    {
+      "start": 715.22,
+      "end": 716.58,
+      "speaker": "respondent",
+      "text": "Что такое ложь в вашей жизни?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0096,
+        "pitch_hz": 400.0,
+        "spectral_centroid_hz": 1768.2
+      }
+    },
+    {
+      "start": 719.3,
+      "end": 720.44,
+      "speaker": "interviewer",
+      "text": "Дезинформация человека.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0083,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2277.7
+      }
+    },
+    {
+      "start": 721.28,
+      "end": 722.62,
+      "speaker": "respondent",
+      "text": "Передачи ему ложные.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00973,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2383.5
+      }
+    },
+    {
+      "start": 722.8,
+      "end": 723.32,
+      "speaker": "interviewer",
+      "text": "И информация.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00514,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2105.3
+      }
+    },
+    {
+      "start": 724.02,
+      "end": 725.38,
+      "speaker": "respondent",
+      "text": "В некоторых случаях, наверное,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.011,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2188.3
+      }
+    },
+    {
+      "start": 725.66,
+      "end": 727.26,
+      "speaker": "respondent",
+      "text": "под обман можно так же подогнать",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00866,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1735.7
+      }
+    },
+    {
+      "start": 728.6,
+      "end": 730.14,
+      "speaker": "respondent",
+      "text": "недоговорение какой-то информации.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0076,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1668.3
+      }
+    },
+    {
+      "start": 731.12,
+      "end": 732.18,
+      "speaker": "respondent",
+      "text": "Есть ложь, которую",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01147,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 2533.2
+      }
+    },
+    {
+      "start": 732.18,
+      "end": 733.1,
+      "speaker": "interviewer",
+      "text": "можно оправдать?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01115,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1749.1
+      }
+    },
+    {
+      "start": 733.1,
+      "end": 734.12,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00183,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2603.4
+      }
+    },
+    {
+      "start": 736.86,
+      "end": 738.52,
+      "speaker": "respondent",
+      "text": "А вы были свидетелем того,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01036,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2852.6
+      }
+    },
+    {
+      "start": 738.8,
+      "end": 740.88,
+      "speaker": "respondent",
+      "text": "что кто-то из ваших знакомых",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00968,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1990.4
+      }
+    },
+    {
+      "start": 740.88,
+      "end": 741.04,
+      "speaker": "interviewer",
+      "text": "была?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00344,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 2061.1
+      }
+    },
+    {
+      "start": 742.02,
+      "end": 742.22,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00594,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1898.3
+      }
+    },
+    {
+      "start": 743.88,
+      "end": 746.28,
+      "speaker": "respondent",
+      "text": "А что при этом, по вашему мнению,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01235,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1591.9
+      }
+    },
+    {
+      "start": 746.56,
+      "end": 748.08,
+      "speaker": "respondent",
+      "text": "чувствует человек, который вы должны дать?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00868,
+        "pitch_hz": 75.5,
+        "spectral_centroid_hz": 1714.8
+      }
+    },
+    {
+      "start": 750.2,
+      "end": 751.62,
+      "speaker": "respondent",
+      "text": "Очень сильно зависит от человека.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0078,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2655.5
+      }
+    },
+    {
+      "start": 751.94,
+      "end": 753.72,
+      "speaker": "respondent",
+      "text": "Если человек патологический",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00781,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1775.5
+      }
+    },
+    {
+      "start": 753.72,
+      "end": 755.44,
+      "speaker": "respondent",
+      "text": "угол, то, скорее всего, он",
+      "pause_seconds": 0.58,
+      "acoustic": {
+        "rms": 0.00853,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2149.4
+      }
+    },
+    {
+      "start": 755.44,
+      "end": 756.7,
+      "speaker": "interviewer",
+      "text": "перестал уже, что-либо чувствовать.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00544,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2480.3
+      }
+    },
+    {
+      "start": 757.26,
+      "end": 759.72,
+      "speaker": "respondent",
+      "text": "Если ему самому неприятно",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01072,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2168.3
+      }
+    },
+    {
+      "start": 761.72,
+      "end": 762.84,
+      "speaker": "interviewer",
+      "text": "выкладывать ложь,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00715,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 2011.0
+      }
+    },
+    {
+      "start": 764.18,
+      "end": 765.5,
+      "speaker": "respondent",
+      "text": "то, наверное, тоже негативники",
+      "pause_seconds": 0.28,
+      "acoustic": {
+        "rms": 0.00823,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1812.4
+      }
+    },
+    {
+      "start": 765.5,
+      "end": 766.38,
+      "speaker": "interviewer",
+      "text": "и какие-то эмоции испытывали.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00342,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2713.9
+      }
+    },
+    {
+      "start": 766.88,
+      "end": 768.28,
+      "speaker": "respondent",
+      "text": "А вот из ваших знакомых",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00812,
+        "pitch_hz": 129.0,
+        "spectral_centroid_hz": 2194.1
+      }
+    },
+    {
+      "start": 768.28,
+      "end": 769.56,
+      "speaker": "interviewer",
+      "text": "кто чаще всего лужит?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00714,
+        "pitch_hz": 142.9,
+        "spectral_centroid_hz": 2777.0
+      }
+    },
+    {
+      "start": 774.65,
+      "end": 775.17,
+      "speaker": "interviewer",
+      "text": "Не знаю.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00719,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2476.0
+      }
+    },
+    {
+      "start": 775.31,
+      "end": 778.11,
+      "speaker": "respondent",
+      "text": "Я знакомых таких умений только,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00836,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2260.8
+      }
+    },
+    {
+      "start": 778.17,
+      "end": 780.03,
+      "speaker": "respondent",
+      "text": "но я замечал его за постоянные ложь.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00821,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2435.4
+      }
+    },
+    {
+      "start": 780.39,
+      "end": 782.87,
+      "speaker": "respondent",
+      "text": "А если бы за чем-то, по вашим мнению,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00967,
+        "pitch_hz": 125.0,
+        "spectral_centroid_hz": 2438.9
+      }
+    },
+    {
+      "start": 783.11,
+      "end": 783.69,
+      "speaker": "interviewer",
+      "text": "он мог это делать?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00481,
+        "pitch_hz": 93.0,
+        "spectral_centroid_hz": 2406.8
+      }
+    },
+    {
+      "start": 786.25,
+      "end": 787.29,
+      "speaker": "interviewer",
+      "text": "Показаться лучше,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00837,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1979.2
+      }
+    },
+    {
+      "start": 787.51,
+      "end": 789.03,
+      "speaker": "interviewer",
+      "text": "возможно, чем мы есть на самом деле.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00573,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2567.5
+      }
+    },
+    {
+      "start": 791.11,
+      "end": 793.09,
+      "speaker": "respondent",
+      "text": "Но вот если мы говорим о вас,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01014,
+        "pitch_hz": 125.0,
+        "spectral_centroid_hz": 2326.1
+      }
+    },
+    {
+      "start": 793.35,
+      "end": 795.07,
+      "speaker": "respondent",
+      "text": "вы когда-нибудь обмалчивали",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00861,
+        "pitch_hz": 129.0,
+        "spectral_centroid_hz": 1667.7
+      }
+    },
+    {
+      "start": 795.07,
+      "end": 796.73,
+      "speaker": "respondent",
+      "text": "что-то, чтобы прикрыть знакомую?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00795,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2099.3
+      }
+    },
+    {
+      "start": 797.43,
+      "end": 798.73,
+      "speaker": "interviewer",
+      "text": "Чтобы прикрыть знакомую.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00614,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1987.6
+      }
+    },
+    {
+      "start": 799.93,
+      "end": 800.45,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0033,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2427.7
+      }
+    },
+    {
+      "start": 802.37,
+      "end": 803.31,
+      "speaker": "interviewer",
+      "text": "А, может быть,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0076,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1819.0
+      }
+    },
+    {
+      "start": 803.35,
+      "end": 804.31,
+      "speaker": "interviewer",
+      "text": "вы когда-нибудь ругали,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01005,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1935.7
+      }
+    },
+    {
+      "start": 804.41,
+      "end": 806.65,
+      "speaker": "respondent",
+      "text": "чтобы избежать для себя негативные последствия?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00784,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2817.3
+      }
+    },
+    {
+      "start": 806.77,
+      "end": 806.95,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00537,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 2144.7
+      }
+    },
+    {
+      "start": 809.26,
+      "end": 811.94,
+      "speaker": "respondent",
+      "text": "То есть, вы сами обманывали свои знакомые?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00967,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2458.6
+      }
+    },
+    {
+      "start": 814.16,
+      "end": 815.2,
+      "speaker": "interviewer",
+      "text": "Плывал 100%.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00694,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1849.4
+      }
+    },
+    {
+      "start": 815.2,
+      "end": 816.9,
+      "speaker": "respondent",
+      "text": "Не перепомню конкретную ситуацию,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00906,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 1551.7
+      }
+    },
+    {
+      "start": 817.04,
+      "end": 818.22,
+      "speaker": "interviewer",
+      "text": "но точно такое было.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00483,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2739.6
+      }
+    },
+    {
+      "start": 818.64,
+      "end": 819.84,
+      "speaker": "interviewer",
+      "text": "Я понял, я понял.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0042,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 1831.7
+      }
+    },
+    {
+      "start": 820.08,
+      "end": 821.24,
+      "speaker": "respondent",
+      "text": "А вот, по вашему мнению,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01134,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 1720.4
+      }
+    },
+    {
+      "start": 821.38,
+      "end": 822.46,
+      "speaker": "respondent",
+      "text": "у живых человек это кто?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0086,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1947.6
+      }
+    },
+    {
+      "start": 823.74,
+      "end": 824.5,
+      "speaker": "interviewer",
+      "text": "В каком плане?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00572,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 1673.0
+      }
+    },
+    {
+      "start": 825.06,
+      "end": 826.78,
+      "speaker": "respondent",
+      "text": "Кто такой у живых человек?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00851,
+        "pitch_hz": 400.0,
+        "spectral_centroid_hz": 1715.8
+      }
+    },
+    {
+      "start": 827.82,
+      "end": 828.5,
+      "speaker": "interviewer",
+      "text": "Человек,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00765,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 2877.9
+      }
+    },
+    {
+      "start": 828.56,
+      "end": 830.58,
+      "speaker": "respondent",
+      "text": "который много лыжет",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00851,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 1386.8
+      }
+    },
+    {
+      "start": 830.58,
+      "end": 832.18,
+      "speaker": "interviewer",
+      "text": "и не кращенеет.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0046,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2260.5
+      }
+    },
+    {
+      "start": 832.48,
+      "end": 835.38,
+      "speaker": "respondent",
+      "text": "Хорошо. А вот как вы лично понимаете,",
+      "pause_seconds": 0.38,
+      "acoustic": {
+        "rms": 0.00895,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 1536.3
+      }
+    },
+    {
+      "start": 835.66,
+      "end": 836.6,
+      "speaker": "interviewer",
+      "text": "что в каком-то человеку",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00808,
+        "pitch_hz": 153.8,
+        "spectral_centroid_hz": 1760.6
+      }
+    },
+    {
+      "start": 836.6,
+      "end": 837.34,
+      "speaker": "interviewer",
+      "text": "нельзя лыть?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00692,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 2317.1
+      }
+    },
+    {
+      "start": 838.1,
+      "end": 839.08,
+      "speaker": "interviewer",
+      "text": "По опыту.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00722,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 1529.1
+      }
+    },
+    {
+      "start": 842.32,
+      "end": 844.44,
+      "speaker": "respondent",
+      "text": "И у вас есть знакомые,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01094,
+        "pitch_hz": 125.0,
+        "spectral_centroid_hz": 2246.6
+      }
+    },
+    {
+      "start": 844.56,
+      "end": 845.94,
+      "speaker": "respondent",
+      "text": "которых можно фортизовать,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01084,
+        "pitch_hz": 133.3,
+        "spectral_centroid_hz": 1402.9
+      }
+    },
+    {
+      "start": 846.04,
+      "end": 847.16,
+      "speaker": "interviewer",
+      "text": "как нечестного человека?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00573,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2778.9
+      }
+    },
+    {
+      "start": 848.7,
+      "end": 849.06,
+      "speaker": "interviewer",
+      "text": "Нет.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00794,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1871.5
+      }
+    },
+    {
+      "start": 849.52,
+      "end": 850.98,
+      "speaker": "interviewer",
+      "text": "Такие знакомые, я помню.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00507,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1829.8
+      }
+    },
+    {
+      "start": 852.42,
+      "end": 853.86,
+      "speaker": "respondent",
+      "text": "Вот если бы были,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00987,
+        "pitch_hz": 142.9,
+        "spectral_centroid_hz": 2380.5
+      }
+    },
+    {
+      "start": 853.94,
+      "end": 854.98,
+      "speaker": "interviewer",
+      "text": "как вы их не могли относить?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0062,
+        "pitch_hz": 129.0,
+        "spectral_centroid_hz": 1788.9
+      }
+    },
+    {
+      "start": 856.14,
+      "end": 857.54,
+      "speaker": "respondent",
+      "text": "Вряд ли бы я их мог называть.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0111,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1656.1
+      }
+    },
+    {
+      "start": 861.2,
+      "end": 863.3,
+      "speaker": "respondent",
+      "text": "Скажите, были ли ситуации в вашей жизни,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01138,
+        "pitch_hz": 166.7,
+        "spectral_centroid_hz": 2016.7
+      }
+    },
+    {
+      "start": 863.46,
+      "end": 864.66,
+      "speaker": "respondent",
+      "text": "когда вы принимали решение",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01092,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1513.9
+      }
+    },
+    {
+      "start": 864.66,
+      "end": 865.72,
+      "speaker": "interviewer",
+      "text": "отдавиться от человека",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00913,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2948.9
+      }
+    },
+    {
+      "start": 865.72,
+      "end": 867.12,
+      "speaker": "interviewer",
+      "text": "из-за его ужин?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00818,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 3030.0
+      }
+    },
+    {
+      "start": 870.3,
+      "end": 870.98,
+      "speaker": "respondent",
+      "text": "Были ли ситуации,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01502,
+        "pitch_hz": 190.5,
+        "spectral_centroid_hz": 2382.0
+      }
+    },
+    {
+      "start": 871.06,
+      "end": 873.08,
+      "speaker": "respondent",
+      "text": "чтобы вы сами совершали поступки,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01095,
+        "pitch_hz": 125.0,
+        "spectral_centroid_hz": 2920.4
+      }
+    },
+    {
+      "start": 873.16,
+      "end": 875.5,
+      "speaker": "respondent",
+      "text": "позовляющие вы сомниться в вашей честности?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00791,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2751.0
+      }
+    },
+    {
+      "start": 878.27,
+      "end": 879.21,
+      "speaker": "respondent",
+      "text": "Когда-то, наверное.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00957,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1609.1
+      }
+    },
+    {
+      "start": 880.11,
+      "end": 882.01,
+      "speaker": "respondent",
+      "text": "Были ли ситуации, что вы испытывались",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01414,
+        "pitch_hz": 74.1,
+        "spectral_centroid_hz": 2323.4
+      }
+    },
+    {
+      "start": 882.01,
+      "end": 884.39,
+      "speaker": "respondent",
+      "text": "из-за того, что обманули кого-то?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0103,
+        "pitch_hz": 117.6,
+        "spectral_centroid_hz": 2051.6
+      }
+    },
+    {
+      "start": 884.43,
+      "end": 884.61,
+      "speaker": "interviewer",
+      "text": "Да.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00515,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 1895.2
+      }
+    },
+    {
+      "start": 884.61,
+      "end": 886.75,
+      "speaker": "interviewer",
+      "text": "Хорошо. Вы полноспасибо большое",
+      "pause_seconds": 0.26,
+      "acoustic": {
+        "rms": 0.00499,
+        "pitch_hz": 102.6,
+        "spectral_centroid_hz": 2574.8
+      }
+    },
+    {
+      "start": 886.75,
+      "end": 888.81,
+      "speaker": "respondent",
+      "text": "за ваши честные ответы.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00696,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 2741.0
+      }
+    },
+    {
+      "start": 888.95,
+      "end": 890.21,
+      "speaker": "respondent",
+      "text": "Если мы говорим",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01438,
+        "pitch_hz": 148.1,
+        "spectral_centroid_hz": 1800.4
+      }
+    },
+    {
+      "start": 890.21,
+      "end": 892.73,
+      "speaker": "respondent",
+      "text": "о той беседе, которая сейчас была,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00722,
+        "pitch_hz": 105.3,
+        "spectral_centroid_hz": 2757.0
+      }
+    },
+    {
+      "start": 893.33,
+      "end": 894.45,
+      "speaker": "respondent",
+      "text": "в каком настроении",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00784,
+        "pitch_hz": 121.2,
+        "spectral_centroid_hz": 1761.5
+      }
+    },
+    {
+      "start": 894.45,
+      "end": 895.07,
+      "speaker": "interviewer",
+      "text": "вы ходили?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00322,
+        "pitch_hz": 80.0,
+        "spectral_centroid_hz": 2136.9
+      }
+    },
+    {
+      "start": 895.55,
+      "end": 898.17,
+      "speaker": "respondent",
+      "text": "В нейтральном чуть-чуть завалованном.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00988,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1720.3
+      }
+    },
+    {
+      "start": 898.47,
+      "end": 899.29,
+      "speaker": "interviewer",
+      "text": "Хорошо. А сейчас,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00806,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2875.3
+      }
+    },
+    {
+      "start": 899.49,
+      "end": 900.97,
+      "speaker": "interviewer",
+      "text": "после того, как она завершается,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00663,
+        "pitch_hz": 100.0,
+        "spectral_centroid_hz": 2539.8
+      }
+    },
+    {
+      "start": 900.97,
+      "end": 902.01,
+      "speaker": "interviewer",
+      "text": "как вы себя чувствуете?",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00416,
+        "pitch_hz": 95.2,
+        "spectral_centroid_hz": 3203.5
+      }
+    },
+    {
+      "start": 905.15,
+      "end": 905.79,
+      "speaker": "respondent",
+      "text": "Удовлетворенным,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01278,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 1495.1
+      }
+    },
+    {
+      "start": 906.79,
+      "end": 908.63,
+      "speaker": "interviewer",
+      "text": "завалованным, нейтральным.",
+      "pause_seconds": 0.56,
+      "acoustic": {
+        "rms": 0.0081,
+        "pitch_hz": 114.3,
+        "spectral_centroid_hz": 1835.2
+      }
+    },
+    {
+      "start": 908.91,
+      "end": 910.09,
+      "speaker": "respondent",
+      "text": "Отлично. Спасибо большое. Вы",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00863,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 3262.5
+      }
+    },
+    {
+      "start": 910.09,
+      "end": 910.85,
+      "speaker": "respondent",
+      "text": "большой молодец.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01327,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2581.4
+      }
+    },
+    {
+      "start": 910.85,
+      "end": 913.15,
+      "speaker": "respondent",
+      "text": "Вы совсем замечательно справились.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00739,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 3123.6
+      }
+    },
+    {
+      "start": 913.31,
+      "end": 914.49,
+      "speaker": "respondent",
+      "text": "Поэтому сейчас прошу вас",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00846,
+        "pitch_hz": 108.1,
+        "spectral_centroid_hz": 2618.8
+      }
+    },
+    {
+      "start": 914.49,
+      "end": 916.79,
+      "speaker": "interviewer",
+      "text": "еще две минуты отдохнуть,",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00632,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 1744.2
+      }
+    },
+    {
+      "start": 916.89,
+      "end": 918.09,
+      "speaker": "interviewer",
+      "text": "посидеть закрыты глазами",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.0079,
+        "pitch_hz": 97.6,
+        "spectral_centroid_hz": 2531.7
+      }
+    },
+    {
+      "start": 918.09,
+      "end": 919.85,
+      "speaker": "respondent",
+      "text": "и мы с вами будем завершать.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.00869,
+        "pitch_hz": 160.0,
+        "spectral_centroid_hz": 2653.2
+      }
+    },
+    {
+      "start": 1057.62,
+      "end": 1059.72,
+      "speaker": "respondent",
+      "text": "Отлично. Мы с вами заканчиваем.",
+      "pause_seconds": 0.52,
+      "acoustic": {
+        "rms": 0.01078,
+        "pitch_hz": 111.1,
+        "spectral_centroid_hz": 2628.1
+      }
+    },
+    {
+      "start": 1059.96,
+      "end": 1060.22,
+      "speaker": "interviewer",
+      "text": "Спасибо.",
+      "pause_seconds": 0,
+      "acoustic": {
+        "rms": 0.01119,
+        "pitch_hz": null,
+        "spectral_centroid_hz": 3658.2
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "start": 131.32,
+      "end": 134.06,
+      "name": "R01 · Представление",
+      "label": "truth"
+    },
+    {
+      "start": 138.76,
+      "end": 144.96,
+      "name": "R02 · Самочувствие сегодня",
+      "label": "truth"
+    },
+    {
+      "start": 163.6,
+      "end": 171.24,
+      "name": "R03 · Имя и учёба",
+      "label": "truth"
+    },
+    {
+      "start": 172.34,
+      "end": 183.72,
+      "name": "R04 · Работа",
+      "label": "truth"
+    },
+    {
+      "start": 186.0,
+      "end": 202.04,
+      "name": "R05 · Проекты на работе",
+      "label": "truth"
+    },
+    {
+      "start": 212.3,
+      "end": 238.83,
+      "name": "R06 · Почему поступил в ИТМО",
+      "label": "truth"
+    },
+    {
+      "start": 238.83,
+      "end": 250.13,
+      "name": "R07 · Интерес к медицине",
+      "label": "truth"
+    },
+    {
+      "start": 259.01,
+      "end": 268.15,
+      "name": "R08 · Увлечения и свободное время",
+      "label": "truth"
+    },
+    {
+      "start": 268.47,
+      "end": 275.41,
+      "name": "R09 · Велосипед и марафон",
+      "label": "truth"
+    },
+    {
+      "start": 277.53,
+      "end": 281.33,
+      "name": "R10 · Хоккей",
+      "label": "truth"
+    },
+    {
+      "start": 289.43,
+      "end": 309.91,
+      "name": "R11 · Другие достижения",
+      "label": "truth"
+    },
+    {
+      "start": 320.69,
+      "end": 344.35,
+      "name": "R12 · Главный жизненный вызов",
+      "label": "truth"
+    },
+    {
+      "start": 359.67,
+      "end": 360.69,
+      "name": "R13 · Отношение к алкоголю",
+      "label": "lie"
+    },
+    {
+      "start": 367.53,
+      "end": 385.53,
+      "name": "R14 · Возможные плюсы алкоголя",
+      "label": "lie"
+    },
+    {
+      "start": 392.36,
+      "end": 394.54,
+      "name": "R15 · Главный минус алкоголя",
+      "label": "lie"
+    },
+    {
+      "start": 405.24,
+      "end": 414.1,
+      "name": "R16 · Эмоции под воздействием алкоголя",
+      "label": "lie"
+    },
+    {
+      "start": 420.02,
+      "end": 421.34,
+      "name": "R17 · Чувства по отношению к пьяному человеку",
+      "label": "lie"
+    },
+    {
+      "start": 427.56,
+      "end": 428.32,
+      "name": "R18 · Видел ли пьяных знакомых",
+      "label": "lie"
+    },
+    {
+      "start": 436.92,
+      "end": 444.56,
+      "name": "R19 · Реакция на пьяного знакомого",
+      "label": "lie"
+    },
+    {
+      "start": 449.02,
+      "end": 449.38,
+      "name": "R20 · Употребление алкоголя с друзьями",
+      "label": "lie"
+    },
+    {
+      "start": 452.46,
+      "end": 452.6,
+      "name": "R21 · Употребление алкоголя вообще",
+      "label": "lie"
+    },
+    {
+      "start": 466.54,
+      "end": 466.92,
+      "name": "R22 · Запрет употребления алкоголя",
+      "label": "lie"
+    },
+    {
+      "start": 473.63,
+      "end": 477.05,
+      "name": "R23 · Запрет продажи алкоголя",
+      "label": "lie"
+    },
+    {
+      "start": 487.65,
+      "end": 489.74,
+      "name": "R24 · Наказание за правонарушения в состоянии опьянения",
+      "label": "lie"
+    },
+    {
+      "start": 500.32,
+      "end": 500.85,
+      "name": "R25 · Негативный опыт знакомых из-за алкоголя",
+      "label": "lie"
+    },
+    {
+      "start": 508.55,
+      "end": 509.85,
+      "name": "R26 · Знакомые, сожалевшие о выпивке",
+      "label": "lie"
+    },
+    {
+      "start": 519.66,
+      "end": 522.6,
+      "name": "R27 · Стыдные ситуации, связанные с алкоголем",
+      "label": "lie"
+    },
+    {
+      "start": 534.35,
+      "end": 548.81,
+      "name": "R28 · Что такое конфликт",
+      "label": "truth"
+    },
+    {
+      "start": 560.08,
+      "end": 563.5,
+      "name": "R29 · Конфликт как две противоположные точки зрения",
+      "label": "truth"
+    },
+    {
+      "start": 570.69,
+      "end": 576.21,
+      "name": "R30 · Признаки конфликтного человека",
+      "label": "truth"
+    },
+    {
+      "start": 581.51,
+      "end": 582.17,
+      "name": "R31 · Есть ли конфликтные люди среди знакомых",
+      "label": "truth"
+    },
+    {
+      "start": 589.28,
+      "end": 599.32,
+      "name": "R32 · Что провоцирует конфликтных знакомых",
+      "label": "lie"
+    },
+    {
+      "start": 603.16,
+      "end": 603.56,
+      "name": "R33 · Считает ли себя конфликтным",
+      "label": "lie"
+    },
+    {
+      "start": 609.2,
+      "end": 609.72,
+      "name": "R34 · Был ли инициатором конфликта",
+      "label": "lie"
+    },
+    {
+      "start": 616.88,
+      "end": 617.36,
+      "name": "R35 · Конфликтовал ли лично с кем-то",
+      "label": "lie"
+    },
+    {
+      "start": 630.92,
+      "end": 638.37,
+      "name": "R36 · Эмоции человека в конфликте",
+      "label": "truth"
+    },
+    {
+      "start": 648.63,
+      "end": 660.51,
+      "name": "R37 · Проявляется ли истинное лицо в конфликте",
+      "label": "truth"
+    },
+    {
+      "start": 666.94,
+      "end": 678.64,
+      "name": "R38 · Как друзья ведут себя в конфликте",
+      "label": "truth"
+    },
+    {
+      "start": 682.55,
+      "end": 682.87,
+      "name": "R39 · Отличается ли поведение друзей в конфликте от обычного",
+      "label": "truth"
+    },
+    {
+      "start": 691.18,
+      "end": 691.94,
+      "name": "R40 · Ведут ли друзья себя импульсивно в конфликте",
+      "label": "truth"
+    },
+    {
+      "start": 699.56,
+      "end": 700.1,
+      "name": "R41 · Говорил ли в конфликте то, о чём потом жалел",
+      "label": "lie"
+    },
+    {
+      "start": 706.9,
+      "end": 707.62,
+      "name": "R42 · Обидел ли кого-то из знакомых в ходе конфликта",
+      "label": "lie"
+    },
+    {
+      "start": 719.3,
+      "end": 730.14,
+      "name": "R43 · Что такое ложь",
+      "label": "truth"
+    },
+    {
+      "start": 733.1,
+      "end": 734.12,
+      "name": "R44 · Бывает ли оправданная ложь",
+      "label": "truth"
+    },
+    {
+      "start": 742.02,
+      "end": 742.36,
+      "name": "R45 · Был ли свидетелем лжи знакомых",
+      "label": "truth"
+    },
+    {
+      "start": 750.2,
+      "end": 766.38,
+      "name": "R46 · Что чувствует человек, который лжёт",
+      "label": "truth"
+    },
+    {
+      "start": 774.65,
+      "end": 780.03,
+      "name": "R47 · Кто из знакомых чаще всего лжёт",
+      "label": "truth"
+    },
+    {
+      "start": 786.25,
+      "end": 789.03,
+      "name": "R48 · Зачем знакомый мог бы лгать",
+      "label": "truth"
+    },
+    {
+      "start": 797.43,
+      "end": 800.45,
+      "name": "R49 · Умалчивал ли что-то, чтобы прикрыть знакомых",
+      "label": "truth"
+    },
+    {
+      "start": 806.77,
+      "end": 807.08,
+      "name": "R50 · Лгал ли, чтобы избежать негативных последствий",
+      "label": "truth"
+    },
+    {
+      "start": 814.16,
+      "end": 818.22,
+      "name": "R51 · Обманывал ли своих знакомых",
+      "label": "truth"
+    },
+    {
+      "start": 827.82,
+      "end": 832.18,
+      "name": "R52 · Кого считает лживым человеком",
+      "label": "truth"
+    },
+    {
+      "start": 838.1,
+      "end": 839.08,
+      "name": "R53 · Как понимает, что человеку нельзя лгать",
+      "label": "truth"
+    },
+    {
+      "start": 848.7,
+      "end": 850.98,
+      "name": "R54 · Есть ли среди знакомых нечестные люди",
+      "label": "truth"
+    },
+    {
+      "start": 856.14,
+      "end": 857.54,
+      "name": "R55 · Как бы относился к нечестным знакомым",
+      "label": "truth"
+    },
+    {
+      "start": 867.65,
+      "end": 867.92,
+      "name": "R56 · Отдалялся ли от человека из-за его лжи",
+      "label": "truth"
+    },
+    {
+      "start": 878.27,
+      "end": 879.21,
+      "name": "R57 · Совершал ли поступки, заставляющие усомниться в его честности",
+      "label": "truth"
+    },
+    {
+      "start": 884.43,
+      "end": 884.8,
+      "name": "R58 · Сожалел ли о том, что обманул кого-то",
+      "label": "truth"
+    },
+    {
+      "start": 895.55,
+      "end": 898.17,
+      "name": "R59 · Настроение до беседы",
+      "label": "truth"
+    },
+    {
+      "start": 905.15,
+      "end": 908.63,
+      "name": "R60 · Самочувствие после беседы",
+      "label": "truth"
+    }
+  ],
+  "jobs": {},
+  "video_analysis": {
+    "duration": 1060.36,
+    "frames_analyzed": 13255,
+    "pose_available": true,
+    "rppg_points": 9023
+  },
+  "sync_estimate": {
+    "signal_minus_video_seconds": 32.0,
+    "uncertainty_seconds": 2.0,
+    "method": "audio speech energy versus RIP change; cross-correlation peaks across independent 5-minute blocks; SpO2 disconnect near camera end",
+    "review_required": true
+  },
+  "transcript_review_required": true,
+  "annotation_provenance": {
+    "label_source": "User confirmation in conversation",
+    "time_basis": "Seconds from start of video",
+    "candidate_file": "answer_candidates.json",
+    "pending_candidate_ids": [],
+    "updated_at": "2026-10-20T20:18:12.098826+00:00",
+    "correction": "R25 restored after participant clarified two separate answers; R24/R26/R27 boundaries reviewed."
+  },
+  "transcript_corrections": [
+    {
+      "at": "2026-10-20T20:19:13.141108+00:00",
+      "range_video_seconds": [
+        487.65,
+        522.6
+      ],
+      "reason": "Two separate answers R25/R26 confirmed by participant and multichannel audio/video; nearby speaker diarization corrected."
+    }
+  ]
+}
