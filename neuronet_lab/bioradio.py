@@ -21,8 +21,23 @@ CHANNELS = {
     "SpO2 pulse": "SpO2",
     "BioRadio Event": "Event",
 }
-IMPORT_VERSION = 2
+IMPORT_VERSION = 4
 DECIMAL_FIELDS = {"ECG", "RIP", "GSR", "Flow Rate temp", "PPG pulse"}
+
+
+def _normalize_header(name: str) -> str:
+    """Map device-specific sensor suffixes onto the supported channel roles."""
+    cleaned = " ".join(name.strip().split())
+    for known in CHANNELS:
+        if cleaned.casefold() == known.casefold():
+            return known
+    # BioRadio allows different sensor names (Sensor 1, PulseOx1, pulse, ...).
+    for prefix, canonical in (("flow rate", "Flow Rate temp"),
+                              ("heart rate", "Heart Rate pulse"),
+                              ("ppg", "PPG pulse"), ("spo2", "SpO2 pulse")):
+        if cleaned.casefold() == prefix or cleaned.casefold().startswith(prefix + " "):
+            return canonical
+    return cleaned
 
 
 def parse_clock(value: str) -> float:
@@ -68,9 +83,14 @@ def _decimal_comma_row(fields: list[str], headers: list[str]) -> dict[str, float
                 solutions.append(values)
             return
         remaining = len(names) - index
-        if not remaining <= len(tokens) - cursor <= remaining + sum(n in DECIMAL_FIELDS for n in names[index:]):
+        optional_event = bool(names and names[-1] == "BioRadio Event")
+        if not remaining - optional_event <= len(tokens) - cursor <= remaining + sum(n in DECIMAL_FIELDS for n in names[index:]):
             return
         name = names[index]
+        if cursor == len(tokens):
+            if index == len(names) - 1 and name == "BioRadio Event":
+                visit(index + 1, cursor, values + [float("nan")])
+            return
         raw = tokens[cursor]
         choices = [(raw, 1)]
         if name in DECIMAL_FIELDS and cursor + 1 < len(tokens):
@@ -85,7 +105,8 @@ def _decimal_comma_row(fields: list[str], headers: list[str]) -> dict[str, float
                 continue
             if name not in DECIMAL_FIELDS and name in CHANNELS and np.isfinite(value):
                 maximum = {"Heart Rate pulse": 300, "SpO2 pulse": 100, "BioRadio Event": 65535}.get(name)
-                if maximum is not None and (value != int(value) or not 0 <= value <= maximum):
+                missing_codes = {"Heart Rate pulse": {511}, "SpO2 pulse": {127}}.get(name, set())
+                if maximum is not None and (value != int(value) or (not 0 <= value <= maximum and value not in missing_codes)):
                     continue
             visit(index + 1, cursor + width, values + [value])
 
@@ -107,12 +128,15 @@ def import_csv(source: Path, output_dir: Path) -> dict:
         delimiter = ";" if first_line.count(";") > first_line.count(",") else ","
         handle.seek(0)
         reader = csv.reader(handle, delimiter=delimiter)
-        headers = [name.strip() for name in next(reader)]
+        original_headers = [name.strip() for name in next(reader)]
+        headers = [_normalize_header(name) for name in original_headers]
         if not headers or headers[0].lower() not in {"elapsed time", "time", "timestamp"}:
             raise ValueError("CSV needs an 'Elapsed Time' column")
         names = [CHANNELS[name] for name in headers if name in CHANNELS]
-        if not names:
+        if not any(name != "Event" for name in names):
             raise ValueError("No recognized BioRadio channels in CSV")
+        if len(names) != len(set(names)):
+            raise ValueError("В CSV несколько датчиков одного типа. Экспортируйте по одному каналу каждого типа.")
         columns = {name: array("d") for name in names}
         times = array("d")
         malformed = 0
@@ -158,6 +182,16 @@ def import_csv(source: Path, output_dir: Path) -> dict:
 
     time_array = np.frombuffer(times, dtype=np.float64).copy()
     signal_array = np.column_stack([np.frombuffer(columns[name], dtype=np.float64) for name in names])
+    invalid_device_values = {}
+    for name, maximum in (("HeartRate", 300), ("SpO2", 100)):
+        if name in names:
+            channel = signal_array[:, names.index(name)]
+            invalid = np.isfinite(channel) & ((channel <= 0) | (channel > maximum))
+            invalid_device_values[name] = int(invalid.sum())
+            channel[invalid] = np.nan
+    usable = [i for i, name in enumerate(names) if name != "Event"]
+    if not np.isfinite(signal_array[:, usable]).any():
+        raise ValueError("Не удалось прочитать значения каналов BioRadio. Проверьте формат CSV. Прежние данные сессии сохранены.")
     for name, values in (("time.npy", time_array), ("signals.npy", signal_array)):
         temporary = output_dir / (name + ".tmp")
         with temporary.open("wb") as handle:
@@ -176,6 +210,9 @@ def import_csv(source: Path, output_dir: Path) -> dict:
         "malformed_rows": malformed,
         "format": mode,
         "import_version": IMPORT_VERSION,
+        "source_file": source.name,
+        "source_headers": original_headers,
+        "invalid_device_values": invalid_device_values,
         "recovered_decimal_rows": recovered,
         "nonfinite_samples": {name: int(np.count_nonzero(~np.isfinite(signal_array[:, i]))) for i, name in enumerate(names)},
     }

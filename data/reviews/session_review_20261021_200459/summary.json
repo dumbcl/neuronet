@@ -1,0 +1,72 @@
+[
+  {
+    "id": "6c64e7e5588141c1a31d6876cefda2c0",
+    "name": "00012 — komarov",
+    "turns": 385,
+    "answers": 58,
+    "answer_labels": {
+      "truth": 34,
+      "lie": 21,
+      "base": 0,
+      "unlabeled": 3
+    },
+    "annotations": 135,
+    "internal_pauses": 59
+  },
+  {
+    "id": "a7c62a956399449a8dac43d749761e67",
+    "name": "Маргарян — 07.10.2026 — проверить синхронизацию",
+    "turns": 342,
+    "answers": 55,
+    "answer_labels": {
+      "truth": 44,
+      "lie": 10,
+      "base": 0,
+      "unlabeled": 1
+    },
+    "annotations": 141,
+    "internal_pauses": 77
+  },
+  {
+    "id": "5dba1945a17d42268d2bb7a07ed67d59",
+    "name": "Дубров Степан",
+    "turns": 110,
+    "answers": 55,
+    "answer_labels": {
+      "truth": 42,
+      "lie": 11,
+      "base": 0,
+      "unlabeled": 2
+    },
+    "annotations": 115,
+    "internal_pauses": 0
+  },
+  {
+    "id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+    "name": "Яхяев",
+    "turns": 616,
+    "answers": 64,
+    "answer_labels": {
+      "truth": 53,
+      "lie": 10,
+      "base": 1,
+      "unlabeled": 0
+    },
+    "annotations": 152,
+    "internal_pauses": 154
+  },
+  {
+    "id": "105116c550ad455a88376c54ff667e11",
+    "name": "Фокин",
+    "turns": 416,
+    "answers": 60,
+    "answer_labels": {
+      "truth": 52,
+      "lie": 8,
+      "base": 0,
+      "unlabeled": 0
+    },
+    "annotations": 153,
+    "internal_pauses": 106
+  }
+]

@@ -23,8 +23,20 @@ def _union_length(spans):
     return sum(b - a for a, b in merged)
 
 
-def _answers(turns):
+def _answers(turns, answer_spans=None):
     """Infer exchanges from consecutive speaker runs, not ASR segment boundaries."""
+    if answer_spans is not None:
+        by_id = {t.get("id"): t for t in turns if t.get("id")}
+        for answer in answer_spans:
+            parts = [by_id[key] for key in answer.get("turn_ids", []) if key in by_id and by_id[key].get("speaker") == "respondent"]
+            if not parts:
+                continue
+            parts.sort(key=lambda t: t["start"])
+            question = [by_id[key] for key in answer.get("question_turn_ids", []) if key in by_id]
+            question_end = max(t["end"] for t in question) if question else answer.get("question_end")
+            yield dict(answer, speaker="respondent", start=parts[0]["start"], end=max(t["end"] for t in parts),
+                       turns=parts, latency=parts[0]["start"] - question_end if question_end is not None else None)
+        return
     blocks = []
     for turn in sorted(turns, key=lambda t: t["start"]):
         if blocks and blocks[-1]["speaker"] == turn.get("speaker"):
@@ -44,10 +56,11 @@ def load_audio_frames(path, modified_ns):
         return {key: source[key] for key in source.files}
 
 
-def speech_stats(turns, start, end, audio_frames=None):
+def speech_stats(turns, start, end, audio_frames=None, answer_spans=None):
     selected = [t for t in turns if t.get("end", 0) > start and t.get("start", 0) < end]
     respondent = [t for t in selected if t.get("speaker") == "respondent"]
-    answers = [a for a in _answers(turns) if any(t in respondent for t in a["turns"])]
+    answers = [a for a in _answers(turns, answer_spans) if any(t in respondent for t in a["turns"]) or
+               (answer_spans is not None and a["start"] < end and a["end"] > start)]
     response_seconds = _union_length([(max(start, a["start"]), min(end, a["end"])) for a in answers])
     segment_seconds = _union_length([(max(start, t["start"]), min(end, t["end"])) for t in respondent])
     text_parts, word_method, count_available = [], "whole_turns", bool(respondent)
@@ -62,21 +75,33 @@ def speech_stats(turns, start, end, audio_frames=None):
     words = sum(len(_tokens(text)) for text in text_parts) if count_available else None
     syllables = sum(len(re.findall(r"[аеёиоуыэюяaeiouy]", text, re.I)) for text in text_parts) if count_available else None
     latencies = [a["latency"] for a in answers if a["latency"] is not None]
-    pauses = []
+    pause_spans = []
+    estimated_pauses = []
     pauses_complete = bool(respondent)
     for turn in respondent:
         if turn.get("words"):
             pairs = zip(turn["words"][:-1], turn["words"][1:])
-            pauses.extend(max(0, min(end, right["start"]) - max(start, left["end"])) for left, right in pairs if right["start"] - left["end"] >= 0.25)
+            pause_spans.extend((max(start, left["end"]), min(end, right["start"])) for left, right in pairs if right["start"] - left["end"] >= 0.25)
         elif turn["start"] >= start and turn["end"] <= end and turn.get("pause_seconds") is not None:
-            pauses.append(float(turn["pause_seconds"]))
+            estimated_pauses.append((turn, float(turn["pause_seconds"])))
         else:
             pauses_complete = False
     for answer in answers:
         for left, right in zip(answer["turns"][:-1], answer["turns"][1:]):
             gap = max(0, min(end, right["start"]) - max(start, left["end"]))
             if gap >= 0.25:
-                pauses.append(gap)
+                pause_spans.append((max(start, left["end"]), min(end, right["start"])))
+    # Explicit silence spans also include pauses inside a long ASR segment.
+    explicit = []
+    for answer in answers:
+        for pause in answer.get("internal_pauses", []):
+            a, b = max(start, pause["start"]), min(end, pause["end"])
+            if b > a:
+                explicit.append((a, b))
+    known_spans = pause_spans + explicit
+    known_seconds = _union_length(known_spans)
+    residual = sum(max(0, seconds - _union_length([(max(t["start"], a), min(t["end"], b)) for a, b in known_spans])) for t, seconds in estimated_pauses)
+    pause_seconds = known_seconds + residual if pauses_complete or known_spans else None
     result = dict(respondent_words=words,
                   words_per_minute=words * 60 / response_seconds if words is not None and response_seconds else None,
                   syllables_per_second=syllables / response_seconds if syllables is not None and response_seconds else None,
@@ -86,8 +111,10 @@ def speech_stats(turns, start, end, audio_frames=None):
                   turn_count=len(selected), answer_count=len(answers),
                   response_duration_seconds=float(np.mean([a["end"] - a["start"] for a in answers])) if answers else None,
                   response_duration_scope="whole_answer",
-                  internal_pause_seconds=sum(pauses) if pauses_complete else None,
-                  pause_ratio=sum(pauses) / response_seconds if pauses_complete and response_seconds else None,
+                  internal_pause_seconds=pause_seconds,
+                  pause_measurement="complete_from_transcript" if pauses_complete else "known_pauses_only",
+                  pause_ratio=pause_seconds / response_seconds if pause_seconds is not None and response_seconds else None,
+                  answer_ids=[a["id"] for a in answers if a.get("id")],
                   voice_rms=None, pitch_hz=None, pitch_iqr_hz=None, spectral_centroid_hz=None,
                   acoustic_method="unavailable", acoustic_coverage=0.0)
     if audio_frames is not None and respondent:

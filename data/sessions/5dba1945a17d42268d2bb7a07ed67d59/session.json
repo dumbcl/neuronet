@@ -7,7 +7,50 @@
     "size": 469808176,
     "duration": 976.576
   },
-  "signal": null,
+  "signal": {
+    "channels": [
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow",
+      "HeartRate",
+      "PPG",
+      "SpO2",
+      "Event"
+    ],
+    "sample_count": 245735,
+    "sample_rate_hz": 250.0,
+    "start": 0.0,
+    "end": 982.936,
+    "duration": 982.936,
+    "malformed_rows": 56,
+    "format": "decimal_comma",
+    "import_version": 3,
+    "source_file": "dubrov.csv",
+    "source_headers": [
+      "Elapsed Time",
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow Rate Sensor 1",
+      "Heart Rate PulseOx1",
+      "PPG PulseOx1",
+      "SpO2 PulseOx1",
+      "BioRadio Event",
+      ""
+    ],
+    "recovered_decimal_rows": 245679,
+    "nonfinite_samples": {
+      "ECG": 56,
+      "RIP": 56,
+      "GSR": 56,
+      "Flow": 56,
+      "HeartRate": 56,
+      "PPG": 56,
+      "SpO2": 56,
+      "Event": 56
+    }
+  },
   "markers": {
     "video": {
       "baseline_start": 18.7,
@@ -16,1588 +59,6044 @@
       "post_end": 965.8
     },
     "signal": {
-      "baseline_start": null,
-      "dialog_start": null,
-      "dialog_end": null,
-      "post_end": null
+      "baseline_start": 25.7,
+      "dialog_start": 145.6,
+      "dialog_end": 841.6,
+      "post_end": 970.8
     }
   },
   "turns": [
     {
+      "id": "5dba19-t0000",
       "start": 141.3,
       "end": 146.5,
       "speaker": "interviewer",
       "text": "Степан Расскажите немножко о себе",
       "pause_seconds": 2.14,
       "acoustic": {
-        "rms": 0.01003,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 1225.4
-      }
+        "rms": 0.037339686375845456,
+        "pitch_hz": 168.3707805795179,
+        "pitch_iqr_hz": 110.45822172441684,
+        "spectral_centroid_hz": 1978.2597828000037,
+        "voiced_fraction": 0.313953488372093,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 5.2
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0001",
       "start": 146.5,
       "end": 195.1,
       "speaker": "respondent",
-      "text": "Я девопс инженер Работаю в компании МТС Учусь в магистратуре До этого учился выговорять на том же направлении Из-за извлечения у меня симрейсинг на специальном оборудовании Дома, пытаюсь по трекам, ставлю время круга Также занимаюсь домашним сервером, у меня есть сервер с двумя видеокартами Тесла На них запускаю всякие ОЛМки Делаю для себя какие-то удобные сервисы для жизни, чтобы что-то оптимизировать Также разворачиваю какие-то вещи, например, для просмотра фильмов, не оплачиваю подписку в Netflix и так далее",
+      "text": "Я девопс инженер Работаю в компании МТС Учусь в магистратуре До этого учился в бакалавриате на том же направлении Из увлечений у меня симрейсинг на специальном оборудовании Дома, катаюсь по трекам, ставлю время круга Также занимаюсь домашним сервером, у меня есть сервер с двумя видеокартами Тесла На них запускаю всякие LLM-ки Делаю для себя какие-то удобные сервисы для жизни, чтобы что-то оптимизировать Также разворачиваю какие-то вещи, например, для просмотра фильмов, не оплачиваю подписку в Netflix и так далее",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00367,
-        "pitch_hz": 108.1,
-        "spectral_centroid_hz": 1492.4
-      }
+        "rms": 0.011609988352923258,
+        "pitch_hz": 113.46985307677247,
+        "pitch_iqr_hz": 11.56607796607473,
+        "spectral_centroid_hz": 1550.1476885062839,
+        "voiced_fraction": 0.43986820428336076,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 48.6
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0002",
       "start": 196.7,
       "end": 201.1,
       "speaker": "interviewer",
       "text": "Расскажите о своей специализации, целях и планах о будущей профессии",
       "pause_seconds": 0.52,
       "acoustic": {
-        "rms": 0.01397,
-        "pitch_hz": 111.1,
-        "spectral_centroid_hz": 1534.9
-      }
+        "rms": 0.032283841280040235,
+        "pitch_hz": 114.10173008596682,
+        "pitch_iqr_hz": 25.41802670333766,
+        "spectral_centroid_hz": 1635.217919222337,
+        "voiced_fraction": 0.48623853211009177,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.4
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0003",
       "start": 201.1,
       "end": 248.9,
       "speaker": "respondent",
       "text": "Специализация девопс занимаюсь тем, что настраиваю сервера, настраиваю пайплайны Настраиваю сборки образов для проекта, который выполняет генерацию счетов пользователей компонентов Когда они оплачивают свои услуги Мои цели это дальнейшее развитие в этой профессии Я считаю, что она достаточно перспективная Потому что сейчас развиваются активно всякие нейронки И так или иначе, все равно такой человек, как девопс, в команде всегда будет нужен Особенно, когда увеличивается скорость создания продуктов",
       "pause_seconds": 3.88,
       "acoustic": {
-        "rms": 0.00732,
-        "pitch_hz": 148.1,
-        "spectral_centroid_hz": 1402.3
-      }
+        "rms": 0.01600421789533185,
+        "pitch_hz": 111.1166220676728,
+        "pitch_iqr_hz": 11.229254167120388,
+        "spectral_centroid_hz": 1523.8654336462498,
+        "voiced_fraction": 0.4945561139028476,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 47.8
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0004",
       "start": 250.1,
       "end": 256.5,
       "speaker": "interviewer",
       "text": "Ты уже немножко рассказали о своих увлечениях Можешь рассказать о знакомых, которые также этим занимаются или появились вследствие этих увлечений?",
       "pause_seconds": 0.46,
       "acoustic": {
-        "rms": 0.01793,
-        "pitch_hz": 125.0,
-        "spectral_centroid_hz": 1293.2
-      }
+        "rms": 0.039718686095466076,
+        "pitch_hz": 112.35612797964662,
+        "pitch_iqr_hz": 20.429860311859983,
+        "spectral_centroid_hz": 1422.8549897880273,
+        "voiced_fraction": 0.5880503144654088,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 6.4
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0005",
       "start": 257.8,
       "end": 285.1,
       "speaker": "respondent",
-      "text": "Знакомые у меня все, которые занимаются плюс-минус тем же самым Это мои друзья из бакалавриата ИТМО Мне конкретно про каждого? У меня У меня У меня У меня Александр также увлекается там различными локальными вещами Он тоже себе прикупил видеокартами И, может быть, как-то на него в этом плане повлиял Вот Тоже Пишет всякие штуки крутые",
+      "text": "Знакомые у меня все, которые занимаются плюс-минус тем же самым Это мои друзья из бакалавриата ИТМО Мне конкретно про каждого? У меня У меня У меня У меня Александр также увлекается там различными локальными вещами Он тоже себе прикупил видеокарты И, может быть, как-то на него в этом плане повлиял Вот Тоже Пишет всякие штуки крутые",
       "pause_seconds": 2.74,
       "acoustic": {
-        "rms": 0.00823,
-        "pitch_hz": 160.0,
-        "spectral_centroid_hz": 1364.1
-      }
+        "rms": 0.020179324804816233,
+        "pitch_hz": 113.40209524080748,
+        "pitch_iqr_hz": 11.896912114919289,
+        "spectral_centroid_hz": 1341.7385373194716,
+        "voiced_fraction": 0.5517241379310345,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 27.3
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0006",
       "start": 286.1,
       "end": 291.1,
       "speaker": "interviewer",
       "text": "Можешь рассказать о своем положительном опыте или своих достижениях?",
       "pause_seconds": 0.74,
       "acoustic": {
-        "rms": 0.01633,
-        "pitch_hz": 100.0,
-        "spectral_centroid_hz": 1301.0
-      }
+        "rms": 0.03562279381330233,
+        "pitch_hz": 111.26841199660693,
+        "pitch_iqr_hz": 22.78244694224992,
+        "spectral_centroid_hz": 1451.4071067629702,
+        "voiced_fraction": 0.4637096774193548,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 5.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0007",
+      "review_kind": "clarification",
       "start": 291.1,
+      "end": 294.86,
+      "speaker": "respondent",
+      "text": "В достижениях профессиональной деятельности или просто?",
+      "pause_seconds": null,
+      "acoustic": {
+        "rms": 0.012356000483384871,
+        "pitch_hz": 130.05580558678582,
+        "pitch_iqr_hz": 47.444719597296995,
+        "spectral_centroid_hz": 1770.1902611448513,
+        "voiced_fraction": 0.21505376344086022,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.76
+      },
+      "words": []
+    },
+    {
+      "id": "5dba19-new000",
+      "start": 294.86,
+      "end": 295.52,
+      "speaker": "interviewer",
+      "text": "Про какие хотите.",
+      "pause_seconds": null,
+      "acoustic": {
+        "rms": 0.020197859387574894,
+        "pitch_hz": 109.04513848518963,
+        "pitch_iqr_hz": 11.80329954412288,
+        "spectral_centroid_hz": 1373.8714224624634,
+        "voiced_fraction": 0.5806451612903226,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 0.66
+      },
+      "words": []
+    },
+    {
+      "id": "5dba19-new001",
+      "start": 299.28,
+      "end": 323.5,
+      "speaker": "respondent",
+      "text": "Положительный опыт, наверное, у меня на первом месте моей работы. Я работал, можно сказать, в стартапе. И там из-за того, что это была моя первая работа, количество тех вещей, за которые я был ответственен, очень сильно повысило мой профессиональный рост. Можно повторить вопрос?",
+      "pause_seconds": null,
+      "acoustic": {
+        "rms": 0.015637918190934505,
+        "pitch_hz": 115.42351032618546,
+        "pitch_iqr_hz": 8.428567804599282,
+        "spectral_centroid_hz": 1403.9546828733132,
+        "voiced_fraction": 0.46732837055417703,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 24.22
+      },
+      "words": []
+    },
+    {
+      "id": "5dba19-new002",
+      "start": 325.64,
+      "end": 329.54,
+      "speaker": "interviewer",
+      "text": "Можете рассказать о личном положительном опыте или каких-то своих достижениях?",
+      "pause_seconds": null,
+      "acoustic": {
+        "rms": 0.04037369807584927,
+        "pitch_hz": 110.03776270252307,
+        "pitch_iqr_hz": 26.749093017074443,
+        "spectral_centroid_hz": 1476.1391007319899,
+        "voiced_fraction": 0.5854922279792746,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.9
+      },
+      "words": []
+    },
+    {
+      "id": "5dba19-new003",
+      "start": 330.08,
       "end": 348.6,
       "speaker": "respondent",
-      "text": "В достижениях профессиональной деятельности или просто В какие хотите? Ну Ну Положительный опыт, наверное, у меня остановит на первом месте моей работы Я работал, можно сказать, что в стартапе И там из-за того, что это была моя первая работа и количество тех вещей, за которые я был ответственен Очень сильно повысили мой какой-то профессиональный рост Можно повторить вопрос? Можете рассказать о личном положительном опыте или какие-то своих достижениях? Ну, вот мои достижения, наверное, это то, что я справился с тем объемом задач, которые легли на мои плечи Как начинающего специалиста и положительный опыт Как раз, наверное, какое-то взаимодействие с коллегами с того места",
-      "pause_seconds": 5.94,
+      "text": "Мои достижения, наверное, это то, что я справился с тем объёмом задач, которые легли на мои плечи как начинающего специалиста. И положительный опыт — это взаимодействие с коллегами с того места.",
+      "pause_seconds": null,
       "acoustic": {
-        "rms": 0.00548,
-        "pitch_hz": 87.0,
-        "spectral_centroid_hz": 1637.8
-      }
+        "rms": 0.01589070301062788,
+        "pitch_hz": 110.94361135020311,
+        "pitch_iqr_hz": 8.716472099410296,
+        "spectral_centroid_hz": 1521.8128626962612,
+        "voiced_fraction": 0.5551948051948052,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 18.52
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0008",
       "start": 352.6,
       "end": 356.6,
       "speaker": "interviewer",
       "text": "Алкоголь Как вы относитесь к алкоголю?",
       "pause_seconds": 0.82,
       "acoustic": {
-        "rms": 0.01765,
-        "pitch_hz": 102.6,
-        "spectral_centroid_hz": 1103.1
-      }
+        "rms": 0.04264966777967381,
+        "pitch_hz": 103.35324767407529,
+        "pitch_iqr_hz": 15.065189515330118,
+        "spectral_centroid_hz": 1525.0017877929065,
+        "voiced_fraction": 0.4494949494949495,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0009",
       "start": 357.6,
       "end": 362.6,
       "speaker": "respondent",
       "text": "Я считаю, что алкоголь - это зло, но при этом я от него не отказываюсь",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00994,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1380.7
-      }
+        "rms": 0.022024847402668385,
+        "pitch_hz": 112.45872282145187,
+        "pitch_iqr_hz": 11.020855176307464,
+        "spectral_centroid_hz": 1404.2889977553707,
+        "voiced_fraction": 0.657258064516129,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 5.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0010",
       "start": 363.6,
       "end": 366.6,
       "speaker": "interviewer",
       "text": "В чем, по вашему мнению, могут быть плюсы употребления алкоголя?",
       "pause_seconds": 0.28,
       "acoustic": {
-        "rms": 0.01942,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 1087.1
-      }
+        "rms": 0.04670550343169683,
+        "pitch_hz": 130.88323681799596,
+        "pitch_iqr_hz": 60.90488027360878,
+        "spectral_centroid_hz": 1277.940642468754,
+        "voiced_fraction": 0.5067567567567568,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0011",
       "start": 366.6,
       "end": 375.6,
       "speaker": "respondent",
       "text": "Повышение социальной активности Это может раскрепостить человека в новой компании Растопить лед между незнакомыми людьми",
       "pause_seconds": 0.32,
       "acoustic": {
-        "rms": 0.00874,
-        "pitch_hz": 190.5,
-        "spectral_centroid_hz": 1475.1
-      }
+        "rms": 0.017902056271618717,
+        "pitch_hz": 112.51468737434229,
+        "pitch_iqr_hz": 17.658033782803244,
+        "spectral_centroid_hz": 1462.8507309199829,
+        "voiced_fraction": 0.5223214285714286,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 9.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0012",
       "start": 377.6,
       "end": 380.6,
       "speaker": "interviewer",
       "text": "В чем, по вашему мнению, могут быть минусы употребления алкоголя?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01815,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 1060.3
-      }
+        "rms": 0.043681744091771474,
+        "pitch_hz": 124.85051226579249,
+        "pitch_iqr_hz": 70.31205755320654,
+        "spectral_centroid_hz": 1273.1173683214881,
+        "voiced_fraction": 0.5608108108108109,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0013",
       "start": 380.6,
       "end": 396.6,
       "speaker": "respondent",
-      "text": "Вред дорогу То, что, когда ты пьешь алкоголь на следующий день, у тебя похмелье, и, скорее всего, этот день ты не приведешь к продуктивным И, в целом, ну, какое-то, наверное, падение моральное может",
+      "text": "Вред здоровью То, что, когда ты пьешь алкоголь на следующий день, у тебя похмелье, и, скорее всего, этот день ты не проведёшь продуктивно И, в целом, ну, какое-то, наверное, падение моральное может",
       "pause_seconds": 0.88,
       "acoustic": {
-        "rms": 0.00813,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1342.2
-      }
+        "rms": 0.0149456187401273,
+        "pitch_hz": 110.38120003601107,
+        "pitch_iqr_hz": 20.596471661170355,
+        "spectral_centroid_hz": 1453.6937355760979,
+        "voiced_fraction": 0.5,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 16.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0014",
       "start": 397.6,
       "end": 401.6,
       "speaker": "interviewer",
       "text": "Какие эмоции может испытывать человек под воздействием алкоголя?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01779,
-        "pitch_hz": 108.1,
-        "spectral_centroid_hz": 1301.5
-      }
+        "rms": 0.042851640691055314,
+        "pitch_hz": 110.95589467656934,
+        "pitch_iqr_hz": 54.90511789151432,
+        "spectral_centroid_hz": 1561.8566095291008,
+        "voiced_fraction": 0.4696969696969697,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0015",
       "start": 401.6,
       "end": 414.6,
       "speaker": "respondent",
       "text": "Он может испытывать все спектры эмоций То есть, в зависимости от изначального состояния человека Мне кажется, что он может стать и веселее, и грустнее, и может ничего не измениться в его настроении",
       "pause_seconds": 1.2,
       "acoustic": {
-        "rms": 0.00663,
-        "pitch_hz": 74.1,
-        "spectral_centroid_hz": 1407.7
-      }
+        "rms": 0.015624951727040622,
+        "pitch_hz": 109.5795753213519,
+        "pitch_iqr_hz": 10.236249730099672,
+        "spectral_centroid_hz": 1655.6205752823457,
+        "voiced_fraction": 0.4876543209876543,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 13.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0016",
       "start": 414.6,
       "end": 418.6,
       "speaker": "interviewer",
       "text": "А какие эмоции пьяный человек вызывает у окружающих?",
       "pause_seconds": 0.64,
       "acoustic": {
-        "rms": 0.01792,
-        "pitch_hz": 102.6,
-        "spectral_centroid_hz": 1295.8
-      }
+        "rms": 0.04312554867767962,
+        "pitch_hz": 113.77411828722467,
+        "pitch_iqr_hz": 30.25977727852458,
+        "spectral_centroid_hz": 1327.8835481973385,
+        "voiced_fraction": 0.5656565656565656,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0017",
       "start": 418.6,
       "end": 432.6,
       "speaker": "respondent",
       "text": "В зависимости от того, пьяный или окружающий Если он находится, например, в автобусе, то вряд ли кто-то обрадуется запаху этого человека",
       "pause_seconds": 1.42,
       "acoustic": {
-        "rms": 0.00987,
-        "pitch_hz": 100.0,
-        "spectral_centroid_hz": 1235.3
-      }
+        "rms": 0.020090241285671495,
+        "pitch_hz": 112.51155182706792,
+        "pitch_iqr_hz": 11.150775866342386,
+        "spectral_centroid_hz": 1440.124868727174,
+        "voiced_fraction": 0.45988538681948427,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 14.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0018",
       "start": 433.6,
       "end": 435.6,
       "speaker": "interviewer",
       "text": "Вы видели кого-то из знакомых пьяным?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02122,
-        "pitch_hz": 88.9,
-        "spectral_centroid_hz": 1188.5
-      }
+        "rms": 0.05203429174145139,
+        "pitch_hz": 131.26877513569485,
+        "pitch_iqr_hz": 62.13810370067213,
+        "spectral_centroid_hz": 1237.805101128256,
+        "voiced_fraction": 0.6428571428571429,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0019",
       "start": 435.6,
       "end": 436.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00153,
-        "pitch_hz": 333.3,
-        "spectral_centroid_hz": 1895.1
-      }
+        "rms": 0.003213486105367335,
+        "pitch_hz": null,
+        "pitch_iqr_hz": null,
+        "spectral_centroid_hz": 1781.5595355009475,
+        "voiced_fraction": 0.0,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0020",
       "start": 437.6,
       "end": 439.6,
       "speaker": "interviewer",
       "text": "Что вы почувствовали в тот момент?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01609,
-        "pitch_hz": 173.9,
-        "spectral_centroid_hz": 1137.5
-      }
+        "rms": 0.038752362357560466,
+        "pitch_hz": 96.0448087081254,
+        "pitch_iqr_hz": 61.726099921838056,
+        "spectral_centroid_hz": 1663.1656826623637,
+        "voiced_fraction": 0.2653061224489796,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0021",
       "start": 444.6,
       "end": 446.6,
       "speaker": "respondent",
       "text": "Ничего",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00275,
-        "pitch_hz": 121.2,
-        "spectral_centroid_hz": 1862.8
-      }
+        "rms": 0.006615710265933312,
+        "pitch_hz": 111.50507404238662,
+        "pitch_iqr_hz": 8.114360062051219,
+        "spectral_centroid_hz": 1668.5368607341343,
+        "voiced_fraction": 0.19387755102040816,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0022",
       "start": 447.6,
       "end": 450.6,
       "speaker": "interviewer",
       "text": "Вы сами употребляли алкоголь в компании своих друзей?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02092,
-        "pitch_hz": 102.6,
-        "spectral_centroid_hz": 1080.2
-      }
+        "rms": 0.05036955286416417,
+        "pitch_hz": 103.88762536470523,
+        "pitch_iqr_hz": 37.18886768440524,
+        "spectral_centroid_hz": 1277.37159794338,
+        "voiced_fraction": 0.5405405405405406,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0023",
       "start": 451.6,
       "end": 452.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0029,
-        "pitch_hz": 121.2,
-        "spectral_centroid_hz": 1278.2
-      }
+        "rms": 0.006984114870985283,
+        "pitch_hz": 119.83103237307826,
+        "pitch_iqr_hz": 3.3709081896130044,
+        "spectral_centroid_hz": 1569.75131659388,
+        "voiced_fraction": 0.16666666666666666,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0024",
       "start": 452.6,
       "end": 454.6,
       "speaker": "interviewer",
       "text": "Вы вообще когда-либо употребляли алкоголь?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02182,
-        "pitch_hz": 137.9,
-        "spectral_centroid_hz": 1159.8
-      }
+        "rms": 0.05203760862936702,
+        "pitch_hz": 107.42089996653496,
+        "pitch_iqr_hz": 36.64845282960829,
+        "spectral_centroid_hz": 1375.6360604155536,
+        "voiced_fraction": 0.4489795918367347,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0025",
       "start": 454.6,
       "end": 455.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0.4,
       "acoustic": {
-        "rms": 0.01384,
-        "pitch_hz": 75.5,
-        "spectral_centroid_hz": 900.0
-      }
+        "rms": 0.03471302164518575,
+        "pitch_hz": 141.52319095147175,
+        "pitch_iqr_hz": 52.76098410924166,
+        "spectral_centroid_hz": 1243.2039043366383,
+        "voiced_fraction": 0.2916666666666667,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0026",
       "start": 457.6,
       "end": 461.6,
       "speaker": "interviewer",
       "text": "Считаете ли вы правильным запрет на употребление алкоголя в некоторых странах?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02201,
-        "pitch_hz": 173.9,
-        "spectral_centroid_hz": 1070.7
-      }
+        "rms": 0.05298370732864887,
+        "pitch_hz": 121.27356291163748,
+        "pitch_iqr_hz": 50.469877006614325,
+        "spectral_centroid_hz": 1363.7122800072148,
+        "voiced_fraction": 0.5202020202020202,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0027",
       "start": 462.6,
       "end": 475.6,
       "speaker": "respondent",
       "text": "Зависит от веры, убеждений, основной веры, наверное, в этой стране То есть, я не считаю, что это неправильно",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00494,
-        "pitch_hz": 125.0,
-        "spectral_centroid_hz": 1066.5
-      }
+        "rms": 0.013169645463211787,
+        "pitch_hz": 113.72746652810076,
+        "pitch_iqr_hz": 9.221424257051694,
+        "spectral_centroid_hz": 1471.6611576147266,
+        "voiced_fraction": 0.45987654320987653,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 13.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0028",
       "start": 476.6,
       "end": 479.6,
       "speaker": "interviewer",
       "text": "А запрет на продажу алкоголя по ночам и почему?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02073,
-        "pitch_hz": 108.1,
-        "spectral_centroid_hz": 1120.8
-      }
+        "rms": 0.049924331594234435,
+        "pitch_hz": 117.34291447300598,
+        "pitch_iqr_hz": 15.70728263970534,
+        "spectral_centroid_hz": 1430.920631926685,
+        "voiced_fraction": 0.47297297297297297,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0029",
       "start": 480.6,
       "end": 501.6,
       "speaker": "respondent",
       "text": "Запрет на продажу алкоголя по ночам я считаю правильным Потому что, когда этого запрета не было, очень много людей выпивали в парк Не самых хороших слоев населения и они очень громко себя юлили Наверное, это привело к появлению такого закона",
       "pause_seconds": 0.64,
       "acoustic": {
-        "rms": 0.00567,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1059.7
-      }
+        "rms": 0.014211592273994666,
+        "pitch_hz": 112.1136400123159,
+        "pitch_iqr_hz": 7.930691070872257,
+        "spectral_centroid_hz": 1393.27144238453,
+        "voiced_fraction": 0.4723282442748092,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 21.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0030",
       "start": 502.6,
-      "end": 517.6,
+      "end": 508.4,
       "speaker": "interviewer",
-      "text": "А увеличение наказания для лиц, совершивших противоправные действия или ДТП в состоянии алкогольного опьянения? Еще раз, сначала прислушаю Считаете ли вы правильно, что увеличено наказание для лиц, совершивших противоправные действия или ДТП в состоянии алкогольного опьянения?",
-      "pause_seconds": 2.06,
+      "text": "А увеличение наказания для лиц, совершивших противоправные действия или ДТП в состоянии алкогольного опьянения?",
+      "pause_seconds": null,
       "acoustic": {
-        "rms": 0.02114,
-        "pitch_hz": 111.1,
-        "spectral_centroid_hz": 1367.7
-      }
+        "rms": 0.04690224128261448,
+        "pitch_hz": 108.59796565536675,
+        "pitch_iqr_hz": 28.16835084860702,
+        "spectral_centroid_hz": 1379.4738485143325,
+        "voiced_fraction": 0.6493055555555556,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 5.8
+      },
+      "words": []
     },
     {
+      "id": "5dba19-new004",
+      "review_kind": "clarification",
+      "start": 508.7,
+      "end": 509.96,
+      "speaker": "respondent",
+      "text": "Ещё раз, сначала прослушаю.",
+      "pause_seconds": null,
+      "acoustic": {
+        "rms": 0.007493725131831341,
+        "pitch_hz": 117.20133486436184,
+        "pitch_iqr_hz": 4.210024438609963,
+        "spectral_centroid_hz": 1905.3313505402734,
+        "voiced_fraction": 0.2786885245901639,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.26
+      },
+      "words": []
+    },
+    {
+      "id": "5dba19-new005",
+      "start": 509.96,
+      "end": 518.76,
+      "speaker": "interviewer",
+      "text": "Считаете ли вы правильным увеличение наказания для лиц, совершивших противоправные действия или ДТП в состоянии алкогольного опьянения?",
+      "pause_seconds": null,
+      "acoustic": {
+        "rms": 0.047936988470076644,
+        "pitch_hz": 103.37550542332019,
+        "pitch_iqr_hz": 19.398604836535114,
+        "spectral_centroid_hz": 1414.4188265387313,
+        "voiced_fraction": 0.541095890410959,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 8.8
+      },
+      "words": []
+    },
+    {
+      "id": "5dba19-t0031",
       "start": 520.6,
       "end": 521.6,
       "speaker": "respondent",
       "text": "Да, считаю",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00422,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1616.5
-      }
+        "rms": 0.010169176529024474,
+        "pitch_hz": 116.1813964356657,
+        "pitch_iqr_hz": 3.8017690197160334,
+        "spectral_centroid_hz": 1806.8082564638796,
+        "voiced_fraction": 0.375,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0032",
       "start": 522.6,
       "end": 528.6,
       "speaker": "interviewer",
       "text": "Вспомните, у кого-то из ваших знакомых был негативный опыт из-за злоупотребления алкоголя?",
       "pause_seconds": 0.82,
       "acoustic": {
-        "rms": 0.02336,
-        "pitch_hz": 235.3,
-        "spectral_centroid_hz": 1036.2
-      }
+        "rms": 0.05754117690451329,
+        "pitch_hz": 127.24897871206035,
+        "pitch_iqr_hz": 40.74599802516592,
+        "spectral_centroid_hz": 1357.446577391113,
+        "voiced_fraction": 0.540268456375839,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 6.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0033",
       "start": 529.6,
       "end": 530.6,
       "speaker": "respondent",
       "text": "Да, был",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00254,
-        "pitch_hz": 108.1,
-        "spectral_centroid_hz": 1727.1
-      }
+        "rms": 0.0037115401089296914,
+        "pitch_hz": 129.83303578623457,
+        "pitch_iqr_hz": 26.696245498284796,
+        "spectral_centroid_hz": 1598.3500132495528,
+        "voiced_fraction": 0.08333333333333333,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0034",
       "start": 531.6,
       "end": 534.6,
       "speaker": "interviewer",
-      "text": "Может быть, кто-то, вспоминая произошедшее, сожалело с делом?",
+      "text": "Может быть, кто-то, вспоминая произошедшее, сожалел о содеянном?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0211,
-        "pitch_hz": 137.9,
-        "spectral_centroid_hz": 1201.5
-      }
+        "rms": 0.050696462394134965,
+        "pitch_hz": 126.94514879679096,
+        "pitch_iqr_hz": 49.41596466386426,
+        "spectral_centroid_hz": 1605.9718020778334,
+        "voiced_fraction": 0.44594594594594594,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0035",
       "start": 535.6,
       "end": 536.6,
       "speaker": "respondent",
-      "text": "Да, сожалело",
+      "text": "Да, сожалел.",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00437,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1702.9
-      }
+        "rms": 0.010204360382835616,
+        "pitch_hz": 114.7179912188627,
+        "pitch_iqr_hz": 2.9626416782953697,
+        "spectral_centroid_hz": 1711.0986937659375,
+        "voiced_fraction": 0.3333333333333333,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0036",
       "start": 537.6,
       "end": 540.6,
       "speaker": "interviewer",
       "text": "А у вас были ситуации, связанные с алкоголем, которые теперь стыдно вспомнить?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02512,
-        "pitch_hz": 173.9,
-        "spectral_centroid_hz": 1285.2
-      }
+        "rms": 0.06044913929827229,
+        "pitch_hz": 118.24110003349466,
+        "pitch_iqr_hz": 40.511557398346895,
+        "spectral_centroid_hz": 1437.17642355897,
+        "voiced_fraction": 0.5675675675675675,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0037",
       "start": 543.6,
       "end": 544.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00375,
-        "pitch_hz": 111.1,
-        "spectral_centroid_hz": 1284.6
-      }
+        "rms": 0.009229326143194952,
+        "pitch_hz": 109.80485709270991,
+        "pitch_iqr_hz": 1.4858100609529572,
+        "spectral_centroid_hz": 1328.0921433731387,
+        "voiced_fraction": 0.75,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0038",
       "start": 548.6,
       "end": 549.6,
       "speaker": "interviewer",
       "text": "Что такое конфликт?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02083,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 956.5
-      }
+        "rms": 0.049970241032758676,
+        "pitch_hz": 126.88529203653678,
+        "pitch_iqr_hz": 53.20783237744564,
+        "spectral_centroid_hz": 1580.7710954693503,
+        "voiced_fraction": 0.3958333333333333,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0039",
       "start": 550.6,
       "end": 576.6,
       "speaker": "respondent",
       "text": "Конфликт - это когда двое человек или больше не могут найти какую-то общую точку зрения на тот или иной факт или акт, из-за которого они начинают стараться убеждать друг друга в обратном, но при этом у них это не получается",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00468,
-        "pitch_hz": 153.8,
-        "spectral_centroid_hz": 1182.0
-      }
+        "rms": 0.013401182195009931,
+        "pitch_hz": 108.19083160161281,
+        "pitch_iqr_hz": 8.875348229053515,
+        "spectral_centroid_hz": 1414.9987021550148,
+        "voiced_fraction": 0.46841294298921415,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 26.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0040",
       "start": 577.6,
       "end": 581.6,
       "speaker": "interviewer",
       "text": "Верно ли утверждение, что конфликт - это две противоположные точки зрения на произошедшее?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02016,
-        "pitch_hz": 173.9,
-        "spectral_centroid_hz": 1250.5
-      }
+        "rms": 0.04851040286669969,
+        "pitch_hz": 118.39089687980834,
+        "pitch_iqr_hz": 47.35563514609598,
+        "spectral_centroid_hz": 1324.258052654945,
+        "voiced_fraction": 0.6717171717171717,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0041",
       "start": 582.6,
       "end": 583.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00267,
-        "pitch_hz": 108.1,
-        "spectral_centroid_hz": 1445.6
-      }
+        "rms": 0.006417084302619871,
+        "pitch_hz": 109.49229794052948,
+        "pitch_iqr_hz": 3.2681838779338364,
+        "spectral_centroid_hz": 1533.4686094842984,
+        "voiced_fraction": 0.2916666666666667,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0042",
       "start": 583.6,
       "end": 586.6,
       "speaker": "interviewer",
       "text": "По каким признакам можно понять, что человек конфликтный?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02147,
-        "pitch_hz": 190.5,
-        "spectral_centroid_hz": 1221.9
-      }
+        "rms": 0.051704665702496655,
+        "pitch_hz": 132.27986500030363,
+        "pitch_iqr_hz": 32.84757890214162,
+        "spectral_centroid_hz": 1411.6488718168985,
+        "voiced_fraction": 0.43243243243243246,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0043",
       "start": 587.6,
       "end": 605.6,
       "speaker": "respondent",
       "text": "Ну, он часто как-то реагирует на ваши слова, то есть он за каждую какую-то вещь, которую считает неправильной, пытается доказать свою точку зрения, даже если она не уместна",
       "pause_seconds": 1.42,
       "acoustic": {
-        "rms": 0.0049,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1151.6
-      }
+        "rms": 0.016391149260105126,
+        "pitch_hz": 110.31933235200258,
+        "pitch_iqr_hz": 8.944268131133015,
+        "spectral_centroid_hz": 1568.9231523509886,
+        "voiced_fraction": 0.4532293986636971,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 18.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0044",
       "start": 606.6,
       "end": 609.6,
       "speaker": "interviewer",
-      "text": "Есть и среди ваших знакомых конфликтные люди?",
+      "text": "Есть ли среди ваших знакомых конфликтные люди?",
       "pause_seconds": 0.34,
       "acoustic": {
-        "rms": 0.01481,
-        "pitch_hz": 105.3,
-        "spectral_centroid_hz": 1790.1
-      }
+        "rms": 0.035361345401124705,
+        "pitch_hz": 112.96524320250454,
+        "pitch_iqr_hz": 13.68016837802098,
+        "spectral_centroid_hz": 1603.2248916855738,
+        "voiced_fraction": 0.4864864864864865,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0045",
       "start": 609.6,
       "end": 610.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00858,
-        "pitch_hz": 200.0,
-        "spectral_centroid_hz": 1037.1
-      }
+        "rms": 0.02217084067941868,
+        "pitch_hz": 102.4759736583536,
+        "pitch_iqr_hz": 27.54123452718146,
+        "spectral_centroid_hz": 1282.8269907287047,
+        "voiced_fraction": 0.2708333333333333,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0046",
       "start": 610.6,
       "end": 613.6,
       "speaker": "interviewer",
-      "text": "Что их может спровоцировать на часть ссору?",
+      "text": "Что их может спровоцировать начать ссору?",
       "pause_seconds": 1.36,
       "acoustic": {
-        "rms": 0.0161,
-        "pitch_hz": 102.6,
-        "spectral_centroid_hz": 1271.7
-      }
+        "rms": 0.038422465087342136,
+        "pitch_hz": 128.12536029808413,
+        "pitch_iqr_hz": 48.998638793125494,
+        "spectral_centroid_hz": 1632.7389496819012,
+        "voiced_fraction": 0.36486486486486486,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0047",
       "start": 614.6,
       "end": 623.6,
       "speaker": "respondent",
-      "text": "Ну, может, например, если два человека идут по улице и улица недостаточно широкая, чтобы они не пришли на друг друга, просто столкнулись с ключами",
+      "text": "Ну, может, например, если два человека идут по улице и улица недостаточно широкая, чтобы они не пришли на друг друга, просто столкнулись плечами",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00587,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1464.0
-      }
+        "rms": 0.01147294282111755,
+        "pitch_hz": 106.85597201275581,
+        "pitch_iqr_hz": 7.902463805920291,
+        "spectral_centroid_hz": 1554.6642434591824,
+        "voiced_fraction": 0.45982142857142855,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 9.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0048",
       "start": 624.6,
       "end": 627.6,
       "speaker": "interviewer",
       "text": "А вас самого можно назвать конфликтным человеком?",
       "pause_seconds": 0.78,
       "acoustic": {
-        "rms": 0.02014,
-        "pitch_hz": 121.2,
-        "spectral_centroid_hz": 1086.4
-      }
+        "rms": 0.04851202152988536,
+        "pitch_hz": 125.60157244062681,
+        "pitch_iqr_hz": 26.87622114504228,
+        "spectral_centroid_hz": 1407.3425949599773,
+        "voiced_fraction": 0.4594594594594595,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0049",
       "start": 627.6,
       "end": 628.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00259,
-        "pitch_hz": 133.3,
-        "spectral_centroid_hz": 1922.1
-      }
+        "rms": 0.006417208502435032,
+        "pitch_hz": 137.2804714498641,
+        "pitch_iqr_hz": 11.452164132393008,
+        "spectral_centroid_hz": 1929.1369173018995,
+        "voiced_fraction": 0.22916666666666666,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0050",
       "start": 630.6,
       "end": 633.6,
       "speaker": "interviewer",
       "text": "Вы когда-либо сами становились инициатором конфликта?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02103,
-        "pitch_hz": 137.9,
-        "spectral_centroid_hz": 1346.6
-      }
+        "rms": 0.05063358477788452,
+        "pitch_hz": 121.88266893165793,
+        "pitch_iqr_hz": 44.75228201686076,
+        "spectral_centroid_hz": 1446.5741451418833,
+        "voiced_fraction": 0.527027027027027,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0051",
       "start": 633.6,
       "end": 634.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00397,
-        "pitch_hz": 93.0,
-        "spectral_centroid_hz": 1501.6
-      }
+        "rms": 0.009727002312490773,
+        "pitch_hz": 110.83755655009463,
+        "pitch_iqr_hz": 18.5719357562334,
+        "spectral_centroid_hz": 1512.3539514148117,
+        "voiced_fraction": 0.25,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0052",
       "start": 634.6,
       "end": 637.6,
       "speaker": "interviewer",
       "text": "Вы лично когда-либо конфликтовали с кем-либо?",
       "pause_seconds": 0.3,
       "acoustic": {
-        "rms": 0.0164,
-        "pitch_hz": 100.0,
-        "spectral_centroid_hz": 1351.9
-      }
+        "rms": 0.03793660232743988,
+        "pitch_hz": 119.28305855912276,
+        "pitch_iqr_hz": 24.61683039244454,
+        "spectral_centroid_hz": 1364.0316657067979,
+        "voiced_fraction": 0.2635135135135135,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0053",
       "start": 637.6,
       "end": 638.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0.3,
       "acoustic": {
-        "rms": 0.01089,
-        "pitch_hz": 173.9,
-        "spectral_centroid_hz": 1019.0
-      }
+        "rms": 0.03236117938563974,
+        "pitch_hz": 128.5930023557714,
+        "pitch_iqr_hz": 76.74842162664154,
+        "spectral_centroid_hz": 1399.4728201555924,
+        "voiced_fraction": 0.375,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0054",
       "start": 640.6,
       "end": 643.6,
       "speaker": "interviewer",
       "text": "Какие эмоции испытывает человек в конфликтной ситуации?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01759,
-        "pitch_hz": 121.2,
-        "spectral_centroid_hz": 1334.1
-      }
+        "rms": 0.042341346572851685,
+        "pitch_hz": 142.9075791053633,
+        "pitch_iqr_hz": 59.18743192675737,
+        "spectral_centroid_hz": 1562.8761459740697,
+        "voiced_fraction": 0.4391891891891892,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0055",
       "start": 644.6,
       "end": 646.6,
       "speaker": "respondent",
       "text": "Негативные эмоции",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0049,
-        "pitch_hz": 129.0,
-        "spectral_centroid_hz": 1257.1
-      }
+        "rms": 0.011685199715117344,
+        "pitch_hz": 123.3840697791503,
+        "pitch_iqr_hz": 7.885806195267719,
+        "spectral_centroid_hz": 1397.817887629487,
+        "voiced_fraction": 0.3979591836734694,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0056",
       "start": 647.6,
       "end": 651.6,
       "speaker": "interviewer",
       "text": "Вы согласны с утверждением, что в конфликте проявляется истинное лицо человека?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01846,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 1152.7
-      }
+        "rms": 0.04443373121758434,
+        "pitch_hz": 124.0069999815436,
+        "pitch_iqr_hz": 57.222509227477815,
+        "spectral_centroid_hz": 1542.2167388519356,
+        "voiced_fraction": 0.5050505050505051,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0057",
       "start": 651.6,
       "end": 652.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0.44,
       "acoustic": {
-        "rms": 0.00637,
-        "pitch_hz": 95.2,
-        "spectral_centroid_hz": 1392.3
-      }
+        "rms": 0.01513982689002499,
+        "pitch_hz": 118.02312603419755,
+        "pitch_iqr_hz": 57.60679027944052,
+        "spectral_centroid_hz": 1412.6284784985046,
+        "voiced_fraction": 0.10416666666666667,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0058",
       "start": 653.6,
       "end": 655.6,
       "speaker": "interviewer",
       "text": "Как ваши друзья вели себя в конфликте?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02412,
-        "pitch_hz": 190.5,
-        "spectral_centroid_hz": 1262.8
-      }
+        "rms": 0.057896999827480373,
+        "pitch_hz": 137.80945692704023,
+        "pitch_iqr_hz": 38.69968262113821,
+        "spectral_centroid_hz": 1568.2792329497993,
+        "voiced_fraction": 0.30612244897959184,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0059",
       "start": 658.6,
       "end": 667.6,
       "speaker": "respondent",
-      "text": "Повышали тон Ругались Возможно, пытались как-то привить свою силу",
+      "text": "Повышали тон Ругались Возможно, пытались как-то проявить свою силу",
       "pause_seconds": 0.32,
       "acoustic": {
-        "rms": 0.00508,
-        "pitch_hz": 133.3,
-        "spectral_centroid_hz": 1186.9
-      }
+        "rms": 0.01188776211921244,
+        "pitch_hz": 109.54960008528397,
+        "pitch_iqr_hz": 12.613598969537819,
+        "spectral_centroid_hz": 1584.100075489638,
+        "voiced_fraction": 0.2700892857142857,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 9.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0060",
       "start": 668.6,
       "end": 670.6,
       "speaker": "interviewer",
       "text": "Отличалось ли это от обычного поведения?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02272,
-        "pitch_hz": 117.6,
-        "spectral_centroid_hz": 1444.6
-      }
+        "rms": 0.05466582856404724,
+        "pitch_hz": 133.1235556849392,
+        "pitch_iqr_hz": 67.88855011797844,
+        "spectral_centroid_hz": 1673.0761231139852,
+        "voiced_fraction": 0.35714285714285715,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0061",
       "start": 670.6,
       "end": 671.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01248,
-        "pitch_hz": 210.5,
-        "spectral_centroid_hz": 1053.7
-      }
+        "rms": 0.030250623955460163,
+        "pitch_hz": 109.30502267483396,
+        "pitch_iqr_hz": 77.75853077648854,
+        "spectral_centroid_hz": 1242.6096553417249,
+        "voiced_fraction": 0.375,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0062",
       "start": 672.6,
       "end": 674.6,
       "speaker": "interviewer",
-      "text": "Кто-то из них вел себя импульсивно невдуманно?",
+      "text": "Кто-то из них вёл себя импульсивно, необдуманно?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.024,
-        "pitch_hz": 166.7,
-        "spectral_centroid_hz": 1442.9
-      }
+        "rms": 0.057753476989943694,
+        "pitch_hz": 136.21569183831798,
+        "pitch_iqr_hz": 45.283254706219424,
+        "spectral_centroid_hz": 1664.7697606157376,
+        "voiced_fraction": 0.4897959183673469,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0063",
       "start": 674.6,
       "end": 675.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01919,
-        "pitch_hz": 200.0,
-        "spectral_centroid_hz": 1043.5
-      }
+        "rms": 0.046165966461175593,
+        "pitch_hz": 154.12810771484854,
+        "pitch_iqr_hz": 98.2368251721824,
+        "spectral_centroid_hz": 1340.1428333078559,
+        "voiced_fraction": 0.7291666666666666,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0064",
       "start": 676.6,
       "end": 679.6,
       "speaker": "interviewer",
       "text": "В ходе конфликта вы сами когда-нибудь говорили что-то, о чем впоследствии сожалели?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0252,
-        "pitch_hz": 148.1,
-        "spectral_centroid_hz": 1274.8
-      }
+        "rms": 0.06038242092840975,
+        "pitch_hz": 145.63329617860762,
+        "pitch_iqr_hz": 60.670498657052846,
+        "spectral_centroid_hz": 1325.7413341308293,
+        "voiced_fraction": 0.581081081081081,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0065",
       "start": 680.0,
       "end": 681.0,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01027,
-        "pitch_hz": 95.2,
-        "spectral_centroid_hz": 1397.4
-      }
+        "rms": 0.024979086277079097,
+        "pitch_hz": 119.05635376026346,
+        "pitch_iqr_hz": 30.853545626593657,
+        "spectral_centroid_hz": 1934.1756988355435,
+        "voiced_fraction": 0.3541666666666667,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0066",
       "start": 681.6,
       "end": 683.6,
       "speaker": "interviewer",
       "text": "В ходе конфликта вы обижали кого-то из своих знакомых?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02649,
-        "pitch_hz": 148.1,
-        "spectral_centroid_hz": 1084.6
-      }
+        "rms": 0.063362919669548,
+        "pitch_hz": 134.47526537009892,
+        "pitch_iqr_hz": 35.13732075587707,
+        "spectral_centroid_hz": 1264.6579078551922,
+        "voiced_fraction": 0.5102040816326531,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0067",
       "start": 684.6,
       "end": 685.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00277,
-        "pitch_hz": 117.6,
-        "spectral_centroid_hz": 1356.5
-      }
+        "rms": 0.00666237499718385,
+        "pitch_hz": 116.40518035528548,
+        "pitch_iqr_hz": 2.763262760271502,
+        "spectral_centroid_hz": 1540.0787614368935,
+        "voiced_fraction": 0.14583333333333334,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0068",
       "start": 689.6,
       "end": 691.6,
       "speaker": "interviewer",
       "text": "Что такое ложь?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01436,
-        "pitch_hz": 85.1,
-        "spectral_centroid_hz": 1861.2
-      }
+        "rms": 0.03455742586468798,
+        "pitch_hz": 149.6788827458086,
+        "pitch_iqr_hz": 80.73389461942742,
+        "spectral_centroid_hz": 2318.110676279997,
+        "voiced_fraction": 0.17346938775510204,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0069",
       "start": 692.6,
       "end": 695.6,
       "speaker": "respondent",
       "text": "Ложь - это умышленное сокрытие факта",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0059,
-        "pitch_hz": 125.0,
-        "spectral_centroid_hz": 1642.4
-      }
+        "rms": 0.014192174264072752,
+        "pitch_hz": 118.12670536838746,
+        "pitch_iqr_hz": 9.859261245270034,
+        "spectral_centroid_hz": 1778.2642202380025,
+        "voiced_fraction": 0.44594594594594594,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0070",
       "start": 696.6,
       "end": 699.6,
       "speaker": "interviewer",
       "text": "По вашему мнению, есть ложь, которую можно оправдать?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02289,
-        "pitch_hz": 87.0,
-        "spectral_centroid_hz": 1283.9
-      }
+        "rms": 0.05506096608060857,
+        "pitch_hz": 145.62408341673552,
+        "pitch_iqr_hz": 70.6944791256958,
+        "spectral_centroid_hz": 1519.9197456050595,
+        "voiced_fraction": 0.3783783783783784,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0071",
       "start": 700.6,
       "end": 701.6,
       "speaker": "respondent",
       "text": "Да",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00133,
-        "pitch_hz": 97.6,
-        "spectral_centroid_hz": 1874.8
-      }
+        "rms": 0.0031943208372808194,
+        "pitch_hz": null,
+        "pitch_iqr_hz": null,
+        "spectral_centroid_hz": 1734.4005044861624,
+        "voiced_fraction": 0.0,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0072",
       "start": 702.6,
       "end": 706.6,
       "speaker": "interviewer",
       "text": "Вы были свидетелем того, когда кто-то из ваших знакомых лгал?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02298,
-        "pitch_hz": 85.1,
-        "spectral_centroid_hz": 1311.1
-      }
+        "rms": 0.05476839989839005,
+        "pitch_hz": 147.81892267648453,
+        "pitch_iqr_hz": 58.869040107246775,
+        "spectral_centroid_hz": 1463.6915773373548,
+        "voiced_fraction": 0.3484848484848485,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0073",
       "start": 707.6,
       "end": 708.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00432,
-        "pitch_hz": 121.2,
-        "spectral_centroid_hz": 1641.1
-      }
+        "rms": 0.014387928002620436,
+        "pitch_hz": 127.30724184101929,
+        "pitch_iqr_hz": 0.33860054634146763,
+        "spectral_centroid_hz": 1471.9203530323375,
+        "voiced_fraction": 0.0625,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0074",
       "start": 709.6,
       "end": 712.6,
       "speaker": "interviewer",
       "text": "Что, по вашему мнению, чувствует человек, который вынужден лгать?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02332,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 1219.8
-      }
+        "rms": 0.055387979707534465,
+        "pitch_hz": 146.24831999713484,
+        "pitch_iqr_hz": 44.95236332012257,
+        "spectral_centroid_hz": 1431.3592864030313,
+        "voiced_fraction": 0.5067567567567568,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0075",
       "start": 713.6,
       "end": 718.6,
       "speaker": "respondent",
-      "text": "Ну, негативные тоже какие-то миссы",
+      "text": "Ну, негативные тоже какие-то эмоции.",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00222,
-        "pitch_hz": 148.1,
-        "spectral_centroid_hz": 1454.6
-      }
+        "rms": 0.006796364261494994,
+        "pitch_hz": 121.16238539777763,
+        "pitch_iqr_hz": 22.582160479112247,
+        "spectral_centroid_hz": 1531.7597597392187,
+        "voiced_fraction": 0.2661290322580645,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 5.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0076",
       "start": 719.6,
       "end": 722.6,
       "speaker": "interviewer",
       "text": "Кто из ваших знакомых чаще всего лжет?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0205,
-        "pitch_hz": 173.9,
-        "spectral_centroid_hz": 1242.7
-      }
+        "rms": 0.04881437750783505,
+        "pitch_hz": 127.0162006174563,
+        "pitch_iqr_hz": 49.321162623963104,
+        "spectral_centroid_hz": 1630.9979074623564,
+        "voiced_fraction": 0.30405405405405406,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0077",
       "start": 723.6,
       "end": 727.6,
       "speaker": "respondent",
       "text": "Не могу ответить, не знаю",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00228,
-        "pitch_hz": 142.9,
-        "spectral_centroid_hz": 1984.5
-      }
+        "rms": 0.0054773555163629434,
+        "pitch_hz": 111.39946661173836,
+        "pitch_iqr_hz": 13.758645430079724,
+        "spectral_centroid_hz": 1905.6387832521584,
+        "voiced_fraction": 0.13636363636363635,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 4.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0078",
       "start": 728.6,
       "end": 731.6,
       "speaker": "interviewer",
       "text": "Ну, если бы такие были, зачем они это делают?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01737,
-        "pitch_hz": 125.0,
-        "spectral_centroid_hz": 1229.8
-      }
+        "rms": 0.041849860997338256,
+        "pitch_hz": 128.70536646425924,
+        "pitch_iqr_hz": 52.03507831634536,
+        "spectral_centroid_hz": 1430.7408289924676,
+        "voiced_fraction": 0.5202702702702703,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0079",
       "start": 732.6,
       "end": 739.6,
       "speaker": "respondent",
-      "text": "Наверное, чтобы сохранить какие-то отношения с человеком, на которого они не хотят пустить отношения",
+      "text": "Наверное, чтобы сохранить какие-то отношения с человеком, с которым они не хотят испортить отношения",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00435,
-        "pitch_hz": 95.2,
-        "spectral_centroid_hz": 1497.2
-      }
+        "rms": 0.009368917042269014,
+        "pitch_hz": 110.38785995264969,
+        "pitch_iqr_hz": 5.950144126620614,
+        "spectral_centroid_hz": 1687.4197674290883,
+        "voiced_fraction": 0.31896551724137934,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 7.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0080",
       "start": 740.6,
       "end": 743.6,
       "speaker": "interviewer",
       "text": "А вы когда-нибудь умалчивали что-то, чтобы прикрыть знакомого?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02272,
-        "pitch_hz": 117.6,
-        "spectral_centroid_hz": 1367.9
-      }
+        "rms": 0.05446468652227592,
+        "pitch_hz": 125.36675965610178,
+        "pitch_iqr_hz": 47.71916326671192,
+        "spectral_centroid_hz": 1357.3717421957317,
+        "voiced_fraction": 0.5945945945945946,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0081",
       "start": 744.6,
       "end": 745.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01192,
-        "pitch_hz": 148.1,
-        "spectral_centroid_hz": 961.5
-      }
+        "rms": 0.02226808056680869,
+        "pitch_hz": 143.78128884638494,
+        "pitch_iqr_hz": 31.910992948248904,
+        "spectral_centroid_hz": 1552.5720800432857,
+        "voiced_fraction": 0.20833333333333334,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0082",
       "start": 745.6,
       "end": 747.6,
       "speaker": "interviewer",
       "text": "Вы когда-либо лгали, чтобы избежать негативных последствий?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02667,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 1294.4
-      }
+        "rms": 0.06529459177076836,
+        "pitch_hz": 117.74227203925564,
+        "pitch_iqr_hz": 41.5478633974696,
+        "spectral_centroid_hz": 1179.422499621879,
+        "voiced_fraction": 0.7448979591836735,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0083",
       "start": 748.6,
       "end": 749.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00942,
-        "pitch_hz": 129.0,
-        "spectral_centroid_hz": 1739.7
-      }
+        "rms": 0.011392188781113926,
+        "pitch_hz": 111.84330093451297,
+        "pitch_iqr_hz": 1.6637773025376106,
+        "spectral_centroid_hz": 1664.370894384847,
+        "voiced_fraction": 0.041666666666666664,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0084",
       "start": 749.6,
       "end": 751.6,
       "speaker": "interviewer",
       "text": "Вы сами когда-либо обманывали своих знакомых?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02449,
-        "pitch_hz": 181.8,
-        "spectral_centroid_hz": 990.3
-      }
+        "rms": 0.0605725897638679,
+        "pitch_hz": 115.6874642112569,
+        "pitch_iqr_hz": 36.61465668705526,
+        "spectral_centroid_hz": 1174.9610796513398,
+        "voiced_fraction": 0.6122448979591837,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0085",
       "start": 751.6,
       "end": 752.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00282,
-        "pitch_hz": 121.2,
-        "spectral_centroid_hz": 1109.1
-      }
+        "rms": 0.007002459452722675,
+        "pitch_hz": 122.4790155956039,
+        "pitch_iqr_hz": 4.3084431536926076,
+        "spectral_centroid_hz": 1385.840668351112,
+        "voiced_fraction": 0.2708333333333333,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0086",
       "start": 755.6,
       "end": 756.6,
       "speaker": "interviewer",
       "text": "Кто это такой, лживый человек?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01717,
-        "pitch_hz": 76.9,
-        "spectral_centroid_hz": 1025.1
-      }
+        "rms": 0.043312956165485444,
+        "pitch_hz": 129.59685167878223,
+        "pitch_iqr_hz": 30.57760717883579,
+        "spectral_centroid_hz": 1065.710674458969,
+        "voiced_fraction": 0.5416666666666666,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0087",
       "start": 759.6,
       "end": 767.6,
       "speaker": "respondent",
-      "text": "Ну, я думаю, что любой человек за свою жизнь хоть раз лугал Поэтому лживый человек - это обычный человек",
+      "text": "Ну, я думаю, что любой человек за свою жизнь хоть раз лгал Поэтому лживый человек - это обычный человек",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00688,
-        "pitch_hz": 142.9,
-        "spectral_centroid_hz": 1335.5
-      }
+        "rms": 0.014825350396058439,
+        "pitch_hz": 116.16073397657055,
+        "pitch_iqr_hz": 10.051001758649093,
+        "spectral_centroid_hz": 1373.3970091364597,
+        "voiced_fraction": 0.507537688442211,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 8.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0088",
       "start": 768.6,
       "end": 771.6,
       "speaker": "interviewer",
       "text": "Как вы понимаете, что какому человеку нельзя доверять?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02435,
-        "pitch_hz": 148.1,
-        "spectral_centroid_hz": 1212.5
-      }
+        "rms": 0.05814811077811437,
+        "pitch_hz": 134.719502021198,
+        "pitch_iqr_hz": 51.554647120186004,
+        "spectral_centroid_hz": 1403.6641429296421,
+        "voiced_fraction": 0.47297297297297297,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0089",
       "start": 774.6,
       "end": 781.6,
       "speaker": "respondent",
       "text": "То, что он говорит мне, не совпадает с реальностью То, о чем я знаю",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0083,
-        "pitch_hz": 117.6,
-        "spectral_centroid_hz": 1284.4
-      }
+        "rms": 0.016310744841996565,
+        "pitch_hz": 118.50975119651031,
+        "pitch_iqr_hz": 13.837370358017466,
+        "spectral_centroid_hz": 1388.427884619224,
+        "voiced_fraction": 0.4942528735632184,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 7.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0090",
       "start": 782.6,
       "end": 785.6,
       "speaker": "interviewer",
       "text": "Кого-либо из ваших знакомых можно характеризовать как нечестного человека?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02005,
-        "pitch_hz": 111.1,
-        "spectral_centroid_hz": 1047.0
-      }
+        "rms": 0.048670470798796765,
+        "pitch_hz": 115.009670902276,
+        "pitch_iqr_hz": 20.64558780082382,
+        "spectral_centroid_hz": 1266.860078293066,
+        "voiced_fraction": 0.581081081081081,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0091",
       "start": 785.6,
       "end": 786.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00288,
-        "pitch_hz": 121.2,
-        "spectral_centroid_hz": 1306.2
-      }
+        "rms": 0.007318894191323979,
+        "pitch_hz": 119.77010813818382,
+        "pitch_iqr_hz": 3.1581672203552813,
+        "spectral_centroid_hz": 1351.1878911295005,
+        "voiced_fraction": 0.22916666666666666,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0092",
       "start": 787.6,
       "end": 789.6,
       "speaker": "interviewer",
       "text": "Если бы такой был, как бы вы к нему относились?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02074,
-        "pitch_hz": 133.3,
-        "spectral_centroid_hz": 913.6
-      }
+        "rms": 0.04992674976601804,
+        "pitch_hz": 128.7219127434156,
+        "pitch_iqr_hz": 30.98173055193992,
+        "spectral_centroid_hz": 1391.5610608403986,
+        "voiced_fraction": 0.5612244897959183,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0093",
       "start": 792.6,
       "end": 793.6,
       "speaker": "respondent",
-      "text": "Скверо",
+      "text": "Скверно.",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00392,
-        "pitch_hz": 114.3,
-        "spectral_centroid_hz": 1338.8
-      }
+        "rms": 0.009444935676577915,
+        "pitch_hz": 113.19224821038048,
+        "pitch_iqr_hz": 1.9595947763622092,
+        "spectral_centroid_hz": 1633.014625437384,
+        "voiced_fraction": 0.3333333333333333,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0094",
       "start": 794.6,
       "end": 797.6,
       "speaker": "interviewer",
       "text": "Вы когда-либо принимали решение отдалиться от человека из-за его лжи?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02366,
-        "pitch_hz": 148.1,
-        "spectral_centroid_hz": 1314.9
-      }
+        "rms": 0.05689369338606557,
+        "pitch_hz": 129.29704365937417,
+        "pitch_iqr_hz": 37.658339339535075,
+        "spectral_centroid_hz": 1299.3678115253038,
+        "voiced_fraction": 0.6959459459459459,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0095",
       "start": 797.6,
       "end": 798.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.01626,
-        "pitch_hz": 125.0,
-        "spectral_centroid_hz": 1056.4
-      }
+        "rms": 0.03939648497620582,
+        "pitch_hz": 120.1931752232014,
+        "pitch_iqr_hz": 19.855597539618955,
+        "spectral_centroid_hz": 1298.8782167148954,
+        "voiced_fraction": 0.625,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0096",
       "start": 799.6,
       "end": 802.6,
       "speaker": "interviewer",
       "text": "Вы сами когда-либо совершали поступки, позволяющие усомниться в вашей честности?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02152,
-        "pitch_hz": 235.3,
-        "spectral_centroid_hz": 1281.9
-      }
+        "rms": 0.05153100306257909,
+        "pitch_hz": 122.78512675060945,
+        "pitch_iqr_hz": 32.590652590103446,
+        "spectral_centroid_hz": 1525.3854230858453,
+        "voiced_fraction": 0.49324324324324326,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0097",
       "start": 803.6,
       "end": 804.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00181,
-        "pitch_hz": 125.0,
-        "spectral_centroid_hz": 2433.8
-      }
+        "rms": 0.0040517719616899196,
+        "pitch_hz": null,
+        "pitch_iqr_hz": null,
+        "spectral_centroid_hz": 2088.9735045019775,
+        "voiced_fraction": 0.0,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0098",
       "start": 805.6,
       "end": 808.6,
       "speaker": "interviewer",
       "text": "Вы испытываете сожаление из-за того, что обманули кого-то ранее?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.02026,
-        "pitch_hz": 97.6,
-        "spectral_centroid_hz": 1444.4
-      }
+        "rms": 0.04846378527170825,
+        "pitch_hz": 132.2863908421817,
+        "pitch_iqr_hz": 46.60903321764316,
+        "spectral_centroid_hz": 1489.9622655785847,
+        "voiced_fraction": 0.6013513513513513,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0099",
       "start": 808.6,
       "end": 809.6,
       "speaker": "respondent",
       "text": "Нет",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.0072,
-        "pitch_hz": 88.9,
-        "spectral_centroid_hz": 1320.0
-      }
+        "rms": 0.020134680586274146,
+        "pitch_hz": 123.87136827697657,
+        "pitch_iqr_hz": 39.96334394858846,
+        "spectral_centroid_hz": 1380.464424696794,
+        "voiced_fraction": 0.4791666666666667,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0100",
       "start": 814.6,
       "end": 817.6,
       "speaker": "interviewer",
-      "text": "Скажите, пожалуйста, как ваше настроение было во время сели-седы?",
+      "text": "Скажите, пожалуйста, какое у вас настроение было во время беседы?",
       "pause_seconds": 0.3,
       "acoustic": {
-        "rms": 0.01891,
-        "pitch_hz": 117.6,
-        "spectral_centroid_hz": 1196.6
-      }
+        "rms": 0.04728159971053619,
+        "pitch_hz": 111.03977364819387,
+        "pitch_iqr_hz": 28.78670654244918,
+        "spectral_centroid_hz": 1272.4447030746555,
+        "voiced_fraction": 0.5337837837837838,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 3.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0101",
       "start": 818.6,
       "end": 819.6,
       "speaker": "respondent",
       "text": "Спокойно",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00258,
-        "pitch_hz": 108.1,
-        "spectral_centroid_hz": 1846.4
-      }
+        "rms": 0.006126716810047771,
+        "pitch_hz": 108.00075105319166,
+        "pitch_iqr_hz": 2.5504719002727683,
+        "spectral_centroid_hz": 1628.3965527542339,
+        "voiced_fraction": 0.1875,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0102",
       "start": 822.6,
       "end": 823.6,
       "speaker": "interviewer",
       "text": "Сейчас какое самочувствие?",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00777,
-        "pitch_hz": 90.9,
-        "spectral_centroid_hz": 1933.1
-      }
+        "rms": 0.018483122877986407,
+        "pitch_hz": 101.02793917130309,
+        "pitch_iqr_hz": 44.63371089463311,
+        "spectral_centroid_hz": 1945.7009927274887,
+        "voiced_fraction": 0.0625,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 1.0
+      },
+      "words": []
     },
     {
+      "id": "5dba19-t0103",
       "start": 824.6,
       "end": 826.6,
       "speaker": "respondent",
-      "text": "Меня разрушили комары",
+      "text": "Меня раздражали комары.",
       "pause_seconds": 0,
       "acoustic": {
-        "rms": 0.00437,
-        "pitch_hz": 125.0,
-        "spectral_centroid_hz": 1402.7
-      }
+        "rms": 0.010521369380160524,
+        "pitch_hz": 125.14241337721988,
+        "pitch_iqr_hz": 6.6709997394917195,
+        "spectral_centroid_hz": 1790.706956164544,
+        "voiced_fraction": 0.29591836734693877,
+        "version": 2,
+        "scope": "full_turn",
+        "duration_seconds": 2.0
+      },
+      "words": []
     }
   ],
   "annotations": [
     {
+      "start": 0,
+      "end": 18.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v000"
+    },
+    {
+      "start": 18.7,
+      "end": 140.6,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой до беседы",
+      "id": "5dba19-v001"
+    },
+    {
+      "start": 140.6,
+      "end": 146.5,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v002"
+    },
+    {
+      "start": 146.5,
+      "end": 195.1,
+      "label": "truth",
+      "answer_id": "5dba19-a001",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #1 Знакомство: Расскажите немножко о себе",
+      "id": "5dba19-v003"
+    },
+    {
+      "start": 195.1,
+      "end": 201.1,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v004"
+    },
+    {
+      "start": 201.1,
+      "end": 248.9,
+      "label": "truth",
+      "answer_id": "5dba19-a002",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #2 Знакомство: Специализация, цели и планы о будущей профессии",
+      "id": "5dba19-v005"
+    },
+    {
+      "start": 248.9,
+      "end": 257.8,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v006"
+    },
+    {
+      "start": 257.8,
+      "end": 285.1,
+      "label": "truth",
+      "answer_id": "5dba19-a003",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #3 Знакомство: Знакомые, которые тоже этим увлекаются",
+      "id": "5dba19-v007"
+    },
+    {
+      "start": 285.1,
+      "end": 291.1,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v008"
+    },
+    {
+      "start": 291.1,
+      "end": 294.86,
+      "label": "unlabeled",
+      "answer_id": "5dba19-a004",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #4 Знакомство: Положительный опыт / достижения",
+      "id": "5dba19-v009",
+      "review_required": true
+    },
+    {
+      "start": 294.86,
+      "end": 299.28,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v010"
+    },
+    {
+      "start": 299.28,
+      "end": 323.5,
+      "label": "truth",
+      "answer_id": "5dba19-a005",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #4 Знакомство: Положительный опыт / достижения",
+      "id": "5dba19-v011"
+    },
+    {
+      "start": 323.5,
+      "end": 330.08,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v012"
+    },
+    {
+      "start": 330.08,
+      "end": 348.6,
+      "label": "truth",
+      "answer_id": "5dba19-a006",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #4 Знакомство: Положительный опыт / достижения",
+      "id": "5dba19-v013"
+    },
+    {
+      "start": 348.6,
+      "end": 357.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v014"
+    },
+    {
+      "start": 357.6,
+      "end": 362.6,
+      "label": "truth",
+      "answer_id": "5dba19-a007",
+      "kind": "response",
+      "name": "Ответ респондента · #5 Алкоголь 1: Как вы относитесь к алкоголю?",
+      "id": "5dba19-v015"
+    },
+    {
+      "start": 362.6,
+      "end": 366.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v016"
+    },
+    {
+      "start": 366.6,
+      "end": 375.6,
+      "label": "truth",
+      "answer_id": "5dba19-a008",
+      "kind": "response",
+      "name": "Ответ респондента · #6 Алкоголь 1: Плюсы употребления алкоголя?",
+      "id": "5dba19-v017"
+    },
+    {
+      "start": 375.6,
+      "end": 380.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v018"
+    },
+    {
+      "start": 380.6,
+      "end": 396.6,
+      "label": "truth",
+      "answer_id": "5dba19-a009",
+      "kind": "response",
+      "name": "Ответ респондента · #7 Алкоголь 1: Минусы употребления алкоголя?",
+      "id": "5dba19-v019"
+    },
+    {
+      "start": 396.6,
+      "end": 401.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v020"
+    },
+    {
+      "start": 401.6,
+      "end": 414.6,
+      "label": "truth",
+      "answer_id": "5dba19-a010",
+      "kind": "response",
+      "name": "Ответ респондента · #8 Алкоголь 1: Какие эмоции испытывает человек под алкоголем?",
+      "id": "5dba19-v021"
+    },
+    {
+      "start": 414.6,
+      "end": 418.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v022"
+    },
+    {
+      "start": 418.6,
+      "end": 432.6,
+      "label": "truth",
+      "answer_id": "5dba19-a011",
+      "kind": "response",
+      "name": "Ответ респондента · #9 Алкоголь 1: Какие эмоции пьяный вызывает у окружающих?",
+      "id": "5dba19-v023"
+    },
+    {
+      "start": 432.6,
+      "end": 435.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v024"
+    },
+    {
+      "start": 435.6,
+      "end": 436.6,
+      "label": "truth",
+      "answer_id": "5dba19-a012",
+      "kind": "response",
+      "name": "Ответ респондента · #10 Алкоголь 1: Вы видели кого-то из знакомых пьяным?",
+      "id": "5dba19-v025"
+    },
+    {
+      "start": 436.6,
+      "end": 444.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v026"
+    },
+    {
+      "start": 444.6,
+      "end": 446.6,
+      "label": "truth",
+      "answer_id": "5dba19-a013",
+      "kind": "response",
+      "name": "Ответ респондента · #11 Алкоголь 1: Что вы почувствовали в тот момент?",
+      "id": "5dba19-v027"
+    },
+    {
+      "start": 446.6,
+      "end": 451.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v028"
+    },
+    {
+      "start": 451.6,
+      "end": 452.6,
+      "label": "lie",
+      "answer_id": "5dba19-a014",
+      "kind": "response",
+      "name": "Ответ респондента · #12 Алкоголь 1: Вы сами употребляли алкоголь в компании друзей?",
+      "id": "5dba19-v029"
+    },
+    {
+      "start": 452.6,
+      "end": 454.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v030"
+    },
+    {
+      "start": 454.6,
+      "end": 455.6,
+      "label": "lie",
+      "answer_id": "5dba19-a015",
+      "kind": "response",
+      "name": "Ответ респондента · #13 Алкоголь 1: Вы вообще когда-либо употребляли алкоголь?",
+      "id": "5dba19-v031"
+    },
+    {
+      "start": 455.6,
+      "end": 462.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v032"
+    },
+    {
+      "start": 462.6,
+      "end": 475.6,
+      "label": "truth",
+      "answer_id": "5dba19-a016",
+      "kind": "response",
+      "name": "Ответ респондента · #14 Алкоголь 2: Правильно ли запрещать алкоголь в некоторых странах?",
+      "id": "5dba19-v033"
+    },
+    {
+      "start": 475.6,
+      "end": 480.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v034"
+    },
+    {
+      "start": 480.6,
+      "end": 501.6,
+      "label": "truth",
+      "answer_id": "5dba19-a017",
+      "kind": "response",
+      "name": "Ответ респондента · #15 Алкоголь 2: Запрет на продажу алкоголя ночью?",
+      "id": "5dba19-v035"
+    },
+    {
+      "start": 501.6,
+      "end": 508.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v036"
+    },
+    {
+      "start": 508.7,
+      "end": 509.96,
+      "label": "unlabeled",
+      "answer_id": "5dba19-a018",
+      "kind": "response",
+      "name": "Ответ респондента · #16 Алкоголь 2: Ужесточение наказания за ДТП/правонарушения в опьянении?",
+      "id": "5dba19-v037",
+      "review_required": true
+    },
+    {
+      "start": 509.96,
+      "end": 520.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v038"
+    },
+    {
+      "start": 520.6,
+      "end": 521.6,
+      "label": "truth",
+      "answer_id": "5dba19-a019",
+      "kind": "response",
+      "name": "Ответ респондента · #16 Алкоголь 2: Ужесточение наказания за ДТП/правонарушения в опьянении?",
+      "id": "5dba19-v039"
+    },
+    {
+      "start": 521.6,
+      "end": 529.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v040"
+    },
+    {
+      "start": 529.6,
+      "end": 530.6,
+      "label": "truth",
+      "answer_id": "5dba19-a020",
+      "kind": "response",
+      "name": "Ответ респондента · #17 Алкоголь 2: У знакомых был негативный опыт из-за алкоголя?",
+      "id": "5dba19-v041"
+    },
+    {
+      "start": 530.6,
+      "end": 535.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v042"
+    },
+    {
+      "start": 535.6,
+      "end": 536.6,
+      "label": "truth",
+      "answer_id": "5dba19-a021",
+      "kind": "response",
+      "name": "Ответ респондента · #18 Алкоголь 2: Кто-то сожалел о произошедшем?",
+      "id": "5dba19-v043"
+    },
+    {
+      "start": 536.6,
+      "end": 543.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v044"
+    },
+    {
+      "start": 543.6,
+      "end": 544.6,
+      "label": "lie",
+      "answer_id": "5dba19-a022",
+      "kind": "response",
+      "name": "Ответ респондента · #19 Алкоголь 2: У вас были ситуации с алкоголем, которые стыдно вспомнить?",
+      "id": "5dba19-v045"
+    },
+    {
+      "start": 544.6,
+      "end": 550.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v046"
+    },
+    {
+      "start": 550.6,
+      "end": 576.6,
+      "label": "truth",
+      "answer_id": "5dba19-a023",
+      "kind": "response",
+      "name": "Ответ респондента · #20 Конфликт 1: Что такое конфликт?",
+      "id": "5dba19-v047"
+    },
+    {
+      "start": 576.6,
+      "end": 582.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v048"
+    },
+    {
+      "start": 582.6,
+      "end": 583.6,
+      "label": "truth",
+      "answer_id": "5dba19-a024",
+      "kind": "response",
+      "name": "Ответ респондента · #21 Конфликт 1: Конфликт — это две противоположные точки зрения?",
+      "id": "5dba19-v049"
+    },
+    {
+      "start": 583.6,
+      "end": 587.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v050"
+    },
+    {
+      "start": 587.6,
+      "end": 605.6,
+      "label": "truth",
+      "answer_id": "5dba19-a025",
+      "kind": "response",
+      "name": "Ответ респондента · #22 Конфликт 1: Признаки конфликтного человека?",
+      "id": "5dba19-v051"
+    },
+    {
+      "start": 605.6,
+      "end": 609.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v052"
+    },
+    {
+      "start": 609.6,
+      "end": 610.6,
+      "label": "truth",
+      "answer_id": "5dba19-a026",
+      "kind": "response",
+      "name": "Ответ респондента · #23 Конфликт 1: Среди ваших знакомых есть конфликтные люди?",
+      "id": "5dba19-v053"
+    },
+    {
+      "start": 610.6,
+      "end": 614.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v054"
+    },
+    {
+      "start": 614.6,
+      "end": 623.6,
+      "label": "truth",
+      "answer_id": "5dba19-a027",
+      "kind": "response",
+      "name": "Ответ респондента · #24 Конфликт 1: Что может их спровоцировать на ссору?",
+      "id": "5dba19-v055"
+    },
+    {
+      "start": 623.6,
+      "end": 627.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v056"
+    },
+    {
+      "start": 627.6,
+      "end": 628.6,
+      "label": "truth",
+      "answer_id": "5dba19-a028",
+      "kind": "response",
+      "name": "Ответ респондента · #25 Конфликт 1: Вас самого можно назвать конфликтным?",
+      "id": "5dba19-v057"
+    },
+    {
+      "start": 628.6,
+      "end": 633.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v058"
+    },
+    {
+      "start": 633.6,
+      "end": 634.6,
+      "label": "truth",
+      "answer_id": "5dba19-a029",
+      "kind": "response",
+      "name": "Ответ респондента · #26 Конфликт 1: Вы сами становились инициатором конфликта?",
+      "id": "5dba19-v059"
+    },
+    {
+      "start": 634.6,
+      "end": 637.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v060"
+    },
+    {
+      "start": 637.6,
+      "end": 638.6,
+      "label": "truth",
+      "answer_id": "5dba19-a030",
+      "kind": "response",
+      "name": "Ответ респондента · #27 Конфликт 1: Вы лично конфликтовали с кем-либо?",
+      "id": "5dba19-v061"
+    },
+    {
+      "start": 638.6,
+      "end": 644.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v062"
+    },
+    {
+      "start": 644.6,
+      "end": 646.6,
+      "label": "truth",
+      "answer_id": "5dba19-a031",
+      "kind": "response",
+      "name": "Ответ респондента · #28 Конфликт 2: Какие эмоции испытывает человек в конфликте?",
+      "id": "5dba19-v063"
+    },
+    {
+      "start": 646.6,
+      "end": 651.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v064"
+    },
+    {
+      "start": 651.6,
+      "end": 652.6,
+      "label": "truth",
+      "answer_id": "5dba19-a032",
+      "kind": "response",
+      "name": "Ответ респондента · #29 Конфликт 2: В конфликте проявляется истинное лицо человека?",
+      "id": "5dba19-v065"
+    },
+    {
+      "start": 652.6,
+      "end": 658.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v066"
+    },
+    {
+      "start": 658.6,
+      "end": 667.6,
+      "label": "truth",
+      "answer_id": "5dba19-a033",
+      "kind": "response",
+      "name": "Ответ респондента · #30 Конфликт 2: Как ваши друзья вели себя в конфликте?",
+      "id": "5dba19-v067"
+    },
+    {
+      "start": 667.6,
+      "end": 670.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v068"
+    },
+    {
+      "start": 670.6,
+      "end": 671.6,
+      "label": "truth",
+      "answer_id": "5dba19-a034",
+      "kind": "response",
+      "name": "Ответ респондента · #31 Конфликт 2: Отличалось ли это от обычного поведения?",
+      "id": "5dba19-v069"
+    },
+    {
+      "start": 671.6,
+      "end": 674.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v070"
+    },
+    {
+      "start": 674.6,
+      "end": 675.6,
+      "label": "truth",
+      "answer_id": "5dba19-a035",
+      "kind": "response",
+      "name": "Ответ респондента · #32 Конфликт 2: Кто-то вёл себя импульсивно, необдуманно?",
+      "id": "5dba19-v071"
+    },
+    {
+      "start": 675.6,
+      "end": 680.0,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v072"
+    },
+    {
+      "start": 680.0,
+      "end": 681.0,
+      "label": "truth",
+      "answer_id": "5dba19-a036",
+      "kind": "response",
+      "name": "Ответ респондента · #33 Конфликт 2: Вы говорили в конфликте что-то, о чём потом жалели?",
+      "id": "5dba19-v073"
+    },
+    {
+      "start": 681.0,
+      "end": 684.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v074"
+    },
+    {
+      "start": 684.6,
+      "end": 685.6,
+      "label": "truth",
+      "answer_id": "5dba19-a037",
+      "kind": "response",
+      "name": "Ответ респондента · #34 Конфликт 2: Вы обижали кого-то из знакомых в конфликте?",
+      "id": "5dba19-v075"
+    },
+    {
+      "start": 685.6,
+      "end": 692.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v076"
+    },
+    {
+      "start": 692.6,
+      "end": 695.6,
+      "label": "truth",
+      "answer_id": "5dba19-a038",
+      "kind": "response",
+      "name": "Ответ респондента · #35 Обман 1: Что такое ложь?",
+      "id": "5dba19-v077"
+    },
+    {
+      "start": 695.6,
+      "end": 700.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v078"
+    },
+    {
+      "start": 700.6,
+      "end": 701.6,
+      "label": "truth",
+      "answer_id": "5dba19-a039",
+      "kind": "response",
+      "name": "Ответ респондента · #36 Обман 1: Есть ложь, которую можно оправдать?",
+      "id": "5dba19-v079"
+    },
+    {
+      "start": 701.6,
+      "end": 707.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v080"
+    },
+    {
+      "start": 707.6,
+      "end": 708.6,
+      "label": "lie",
+      "answer_id": "5dba19-a040",
+      "kind": "response",
+      "name": "Ответ респондента · #37 Обман 1: Вы были свидетелем, как знакомый лгал?",
+      "id": "5dba19-v081"
+    },
+    {
+      "start": 708.6,
+      "end": 713.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v082"
+    },
+    {
+      "start": 713.6,
+      "end": 718.6,
+      "label": "truth",
+      "answer_id": "5dba19-a041",
+      "kind": "response",
+      "name": "Ответ респондента · #38 Обман 1: Что чувствует человек, вынужденный лгать?",
+      "id": "5dba19-v083"
+    },
+    {
+      "start": 718.6,
+      "end": 723.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v084"
+    },
+    {
+      "start": 723.6,
+      "end": 727.6,
+      "label": "truth",
+      "answer_id": "5dba19-a042",
+      "kind": "response",
+      "name": "Ответ респондента · #39 Обман 1: Кто из знакомых чаще всего лжёт?",
+      "id": "5dba19-v085"
+    },
+    {
+      "start": 727.6,
+      "end": 732.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v086"
+    },
+    {
+      "start": 732.6,
+      "end": 739.6,
+      "label": "truth",
+      "answer_id": "5dba19-a043",
+      "kind": "response",
+      "name": "Ответ респондента · #40 Обман 1: Если бы такие были, зачем они это делают?",
+      "id": "5dba19-v087"
+    },
+    {
+      "start": 739.6,
+      "end": 744.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v088"
+    },
+    {
+      "start": 744.6,
+      "end": 745.6,
+      "label": "lie",
+      "answer_id": "5dba19-a044",
+      "kind": "response",
+      "name": "Ответ респондента · #41 Обман 1: Вы умалчивали что-то, чтобы прикрыть знакомого?",
+      "id": "5dba19-v089"
+    },
+    {
+      "start": 745.6,
+      "end": 748.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v090"
+    },
+    {
+      "start": 748.6,
+      "end": 749.6,
+      "label": "lie",
+      "answer_id": "5dba19-a045",
+      "kind": "response",
+      "name": "Ответ респондента · #42 Обман 1: Вы лгали, чтобы избежать негативных последствий?",
+      "id": "5dba19-v091"
+    },
+    {
+      "start": 749.6,
+      "end": 751.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v092"
+    },
+    {
+      "start": 751.6,
+      "end": 752.6,
+      "label": "lie",
+      "answer_id": "5dba19-a046",
+      "kind": "response",
+      "name": "Ответ респондента · #43 Обман 1: Вы сами обманывали своих знакомых?",
+      "id": "5dba19-v093"
+    },
+    {
+      "start": 752.6,
+      "end": 759.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v094"
+    },
+    {
+      "start": 759.6,
+      "end": 767.6,
+      "label": "truth",
+      "answer_id": "5dba19-a047",
+      "kind": "response",
+      "name": "Ответ респондента · #44 Обман 2: Кто такой лживый человек?",
+      "id": "5dba19-v095"
+    },
+    {
+      "start": 767.6,
+      "end": 774.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v096"
+    },
+    {
+      "start": 774.6,
+      "end": 781.6,
+      "label": "truth",
+      "answer_id": "5dba19-a048",
+      "kind": "response",
+      "name": "Ответ респондента · #45 Обман 2: Как понять, что человеку нельзя доверять?",
+      "id": "5dba19-v097"
+    },
+    {
+      "start": 781.6,
+      "end": 785.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v098"
+    },
+    {
+      "start": 785.6,
+      "end": 786.6,
+      "label": "lie",
+      "answer_id": "5dba19-a049",
+      "kind": "response",
+      "name": "Ответ респондента · #46 Обман 2: Кого-то из знакомых можно назвать нечестным?",
+      "id": "5dba19-v099"
+    },
+    {
+      "start": 786.6,
+      "end": 792.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v100"
+    },
+    {
+      "start": 792.6,
+      "end": 793.6,
+      "label": "truth",
+      "answer_id": "5dba19-a050",
+      "kind": "response",
+      "name": "Ответ респондента · #47 Обман 2: Если бы такой был, как бы вы к нему относились?",
+      "id": "5dba19-v101"
+    },
+    {
+      "start": 793.6,
+      "end": 797.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v102"
+    },
+    {
+      "start": 797.6,
+      "end": 798.6,
+      "label": "lie",
+      "answer_id": "5dba19-a051",
+      "kind": "response",
+      "name": "Ответ респондента · #48 Обман 2: Вы отдалялись от человека из-за его лжи?",
+      "id": "5dba19-v103"
+    },
+    {
+      "start": 798.6,
+      "end": 803.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v104"
+    },
+    {
+      "start": 803.6,
+      "end": 804.6,
+      "label": "lie",
+      "answer_id": "5dba19-a052",
+      "kind": "response",
+      "name": "Ответ респондента · #49 Обман 2: Вы совершали поступки, позволяющие усомниться в вашей честности?",
+      "id": "5dba19-v105"
+    },
+    {
+      "start": 804.6,
+      "end": 808.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v106"
+    },
+    {
+      "start": 808.6,
+      "end": 809.6,
+      "label": "lie",
+      "answer_id": "5dba19-a053",
+      "kind": "response",
+      "name": "Ответ респондента · #50 Обман 2: Вы сожалеете, что обманули кого-то ранее?",
+      "id": "5dba19-v107"
+    },
+    {
+      "start": 809.6,
+      "end": 818.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v108"
+    },
+    {
+      "start": 818.6,
+      "end": 819.6,
+      "label": "truth",
+      "answer_id": "5dba19-a054",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #51 После: Какое было настроение во время беседы?",
+      "id": "5dba19-v109"
+    },
+    {
+      "start": 819.6,
+      "end": 824.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v110"
+    },
+    {
+      "start": 824.6,
+      "end": 826.6,
+      "label": "truth",
+      "answer_id": "5dba19-a055",
+      "kind": "response",
+      "name": "Ответ респондента · База-речь: #52 После: Какое самочувствие сейчас?",
+      "id": "5dba19-v111"
+    },
+    {
+      "start": 826.6,
+      "end": 843.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / покой после беседы",
+      "id": "5dba19-v112"
+    },
+    {
+      "start": 843.7,
+      "end": 965.8,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой после беседы",
+      "id": "5dba19-v113"
+    },
+    {
+      "start": 965.8,
+      "end": 976.576,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / покой после беседы",
+      "id": "5dba19-v114"
+    }
+  ],
+  "jobs": {},
+  "video_analysis": {
+    "duration": 976.4666666666667,
+    "frames_analyzed": 9765,
+    "pose_available": true,
+    "rppg_points": 5696,
+    "feature_version": 2
+  },
+  "audio_analysis": {
+    "version": 2
+  },
+  "answers": [
+    {
+      "id": "5dba19-a001",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 146.5,
+      "end": 195.1,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0001"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0000"
+      ],
+      "question_start": 141.3,
+      "question_end": 146.5,
+      "source_annotation_ids": [
+        "5dba19-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 141.3,
+        "end": 195.1,
+        "answer": {
+          "start": 146.5,
+          "end": 195.1
+        },
+        "question": {
+          "start": 141.3,
+          "end": 146.5
+        },
+        "waiting": {
+          "start": 146.5,
+          "end": 146.5
+        },
+        "source_question_start": 141.3,
+        "source_question_end": 146.5,
+        "question_turn_ids": [
+          "5dba19-t0000"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a002",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 201.1,
+      "end": 248.9,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0003"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0002"
+      ],
+      "question_start": 196.7,
+      "question_end": 201.1,
+      "source_annotation_ids": [
+        "5dba19-source002"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 196.7,
+        "end": 248.9,
+        "answer": {
+          "start": 201.1,
+          "end": 248.9
+        },
+        "question": {
+          "start": 196.7,
+          "end": 201.1
+        },
+        "waiting": {
+          "start": 201.1,
+          "end": 201.1
+        },
+        "source_question_start": 196.7,
+        "source_question_end": 201.1,
+        "question_turn_ids": [
+          "5dba19-t0002"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a003",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 257.8,
+      "end": 285.1,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0005"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0004"
+      ],
+      "question_start": 250.1,
+      "question_end": 256.5,
+      "source_annotation_ids": [
+        "5dba19-source003"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 250.1,
+        "end": 285.1,
+        "answer": {
+          "start": 257.8,
+          "end": 285.1
+        },
+        "question": {
+          "start": 250.1,
+          "end": 256.5
+        },
+        "waiting": {
+          "start": 256.5,
+          "end": 257.8
+        },
+        "source_question_start": 250.1,
+        "source_question_end": 256.5,
+        "question_turn_ids": [
+          "5dba19-t0004"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a004",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 291.1,
+      "end": 294.86,
+      "label": "unlabeled",
+      "turn_ids": [
+        "5dba19-t0007"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0006"
+      ],
+      "question_start": 286.1,
+      "question_end": 291.1,
+      "source_annotation_ids": [
+        "5dba19-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": false,
+      "review_required": true,
+      "episode": {
+        "version": 1,
+        "start": 286.1,
+        "end": 294.86,
+        "answer": {
+          "start": 291.1,
+          "end": 294.86
+        },
+        "question": {
+          "start": 286.1,
+          "end": 291.1
+        },
+        "waiting": {
+          "start": 291.1,
+          "end": 291.1
+        },
+        "source_question_start": 286.1,
+        "source_question_end": 291.1,
+        "question_turn_ids": [
+          "5dba19-t0006"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a005",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 299.28,
+      "end": 323.5,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-new001"
+      ],
+      "question_turn_ids": [
+        "5dba19-new000"
+      ],
+      "question_start": 294.86,
+      "question_end": 295.52,
+      "source_annotation_ids": [
+        "5dba19-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 294.86,
+        "end": 323.5,
+        "answer": {
+          "start": 299.28,
+          "end": 323.5
+        },
+        "question": {
+          "start": 294.86,
+          "end": 295.52
+        },
+        "waiting": {
+          "start": 295.52,
+          "end": 299.28
+        },
+        "source_question_start": 294.86,
+        "source_question_end": 295.52,
+        "question_turn_ids": [
+          "5dba19-new000"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a006",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 330.08,
+      "end": 348.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-new003"
+      ],
+      "question_turn_ids": [
+        "5dba19-new002"
+      ],
+      "question_start": 325.64,
+      "question_end": 329.54,
+      "source_annotation_ids": [
+        "5dba19-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 325.64,
+        "end": 348.6,
+        "answer": {
+          "start": 330.08,
+          "end": 348.6
+        },
+        "question": {
+          "start": 325.64,
+          "end": 329.54
+        },
+        "waiting": {
+          "start": 329.54,
+          "end": 330.08
+        },
+        "source_question_start": 325.64,
+        "source_question_end": 329.54,
+        "question_turn_ids": [
+          "5dba19-new002"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a007",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 357.6,
+      "end": 362.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0009"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0008"
+      ],
+      "question_start": 352.6,
+      "question_end": 356.6,
+      "source_annotation_ids": [
+        "5dba19-source005"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 352.6,
+        "end": 362.6,
+        "answer": {
+          "start": 357.6,
+          "end": 362.6
+        },
+        "question": {
+          "start": 352.6,
+          "end": 356.6
+        },
+        "waiting": {
+          "start": 356.6,
+          "end": 357.6
+        },
+        "source_question_start": 352.6,
+        "source_question_end": 356.6,
+        "question_turn_ids": [
+          "5dba19-t0008"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a008",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 366.6,
+      "end": 375.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0011"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0010"
+      ],
+      "question_start": 363.6,
+      "question_end": 366.6,
+      "source_annotation_ids": [
+        "5dba19-source006"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 363.6,
+        "end": 375.6,
+        "answer": {
+          "start": 366.6,
+          "end": 375.6
+        },
+        "question": {
+          "start": 363.6,
+          "end": 366.6
+        },
+        "waiting": {
+          "start": 366.6,
+          "end": 366.6
+        },
+        "source_question_start": 363.6,
+        "source_question_end": 366.6,
+        "question_turn_ids": [
+          "5dba19-t0010"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a009",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 380.6,
+      "end": 396.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0013"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0012"
+      ],
+      "question_start": 377.6,
+      "question_end": 380.6,
+      "source_annotation_ids": [
+        "5dba19-source007"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 377.6,
+        "end": 396.6,
+        "answer": {
+          "start": 380.6,
+          "end": 396.6
+        },
+        "question": {
+          "start": 377.6,
+          "end": 380.6
+        },
+        "waiting": {
+          "start": 380.6,
+          "end": 380.6
+        },
+        "source_question_start": 377.6,
+        "source_question_end": 380.6,
+        "question_turn_ids": [
+          "5dba19-t0012"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a010",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 401.6,
+      "end": 414.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0015"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0014"
+      ],
+      "question_start": 397.6,
+      "question_end": 401.6,
+      "source_annotation_ids": [
+        "5dba19-source008"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 397.6,
+        "end": 414.6,
+        "answer": {
+          "start": 401.6,
+          "end": 414.6
+        },
+        "question": {
+          "start": 397.6,
+          "end": 401.6
+        },
+        "waiting": {
+          "start": 401.6,
+          "end": 401.6
+        },
+        "source_question_start": 397.6,
+        "source_question_end": 401.6,
+        "question_turn_ids": [
+          "5dba19-t0014"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a011",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 418.6,
+      "end": 432.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0017"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0016"
+      ],
+      "question_start": 414.6,
+      "question_end": 418.6,
+      "source_annotation_ids": [
+        "5dba19-source009"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 414.6,
+        "end": 432.6,
+        "answer": {
+          "start": 418.6,
+          "end": 432.6
+        },
+        "question": {
+          "start": 414.6,
+          "end": 418.6
+        },
+        "waiting": {
+          "start": 418.6,
+          "end": 418.6
+        },
+        "source_question_start": 414.6,
+        "source_question_end": 418.6,
+        "question_turn_ids": [
+          "5dba19-t0016"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a012",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 435.6,
+      "end": 436.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0019"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0018"
+      ],
+      "question_start": 433.6,
+      "question_end": 435.6,
+      "source_annotation_ids": [
+        "5dba19-source010"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 433.6,
+        "end": 436.6,
+        "answer": {
+          "start": 435.6,
+          "end": 436.6
+        },
+        "question": {
+          "start": 433.6,
+          "end": 435.6
+        },
+        "waiting": {
+          "start": 435.6,
+          "end": 435.6
+        },
+        "source_question_start": 433.6,
+        "source_question_end": 435.6,
+        "question_turn_ids": [
+          "5dba19-t0018"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a013",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 444.6,
+      "end": 446.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0021"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0020"
+      ],
+      "question_start": 437.6,
+      "question_end": 439.6,
+      "source_annotation_ids": [
+        "5dba19-source011"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 437.6,
+        "end": 446.6,
+        "answer": {
+          "start": 444.6,
+          "end": 446.6
+        },
+        "question": {
+          "start": 437.6,
+          "end": 439.6
+        },
+        "waiting": {
+          "start": 439.6,
+          "end": 444.6
+        },
+        "source_question_start": 437.6,
+        "source_question_end": 439.6,
+        "question_turn_ids": [
+          "5dba19-t0020"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a014",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 451.6,
+      "end": 452.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0023"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0022"
+      ],
+      "question_start": 447.6,
+      "question_end": 450.6,
+      "source_annotation_ids": [
+        "5dba19-source012"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 447.6,
+        "end": 452.6,
+        "answer": {
+          "start": 451.6,
+          "end": 452.6
+        },
+        "question": {
+          "start": 447.6,
+          "end": 450.6
+        },
+        "waiting": {
+          "start": 450.6,
+          "end": 451.6
+        },
+        "source_question_start": 447.6,
+        "source_question_end": 450.6,
+        "question_turn_ids": [
+          "5dba19-t0022"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a015",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 454.6,
+      "end": 455.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0025"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0024"
+      ],
+      "question_start": 452.6,
+      "question_end": 454.6,
+      "source_annotation_ids": [
+        "5dba19-source013"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 452.6,
+        "end": 455.6,
+        "answer": {
+          "start": 454.6,
+          "end": 455.6
+        },
+        "question": {
+          "start": 452.6,
+          "end": 454.6
+        },
+        "waiting": {
+          "start": 454.6,
+          "end": 454.6
+        },
+        "source_question_start": 452.6,
+        "source_question_end": 454.6,
+        "question_turn_ids": [
+          "5dba19-t0024"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a016",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 462.6,
+      "end": 475.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0027"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0026"
+      ],
+      "question_start": 457.6,
+      "question_end": 461.6,
+      "source_annotation_ids": [
+        "5dba19-source014"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 457.6,
+        "end": 475.6,
+        "answer": {
+          "start": 462.6,
+          "end": 475.6
+        },
+        "question": {
+          "start": 457.6,
+          "end": 461.6
+        },
+        "waiting": {
+          "start": 461.6,
+          "end": 462.6
+        },
+        "source_question_start": 457.6,
+        "source_question_end": 461.6,
+        "question_turn_ids": [
+          "5dba19-t0026"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a017",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 480.6,
+      "end": 501.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0029"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0028"
+      ],
+      "question_start": 476.6,
+      "question_end": 479.6,
+      "source_annotation_ids": [
+        "5dba19-source015"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 476.6,
+        "end": 501.6,
+        "answer": {
+          "start": 480.6,
+          "end": 501.6
+        },
+        "question": {
+          "start": 476.6,
+          "end": 479.6
+        },
+        "waiting": {
+          "start": 479.6,
+          "end": 480.6
+        },
+        "source_question_start": 476.6,
+        "source_question_end": 479.6,
+        "question_turn_ids": [
+          "5dba19-t0028"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a018",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 508.7,
+      "end": 509.96,
+      "label": "unlabeled",
+      "turn_ids": [
+        "5dba19-new004"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0030"
+      ],
+      "question_start": 502.6,
+      "question_end": 508.4,
+      "source_annotation_ids": [
+        "5dba19-source016"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": false,
+      "review_required": true,
+      "episode": {
+        "version": 1,
+        "start": 502.6,
+        "end": 509.96,
+        "answer": {
+          "start": 508.7,
+          "end": 509.96
+        },
+        "question": {
+          "start": 502.6,
+          "end": 508.4
+        },
+        "waiting": {
+          "start": 508.4,
+          "end": 508.7
+        },
+        "source_question_start": 502.6,
+        "source_question_end": 508.4,
+        "question_turn_ids": [
+          "5dba19-t0030"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a019",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 520.6,
+      "end": 521.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0031"
+      ],
+      "question_turn_ids": [
+        "5dba19-new005"
+      ],
+      "question_start": 509.96,
+      "question_end": 518.76,
+      "source_annotation_ids": [
+        "5dba19-source016"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 509.96,
+        "end": 521.6,
+        "answer": {
+          "start": 520.6,
+          "end": 521.6
+        },
+        "question": {
+          "start": 509.96,
+          "end": 518.76
+        },
+        "waiting": {
+          "start": 518.76,
+          "end": 520.6
+        },
+        "source_question_start": 509.96,
+        "source_question_end": 518.76,
+        "question_turn_ids": [
+          "5dba19-new005"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a020",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 529.6,
+      "end": 530.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0033"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0032"
+      ],
+      "question_start": 522.6,
+      "question_end": 528.6,
+      "source_annotation_ids": [
+        "5dba19-source017"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 522.6,
+        "end": 530.6,
+        "answer": {
+          "start": 529.6,
+          "end": 530.6
+        },
+        "question": {
+          "start": 522.6,
+          "end": 528.6
+        },
+        "waiting": {
+          "start": 528.6,
+          "end": 529.6
+        },
+        "source_question_start": 522.6,
+        "source_question_end": 528.6,
+        "question_turn_ids": [
+          "5dba19-t0032"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a021",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 535.6,
+      "end": 536.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0035"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0034"
+      ],
+      "question_start": 531.6,
+      "question_end": 534.6,
+      "source_annotation_ids": [
+        "5dba19-source018"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 531.6,
+        "end": 536.6,
+        "answer": {
+          "start": 535.6,
+          "end": 536.6
+        },
+        "question": {
+          "start": 531.6,
+          "end": 534.6
+        },
+        "waiting": {
+          "start": 534.6,
+          "end": 535.6
+        },
+        "source_question_start": 531.6,
+        "source_question_end": 534.6,
+        "question_turn_ids": [
+          "5dba19-t0034"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a022",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 543.6,
+      "end": 544.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0037"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0036"
+      ],
+      "question_start": 537.6,
+      "question_end": 540.6,
+      "source_annotation_ids": [
+        "5dba19-source019"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 537.6,
+        "end": 544.6,
+        "answer": {
+          "start": 543.6,
+          "end": 544.6
+        },
+        "question": {
+          "start": 537.6,
+          "end": 540.6
+        },
+        "waiting": {
+          "start": 540.6,
+          "end": 543.6
+        },
+        "source_question_start": 537.6,
+        "source_question_end": 540.6,
+        "question_turn_ids": [
+          "5dba19-t0036"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a023",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 550.6,
+      "end": 576.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0039"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0038"
+      ],
+      "question_start": 548.6,
+      "question_end": 549.6,
+      "source_annotation_ids": [
+        "5dba19-source020"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 548.6,
+        "end": 576.6,
+        "answer": {
+          "start": 550.6,
+          "end": 576.6
+        },
+        "question": {
+          "start": 548.6,
+          "end": 549.6
+        },
+        "waiting": {
+          "start": 549.6,
+          "end": 550.6
+        },
+        "source_question_start": 548.6,
+        "source_question_end": 549.6,
+        "question_turn_ids": [
+          "5dba19-t0038"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a024",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 582.6,
+      "end": 583.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0041"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0040"
+      ],
+      "question_start": 577.6,
+      "question_end": 581.6,
+      "source_annotation_ids": [
+        "5dba19-source021"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 577.6,
+        "end": 583.6,
+        "answer": {
+          "start": 582.6,
+          "end": 583.6
+        },
+        "question": {
+          "start": 577.6,
+          "end": 581.6
+        },
+        "waiting": {
+          "start": 581.6,
+          "end": 582.6
+        },
+        "source_question_start": 577.6,
+        "source_question_end": 581.6,
+        "question_turn_ids": [
+          "5dba19-t0040"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a025",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 587.6,
+      "end": 605.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0043"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0042"
+      ],
+      "question_start": 583.6,
+      "question_end": 586.6,
+      "source_annotation_ids": [
+        "5dba19-source022"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 583.6,
+        "end": 605.6,
+        "answer": {
+          "start": 587.6,
+          "end": 605.6
+        },
+        "question": {
+          "start": 583.6,
+          "end": 586.6
+        },
+        "waiting": {
+          "start": 586.6,
+          "end": 587.6
+        },
+        "source_question_start": 583.6,
+        "source_question_end": 586.6,
+        "question_turn_ids": [
+          "5dba19-t0042"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a026",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 609.6,
+      "end": 610.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0045"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0044"
+      ],
+      "question_start": 606.6,
+      "question_end": 609.6,
+      "source_annotation_ids": [
+        "5dba19-source023"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 606.6,
+        "end": 610.6,
+        "answer": {
+          "start": 609.6,
+          "end": 610.6
+        },
+        "question": {
+          "start": 606.6,
+          "end": 609.6
+        },
+        "waiting": {
+          "start": 609.6,
+          "end": 609.6
+        },
+        "source_question_start": 606.6,
+        "source_question_end": 609.6,
+        "question_turn_ids": [
+          "5dba19-t0044"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a027",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 614.6,
+      "end": 623.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0047"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0046"
+      ],
+      "question_start": 610.6,
+      "question_end": 613.6,
+      "source_annotation_ids": [
+        "5dba19-source024"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 610.6,
+        "end": 623.6,
+        "answer": {
+          "start": 614.6,
+          "end": 623.6
+        },
+        "question": {
+          "start": 610.6,
+          "end": 613.6
+        },
+        "waiting": {
+          "start": 613.6,
+          "end": 614.6
+        },
+        "source_question_start": 610.6,
+        "source_question_end": 613.6,
+        "question_turn_ids": [
+          "5dba19-t0046"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a028",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 627.6,
+      "end": 628.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0049"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0048"
+      ],
+      "question_start": 624.6,
+      "question_end": 627.6,
+      "source_annotation_ids": [
+        "5dba19-source025"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 624.6,
+        "end": 628.6,
+        "answer": {
+          "start": 627.6,
+          "end": 628.6
+        },
+        "question": {
+          "start": 624.6,
+          "end": 627.6
+        },
+        "waiting": {
+          "start": 627.6,
+          "end": 627.6
+        },
+        "source_question_start": 624.6,
+        "source_question_end": 627.6,
+        "question_turn_ids": [
+          "5dba19-t0048"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a029",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 633.6,
+      "end": 634.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0051"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0050"
+      ],
+      "question_start": 630.6,
+      "question_end": 633.6,
+      "source_annotation_ids": [
+        "5dba19-source026"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 630.6,
+        "end": 634.6,
+        "answer": {
+          "start": 633.6,
+          "end": 634.6
+        },
+        "question": {
+          "start": 630.6,
+          "end": 633.6
+        },
+        "waiting": {
+          "start": 633.6,
+          "end": 633.6
+        },
+        "source_question_start": 630.6,
+        "source_question_end": 633.6,
+        "question_turn_ids": [
+          "5dba19-t0050"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a030",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 637.6,
+      "end": 638.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0053"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0052"
+      ],
+      "question_start": 634.6,
+      "question_end": 637.6,
+      "source_annotation_ids": [
+        "5dba19-source027"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 634.6,
+        "end": 638.6,
+        "answer": {
+          "start": 637.6,
+          "end": 638.6
+        },
+        "question": {
+          "start": 634.6,
+          "end": 637.6
+        },
+        "waiting": {
+          "start": 637.6,
+          "end": 637.6
+        },
+        "source_question_start": 634.6,
+        "source_question_end": 637.6,
+        "question_turn_ids": [
+          "5dba19-t0052"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a031",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 644.6,
+      "end": 646.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0055"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0054"
+      ],
+      "question_start": 640.6,
+      "question_end": 643.6,
+      "source_annotation_ids": [
+        "5dba19-source028"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 640.6,
+        "end": 646.6,
+        "answer": {
+          "start": 644.6,
+          "end": 646.6
+        },
+        "question": {
+          "start": 640.6,
+          "end": 643.6
+        },
+        "waiting": {
+          "start": 643.6,
+          "end": 644.6
+        },
+        "source_question_start": 640.6,
+        "source_question_end": 643.6,
+        "question_turn_ids": [
+          "5dba19-t0054"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a032",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 651.6,
+      "end": 652.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0057"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0056"
+      ],
+      "question_start": 647.6,
+      "question_end": 651.6,
+      "source_annotation_ids": [
+        "5dba19-source029"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 647.6,
+        "end": 652.6,
+        "answer": {
+          "start": 651.6,
+          "end": 652.6
+        },
+        "question": {
+          "start": 647.6,
+          "end": 651.6
+        },
+        "waiting": {
+          "start": 651.6,
+          "end": 651.6
+        },
+        "source_question_start": 647.6,
+        "source_question_end": 651.6,
+        "question_turn_ids": [
+          "5dba19-t0056"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a033",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 658.6,
+      "end": 667.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0059"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0058"
+      ],
+      "question_start": 653.6,
+      "question_end": 655.6,
+      "source_annotation_ids": [
+        "5dba19-source030"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 653.6,
+        "end": 667.6,
+        "answer": {
+          "start": 658.6,
+          "end": 667.6
+        },
+        "question": {
+          "start": 653.6,
+          "end": 655.6
+        },
+        "waiting": {
+          "start": 655.6,
+          "end": 658.6
+        },
+        "source_question_start": 653.6,
+        "source_question_end": 655.6,
+        "question_turn_ids": [
+          "5dba19-t0058"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a034",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 670.6,
+      "end": 671.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0061"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0060"
+      ],
+      "question_start": 668.6,
+      "question_end": 670.6,
+      "source_annotation_ids": [
+        "5dba19-source031"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 668.6,
+        "end": 671.6,
+        "answer": {
+          "start": 670.6,
+          "end": 671.6
+        },
+        "question": {
+          "start": 668.6,
+          "end": 670.6
+        },
+        "waiting": {
+          "start": 670.6,
+          "end": 670.6
+        },
+        "source_question_start": 668.6,
+        "source_question_end": 670.6,
+        "question_turn_ids": [
+          "5dba19-t0060"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a035",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 674.6,
+      "end": 675.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0063"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0062"
+      ],
+      "question_start": 672.6,
+      "question_end": 674.6,
+      "source_annotation_ids": [
+        "5dba19-source032"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 672.6,
+        "end": 675.6,
+        "answer": {
+          "start": 674.6,
+          "end": 675.6
+        },
+        "question": {
+          "start": 672.6,
+          "end": 674.6
+        },
+        "waiting": {
+          "start": 674.6,
+          "end": 674.6
+        },
+        "source_question_start": 672.6,
+        "source_question_end": 674.6,
+        "question_turn_ids": [
+          "5dba19-t0062"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a036",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 680.0,
+      "end": 681.0,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0065"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0064"
+      ],
+      "question_start": 676.6,
+      "question_end": 679.6,
+      "source_annotation_ids": [
+        "5dba19-source033"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 676.6,
+        "end": 681.0,
+        "answer": {
+          "start": 680.0,
+          "end": 681.0
+        },
+        "question": {
+          "start": 676.6,
+          "end": 679.6
+        },
+        "waiting": {
+          "start": 679.6,
+          "end": 680.0
+        },
+        "source_question_start": 676.6,
+        "source_question_end": 679.6,
+        "question_turn_ids": [
+          "5dba19-t0064"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a037",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 684.6,
+      "end": 685.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0067"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0066"
+      ],
+      "question_start": 681.6,
+      "question_end": 683.6,
+      "source_annotation_ids": [
+        "5dba19-source034"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 681.6,
+        "end": 685.6,
+        "answer": {
+          "start": 684.6,
+          "end": 685.6
+        },
+        "question": {
+          "start": 681.6,
+          "end": 683.6
+        },
+        "waiting": {
+          "start": 683.6,
+          "end": 684.6
+        },
+        "source_question_start": 681.6,
+        "source_question_end": 683.6,
+        "question_turn_ids": [
+          "5dba19-t0066"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a038",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 692.6,
+      "end": 695.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0069"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0068"
+      ],
+      "question_start": 689.6,
+      "question_end": 691.6,
+      "source_annotation_ids": [
+        "5dba19-source035"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 689.6,
+        "end": 695.6,
+        "answer": {
+          "start": 692.6,
+          "end": 695.6
+        },
+        "question": {
+          "start": 689.6,
+          "end": 691.6
+        },
+        "waiting": {
+          "start": 691.6,
+          "end": 692.6
+        },
+        "source_question_start": 689.6,
+        "source_question_end": 691.6,
+        "question_turn_ids": [
+          "5dba19-t0068"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a039",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 700.6,
+      "end": 701.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0071"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0070"
+      ],
+      "question_start": 696.6,
+      "question_end": 699.6,
+      "source_annotation_ids": [
+        "5dba19-source036"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 696.6,
+        "end": 701.6,
+        "answer": {
+          "start": 700.6,
+          "end": 701.6
+        },
+        "question": {
+          "start": 696.6,
+          "end": 699.6
+        },
+        "waiting": {
+          "start": 699.6,
+          "end": 700.6
+        },
+        "source_question_start": 696.6,
+        "source_question_end": 699.6,
+        "question_turn_ids": [
+          "5dba19-t0070"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a040",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 707.6,
+      "end": 708.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0073"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0072"
+      ],
+      "question_start": 702.6,
+      "question_end": 706.6,
+      "source_annotation_ids": [
+        "5dba19-source037"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 702.6,
+        "end": 708.6,
+        "answer": {
+          "start": 707.6,
+          "end": 708.6
+        },
+        "question": {
+          "start": 702.6,
+          "end": 706.6
+        },
+        "waiting": {
+          "start": 706.6,
+          "end": 707.6
+        },
+        "source_question_start": 702.6,
+        "source_question_end": 706.6,
+        "question_turn_ids": [
+          "5dba19-t0072"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a041",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 713.6,
+      "end": 718.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0075"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0074"
+      ],
+      "question_start": 709.6,
+      "question_end": 712.6,
+      "source_annotation_ids": [
+        "5dba19-source038"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 709.6,
+        "end": 718.6,
+        "answer": {
+          "start": 713.6,
+          "end": 718.6
+        },
+        "question": {
+          "start": 709.6,
+          "end": 712.6
+        },
+        "waiting": {
+          "start": 712.6,
+          "end": 713.6
+        },
+        "source_question_start": 709.6,
+        "source_question_end": 712.6,
+        "question_turn_ids": [
+          "5dba19-t0074"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a042",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 723.6,
+      "end": 727.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0077"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0076"
+      ],
+      "question_start": 719.6,
+      "question_end": 722.6,
+      "source_annotation_ids": [
+        "5dba19-source039"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 719.6,
+        "end": 727.6,
+        "answer": {
+          "start": 723.6,
+          "end": 727.6
+        },
+        "question": {
+          "start": 719.6,
+          "end": 722.6
+        },
+        "waiting": {
+          "start": 722.6,
+          "end": 723.6
+        },
+        "source_question_start": 719.6,
+        "source_question_end": 722.6,
+        "question_turn_ids": [
+          "5dba19-t0076"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a043",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 732.6,
+      "end": 739.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0079"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0078"
+      ],
+      "question_start": 728.6,
+      "question_end": 731.6,
+      "source_annotation_ids": [
+        "5dba19-source040"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 728.6,
+        "end": 739.6,
+        "answer": {
+          "start": 732.6,
+          "end": 739.6
+        },
+        "question": {
+          "start": 728.6,
+          "end": 731.6
+        },
+        "waiting": {
+          "start": 731.6,
+          "end": 732.6
+        },
+        "source_question_start": 728.6,
+        "source_question_end": 731.6,
+        "question_turn_ids": [
+          "5dba19-t0078"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a044",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 744.6,
+      "end": 745.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0081"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0080"
+      ],
+      "question_start": 740.6,
+      "question_end": 743.6,
+      "source_annotation_ids": [
+        "5dba19-source041"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 740.6,
+        "end": 745.6,
+        "answer": {
+          "start": 744.6,
+          "end": 745.6
+        },
+        "question": {
+          "start": 740.6,
+          "end": 743.6
+        },
+        "waiting": {
+          "start": 743.6,
+          "end": 744.6
+        },
+        "source_question_start": 740.6,
+        "source_question_end": 743.6,
+        "question_turn_ids": [
+          "5dba19-t0080"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a045",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 748.6,
+      "end": 749.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0083"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0082"
+      ],
+      "question_start": 745.6,
+      "question_end": 747.6,
+      "source_annotation_ids": [
+        "5dba19-source042"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 745.6,
+        "end": 749.6,
+        "answer": {
+          "start": 748.6,
+          "end": 749.6
+        },
+        "question": {
+          "start": 745.6,
+          "end": 747.6
+        },
+        "waiting": {
+          "start": 747.6,
+          "end": 748.6
+        },
+        "source_question_start": 745.6,
+        "source_question_end": 747.6,
+        "question_turn_ids": [
+          "5dba19-t0082"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a046",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 751.6,
+      "end": 752.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0085"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0084"
+      ],
+      "question_start": 749.6,
+      "question_end": 751.6,
+      "source_annotation_ids": [
+        "5dba19-source043"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 749.6,
+        "end": 752.6,
+        "answer": {
+          "start": 751.6,
+          "end": 752.6
+        },
+        "question": {
+          "start": 749.6,
+          "end": 751.6
+        },
+        "waiting": {
+          "start": 751.6,
+          "end": 751.6
+        },
+        "source_question_start": 749.6,
+        "source_question_end": 751.6,
+        "question_turn_ids": [
+          "5dba19-t0084"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a047",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 759.6,
+      "end": 767.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0087"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0086"
+      ],
+      "question_start": 755.6,
+      "question_end": 756.6,
+      "source_annotation_ids": [
+        "5dba19-source044"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 755.6,
+        "end": 767.6,
+        "answer": {
+          "start": 759.6,
+          "end": 767.6
+        },
+        "question": {
+          "start": 755.6,
+          "end": 756.6
+        },
+        "waiting": {
+          "start": 756.6,
+          "end": 759.6
+        },
+        "source_question_start": 755.6,
+        "source_question_end": 756.6,
+        "question_turn_ids": [
+          "5dba19-t0086"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a048",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 774.6,
+      "end": 781.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0089"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0088"
+      ],
+      "question_start": 768.6,
+      "question_end": 771.6,
+      "source_annotation_ids": [
+        "5dba19-source045"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 768.6,
+        "end": 781.6,
+        "answer": {
+          "start": 774.6,
+          "end": 781.6
+        },
+        "question": {
+          "start": 768.6,
+          "end": 771.6
+        },
+        "waiting": {
+          "start": 771.6,
+          "end": 774.6
+        },
+        "source_question_start": 768.6,
+        "source_question_end": 771.6,
+        "question_turn_ids": [
+          "5dba19-t0088"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a049",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 785.6,
+      "end": 786.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0091"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0090"
+      ],
+      "question_start": 782.6,
+      "question_end": 785.6,
+      "source_annotation_ids": [
+        "5dba19-source046"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 782.6,
+        "end": 786.6,
+        "answer": {
+          "start": 785.6,
+          "end": 786.6
+        },
+        "question": {
+          "start": 782.6,
+          "end": 785.6
+        },
+        "waiting": {
+          "start": 785.6,
+          "end": 785.6
+        },
+        "source_question_start": 782.6,
+        "source_question_end": 785.6,
+        "question_turn_ids": [
+          "5dba19-t0090"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a050",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 792.6,
+      "end": 793.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0093"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0092"
+      ],
+      "question_start": 787.6,
+      "question_end": 789.6,
+      "source_annotation_ids": [
+        "5dba19-source047"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 787.6,
+        "end": 793.6,
+        "answer": {
+          "start": 792.6,
+          "end": 793.6
+        },
+        "question": {
+          "start": 787.6,
+          "end": 789.6
+        },
+        "waiting": {
+          "start": 789.6,
+          "end": 792.6
+        },
+        "source_question_start": 787.6,
+        "source_question_end": 789.6,
+        "question_turn_ids": [
+          "5dba19-t0092"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a051",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 797.6,
+      "end": 798.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0095"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0094"
+      ],
+      "question_start": 794.6,
+      "question_end": 797.6,
+      "source_annotation_ids": [
+        "5dba19-source048"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 794.6,
+        "end": 798.6,
+        "answer": {
+          "start": 797.6,
+          "end": 798.6
+        },
+        "question": {
+          "start": 794.6,
+          "end": 797.6
+        },
+        "waiting": {
+          "start": 797.6,
+          "end": 797.6
+        },
+        "source_question_start": 794.6,
+        "source_question_end": 797.6,
+        "question_turn_ids": [
+          "5dba19-t0094"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a052",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 803.6,
+      "end": 804.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0097"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0096"
+      ],
+      "question_start": 799.6,
+      "question_end": 802.6,
+      "source_annotation_ids": [
+        "5dba19-source049"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 799.6,
+        "end": 804.6,
+        "answer": {
+          "start": 803.6,
+          "end": 804.6
+        },
+        "question": {
+          "start": 799.6,
+          "end": 802.6
+        },
+        "waiting": {
+          "start": 802.6,
+          "end": 803.6
+        },
+        "source_question_start": 799.6,
+        "source_question_end": 802.6,
+        "question_turn_ids": [
+          "5dba19-t0096"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a053",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 808.6,
+      "end": 809.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0099"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0098"
+      ],
+      "question_start": 805.6,
+      "question_end": 808.6,
+      "source_annotation_ids": [
+        "5dba19-source050"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 805.6,
+        "end": 809.6,
+        "answer": {
+          "start": 808.6,
+          "end": 809.6
+        },
+        "question": {
+          "start": 805.6,
+          "end": 808.6
+        },
+        "waiting": {
+          "start": 808.6,
+          "end": 808.6
+        },
+        "source_question_start": 805.6,
+        "source_question_end": 808.6,
+        "question_turn_ids": [
+          "5dba19-t0098"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a054",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 818.6,
+      "end": 819.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0101"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0100"
+      ],
+      "question_start": 814.6,
+      "question_end": 817.6,
+      "source_annotation_ids": [
+        "5dba19-source051"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 814.6,
+        "end": 819.6,
+        "answer": {
+          "start": 818.6,
+          "end": 819.6
+        },
+        "question": {
+          "start": 814.6,
+          "end": 817.6
+        },
+        "waiting": {
+          "start": 817.6,
+          "end": 818.6
+        },
+        "source_question_start": 814.6,
+        "source_question_end": 817.6,
+        "question_turn_ids": [
+          "5dba19-t0100"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a055",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 824.6,
+      "end": 826.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0103"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0102"
+      ],
+      "question_start": 822.6,
+      "question_end": 823.6,
+      "source_annotation_ids": [
+        "5dba19-source052"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 822.6,
+        "end": 826.6,
+        "answer": {
+          "start": 824.6,
+          "end": 826.6
+        },
+        "question": {
+          "start": 822.6,
+          "end": 823.6
+        },
+        "waiting": {
+          "start": 823.6,
+          "end": 824.6
+        },
+        "source_question_start": 822.6,
+        "source_question_end": 823.6,
+        "question_turn_ids": [
+          "5dba19-t0102"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    }
+  ],
+  "annotation_sources": [
+    {
       "start": 18.7,
       "end": 140.6,
       "name": "База-покой (глаза закрыты)",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source000"
     },
     {
       "start": 141.3,
       "end": 195.1,
       "name": "База-речь: #1 Знакомство: Расскажите немножко о себе → DevOps в МТС, магистратура, симрейсинг, домашний сервер с Tesla, LLM, свои сервисы",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source001",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
     },
     {
       "start": 196.7,
       "end": 248.9,
       "name": "База-речь: #2 Знакомство: Специализация, цели и планы о будущей профессии → Настраиваю сервера и пайплайны; хочу развиваться, профессия перспективная",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source002",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
     },
     {
       "start": 250.1,
       "end": 285.1,
       "name": "База-речь: #3 Знакомство: Знакомые, которые тоже этим увлекаются → Друзья из бакалавриата ИТМО; Александр тоже купил видеокарты",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source003",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
     },
     {
       "start": 286.1,
       "end": 348.6,
       "name": "База-речь: #4 Знакомство: Положительный опыт / достижения → Первая работа в стартапе, справился с объёмом задач, взаимодействие с коллегами",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source004",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
     },
     {
       "start": 352.6,
       "end": 362.6,
       "name": "#5 Алкоголь 1: Как вы относитесь к алкоголю? → Алкоголь — зло, но я от него не отказываюсь",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source005"
     },
     {
       "start": 363.6,
       "end": 375.6,
       "name": "#6 Алкоголь 1: Плюсы употребления алкоголя? → Социальная активность, раскрепощает, растапливает лёд",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source006"
     },
     {
       "start": 377.6,
       "end": 396.6,
       "name": "#7 Алкоголь 1: Минусы употребления алкоголя? → Вред здоровью, похмелье, непродуктивный день, моральное падение",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source007"
     },
     {
       "start": 397.6,
       "end": 414.6,
       "name": "#8 Алкоголь 1: Какие эмоции испытывает человек под алкоголем? → Весь спектр, зависит от исходного состояния",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source008"
     },
     {
       "start": 414.6,
       "end": 432.6,
       "name": "#9 Алкоголь 1: Какие эмоции пьяный вызывает у окружающих? → Зависит; в автобусе запаху никто не обрадуется",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source009"
     },
     {
       "start": 433.6,
       "end": 436.6,
       "name": "#10 Алкоголь 1: Вы видели кого-то из знакомых пьяным? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source010"
     },
     {
       "start": 437.6,
       "end": 446.6,
       "name": "#11 Алкоголь 1: Что вы почувствовали в тот момент? → Ничего",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source011"
     },
     {
       "start": 447.6,
       "end": 452.6,
       "name": "#12 Алкоголь 1: Вы сами употребляли алкоголь в компании друзей? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source012"
     },
     {
       "start": 452.6,
       "end": 455.6,
       "name": "#13 Алкоголь 1: Вы вообще когда-либо употребляли алкоголь? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source013"
     },
     {
       "start": 457.6,
       "end": 475.6,
       "name": "#14 Алкоголь 2: Правильно ли запрещать алкоголь в некоторых странах? → Зависит от веры; не считаю это неправильным",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source014"
     },
     {
       "start": 476.6,
       "end": 501.6,
       "name": "#15 Алкоголь 2: Запрет на продажу алкоголя ночью? → Правильно: раньше много пили в парках и шумели",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source015"
     },
     {
       "start": 502.6,
       "end": 521.6,
       "name": "#16 Алкоголь 2: Ужесточение наказания за ДТП/правонарушения в опьянении? → Да, считаю (после просьбы повторить вопрос)",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source016"
     },
     {
       "start": 522.6,
       "end": 530.6,
       "name": "#17 Алкоголь 2: У знакомых был негативный опыт из-за алкоголя? → Да, был",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source017"
     },
     {
       "start": 531.6,
       "end": 536.6,
       "name": "#18 Алкоголь 2: Кто-то сожалел о произошедшем? → Да, сожалел",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source018"
     },
     {
       "start": 537.6,
       "end": 544.6,
       "name": "#19 Алкоголь 2: У вас были ситуации с алкоголем, которые стыдно вспомнить? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source019"
     },
     {
       "start": 548.6,
       "end": 576.6,
       "name": "#20 Конфликт 1: Что такое конфликт? → Двое не могут найти общую точку зрения и пытаются переубедить друг друга",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source020"
     },
     {
       "start": 577.6,
       "end": 583.6,
       "name": "#21 Конфликт 1: Конфликт — это две противоположные точки зрения? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source021"
     },
     {
       "start": 583.6,
       "end": 605.6,
       "name": "#22 Конфликт 1: Признаки конфликтного человека? → На каждую мелочь доказывает свою точку зрения",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source022"
     },
     {
       "start": 606.6,
       "end": 610.6,
       "name": "#23 Конфликт 1: Среди ваших знакомых есть конфликтные люди? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source023"
     },
     {
       "start": 610.6,
       "end": 623.6,
       "name": "#24 Конфликт 1: Что может их спровоцировать на ссору? → Например, столкнулись плечами на узкой улице",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source024"
     },
     {
       "start": 624.6,
       "end": 628.6,
       "name": "#25 Конфликт 1: Вас самого можно назвать конфликтным? → Нет",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source025"
     },
     {
       "start": 630.6,
       "end": 634.6,
       "name": "#26 Конфликт 1: Вы сами становились инициатором конфликта? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source026"
     },
     {
       "start": 634.6,
       "end": 638.6,
       "name": "#27 Конфликт 1: Вы лично конфликтовали с кем-либо? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source027"
     },
     {
       "start": 640.6,
       "end": 646.6,
       "name": "#28 Конфликт 2: Какие эмоции испытывает человек в конфликте? → Негативные",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source028"
     },
     {
       "start": 647.6,
       "end": 652.6,
       "name": "#29 Конфликт 2: В конфликте проявляется истинное лицо человека? → Нет",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source029"
     },
     {
       "start": 653.6,
       "end": 667.6,
       "name": "#30 Конфликт 2: Как ваши друзья вели себя в конфликте? → Повышали тон, ругались, пытались показать силу",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source030"
     },
     {
       "start": 668.6,
       "end": 671.6,
       "name": "#31 Конфликт 2: Отличалось ли это от обычного поведения? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source031"
     },
     {
       "start": 672.6,
       "end": 675.6,
       "name": "#32 Конфликт 2: Кто-то вёл себя импульсивно, необдуманно? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source032"
     },
     {
       "start": 676.6,
       "end": 681.0,
       "name": "#33 Конфликт 2: Вы говорили в конфликте что-то, о чём потом жалели? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source033"
     },
     {
       "start": 681.6,
       "end": 685.6,
       "name": "#34 Конфликт 2: Вы обижали кого-то из знакомых в конфликте? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source034"
     },
     {
       "start": 689.6,
       "end": 695.6,
       "name": "#35 Обман 1: Что такое ложь? → Умышленное сокрытие факта",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source035"
     },
     {
       "start": 696.6,
       "end": 701.6,
       "name": "#36 Обман 1: Есть ложь, которую можно оправдать? → Да",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source036"
     },
     {
       "start": 702.6,
       "end": 708.6,
       "name": "#37 Обман 1: Вы были свидетелем, как знакомый лгал? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source037"
     },
     {
       "start": 709.6,
       "end": 718.6,
       "name": "#38 Обман 1: Что чувствует человек, вынужденный лгать? → Тоже какие-то негативные эмоции",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source038"
     },
     {
       "start": 719.6,
       "end": 727.6,
       "name": "#39 Обман 1: Кто из знакомых чаще всего лжёт? → Не могу ответить, не знаю",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source039"
     },
     {
       "start": 728.6,
       "end": 739.6,
       "name": "#40 Обман 1: Если бы такие были, зачем они это делают? → Чтобы сохранить отношения",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source040"
     },
     {
       "start": 740.6,
       "end": 745.6,
       "name": "#41 Обман 1: Вы умалчивали что-то, чтобы прикрыть знакомого? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source041"
     },
     {
       "start": 745.6,
       "end": 749.6,
       "name": "#42 Обман 1: Вы лгали, чтобы избежать негативных последствий? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source042"
     },
     {
       "start": 749.6,
       "end": 752.6,
       "name": "#43 Обман 1: Вы сами обманывали своих знакомых? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source043"
     },
     {
       "start": 755.6,
       "end": 767.6,
       "name": "#44 Обман 2: Кто такой лживый человек? → Каждый хоть раз лгал, лживый человек — обычный человек",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source044"
     },
     {
       "start": 768.6,
       "end": 781.6,
       "name": "#45 Обман 2: Как понять, что человеку нельзя доверять? → Его слова не совпадают с тем, что я знаю",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source045"
     },
     {
       "start": 782.6,
       "end": 786.6,
       "name": "#46 Обман 2: Кого-то из знакомых можно назвать нечестным? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source046"
     },
     {
       "start": 787.6,
       "end": 793.6,
       "name": "#47 Обман 2: Если бы такой был, как бы вы к нему относились? → Скверно",
-      "label": "truth"
+      "label": "truth",
+      "id": "5dba19-source047"
     },
     {
       "start": 794.6,
       "end": 798.6,
       "name": "#48 Обман 2: Вы отдалялись от человека из-за его лжи? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source048"
     },
     {
       "start": 799.6,
       "end": 804.6,
       "name": "#49 Обман 2: Вы совершали поступки, позволяющие усомниться в вашей честности? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source049"
     },
     {
       "start": 805.6,
       "end": 809.6,
       "name": "#50 Обман 2: Вы сожалеете, что обманули кого-то ранее? → Нет",
-      "label": "lie"
+      "label": "lie",
+      "id": "5dba19-source050"
     },
     {
       "start": 814.6,
       "end": 819.6,
       "name": "База-речь: #51 После: Какое было настроение во время беседы? → Спокойно",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source051",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
     },
     {
       "start": 822.6,
       "end": 826.6,
       "name": "База-речь: #52 После: Какое самочувствие сейчас? → Мешали комары (больше движений — помеха)",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source052",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
     },
     {
       "start": 843.7,
       "end": 965.8,
       "name": "База-покой (глаза закрыты)",
-      "label": "base"
+      "label": "base",
+      "id": "5dba19-source053"
     }
   ],
-  "jobs": {},
-  "video_analysis": null
+  "answer_review_required": false,
+  "annotation_schema_version": 2,
+  "annotation_review": {
+    "date": "2026-10-21",
+    "source_backup": "data/reviews/session_review_20261021_200459/original_sessions/5dba1945a17d42268d2bb7a07ed67d59.json",
+    "label_policy": "Expert labels inherited per participant; Dubrov spoken baselines changed to truth on user confirmation.",
+    "uncertainty_policy": "Unclear text is not replaced by guesses; unclear labels excluded from binary dataset."
+  },
+  "review_issues": [
+    {
+      "start": 508.7,
+      "end": 509.96,
+      "issue": "Request to repeat the question, not a factual truth/lie response; excluded from binary export."
+    }
+  ],
+  "rest_intervals": [
+    {
+      "start": 18.7,
+      "end": 140.6
+    },
+    {
+      "start": 843.7,
+      "end": 965.8
+    }
+  ],
+  "episode_schema_version": 1
 }

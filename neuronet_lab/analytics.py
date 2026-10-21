@@ -32,10 +32,10 @@ def _device_mean(values, maximum):
     return _mean(values[(values > 0) & (values <= maximum)])
 
 
-def interval_stats(session_dir: Path, start: float, end: float, signal_start: float, signal_end: float, turns: list[dict]) -> dict:
+def interval_stats(session_dir: Path, start: float, end: float, signal_start: float, signal_end: float, turns: list[dict], answer_spans=None, *, include_contact=True) -> dict:
     if end <= start:
         raise ValueError("Interval end must follow start")
-    if (session_dir / "signal_meta.json").exists():
+    if include_contact and (session_dir / "signal_meta.json").exists():
         meta, times, signals = window(session_dir, signal_start, signal_end)
         by_name = {name: signals[:, i] for i, name in enumerate(meta["channels"])} if len(times) else {}
         fs = float(meta.get("sample_rate_hz") or 0)
@@ -50,7 +50,7 @@ def interval_stats(session_dir: Path, start: float, end: float, signal_start: fl
     remote_bpm = video.get("rppg_heart_rate_bpm")
     audio_path = session_dir / "audio_features.npz"
     frames = load_audio_frames(audio_path, audio_path.stat().st_mtime_ns) if audio_path.exists() else None
-    speech = _speech_stats(turns, start, end, frames)
+    speech = _speech_stats(turns, start, end, frames, answer_spans)
     notes = []
     if by_name and duration + (1 / fs if fs else 0) < 120:
         notes.append("Для ВСР нужно не менее 120 секунд; ULF/VLF на таком окне недоступны.")
@@ -65,9 +65,13 @@ def interval_stats(session_dir: Path, start: float, end: float, signal_start: fl
     if speech["word_count_method"] == "unavailable_partial_turn":
         notes.append("Границы пересекают реплику без времён слов: темп речи не вычислен.")
     if speech["answer_count"]:
-        notes.append("Задержка и полная длительность ответа определены по последовательным репликам говорящих.")
+        notes.append("Длительность полного ответа включает внутренние паузы." if answer_spans is not None else "Задержка и полная длительность ответа определены по последовательным репликам говорящих.")
     if speech["acoustic_method"] == "unavailable" and speech["answer_count"]:
         notes.append("Для акустики пересчитайте её по видео во вкладке стенограммы.")
+    gsr = _finite(by_name.get("GSR", []))
+    gsr_unavailable = bool(len(gsr) and np.all(gsr == 100000))
+    if gsr_unavailable:
+        notes.append("GSR постоянен (100000): канал недоступен для анализа изменений.")
     return {
         "calculation_version": 2,
         "video_interval": [start, end],
@@ -79,7 +83,7 @@ def interval_stats(session_dir: Path, start: float, end: float, signal_start: fl
             "heart_rate_monitor_bpm": _device_mean(by_name.get("HeartRate", []), 300),
             "spo2_percent": _device_mean(by_name.get("SpO2", []), 100),
             "respiration_bpm": _respiration(by_name["RIP"], fs, times) if "RIP" in by_name else None,
-            "gsr_mean": _mean(by_name.get("GSR", [])),
+            "gsr_mean": None if gsr_unavailable else _mean(gsr),
         },
         "video": video,
         "comparison": {

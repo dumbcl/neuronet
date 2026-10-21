@@ -1,0 +1,3591 @@
+{
+  "dataset_schema_version": 1,
+  "created_utc": "2026-10-21T18:22:31.317002+00:00",
+  "csv_file": "dubrov.csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "decimal_separator": ".",
+  "missing_values": "empty CSV cells; never replaced with zero",
+  "row_unit": "one full respondent answer including internal pauses",
+  "target_mapping": {
+    "truth": 0,
+    "lie": 1
+  },
+  "row_count": 53,
+  "excluded_answers": [
+    {
+      "answer_id": "5dba19-a004",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "5dba19-a018",
+      "reason": "Нет бинарного класса правда/ложь"
+    }
+  ],
+  "session_id": "5dba1945a17d42268d2bb7a07ed67d59",
+  "session_name": "Дубров Степан",
+  "session_sha256": "e2122de5663b8c55af97b57b4982e5fdc031715710b6443de176d74f9cd95a9f",
+  "markers": {
+    "video": {
+      "baseline_start": 18.7,
+      "dialog_start": 140.6,
+      "dialog_end": 836.6,
+      "post_end": 965.8
+    },
+    "signal": {
+      "baseline_start": 25.7,
+      "dialog_start": 145.6,
+      "dialog_end": 841.6,
+      "post_end": 970.8
+    }
+  },
+  "sync_status": "markers_aligned",
+  "sync_estimate": null,
+  "signal_import": {
+    "channels": [
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow",
+      "HeartRate",
+      "PPG",
+      "SpO2",
+      "Event"
+    ],
+    "sample_count": 245735,
+    "sample_rate_hz": 250.0,
+    "start": 0.0,
+    "end": 982.936,
+    "duration": 982.936,
+    "malformed_rows": 56,
+    "format": "decimal_comma",
+    "import_version": 3,
+    "source_file": "dubrov.csv",
+    "source_headers": [
+      "Elapsed Time",
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow Rate Sensor 1",
+      "Heart Rate PulseOx1",
+      "PPG PulseOx1",
+      "SpO2 PulseOx1",
+      "BioRadio Event",
+      ""
+    ],
+    "recovered_decimal_rows": 245679,
+    "nonfinite_samples": {
+      "ECG": 56,
+      "RIP": 56,
+      "GSR": 56,
+      "Flow": 56,
+      "HeartRate": 56,
+      "PPG": 56,
+      "SpO2": 56,
+      "Event": 56
+    }
+  },
+  "audio_analysis": {
+    "version": 2
+  },
+  "video_analysis": {
+    "duration": 976.4666666666667,
+    "frames_analyzed": 9765,
+    "pose_available": true,
+    "rppg_points": 5696,
+    "feature_version": 2
+  },
+  "answer_snapshot": [
+    {
+      "id": "5dba19-a001",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 146.5,
+      "end": 195.1,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0001"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0000"
+      ],
+      "question_start": 141.3,
+      "question_end": 146.5,
+      "source_annotation_ids": [
+        "5dba19-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 141.3,
+        "end": 195.1,
+        "answer": {
+          "start": 146.5,
+          "end": 195.1
+        },
+        "question": {
+          "start": 141.3,
+          "end": 146.5
+        },
+        "waiting": {
+          "start": 146.5,
+          "end": 146.5
+        },
+        "source_question_start": 141.3,
+        "source_question_end": 146.5,
+        "question_turn_ids": [
+          "5dba19-t0000"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a002",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 201.1,
+      "end": 248.9,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0003"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0002"
+      ],
+      "question_start": 196.7,
+      "question_end": 201.1,
+      "source_annotation_ids": [
+        "5dba19-source002"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 196.7,
+        "end": 248.9,
+        "answer": {
+          "start": 201.1,
+          "end": 248.9
+        },
+        "question": {
+          "start": 196.7,
+          "end": 201.1
+        },
+        "waiting": {
+          "start": 201.1,
+          "end": 201.1
+        },
+        "source_question_start": 196.7,
+        "source_question_end": 201.1,
+        "question_turn_ids": [
+          "5dba19-t0002"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a003",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 257.8,
+      "end": 285.1,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0005"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0004"
+      ],
+      "question_start": 250.1,
+      "question_end": 256.5,
+      "source_annotation_ids": [
+        "5dba19-source003"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 250.1,
+        "end": 285.1,
+        "answer": {
+          "start": 257.8,
+          "end": 285.1
+        },
+        "question": {
+          "start": 250.1,
+          "end": 256.5
+        },
+        "waiting": {
+          "start": 256.5,
+          "end": 257.8
+        },
+        "source_question_start": 250.1,
+        "source_question_end": 256.5,
+        "question_turn_ids": [
+          "5dba19-t0004"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a005",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 299.28,
+      "end": 323.5,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-new001"
+      ],
+      "question_turn_ids": [
+        "5dba19-new000"
+      ],
+      "question_start": 294.86,
+      "question_end": 295.52,
+      "source_annotation_ids": [
+        "5dba19-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 294.86,
+        "end": 323.5,
+        "answer": {
+          "start": 299.28,
+          "end": 323.5
+        },
+        "question": {
+          "start": 294.86,
+          "end": 295.52
+        },
+        "waiting": {
+          "start": 295.52,
+          "end": 299.28
+        },
+        "source_question_start": 294.86,
+        "source_question_end": 295.52,
+        "question_turn_ids": [
+          "5dba19-new000"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a006",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 330.08,
+      "end": 348.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-new003"
+      ],
+      "question_turn_ids": [
+        "5dba19-new002"
+      ],
+      "question_start": 325.64,
+      "question_end": 329.54,
+      "source_annotation_ids": [
+        "5dba19-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 325.64,
+        "end": 348.6,
+        "answer": {
+          "start": 330.08,
+          "end": 348.6
+        },
+        "question": {
+          "start": 325.64,
+          "end": 329.54
+        },
+        "waiting": {
+          "start": 329.54,
+          "end": 330.08
+        },
+        "source_question_start": 325.64,
+        "source_question_end": 329.54,
+        "question_turn_ids": [
+          "5dba19-new002"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a007",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 357.6,
+      "end": 362.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0009"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0008"
+      ],
+      "question_start": 352.6,
+      "question_end": 356.6,
+      "source_annotation_ids": [
+        "5dba19-source005"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 352.6,
+        "end": 362.6,
+        "answer": {
+          "start": 357.6,
+          "end": 362.6
+        },
+        "question": {
+          "start": 352.6,
+          "end": 356.6
+        },
+        "waiting": {
+          "start": 356.6,
+          "end": 357.6
+        },
+        "source_question_start": 352.6,
+        "source_question_end": 356.6,
+        "question_turn_ids": [
+          "5dba19-t0008"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a008",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 366.6,
+      "end": 375.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0011"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0010"
+      ],
+      "question_start": 363.6,
+      "question_end": 366.6,
+      "source_annotation_ids": [
+        "5dba19-source006"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 363.6,
+        "end": 375.6,
+        "answer": {
+          "start": 366.6,
+          "end": 375.6
+        },
+        "question": {
+          "start": 363.6,
+          "end": 366.6
+        },
+        "waiting": {
+          "start": 366.6,
+          "end": 366.6
+        },
+        "source_question_start": 363.6,
+        "source_question_end": 366.6,
+        "question_turn_ids": [
+          "5dba19-t0010"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a009",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 380.6,
+      "end": 396.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0013"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0012"
+      ],
+      "question_start": 377.6,
+      "question_end": 380.6,
+      "source_annotation_ids": [
+        "5dba19-source007"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 377.6,
+        "end": 396.6,
+        "answer": {
+          "start": 380.6,
+          "end": 396.6
+        },
+        "question": {
+          "start": 377.6,
+          "end": 380.6
+        },
+        "waiting": {
+          "start": 380.6,
+          "end": 380.6
+        },
+        "source_question_start": 377.6,
+        "source_question_end": 380.6,
+        "question_turn_ids": [
+          "5dba19-t0012"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a010",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 401.6,
+      "end": 414.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0015"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0014"
+      ],
+      "question_start": 397.6,
+      "question_end": 401.6,
+      "source_annotation_ids": [
+        "5dba19-source008"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 397.6,
+        "end": 414.6,
+        "answer": {
+          "start": 401.6,
+          "end": 414.6
+        },
+        "question": {
+          "start": 397.6,
+          "end": 401.6
+        },
+        "waiting": {
+          "start": 401.6,
+          "end": 401.6
+        },
+        "source_question_start": 397.6,
+        "source_question_end": 401.6,
+        "question_turn_ids": [
+          "5dba19-t0014"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a011",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 418.6,
+      "end": 432.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0017"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0016"
+      ],
+      "question_start": 414.6,
+      "question_end": 418.6,
+      "source_annotation_ids": [
+        "5dba19-source009"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 414.6,
+        "end": 432.6,
+        "answer": {
+          "start": 418.6,
+          "end": 432.6
+        },
+        "question": {
+          "start": 414.6,
+          "end": 418.6
+        },
+        "waiting": {
+          "start": 418.6,
+          "end": 418.6
+        },
+        "source_question_start": 414.6,
+        "source_question_end": 418.6,
+        "question_turn_ids": [
+          "5dba19-t0016"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a012",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 435.6,
+      "end": 436.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0019"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0018"
+      ],
+      "question_start": 433.6,
+      "question_end": 435.6,
+      "source_annotation_ids": [
+        "5dba19-source010"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 433.6,
+        "end": 436.6,
+        "answer": {
+          "start": 435.6,
+          "end": 436.6
+        },
+        "question": {
+          "start": 433.6,
+          "end": 435.6
+        },
+        "waiting": {
+          "start": 435.6,
+          "end": 435.6
+        },
+        "source_question_start": 433.6,
+        "source_question_end": 435.6,
+        "question_turn_ids": [
+          "5dba19-t0018"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a013",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 444.6,
+      "end": 446.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0021"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0020"
+      ],
+      "question_start": 437.6,
+      "question_end": 439.6,
+      "source_annotation_ids": [
+        "5dba19-source011"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 437.6,
+        "end": 446.6,
+        "answer": {
+          "start": 444.6,
+          "end": 446.6
+        },
+        "question": {
+          "start": 437.6,
+          "end": 439.6
+        },
+        "waiting": {
+          "start": 439.6,
+          "end": 444.6
+        },
+        "source_question_start": 437.6,
+        "source_question_end": 439.6,
+        "question_turn_ids": [
+          "5dba19-t0020"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a014",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 451.6,
+      "end": 452.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0023"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0022"
+      ],
+      "question_start": 447.6,
+      "question_end": 450.6,
+      "source_annotation_ids": [
+        "5dba19-source012"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 447.6,
+        "end": 452.6,
+        "answer": {
+          "start": 451.6,
+          "end": 452.6
+        },
+        "question": {
+          "start": 447.6,
+          "end": 450.6
+        },
+        "waiting": {
+          "start": 450.6,
+          "end": 451.6
+        },
+        "source_question_start": 447.6,
+        "source_question_end": 450.6,
+        "question_turn_ids": [
+          "5dba19-t0022"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a015",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 454.6,
+      "end": 455.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0025"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0024"
+      ],
+      "question_start": 452.6,
+      "question_end": 454.6,
+      "source_annotation_ids": [
+        "5dba19-source013"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 452.6,
+        "end": 455.6,
+        "answer": {
+          "start": 454.6,
+          "end": 455.6
+        },
+        "question": {
+          "start": 452.6,
+          "end": 454.6
+        },
+        "waiting": {
+          "start": 454.6,
+          "end": 454.6
+        },
+        "source_question_start": 452.6,
+        "source_question_end": 454.6,
+        "question_turn_ids": [
+          "5dba19-t0024"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a016",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 462.6,
+      "end": 475.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0027"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0026"
+      ],
+      "question_start": 457.6,
+      "question_end": 461.6,
+      "source_annotation_ids": [
+        "5dba19-source014"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 457.6,
+        "end": 475.6,
+        "answer": {
+          "start": 462.6,
+          "end": 475.6
+        },
+        "question": {
+          "start": 457.6,
+          "end": 461.6
+        },
+        "waiting": {
+          "start": 461.6,
+          "end": 462.6
+        },
+        "source_question_start": 457.6,
+        "source_question_end": 461.6,
+        "question_turn_ids": [
+          "5dba19-t0026"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a017",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 480.6,
+      "end": 501.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0029"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0028"
+      ],
+      "question_start": 476.6,
+      "question_end": 479.6,
+      "source_annotation_ids": [
+        "5dba19-source015"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 476.6,
+        "end": 501.6,
+        "answer": {
+          "start": 480.6,
+          "end": 501.6
+        },
+        "question": {
+          "start": 476.6,
+          "end": 479.6
+        },
+        "waiting": {
+          "start": 479.6,
+          "end": 480.6
+        },
+        "source_question_start": 476.6,
+        "source_question_end": 479.6,
+        "question_turn_ids": [
+          "5dba19-t0028"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a019",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 520.6,
+      "end": 521.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0031"
+      ],
+      "question_turn_ids": [
+        "5dba19-new005"
+      ],
+      "question_start": 509.96,
+      "question_end": 518.76,
+      "source_annotation_ids": [
+        "5dba19-source016"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 509.96,
+        "end": 521.6,
+        "answer": {
+          "start": 520.6,
+          "end": 521.6
+        },
+        "question": {
+          "start": 509.96,
+          "end": 518.76
+        },
+        "waiting": {
+          "start": 518.76,
+          "end": 520.6
+        },
+        "source_question_start": 509.96,
+        "source_question_end": 518.76,
+        "question_turn_ids": [
+          "5dba19-new005"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a020",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 529.6,
+      "end": 530.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0033"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0032"
+      ],
+      "question_start": 522.6,
+      "question_end": 528.6,
+      "source_annotation_ids": [
+        "5dba19-source017"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 522.6,
+        "end": 530.6,
+        "answer": {
+          "start": 529.6,
+          "end": 530.6
+        },
+        "question": {
+          "start": 522.6,
+          "end": 528.6
+        },
+        "waiting": {
+          "start": 528.6,
+          "end": 529.6
+        },
+        "source_question_start": 522.6,
+        "source_question_end": 528.6,
+        "question_turn_ids": [
+          "5dba19-t0032"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a021",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 535.6,
+      "end": 536.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0035"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0034"
+      ],
+      "question_start": 531.6,
+      "question_end": 534.6,
+      "source_annotation_ids": [
+        "5dba19-source018"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 531.6,
+        "end": 536.6,
+        "answer": {
+          "start": 535.6,
+          "end": 536.6
+        },
+        "question": {
+          "start": 531.6,
+          "end": 534.6
+        },
+        "waiting": {
+          "start": 534.6,
+          "end": 535.6
+        },
+        "source_question_start": 531.6,
+        "source_question_end": 534.6,
+        "question_turn_ids": [
+          "5dba19-t0034"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a022",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 543.6,
+      "end": 544.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0037"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0036"
+      ],
+      "question_start": 537.6,
+      "question_end": 540.6,
+      "source_annotation_ids": [
+        "5dba19-source019"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 537.6,
+        "end": 544.6,
+        "answer": {
+          "start": 543.6,
+          "end": 544.6
+        },
+        "question": {
+          "start": 537.6,
+          "end": 540.6
+        },
+        "waiting": {
+          "start": 540.6,
+          "end": 543.6
+        },
+        "source_question_start": 537.6,
+        "source_question_end": 540.6,
+        "question_turn_ids": [
+          "5dba19-t0036"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a023",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 550.6,
+      "end": 576.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0039"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0038"
+      ],
+      "question_start": 548.6,
+      "question_end": 549.6,
+      "source_annotation_ids": [
+        "5dba19-source020"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 548.6,
+        "end": 576.6,
+        "answer": {
+          "start": 550.6,
+          "end": 576.6
+        },
+        "question": {
+          "start": 548.6,
+          "end": 549.6
+        },
+        "waiting": {
+          "start": 549.6,
+          "end": 550.6
+        },
+        "source_question_start": 548.6,
+        "source_question_end": 549.6,
+        "question_turn_ids": [
+          "5dba19-t0038"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a024",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 582.6,
+      "end": 583.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0041"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0040"
+      ],
+      "question_start": 577.6,
+      "question_end": 581.6,
+      "source_annotation_ids": [
+        "5dba19-source021"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 577.6,
+        "end": 583.6,
+        "answer": {
+          "start": 582.6,
+          "end": 583.6
+        },
+        "question": {
+          "start": 577.6,
+          "end": 581.6
+        },
+        "waiting": {
+          "start": 581.6,
+          "end": 582.6
+        },
+        "source_question_start": 577.6,
+        "source_question_end": 581.6,
+        "question_turn_ids": [
+          "5dba19-t0040"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a025",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 587.6,
+      "end": 605.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0043"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0042"
+      ],
+      "question_start": 583.6,
+      "question_end": 586.6,
+      "source_annotation_ids": [
+        "5dba19-source022"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 583.6,
+        "end": 605.6,
+        "answer": {
+          "start": 587.6,
+          "end": 605.6
+        },
+        "question": {
+          "start": 583.6,
+          "end": 586.6
+        },
+        "waiting": {
+          "start": 586.6,
+          "end": 587.6
+        },
+        "source_question_start": 583.6,
+        "source_question_end": 586.6,
+        "question_turn_ids": [
+          "5dba19-t0042"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a026",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 609.6,
+      "end": 610.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0045"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0044"
+      ],
+      "question_start": 606.6,
+      "question_end": 609.6,
+      "source_annotation_ids": [
+        "5dba19-source023"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 606.6,
+        "end": 610.6,
+        "answer": {
+          "start": 609.6,
+          "end": 610.6
+        },
+        "question": {
+          "start": 606.6,
+          "end": 609.6
+        },
+        "waiting": {
+          "start": 609.6,
+          "end": 609.6
+        },
+        "source_question_start": 606.6,
+        "source_question_end": 609.6,
+        "question_turn_ids": [
+          "5dba19-t0044"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a027",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 614.6,
+      "end": 623.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0047"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0046"
+      ],
+      "question_start": 610.6,
+      "question_end": 613.6,
+      "source_annotation_ids": [
+        "5dba19-source024"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 610.6,
+        "end": 623.6,
+        "answer": {
+          "start": 614.6,
+          "end": 623.6
+        },
+        "question": {
+          "start": 610.6,
+          "end": 613.6
+        },
+        "waiting": {
+          "start": 613.6,
+          "end": 614.6
+        },
+        "source_question_start": 610.6,
+        "source_question_end": 613.6,
+        "question_turn_ids": [
+          "5dba19-t0046"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a028",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 627.6,
+      "end": 628.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0049"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0048"
+      ],
+      "question_start": 624.6,
+      "question_end": 627.6,
+      "source_annotation_ids": [
+        "5dba19-source025"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 624.6,
+        "end": 628.6,
+        "answer": {
+          "start": 627.6,
+          "end": 628.6
+        },
+        "question": {
+          "start": 624.6,
+          "end": 627.6
+        },
+        "waiting": {
+          "start": 627.6,
+          "end": 627.6
+        },
+        "source_question_start": 624.6,
+        "source_question_end": 627.6,
+        "question_turn_ids": [
+          "5dba19-t0048"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a029",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 633.6,
+      "end": 634.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0051"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0050"
+      ],
+      "question_start": 630.6,
+      "question_end": 633.6,
+      "source_annotation_ids": [
+        "5dba19-source026"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 630.6,
+        "end": 634.6,
+        "answer": {
+          "start": 633.6,
+          "end": 634.6
+        },
+        "question": {
+          "start": 630.6,
+          "end": 633.6
+        },
+        "waiting": {
+          "start": 633.6,
+          "end": 633.6
+        },
+        "source_question_start": 630.6,
+        "source_question_end": 633.6,
+        "question_turn_ids": [
+          "5dba19-t0050"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a030",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 637.6,
+      "end": 638.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0053"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0052"
+      ],
+      "question_start": 634.6,
+      "question_end": 637.6,
+      "source_annotation_ids": [
+        "5dba19-source027"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 634.6,
+        "end": 638.6,
+        "answer": {
+          "start": 637.6,
+          "end": 638.6
+        },
+        "question": {
+          "start": 634.6,
+          "end": 637.6
+        },
+        "waiting": {
+          "start": 637.6,
+          "end": 637.6
+        },
+        "source_question_start": 634.6,
+        "source_question_end": 637.6,
+        "question_turn_ids": [
+          "5dba19-t0052"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a031",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 644.6,
+      "end": 646.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0055"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0054"
+      ],
+      "question_start": 640.6,
+      "question_end": 643.6,
+      "source_annotation_ids": [
+        "5dba19-source028"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 640.6,
+        "end": 646.6,
+        "answer": {
+          "start": 644.6,
+          "end": 646.6
+        },
+        "question": {
+          "start": 640.6,
+          "end": 643.6
+        },
+        "waiting": {
+          "start": 643.6,
+          "end": 644.6
+        },
+        "source_question_start": 640.6,
+        "source_question_end": 643.6,
+        "question_turn_ids": [
+          "5dba19-t0054"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a032",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 651.6,
+      "end": 652.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0057"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0056"
+      ],
+      "question_start": 647.6,
+      "question_end": 651.6,
+      "source_annotation_ids": [
+        "5dba19-source029"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 647.6,
+        "end": 652.6,
+        "answer": {
+          "start": 651.6,
+          "end": 652.6
+        },
+        "question": {
+          "start": 647.6,
+          "end": 651.6
+        },
+        "waiting": {
+          "start": 651.6,
+          "end": 651.6
+        },
+        "source_question_start": 647.6,
+        "source_question_end": 651.6,
+        "question_turn_ids": [
+          "5dba19-t0056"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a033",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 658.6,
+      "end": 667.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0059"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0058"
+      ],
+      "question_start": 653.6,
+      "question_end": 655.6,
+      "source_annotation_ids": [
+        "5dba19-source030"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 653.6,
+        "end": 667.6,
+        "answer": {
+          "start": 658.6,
+          "end": 667.6
+        },
+        "question": {
+          "start": 653.6,
+          "end": 655.6
+        },
+        "waiting": {
+          "start": 655.6,
+          "end": 658.6
+        },
+        "source_question_start": 653.6,
+        "source_question_end": 655.6,
+        "question_turn_ids": [
+          "5dba19-t0058"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a034",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 670.6,
+      "end": 671.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0061"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0060"
+      ],
+      "question_start": 668.6,
+      "question_end": 670.6,
+      "source_annotation_ids": [
+        "5dba19-source031"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 668.6,
+        "end": 671.6,
+        "answer": {
+          "start": 670.6,
+          "end": 671.6
+        },
+        "question": {
+          "start": 668.6,
+          "end": 670.6
+        },
+        "waiting": {
+          "start": 670.6,
+          "end": 670.6
+        },
+        "source_question_start": 668.6,
+        "source_question_end": 670.6,
+        "question_turn_ids": [
+          "5dba19-t0060"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a035",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 674.6,
+      "end": 675.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0063"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0062"
+      ],
+      "question_start": 672.6,
+      "question_end": 674.6,
+      "source_annotation_ids": [
+        "5dba19-source032"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 672.6,
+        "end": 675.6,
+        "answer": {
+          "start": 674.6,
+          "end": 675.6
+        },
+        "question": {
+          "start": 672.6,
+          "end": 674.6
+        },
+        "waiting": {
+          "start": 674.6,
+          "end": 674.6
+        },
+        "source_question_start": 672.6,
+        "source_question_end": 674.6,
+        "question_turn_ids": [
+          "5dba19-t0062"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a036",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 680.0,
+      "end": 681.0,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0065"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0064"
+      ],
+      "question_start": 676.6,
+      "question_end": 679.6,
+      "source_annotation_ids": [
+        "5dba19-source033"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 676.6,
+        "end": 681.0,
+        "answer": {
+          "start": 680.0,
+          "end": 681.0
+        },
+        "question": {
+          "start": 676.6,
+          "end": 679.6
+        },
+        "waiting": {
+          "start": 679.6,
+          "end": 680.0
+        },
+        "source_question_start": 676.6,
+        "source_question_end": 679.6,
+        "question_turn_ids": [
+          "5dba19-t0064"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a037",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 684.6,
+      "end": 685.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0067"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0066"
+      ],
+      "question_start": 681.6,
+      "question_end": 683.6,
+      "source_annotation_ids": [
+        "5dba19-source034"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 681.6,
+        "end": 685.6,
+        "answer": {
+          "start": 684.6,
+          "end": 685.6
+        },
+        "question": {
+          "start": 681.6,
+          "end": 683.6
+        },
+        "waiting": {
+          "start": 683.6,
+          "end": 684.6
+        },
+        "source_question_start": 681.6,
+        "source_question_end": 683.6,
+        "question_turn_ids": [
+          "5dba19-t0066"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a038",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 692.6,
+      "end": 695.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0069"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0068"
+      ],
+      "question_start": 689.6,
+      "question_end": 691.6,
+      "source_annotation_ids": [
+        "5dba19-source035"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 689.6,
+        "end": 695.6,
+        "answer": {
+          "start": 692.6,
+          "end": 695.6
+        },
+        "question": {
+          "start": 689.6,
+          "end": 691.6
+        },
+        "waiting": {
+          "start": 691.6,
+          "end": 692.6
+        },
+        "source_question_start": 689.6,
+        "source_question_end": 691.6,
+        "question_turn_ids": [
+          "5dba19-t0068"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a039",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 700.6,
+      "end": 701.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0071"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0070"
+      ],
+      "question_start": 696.6,
+      "question_end": 699.6,
+      "source_annotation_ids": [
+        "5dba19-source036"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 696.6,
+        "end": 701.6,
+        "answer": {
+          "start": 700.6,
+          "end": 701.6
+        },
+        "question": {
+          "start": 696.6,
+          "end": 699.6
+        },
+        "waiting": {
+          "start": 699.6,
+          "end": 700.6
+        },
+        "source_question_start": 696.6,
+        "source_question_end": 699.6,
+        "question_turn_ids": [
+          "5dba19-t0070"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a040",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 707.6,
+      "end": 708.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0073"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0072"
+      ],
+      "question_start": 702.6,
+      "question_end": 706.6,
+      "source_annotation_ids": [
+        "5dba19-source037"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 702.6,
+        "end": 708.6,
+        "answer": {
+          "start": 707.6,
+          "end": 708.6
+        },
+        "question": {
+          "start": 702.6,
+          "end": 706.6
+        },
+        "waiting": {
+          "start": 706.6,
+          "end": 707.6
+        },
+        "source_question_start": 702.6,
+        "source_question_end": 706.6,
+        "question_turn_ids": [
+          "5dba19-t0072"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a041",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 713.6,
+      "end": 718.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0075"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0074"
+      ],
+      "question_start": 709.6,
+      "question_end": 712.6,
+      "source_annotation_ids": [
+        "5dba19-source038"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 709.6,
+        "end": 718.6,
+        "answer": {
+          "start": 713.6,
+          "end": 718.6
+        },
+        "question": {
+          "start": 709.6,
+          "end": 712.6
+        },
+        "waiting": {
+          "start": 712.6,
+          "end": 713.6
+        },
+        "source_question_start": 709.6,
+        "source_question_end": 712.6,
+        "question_turn_ids": [
+          "5dba19-t0074"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a042",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 723.6,
+      "end": 727.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0077"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0076"
+      ],
+      "question_start": 719.6,
+      "question_end": 722.6,
+      "source_annotation_ids": [
+        "5dba19-source039"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 719.6,
+        "end": 727.6,
+        "answer": {
+          "start": 723.6,
+          "end": 727.6
+        },
+        "question": {
+          "start": 719.6,
+          "end": 722.6
+        },
+        "waiting": {
+          "start": 722.6,
+          "end": 723.6
+        },
+        "source_question_start": 719.6,
+        "source_question_end": 722.6,
+        "question_turn_ids": [
+          "5dba19-t0076"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a043",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 732.6,
+      "end": 739.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0079"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0078"
+      ],
+      "question_start": 728.6,
+      "question_end": 731.6,
+      "source_annotation_ids": [
+        "5dba19-source040"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 728.6,
+        "end": 739.6,
+        "answer": {
+          "start": 732.6,
+          "end": 739.6
+        },
+        "question": {
+          "start": 728.6,
+          "end": 731.6
+        },
+        "waiting": {
+          "start": 731.6,
+          "end": 732.6
+        },
+        "source_question_start": 728.6,
+        "source_question_end": 731.6,
+        "question_turn_ids": [
+          "5dba19-t0078"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a044",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 744.6,
+      "end": 745.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0081"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0080"
+      ],
+      "question_start": 740.6,
+      "question_end": 743.6,
+      "source_annotation_ids": [
+        "5dba19-source041"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 740.6,
+        "end": 745.6,
+        "answer": {
+          "start": 744.6,
+          "end": 745.6
+        },
+        "question": {
+          "start": 740.6,
+          "end": 743.6
+        },
+        "waiting": {
+          "start": 743.6,
+          "end": 744.6
+        },
+        "source_question_start": 740.6,
+        "source_question_end": 743.6,
+        "question_turn_ids": [
+          "5dba19-t0080"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a045",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 748.6,
+      "end": 749.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0083"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0082"
+      ],
+      "question_start": 745.6,
+      "question_end": 747.6,
+      "source_annotation_ids": [
+        "5dba19-source042"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 745.6,
+        "end": 749.6,
+        "answer": {
+          "start": 748.6,
+          "end": 749.6
+        },
+        "question": {
+          "start": 745.6,
+          "end": 747.6
+        },
+        "waiting": {
+          "start": 747.6,
+          "end": 748.6
+        },
+        "source_question_start": 745.6,
+        "source_question_end": 747.6,
+        "question_turn_ids": [
+          "5dba19-t0082"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a046",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 751.6,
+      "end": 752.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0085"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0084"
+      ],
+      "question_start": 749.6,
+      "question_end": 751.6,
+      "source_annotation_ids": [
+        "5dba19-source043"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 749.6,
+        "end": 752.6,
+        "answer": {
+          "start": 751.6,
+          "end": 752.6
+        },
+        "question": {
+          "start": 749.6,
+          "end": 751.6
+        },
+        "waiting": {
+          "start": 751.6,
+          "end": 751.6
+        },
+        "source_question_start": 749.6,
+        "source_question_end": 751.6,
+        "question_turn_ids": [
+          "5dba19-t0084"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a047",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 759.6,
+      "end": 767.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0087"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0086"
+      ],
+      "question_start": 755.6,
+      "question_end": 756.6,
+      "source_annotation_ids": [
+        "5dba19-source044"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 755.6,
+        "end": 767.6,
+        "answer": {
+          "start": 759.6,
+          "end": 767.6
+        },
+        "question": {
+          "start": 755.6,
+          "end": 756.6
+        },
+        "waiting": {
+          "start": 756.6,
+          "end": 759.6
+        },
+        "source_question_start": 755.6,
+        "source_question_end": 756.6,
+        "question_turn_ids": [
+          "5dba19-t0086"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a048",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 774.6,
+      "end": 781.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0089"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0088"
+      ],
+      "question_start": 768.6,
+      "question_end": 771.6,
+      "source_annotation_ids": [
+        "5dba19-source045"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 768.6,
+        "end": 781.6,
+        "answer": {
+          "start": 774.6,
+          "end": 781.6
+        },
+        "question": {
+          "start": 768.6,
+          "end": 771.6
+        },
+        "waiting": {
+          "start": 771.6,
+          "end": 774.6
+        },
+        "source_question_start": 768.6,
+        "source_question_end": 771.6,
+        "question_turn_ids": [
+          "5dba19-t0088"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a049",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 785.6,
+      "end": 786.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0091"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0090"
+      ],
+      "question_start": 782.6,
+      "question_end": 785.6,
+      "source_annotation_ids": [
+        "5dba19-source046"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 782.6,
+        "end": 786.6,
+        "answer": {
+          "start": 785.6,
+          "end": 786.6
+        },
+        "question": {
+          "start": 782.6,
+          "end": 785.6
+        },
+        "waiting": {
+          "start": 785.6,
+          "end": 785.6
+        },
+        "source_question_start": 782.6,
+        "source_question_end": 785.6,
+        "question_turn_ids": [
+          "5dba19-t0090"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a050",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 792.6,
+      "end": 793.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0093"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0092"
+      ],
+      "question_start": 787.6,
+      "question_end": 789.6,
+      "source_annotation_ids": [
+        "5dba19-source047"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 787.6,
+        "end": 793.6,
+        "answer": {
+          "start": 792.6,
+          "end": 793.6
+        },
+        "question": {
+          "start": 787.6,
+          "end": 789.6
+        },
+        "waiting": {
+          "start": 789.6,
+          "end": 792.6
+        },
+        "source_question_start": 787.6,
+        "source_question_end": 789.6,
+        "question_turn_ids": [
+          "5dba19-t0092"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a051",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 797.6,
+      "end": 798.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0095"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0094"
+      ],
+      "question_start": 794.6,
+      "question_end": 797.6,
+      "source_annotation_ids": [
+        "5dba19-source048"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 794.6,
+        "end": 798.6,
+        "answer": {
+          "start": 797.6,
+          "end": 798.6
+        },
+        "question": {
+          "start": 794.6,
+          "end": 797.6
+        },
+        "waiting": {
+          "start": 797.6,
+          "end": 797.6
+        },
+        "source_question_start": 794.6,
+        "source_question_end": 797.6,
+        "question_turn_ids": [
+          "5dba19-t0094"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a052",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 803.6,
+      "end": 804.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0097"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0096"
+      ],
+      "question_start": 799.6,
+      "question_end": 802.6,
+      "source_annotation_ids": [
+        "5dba19-source049"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 799.6,
+        "end": 804.6,
+        "answer": {
+          "start": 803.6,
+          "end": 804.6
+        },
+        "question": {
+          "start": 799.6,
+          "end": 802.6
+        },
+        "waiting": {
+          "start": 802.6,
+          "end": 803.6
+        },
+        "source_question_start": 799.6,
+        "source_question_end": 802.6,
+        "question_turn_ids": [
+          "5dba19-t0096"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a053",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 808.6,
+      "end": 809.6,
+      "label": "lie",
+      "turn_ids": [
+        "5dba19-t0099"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0098"
+      ],
+      "question_start": 805.6,
+      "question_end": 808.6,
+      "source_annotation_ids": [
+        "5dba19-source050"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 805.6,
+        "end": 809.6,
+        "answer": {
+          "start": 808.6,
+          "end": 809.6
+        },
+        "question": {
+          "start": 805.6,
+          "end": 808.6
+        },
+        "waiting": {
+          "start": 808.6,
+          "end": 808.6
+        },
+        "source_question_start": 805.6,
+        "source_question_end": 808.6,
+        "question_turn_ids": [
+          "5dba19-t0098"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a054",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 818.6,
+      "end": 819.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0101"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0100"
+      ],
+      "question_start": 814.6,
+      "question_end": 817.6,
+      "source_annotation_ids": [
+        "5dba19-source051"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 814.6,
+        "end": 819.6,
+        "answer": {
+          "start": 818.6,
+          "end": 819.6
+        },
+        "question": {
+          "start": 814.6,
+          "end": 817.6
+        },
+        "waiting": {
+          "start": 817.6,
+          "end": 818.6
+        },
+        "source_question_start": 814.6,
+        "source_question_end": 817.6,
+        "question_turn_ids": [
+          "5dba19-t0100"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "5dba19-a055",
+      "participant_id": "5dba1945a17d42268d2bb7a07ed67d59",
+      "start": 824.6,
+      "end": 826.6,
+      "label": "truth",
+      "turn_ids": [
+        "5dba19-t0103"
+      ],
+      "question_turn_ids": [
+        "5dba19-t0102"
+      ],
+      "question_start": 822.6,
+      "question_end": 823.6,
+      "source_annotation_ids": [
+        "5dba19-source052"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 822.6,
+        "end": 826.6,
+        "answer": {
+          "start": 824.6,
+          "end": 826.6
+        },
+        "question": {
+          "start": 822.6,
+          "end": 823.6
+        },
+        "waiting": {
+          "start": 823.6,
+          "end": 824.6
+        },
+        "source_question_start": 822.6,
+        "source_question_end": 823.6,
+        "question_turn_ids": [
+          "5dba19-t0102"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    }
+  ],
+  "annotation_sources": [
+    {
+      "start": 18.7,
+      "end": 140.6,
+      "name": "База-покой (глаза закрыты)",
+      "label": "base",
+      "id": "5dba19-source000"
+    },
+    {
+      "start": 141.3,
+      "end": 195.1,
+      "name": "База-речь: #1 Знакомство: Расскажите немножко о себе → DevOps в МТС, магистратура, симрейсинг, домашний сервер с Tesla, LLM, свои сервисы",
+      "label": "base",
+      "id": "5dba19-source001",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
+    },
+    {
+      "start": 196.7,
+      "end": 248.9,
+      "name": "База-речь: #2 Знакомство: Специализация, цели и планы о будущей профессии → Настраиваю сервера и пайплайны; хочу развиваться, профессия перспективная",
+      "label": "base",
+      "id": "5dba19-source002",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
+    },
+    {
+      "start": 250.1,
+      "end": 285.1,
+      "name": "База-речь: #3 Знакомство: Знакомые, которые тоже этим увлекаются → Друзья из бакалавриата ИТМО; Александр тоже купил видеокарты",
+      "label": "base",
+      "id": "5dba19-source003",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
+    },
+    {
+      "start": 286.1,
+      "end": 348.6,
+      "name": "База-речь: #4 Знакомство: Положительный опыт / достижения → Первая работа в стартапе, справился с объёмом задач, взаимодействие с коллегами",
+      "label": "base",
+      "id": "5dba19-source004",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
+    },
+    {
+      "start": 352.6,
+      "end": 362.6,
+      "name": "#5 Алкоголь 1: Как вы относитесь к алкоголю? → Алкоголь — зло, но я от него не отказываюсь",
+      "label": "truth",
+      "id": "5dba19-source005"
+    },
+    {
+      "start": 363.6,
+      "end": 375.6,
+      "name": "#6 Алкоголь 1: Плюсы употребления алкоголя? → Социальная активность, раскрепощает, растапливает лёд",
+      "label": "truth",
+      "id": "5dba19-source006"
+    },
+    {
+      "start": 377.6,
+      "end": 396.6,
+      "name": "#7 Алкоголь 1: Минусы употребления алкоголя? → Вред здоровью, похмелье, непродуктивный день, моральное падение",
+      "label": "truth",
+      "id": "5dba19-source007"
+    },
+    {
+      "start": 397.6,
+      "end": 414.6,
+      "name": "#8 Алкоголь 1: Какие эмоции испытывает человек под алкоголем? → Весь спектр, зависит от исходного состояния",
+      "label": "truth",
+      "id": "5dba19-source008"
+    },
+    {
+      "start": 414.6,
+      "end": 432.6,
+      "name": "#9 Алкоголь 1: Какие эмоции пьяный вызывает у окружающих? → Зависит; в автобусе запаху никто не обрадуется",
+      "label": "truth",
+      "id": "5dba19-source009"
+    },
+    {
+      "start": 433.6,
+      "end": 436.6,
+      "name": "#10 Алкоголь 1: Вы видели кого-то из знакомых пьяным? → Да",
+      "label": "truth",
+      "id": "5dba19-source010"
+    },
+    {
+      "start": 437.6,
+      "end": 446.6,
+      "name": "#11 Алкоголь 1: Что вы почувствовали в тот момент? → Ничего",
+      "label": "truth",
+      "id": "5dba19-source011"
+    },
+    {
+      "start": 447.6,
+      "end": 452.6,
+      "name": "#12 Алкоголь 1: Вы сами употребляли алкоголь в компании друзей? → Нет",
+      "label": "lie",
+      "id": "5dba19-source012"
+    },
+    {
+      "start": 452.6,
+      "end": 455.6,
+      "name": "#13 Алкоголь 1: Вы вообще когда-либо употребляли алкоголь? → Нет",
+      "label": "lie",
+      "id": "5dba19-source013"
+    },
+    {
+      "start": 457.6,
+      "end": 475.6,
+      "name": "#14 Алкоголь 2: Правильно ли запрещать алкоголь в некоторых странах? → Зависит от веры; не считаю это неправильным",
+      "label": "truth",
+      "id": "5dba19-source014"
+    },
+    {
+      "start": 476.6,
+      "end": 501.6,
+      "name": "#15 Алкоголь 2: Запрет на продажу алкоголя ночью? → Правильно: раньше много пили в парках и шумели",
+      "label": "truth",
+      "id": "5dba19-source015"
+    },
+    {
+      "start": 502.6,
+      "end": 521.6,
+      "name": "#16 Алкоголь 2: Ужесточение наказания за ДТП/правонарушения в опьянении? → Да, считаю (после просьбы повторить вопрос)",
+      "label": "truth",
+      "id": "5dba19-source016"
+    },
+    {
+      "start": 522.6,
+      "end": 530.6,
+      "name": "#17 Алкоголь 2: У знакомых был негативный опыт из-за алкоголя? → Да, был",
+      "label": "truth",
+      "id": "5dba19-source017"
+    },
+    {
+      "start": 531.6,
+      "end": 536.6,
+      "name": "#18 Алкоголь 2: Кто-то сожалел о произошедшем? → Да, сожалел",
+      "label": "truth",
+      "id": "5dba19-source018"
+    },
+    {
+      "start": 537.6,
+      "end": 544.6,
+      "name": "#19 Алкоголь 2: У вас были ситуации с алкоголем, которые стыдно вспомнить? → Нет",
+      "label": "lie",
+      "id": "5dba19-source019"
+    },
+    {
+      "start": 548.6,
+      "end": 576.6,
+      "name": "#20 Конфликт 1: Что такое конфликт? → Двое не могут найти общую точку зрения и пытаются переубедить друг друга",
+      "label": "truth",
+      "id": "5dba19-source020"
+    },
+    {
+      "start": 577.6,
+      "end": 583.6,
+      "name": "#21 Конфликт 1: Конфликт — это две противоположные точки зрения? → Да",
+      "label": "truth",
+      "id": "5dba19-source021"
+    },
+    {
+      "start": 583.6,
+      "end": 605.6,
+      "name": "#22 Конфликт 1: Признаки конфликтного человека? → На каждую мелочь доказывает свою точку зрения",
+      "label": "truth",
+      "id": "5dba19-source022"
+    },
+    {
+      "start": 606.6,
+      "end": 610.6,
+      "name": "#23 Конфликт 1: Среди ваших знакомых есть конфликтные люди? → Да",
+      "label": "truth",
+      "id": "5dba19-source023"
+    },
+    {
+      "start": 610.6,
+      "end": 623.6,
+      "name": "#24 Конфликт 1: Что может их спровоцировать на ссору? → Например, столкнулись плечами на узкой улице",
+      "label": "truth",
+      "id": "5dba19-source024"
+    },
+    {
+      "start": 624.6,
+      "end": 628.6,
+      "name": "#25 Конфликт 1: Вас самого можно назвать конфликтным? → Нет",
+      "label": "truth",
+      "id": "5dba19-source025"
+    },
+    {
+      "start": 630.6,
+      "end": 634.6,
+      "name": "#26 Конфликт 1: Вы сами становились инициатором конфликта? → Да",
+      "label": "truth",
+      "id": "5dba19-source026"
+    },
+    {
+      "start": 634.6,
+      "end": 638.6,
+      "name": "#27 Конфликт 1: Вы лично конфликтовали с кем-либо? → Да",
+      "label": "truth",
+      "id": "5dba19-source027"
+    },
+    {
+      "start": 640.6,
+      "end": 646.6,
+      "name": "#28 Конфликт 2: Какие эмоции испытывает человек в конфликте? → Негативные",
+      "label": "truth",
+      "id": "5dba19-source028"
+    },
+    {
+      "start": 647.6,
+      "end": 652.6,
+      "name": "#29 Конфликт 2: В конфликте проявляется истинное лицо человека? → Нет",
+      "label": "truth",
+      "id": "5dba19-source029"
+    },
+    {
+      "start": 653.6,
+      "end": 667.6,
+      "name": "#30 Конфликт 2: Как ваши друзья вели себя в конфликте? → Повышали тон, ругались, пытались показать силу",
+      "label": "truth",
+      "id": "5dba19-source030"
+    },
+    {
+      "start": 668.6,
+      "end": 671.6,
+      "name": "#31 Конфликт 2: Отличалось ли это от обычного поведения? → Да",
+      "label": "truth",
+      "id": "5dba19-source031"
+    },
+    {
+      "start": 672.6,
+      "end": 675.6,
+      "name": "#32 Конфликт 2: Кто-то вёл себя импульсивно, необдуманно? → Да",
+      "label": "truth",
+      "id": "5dba19-source032"
+    },
+    {
+      "start": 676.6,
+      "end": 681.0,
+      "name": "#33 Конфликт 2: Вы говорили в конфликте что-то, о чём потом жалели? → Да",
+      "label": "truth",
+      "id": "5dba19-source033"
+    },
+    {
+      "start": 681.6,
+      "end": 685.6,
+      "name": "#34 Конфликт 2: Вы обижали кого-то из знакомых в конфликте? → Да",
+      "label": "truth",
+      "id": "5dba19-source034"
+    },
+    {
+      "start": 689.6,
+      "end": 695.6,
+      "name": "#35 Обман 1: Что такое ложь? → Умышленное сокрытие факта",
+      "label": "truth",
+      "id": "5dba19-source035"
+    },
+    {
+      "start": 696.6,
+      "end": 701.6,
+      "name": "#36 Обман 1: Есть ложь, которую можно оправдать? → Да",
+      "label": "truth",
+      "id": "5dba19-source036"
+    },
+    {
+      "start": 702.6,
+      "end": 708.6,
+      "name": "#37 Обман 1: Вы были свидетелем, как знакомый лгал? → Нет",
+      "label": "lie",
+      "id": "5dba19-source037"
+    },
+    {
+      "start": 709.6,
+      "end": 718.6,
+      "name": "#38 Обман 1: Что чувствует человек, вынужденный лгать? → Тоже какие-то негативные эмоции",
+      "label": "truth",
+      "id": "5dba19-source038"
+    },
+    {
+      "start": 719.6,
+      "end": 727.6,
+      "name": "#39 Обман 1: Кто из знакомых чаще всего лжёт? → Не могу ответить, не знаю",
+      "label": "truth",
+      "id": "5dba19-source039"
+    },
+    {
+      "start": 728.6,
+      "end": 739.6,
+      "name": "#40 Обман 1: Если бы такие были, зачем они это делают? → Чтобы сохранить отношения",
+      "label": "truth",
+      "id": "5dba19-source040"
+    },
+    {
+      "start": 740.6,
+      "end": 745.6,
+      "name": "#41 Обман 1: Вы умалчивали что-то, чтобы прикрыть знакомого? → Нет",
+      "label": "lie",
+      "id": "5dba19-source041"
+    },
+    {
+      "start": 745.6,
+      "end": 749.6,
+      "name": "#42 Обман 1: Вы лгали, чтобы избежать негативных последствий? → Нет",
+      "label": "lie",
+      "id": "5dba19-source042"
+    },
+    {
+      "start": 749.6,
+      "end": 752.6,
+      "name": "#43 Обман 1: Вы сами обманывали своих знакомых? → Нет",
+      "label": "lie",
+      "id": "5dba19-source043"
+    },
+    {
+      "start": 755.6,
+      "end": 767.6,
+      "name": "#44 Обман 2: Кто такой лживый человек? → Каждый хоть раз лгал, лживый человек — обычный человек",
+      "label": "truth",
+      "id": "5dba19-source044"
+    },
+    {
+      "start": 768.6,
+      "end": 781.6,
+      "name": "#45 Обман 2: Как понять, что человеку нельзя доверять? → Его слова не совпадают с тем, что я знаю",
+      "label": "truth",
+      "id": "5dba19-source045"
+    },
+    {
+      "start": 782.6,
+      "end": 786.6,
+      "name": "#46 Обман 2: Кого-то из знакомых можно назвать нечестным? → Нет",
+      "label": "lie",
+      "id": "5dba19-source046"
+    },
+    {
+      "start": 787.6,
+      "end": 793.6,
+      "name": "#47 Обман 2: Если бы такой был, как бы вы к нему относились? → Скверно",
+      "label": "truth",
+      "id": "5dba19-source047"
+    },
+    {
+      "start": 794.6,
+      "end": 798.6,
+      "name": "#48 Обман 2: Вы отдалялись от человека из-за его лжи? → Нет",
+      "label": "lie",
+      "id": "5dba19-source048"
+    },
+    {
+      "start": 799.6,
+      "end": 804.6,
+      "name": "#49 Обман 2: Вы совершали поступки, позволяющие усомниться в вашей честности? → Нет",
+      "label": "lie",
+      "id": "5dba19-source049"
+    },
+    {
+      "start": 805.6,
+      "end": 809.6,
+      "name": "#50 Обман 2: Вы сожалеете, что обманули кого-то ранее? → Нет",
+      "label": "lie",
+      "id": "5dba19-source050"
+    },
+    {
+      "start": 814.6,
+      "end": 819.6,
+      "name": "База-речь: #51 После: Какое было настроение во время беседы? → Спокойно",
+      "label": "base",
+      "id": "5dba19-source051",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
+    },
+    {
+      "start": 822.6,
+      "end": 826.6,
+      "name": "База-речь: #52 После: Какое самочувствие сейчас? → Мешали комары (больше движений — помеха)",
+      "label": "base",
+      "id": "5dba19-source052",
+      "effective_label": "truth",
+      "label_override_reason": "Participant-session owner confirmed introductory and closing answers are truthful, 2026-10-21"
+    },
+    {
+      "start": 843.7,
+      "end": 965.8,
+      "name": "База-покой (глаза закрыты)",
+      "label": "base",
+      "id": "5dba19-source053"
+    }
+  ],
+  "columns": [
+    "dataset_schema_version",
+    "calculation_version",
+    "participant_id",
+    "session_id",
+    "session_name",
+    "answer_id",
+    "target",
+    "label",
+    "video_start_seconds",
+    "video_end_seconds",
+    "answer_duration_seconds",
+    "signal_start_seconds",
+    "signal_end_seconds",
+    "question_start_seconds",
+    "question_end_seconds",
+    "respondent_text",
+    "question_text",
+    "turn_ids",
+    "source_annotation_ids",
+    "internal_pauses",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_sample_count",
+    "signal_time_coverage",
+    "contact_heart_rate_monitor_bpm",
+    "contact_spo2_percent",
+    "contact_respiration_bpm",
+    "contact_gsr_mean",
+    "contact_ecg_heart_rate_bpm",
+    "contact_ecg_sdnn_ms",
+    "contact_ecg_rmssd_ms",
+    "contact_ecg_lf_power",
+    "contact_ecg_hf_power",
+    "contact_ecg_total_power",
+    "contact_ecg_lf_hf",
+    "contact_ppg_heart_rate_bpm",
+    "contact_ppg_sdnn_ms",
+    "contact_ppg_rmssd_ms",
+    "contact_ppg_lf_power",
+    "contact_ppg_hf_power",
+    "contact_ppg_total_power",
+    "contact_ppg_lf_hf",
+    "speech_respondent_words",
+    "speech_words_per_minute",
+    "speech_syllables_per_second",
+    "speech_response_latency_seconds",
+    "speech_response_duration_seconds",
+    "speech_internal_pause_seconds",
+    "speech_pause_ratio",
+    "speech_voice_rms",
+    "speech_pitch_hz",
+    "speech_pitch_iqr_hz",
+    "speech_spectral_centroid_hz",
+    "video_rppg_heart_rate_bpm",
+    "video_head_motion",
+    "video_hand_motion",
+    "video_leg_motion",
+    "video_trunk_tilt_degrees",
+    "comparison_ecg_ppg_delta_bpm",
+    "comparison_ecg_rppg_delta_bpm",
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "notes"
+  ],
+  "numeric_feature_columns": {
+    "contact_heart_rate_monitor_bpm": "bpm",
+    "contact_spo2_percent": "%",
+    "contact_respiration_bpm": "breaths/min",
+    "contact_gsr_mean": "BioRadio source units",
+    "contact_ecg_heart_rate_bpm": "bpm",
+    "contact_ecg_sdnn_ms": "ms",
+    "contact_ecg_rmssd_ms": "ms",
+    "contact_ecg_lf_power": "ms²",
+    "contact_ecg_hf_power": "ms²",
+    "contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ecg_lf_hf": "ratio",
+    "contact_ppg_heart_rate_bpm": "bpm",
+    "contact_ppg_sdnn_ms": "ms",
+    "contact_ppg_rmssd_ms": "ms",
+    "contact_ppg_lf_power": "ms²",
+    "contact_ppg_hf_power": "ms²",
+    "contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ppg_lf_hf": "ratio",
+    "speech_respondent_words": "count",
+    "speech_words_per_minute": "words/min",
+    "speech_syllables_per_second": "syllables/s",
+    "speech_response_latency_seconds": "s",
+    "speech_response_duration_seconds": "s",
+    "speech_internal_pause_seconds": "s",
+    "speech_pause_ratio": "ratio",
+    "speech_voice_rms": "normalized audio amplitude",
+    "speech_pitch_hz": "Hz",
+    "speech_pitch_iqr_hz": "Hz",
+    "speech_spectral_centroid_hz": "Hz",
+    "video_rppg_heart_rate_bpm": "bpm; complete window inside answer",
+    "video_head_motion": "face widths/s",
+    "video_hand_motion": "image heights/s; see motion_units",
+    "video_leg_motion": "image heights/s; see motion_units",
+    "video_trunk_tilt_degrees": "degrees",
+    "comparison_ecg_ppg_delta_bpm": "bpm",
+    "comparison_ecg_rppg_delta_bpm": "bpm"
+  },
+  "quality_columns": [
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_time_coverage",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "notes"
+  ],
+  "research_notes": [
+    "Split training and evaluation by participant_id. IDs, labels, source_annotation_ids and timing are not predictive features.",
+    "Text and question content can disclose the interview protocol; assess text features separately to avoid target leakage.",
+    "dataset_eligible means a reviewed target, not validated physiology. Filter features by sync_status and coverage.",
+    "HRV requires at least 120 seconds and sufficient usable beats. Short answers retain missing HRV.",
+    "Primary rPPG only uses windows fully inside the answer; context rPPG is deliberately excluded.",
+    "GSR=100000 throughout the interval is unavailable. Channel coverage counts finite usable samples, not detector accuracy.",
+    "Pauses may be incompletely annotated. Full answer duration always includes elapsed internal silence.",
+    "Values are unrounded and not normalized to baseline. Baseline intervals and markers are in this metadata."
+  ],
+  "rest_intervals": [
+    {
+      "start": 18.7,
+      "end": 140.6
+    },
+    {
+      "start": 843.7,
+      "end": 965.8
+    }
+  ],
+  "baseline_annotations": [
+    {
+      "start": 0,
+      "end": 18.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v000"
+    },
+    {
+      "start": 18.7,
+      "end": 140.6,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой до беседы",
+      "id": "5dba19-v001"
+    },
+    {
+      "start": 140.6,
+      "end": 146.5,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v002"
+    },
+    {
+      "start": 195.1,
+      "end": 201.1,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v004"
+    },
+    {
+      "start": 248.9,
+      "end": 257.8,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v006"
+    },
+    {
+      "start": 285.1,
+      "end": 291.1,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v008"
+    },
+    {
+      "start": 294.86,
+      "end": 299.28,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v010"
+    },
+    {
+      "start": 323.5,
+      "end": 330.08,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v012"
+    },
+    {
+      "start": 348.6,
+      "end": 357.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v014"
+    },
+    {
+      "start": 362.6,
+      "end": 366.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v016"
+    },
+    {
+      "start": 375.6,
+      "end": 380.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v018"
+    },
+    {
+      "start": 396.6,
+      "end": 401.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v020"
+    },
+    {
+      "start": 414.6,
+      "end": 418.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v022"
+    },
+    {
+      "start": 432.6,
+      "end": 435.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v024"
+    },
+    {
+      "start": 436.6,
+      "end": 444.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v026"
+    },
+    {
+      "start": 446.6,
+      "end": 451.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v028"
+    },
+    {
+      "start": 452.6,
+      "end": 454.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v030"
+    },
+    {
+      "start": 455.6,
+      "end": 462.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v032"
+    },
+    {
+      "start": 475.6,
+      "end": 480.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v034"
+    },
+    {
+      "start": 501.6,
+      "end": 508.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v036"
+    },
+    {
+      "start": 509.96,
+      "end": 520.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v038"
+    },
+    {
+      "start": 521.6,
+      "end": 529.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v040"
+    },
+    {
+      "start": 530.6,
+      "end": 535.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v042"
+    },
+    {
+      "start": 536.6,
+      "end": 543.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v044"
+    },
+    {
+      "start": 544.6,
+      "end": 550.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v046"
+    },
+    {
+      "start": 576.6,
+      "end": 582.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v048"
+    },
+    {
+      "start": 583.6,
+      "end": 587.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v050"
+    },
+    {
+      "start": 605.6,
+      "end": 609.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v052"
+    },
+    {
+      "start": 610.6,
+      "end": 614.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v054"
+    },
+    {
+      "start": 623.6,
+      "end": 627.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v056"
+    },
+    {
+      "start": 628.6,
+      "end": 633.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v058"
+    },
+    {
+      "start": 634.6,
+      "end": 637.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v060"
+    },
+    {
+      "start": 638.6,
+      "end": 644.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v062"
+    },
+    {
+      "start": 646.6,
+      "end": 651.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v064"
+    },
+    {
+      "start": 652.6,
+      "end": 658.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v066"
+    },
+    {
+      "start": 667.6,
+      "end": 670.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v068"
+    },
+    {
+      "start": 671.6,
+      "end": 674.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v070"
+    },
+    {
+      "start": 675.6,
+      "end": 680.0,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v072"
+    },
+    {
+      "start": 681.0,
+      "end": 684.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v074"
+    },
+    {
+      "start": 685.6,
+      "end": 692.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v076"
+    },
+    {
+      "start": 695.6,
+      "end": 700.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v078"
+    },
+    {
+      "start": 701.6,
+      "end": 707.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v080"
+    },
+    {
+      "start": 708.6,
+      "end": 713.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v082"
+    },
+    {
+      "start": 718.6,
+      "end": 723.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v084"
+    },
+    {
+      "start": 727.6,
+      "end": 732.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v086"
+    },
+    {
+      "start": 739.6,
+      "end": 744.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v088"
+    },
+    {
+      "start": 745.6,
+      "end": 748.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v090"
+    },
+    {
+      "start": 749.6,
+      "end": 751.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v092"
+    },
+    {
+      "start": 752.6,
+      "end": 759.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v094"
+    },
+    {
+      "start": 767.6,
+      "end": 774.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v096"
+    },
+    {
+      "start": 781.6,
+      "end": 785.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v098"
+    },
+    {
+      "start": 786.6,
+      "end": 792.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v100"
+    },
+    {
+      "start": 793.6,
+      "end": 797.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v102"
+    },
+    {
+      "start": 798.6,
+      "end": 803.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v104"
+    },
+    {
+      "start": 804.6,
+      "end": 808.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v106"
+    },
+    {
+      "start": 809.6,
+      "end": 818.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v108"
+    },
+    {
+      "start": 819.6,
+      "end": 824.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "5dba19-v110"
+    },
+    {
+      "start": 826.6,
+      "end": 843.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / покой после беседы",
+      "id": "5dba19-v112"
+    },
+    {
+      "start": 843.7,
+      "end": 965.8,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой после беседы",
+      "id": "5dba19-v113"
+    },
+    {
+      "start": 965.8,
+      "end": 976.576,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / покой после беседы",
+      "id": "5dba19-v114"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (
     QApplication, QComboBox, QFileDialog, QGridLayout, QGroupBox, QHBoxLayout,
     QInputDialog, QLabel, QLineEdit, QMainWindow, QMessageBox, QPushButton,
     QScrollArea, QSlider, QSplitter, QTableWidget, QTableWidgetItem, QTabWidget,
-    QVBoxLayout, QWidget, QAbstractItemView,
+    QVBoxLayout, QWidget, QAbstractItemView, QSizePolicy,
 )
 
 from .session import MARKER_NAMES, SessionStore, validate_markers, validate_turns
@@ -302,7 +302,9 @@ class MainWindow(QMainWindow):
     def _annotation_tab(self) -> QWidget:
         tab = QWidget()
         layout = QVBoxLayout(tab)
-        layout.addWidget(QLabel("Экспертные метки для выбранного интервала. Они не являются предсказанием модели."))
+        annotation_hint = QLabel("Экспертные метки для выбранного интервала. Они не являются предсказанием модели.")
+        annotation_hint.setWordWrap(True)
+        layout.addWidget(annotation_hint)
         self.annotation_table = QTableWidget(0, 4)
         self.annotation_table.setHorizontalHeaderLabels(["Начало", "Конец", "Тип", "Название"])
         self.annotation_table.horizontalHeader().setStretchLastSection(True)
@@ -318,6 +320,28 @@ class MainWindow(QMainWindow):
         buttons.addWidget(self._button("Сохранить интервал", self.save_annotation))
         buttons.addWidget(self._button("Удалить выбранный", self.delete_annotation))
         layout.addLayout(buttons)
+        export_box = QGroupBox("Датасет для исследования")
+        export_box.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
+        export_layout = QVBoxLayout(export_box)
+        hint = QLabel("Одна строка — вопрос → ожидание → полный ответ. Метка правда/ложь относится к ответу. Показатели этапов сохраняются отдельно в папке сессии.")
+        hint.setWordWrap(True)
+        hint.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
+        export_layout.addWidget(hint)
+        export_controls = QHBoxLayout()
+        self.dataset_name = QLineEdit("dataset")
+        self.dataset_name.setPlaceholderText("Имя датасета, например fokin")
+        self.dataset_name.setAccessibleName("Имя датасета")
+        self.dataset_name.setToolTip("Имя файла без пути. Расширение .csv добавляется автоматически.")
+        export_controls.addWidget(self.dataset_name, 1)
+        self.dataset_button = self._button("Сформировать датасет", self.export_dataset)
+        export_controls.addWidget(self.dataset_button)
+        export_layout.addLayout(export_controls)
+        self.dataset_status = QLabel("CSV с показателями + JSON с описанием полей и качеством данных. Недоступные значения останутся пустыми.")
+        self.dataset_status.setWordWrap(True)
+        self.dataset_status.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
+        self.dataset_status.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        export_layout.addWidget(self.dataset_status)
+        layout.addWidget(export_box)
         return tab
 
     def _connect(self):
@@ -385,6 +409,8 @@ class MainWindow(QMainWindow):
         self._render_meta()
         self._render_turns()
         self._render_annotations()
+        self.dataset_status.setText("CSV с показателями + JSON с описанием полей и качеством данных. Недоступные значения останутся пустыми.")
+        self.dataset_status.setToolTip("")
         self.metrics.setRowCount(0)
         self.last_plot_second = -1
         self.refresh_plot()
@@ -397,6 +423,8 @@ class MainWindow(QMainWindow):
         signal = self.meta.get("signal")
         video_info = f"Видео: {video['filename']}" if video else "Видео не добавлено"
         signal_info = f"BioRadio: {signal['sample_count']:,} отсчётов, {signal['sample_rate_hz']} Гц" if signal else "CSV не добавлен"
+        if signal and signal.get("malformed_rows"):
+            signal_info += f" · строк с ошибками: {signal['malformed_rows']:,}"
         self.info.setText(f"{video_info}    ·    {signal_info}")
         for medium in ("video", "signal"):
             for name in MARKER_NAMES:
@@ -410,7 +438,7 @@ class MainWindow(QMainWindow):
         thread = TaskThread(action, self)
         self.active_task = thread
         self.statusBar().showMessage(label)
-        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button):
+        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button, self.dataset_button, self.dataset_name):
             button.setEnabled(False)
         self.sessions.setEnabled(False)
         thread.progress.connect(lambda value: self.statusBar().showMessage(f"{label}: {value}%"))
@@ -421,7 +449,7 @@ class MainWindow(QMainWindow):
 
     def _task_finished(self):
         self.active_task = None
-        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button):
+        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button, self.dataset_button, self.dataset_name):
             button.setEnabled(True)
         self.sessions.setEnabled(True)
         self.statusBar().showMessage("Готово", 4000)
@@ -476,7 +504,8 @@ class MainWindow(QMainWindow):
             self._render_meta()
             self.refresh_plot()
             self.statusBar().showMessage("Метки синхронизации сохранены", 5000)
-        self._guard(action)
+            return True
+        return self._guard(action)
 
     def toggle_play(self):
         if self.player.playbackState() == QMediaPlayer.PlaybackState.PlayingState:
@@ -611,6 +640,7 @@ class MainWindow(QMainWindow):
                 item.setForeground(pg.mkColor("#829cf7" if speaker == "Интервьюер" else "#5fd8c2"))
             self.turn_table.setItem(row, column, item)
         self.turn_table.item(row, 0).setData(Qt.ItemDataRole.UserRole, {
+            **{key: turn[key] for key in ("id", "review_kind") if turn.get(key) is not None},
             "pause_seconds": turn.get("pause_seconds"), "acoustic": turn.get("acoustic") or {},
             "words": turn.get("words", []), "_source_text": turn.get("text", ""),
             "_source_bounds": [turn["start"], turn["end"]],
@@ -738,6 +768,31 @@ class MainWindow(QMainWindow):
         self.start_edit.setText(str(item["start"]))
         self.end_edit.setText(str(item["end"]))
         self.player.setPosition(int(item["start"] * 1000))
+
+    def export_dataset(self):
+        if not self.sid:
+            return self._error("Сначала выберите сессию")
+        if self.active_task is not None:
+            return self._error("Дождитесь завершения текущей обработки")
+        from .dataset import dataset_filename
+        name = self._guard(lambda: dataset_filename(self.dataset_name.text()))
+        if not name or not self.save_turns() or not self.save_markers():
+            return
+        sid = self.sid
+        self.dataset_status.setText("Вычисление показателей полных ответов…")
+
+        def done(result):
+            text = (f"Сохранено эпизодов: {result['row_count']}. Исключено: {result['excluded_count']}.\n"
+                    f"CSV: {Path(result['csv_path']).name}\nОписание: {Path(result['metadata_path']).name}")
+            if result["sync_status"] == "missing":
+                text += "\nBioRadio не включён: задайте синхронизацию с видео."
+            elif result["sync_status"] == "estimated_needs_review":
+                text += "\nСинхронизация BioRadio предварительная; замечание записано в датасет."
+            self.dataset_status.setText(text)
+            self.dataset_status.setToolTip(f"{result['csv_path']}\n{result['metadata_path']}")
+
+        self._run_task("Выгрузка датасета", lambda progress: self.store.export_dataset(sid, name, progress), done)
+        self.active_task.failure.connect(lambda message: self.dataset_status.setText(f"Выгрузка не выполнена: {message}"))
 
     def closeEvent(self, event):
         if self.active_task is not None:

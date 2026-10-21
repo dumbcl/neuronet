@@ -1,0 +1,5158 @@
+{
+  "dataset_schema_version": 1,
+  "created_utc": "2026-10-21T18:22:20.108294+00:00",
+  "csv_file": "yahaev.csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "decimal_separator": ".",
+  "missing_values": "empty CSV cells; never replaced with zero",
+  "row_unit": "one full respondent answer including internal pauses",
+  "target_mapping": {
+    "truth": 0,
+    "lie": 1
+  },
+  "row_count": 63,
+  "excluded_answers": [
+    {
+      "answer_id": "cc58d7-a064",
+      "reason": "Нет бинарного класса правда/ложь"
+    }
+  ],
+  "session_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+  "session_name": "Яхяев",
+  "session_sha256": "d9653236148dff8dbf2eca3a106387031a17a6ef1bb2afd5e21778ec341e3e38",
+  "markers": {
+    "video": {
+      "baseline_start": 0.0,
+      "dialog_start": 124.0,
+      "dialog_end": 1346.0,
+      "post_end": 1522.0
+    },
+    "signal": {
+      "baseline_start": 94.0,
+      "dialog_start": 218.0,
+      "dialog_end": 1440.0,
+      "post_end": 1616.0
+    }
+  },
+  "sync_status": "markers_aligned",
+  "sync_estimate": null,
+  "signal_import": {
+    "channels": [
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow",
+      "HeartRate",
+      "PPG",
+      "SpO2",
+      "Event"
+    ],
+    "sample_count": 1616040,
+    "sample_rate_hz": 1000.0,
+    "start": 0.0,
+    "end": 1616.039,
+    "duration": 1616.039,
+    "malformed_rows": 99,
+    "format": "decimal_comma",
+    "import_version": 4,
+    "source_file": "yahayev.csv",
+    "source_headers": [
+      "Elapsed Time",
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow Rate temp",
+      "Heart Rate pulse",
+      "PPG pulse",
+      "SpO2 pulse",
+      "BioRadio Event",
+      ""
+    ],
+    "invalid_device_values": {
+      "HeartRate": 0,
+      "SpO2": 0
+    },
+    "recovered_decimal_rows": 1615941,
+    "nonfinite_samples": {
+      "ECG": 99,
+      "RIP": 99,
+      "GSR": 99,
+      "Flow": 99,
+      "HeartRate": 99,
+      "PPG": 99,
+      "SpO2": 99,
+      "Event": 100
+    }
+  },
+  "audio_analysis": {
+    "version": 2
+  },
+  "video_analysis": {
+    "duration": 1522.1,
+    "frames_analyzed": 15221,
+    "pose_available": true,
+    "rppg_points": 10365,
+    "feature_version": 2
+  },
+  "answer_snapshot": [
+    {
+      "id": "cc58d7-a001",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 123.8,
+      "end": 124.0,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0002"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0000",
+        "cc58d7-t0001"
+      ],
+      "question_start": 120.98,
+      "question_end": 124.28,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 120.98,
+        "end": 124.0,
+        "answer": {
+          "start": 123.8,
+          "end": 124.0
+        },
+        "question": {
+          "start": 120.98,
+          "end": 123.8
+        },
+        "waiting": null,
+        "source_question_start": 120.98,
+        "source_question_end": 124.28,
+        "question_turn_ids": [
+          "cc58d7-t0000",
+          "cc58d7-t0001"
+        ],
+        "question_overlap_seconds": 0.480000000000004,
+        "status": "question_overlap_clipped",
+        "notes": [
+          "Времена вопроса и ответа пересекаются; вопрос ограничен началом ответа, время ожидания недоступно."
+        ]
+      }
+    },
+    {
+      "id": "cc58d7-a002",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 127.0,
+      "end": 128.0,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0004"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0003"
+      ],
+      "question_start": 125.0,
+      "question_end": 127.0,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 125.0,
+        "end": 128.0,
+        "answer": {
+          "start": 127.0,
+          "end": 128.0
+        },
+        "question": {
+          "start": 125.0,
+          "end": 127.0
+        },
+        "waiting": {
+          "start": 127.0,
+          "end": 127.0
+        },
+        "source_question_start": 125.0,
+        "source_question_end": 127.0,
+        "question_turn_ids": [
+          "cc58d7-t0003"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a003",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 129.24,
+      "end": 130.44,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0006"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0005"
+      ],
+      "question_start": 128.0,
+      "question_end": 129.0,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 128.0,
+        "end": 130.44,
+        "answer": {
+          "start": 129.24,
+          "end": 130.44
+        },
+        "question": {
+          "start": 128.0,
+          "end": 129.0
+        },
+        "waiting": {
+          "start": 129.0,
+          "end": 129.24
+        },
+        "source_question_start": 128.0,
+        "source_question_end": 129.0,
+        "question_turn_ids": [
+          "cc58d7-t0005"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a004",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 135.24,
+      "end": 136.02,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0008"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0007"
+      ],
+      "question_start": 131.82,
+      "question_end": 134.92,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 131.82,
+        "end": 136.02,
+        "answer": {
+          "start": 135.24,
+          "end": 136.02
+        },
+        "question": {
+          "start": 131.82,
+          "end": 134.92
+        },
+        "waiting": {
+          "start": 134.92,
+          "end": 135.24
+        },
+        "source_question_start": 131.82,
+        "source_question_end": 134.92,
+        "question_turn_ids": [
+          "cc58d7-t0007"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a005",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 138.38,
+      "end": 145.22,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0010",
+        "cc58d7-t0011",
+        "cc58d7-t0012"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0009"
+      ],
+      "question_start": 136.14,
+      "question_end": 137.84,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 136.14,
+        "end": 145.22,
+        "answer": {
+          "start": 138.38,
+          "end": 145.22
+        },
+        "question": {
+          "start": 136.14,
+          "end": 137.84
+        },
+        "waiting": {
+          "start": 137.84,
+          "end": 138.38
+        },
+        "source_question_start": 136.14,
+        "source_question_end": 137.84,
+        "question_turn_ids": [
+          "cc58d7-t0009"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a006",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 147.6,
+      "end": 148.36,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0014"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0013"
+      ],
+      "question_start": 145.68,
+      "question_end": 147.34,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 145.68,
+        "end": 148.36,
+        "answer": {
+          "start": 147.6,
+          "end": 148.36
+        },
+        "question": {
+          "start": 145.68,
+          "end": 147.34
+        },
+        "waiting": {
+          "start": 147.34,
+          "end": 147.6
+        },
+        "source_question_start": 145.68,
+        "source_question_end": 147.34,
+        "question_turn_ids": [
+          "cc58d7-t0013"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a007",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 155.0,
+      "end": 155.86,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0018"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0015",
+        "cc58d7-t0016",
+        "cc58d7-t0017"
+      ],
+      "question_start": 148.8,
+      "question_end": 154.64,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 148.8,
+        "end": 155.86,
+        "answer": {
+          "start": 155.0,
+          "end": 155.86
+        },
+        "question": {
+          "start": 148.8,
+          "end": 154.64
+        },
+        "waiting": {
+          "start": 154.64,
+          "end": 155.0
+        },
+        "source_question_start": 148.8,
+        "source_question_end": 154.64,
+        "question_turn_ids": [
+          "cc58d7-t0015",
+          "cc58d7-t0016",
+          "cc58d7-t0017"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a008",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 159.94,
+      "end": 181.36,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0020",
+        "cc58d7-t0021",
+        "cc58d7-t0022",
+        "cc58d7-t0023",
+        "cc58d7-t0024",
+        "cc58d7-t0025",
+        "cc58d7-t0026",
+        "cc58d7-t0027",
+        "cc58d7-t0028",
+        "cc58d7-t0029"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0019"
+      ],
+      "question_start": 156.34,
+      "question_end": 159.04,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [
+        {
+          "start": 160.74,
+          "end": 161.14
+        },
+        {
+          "start": 165.1,
+          "end": 165.72
+        },
+        {
+          "start": 167.74,
+          "end": 168.16
+        },
+        {
+          "start": 172.62,
+          "end": 173.32
+        },
+        {
+          "start": 179.56,
+          "end": 179.82
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 156.34,
+        "end": 181.36,
+        "answer": {
+          "start": 159.94,
+          "end": 181.36
+        },
+        "question": {
+          "start": 156.34,
+          "end": 159.04
+        },
+        "waiting": {
+          "start": 159.04,
+          "end": 159.94
+        },
+        "source_question_start": 156.34,
+        "source_question_end": 159.04,
+        "question_turn_ids": [
+          "cc58d7-t0019"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a009",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 187.38,
+      "end": 214.46,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0032",
+        "cc58d7-t0033",
+        "cc58d7-t0034",
+        "cc58d7-t0035",
+        "cc58d7-t0036",
+        "cc58d7-t0037",
+        "cc58d7-t0038",
+        "cc58d7-t0039",
+        "cc58d7-t0040",
+        "cc58d7-t0041",
+        "cc58d7-t0042",
+        "cc58d7-t0043",
+        "cc58d7-t0044",
+        "cc58d7-t0045"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0030",
+        "cc58d7-t0031"
+      ],
+      "question_start": 182.4,
+      "question_end": 187.04,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [
+        {
+          "start": 189.34,
+          "end": 189.62
+        },
+        {
+          "start": 191.82,
+          "end": 192.16
+        },
+        {
+          "start": 194.14,
+          "end": 194.68
+        },
+        {
+          "start": 197.48,
+          "end": 198.18
+        },
+        {
+          "start": 201.46,
+          "end": 201.8
+        },
+        {
+          "start": 203.54,
+          "end": 204.1
+        },
+        {
+          "start": 204.9,
+          "end": 205.18
+        },
+        {
+          "start": 211.66,
+          "end": 212.28
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 182.4,
+        "end": 214.46,
+        "answer": {
+          "start": 187.38,
+          "end": 214.46
+        },
+        "question": {
+          "start": 182.4,
+          "end": 187.04
+        },
+        "waiting": {
+          "start": 187.04,
+          "end": 187.38
+        },
+        "source_question_start": 182.4,
+        "source_question_end": 187.04,
+        "question_turn_ids": [
+          "cc58d7-t0030",
+          "cc58d7-t0031"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a010",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 226.18,
+      "end": 260.38,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0052",
+        "cc58d7-t0053",
+        "cc58d7-t0054",
+        "cc58d7-t0055",
+        "cc58d7-t0056",
+        "cc58d7-t0057",
+        "cc58d7-t0058",
+        "cc58d7-t0059",
+        "cc58d7-t0060",
+        "cc58d7-t0061",
+        "cc58d7-t0062",
+        "cc58d7-t0063",
+        "cc58d7-t0064",
+        "cc58d7-t0065",
+        "cc58d7-t0066",
+        "cc58d7-t0067",
+        "cc58d7-t0068",
+        "cc58d7-t0069"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0046",
+        "cc58d7-t0047",
+        "cc58d7-t0048",
+        "cc58d7-t0049",
+        "cc58d7-t0050",
+        "cc58d7-t0051"
+      ],
+      "question_start": 214.8,
+      "question_end": 225.76,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [
+        {
+          "start": 229.7,
+          "end": 230.5
+        },
+        {
+          "start": 232.2,
+          "end": 232.96
+        },
+        {
+          "start": 238.0,
+          "end": 238.44
+        },
+        {
+          "start": 244.44,
+          "end": 245.32
+        },
+        {
+          "start": 250.56,
+          "end": 251.62
+        },
+        {
+          "start": 252.42,
+          "end": 253.32
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 214.8,
+        "end": 260.38,
+        "answer": {
+          "start": 226.18,
+          "end": 260.38
+        },
+        "question": {
+          "start": 214.8,
+          "end": 225.76
+        },
+        "waiting": {
+          "start": 225.76,
+          "end": 226.18
+        },
+        "source_question_start": 214.8,
+        "source_question_end": 225.76,
+        "question_turn_ids": [
+          "cc58d7-t0046",
+          "cc58d7-t0047",
+          "cc58d7-t0048",
+          "cc58d7-t0049",
+          "cc58d7-t0050",
+          "cc58d7-t0051"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a011",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 264.38,
+      "end": 296.02,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0072",
+        "cc58d7-t0073",
+        "cc58d7-t0074",
+        "cc58d7-t0075",
+        "cc58d7-t0076",
+        "cc58d7-t0077",
+        "cc58d7-t0078",
+        "cc58d7-t0079",
+        "cc58d7-t0080",
+        "cc58d7-t0081",
+        "cc58d7-t0082",
+        "cc58d7-t0083",
+        "cc58d7-t0084",
+        "cc58d7-t0085",
+        "cc58d7-t0086",
+        "cc58d7-t0087"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0070",
+        "cc58d7-t0071"
+      ],
+      "question_start": 260.56,
+      "question_end": 263.52,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [
+        {
+          "start": 265.88,
+          "end": 266.62
+        },
+        {
+          "start": 268.86,
+          "end": 269.58
+        },
+        {
+          "start": 279.82,
+          "end": 280.14
+        },
+        {
+          "start": 283.54,
+          "end": 283.98
+        },
+        {
+          "start": 293.4,
+          "end": 294.02
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 260.56,
+        "end": 296.02,
+        "answer": {
+          "start": 264.38,
+          "end": 296.02
+        },
+        "question": {
+          "start": 260.56,
+          "end": 263.52
+        },
+        "waiting": {
+          "start": 263.52,
+          "end": 264.38
+        },
+        "source_question_start": 260.56,
+        "source_question_end": 263.52,
+        "question_turn_ids": [
+          "cc58d7-t0070",
+          "cc58d7-t0071"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a012",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 297.68,
+      "end": 299.94,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0089"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0088"
+      ],
+      "question_start": 296.4,
+      "question_end": 297.68,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 296.4,
+        "end": 299.94,
+        "answer": {
+          "start": 297.68,
+          "end": 299.94
+        },
+        "question": {
+          "start": 296.4,
+          "end": 297.68
+        },
+        "waiting": {
+          "start": 297.68,
+          "end": 297.68
+        },
+        "source_question_start": 296.4,
+        "source_question_end": 297.68,
+        "question_turn_ids": [
+          "cc58d7-t0088"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a013",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 306.1,
+      "end": 381.26,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0093",
+        "cc58d7-t0094",
+        "cc58d7-t0095",
+        "cc58d7-t0096",
+        "cc58d7-t0097",
+        "cc58d7-t0098",
+        "cc58d7-t0099",
+        "cc58d7-t0100",
+        "cc58d7-t0101",
+        "cc58d7-t0102",
+        "cc58d7-t0103",
+        "cc58d7-t0104",
+        "cc58d7-t0105",
+        "cc58d7-t0106",
+        "cc58d7-t0107",
+        "cc58d7-t0108",
+        "cc58d7-t0109",
+        "cc58d7-t0110",
+        "cc58d7-t0111",
+        "cc58d7-t0112",
+        "cc58d7-t0113",
+        "cc58d7-t0114",
+        "cc58d7-t0115",
+        "cc58d7-t0116",
+        "cc58d7-t0117",
+        "cc58d7-t0118",
+        "cc58d7-t0119",
+        "cc58d7-t0120",
+        "cc58d7-t0121",
+        "cc58d7-t0122",
+        "cc58d7-t0123",
+        "cc58d7-t0124",
+        "cc58d7-t0125",
+        "cc58d7-t0126",
+        "cc58d7-t0127",
+        "cc58d7-t0128",
+        "cc58d7-t0129",
+        "cc58d7-t0130",
+        "cc58d7-t0131"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0090",
+        "cc58d7-t0091",
+        "cc58d7-t0092"
+      ],
+      "question_start": 299.94,
+      "question_end": 305.04,
+      "source_annotation_ids": [
+        "cc58d7-source001"
+      ],
+      "internal_pauses": [
+        {
+          "start": 309.14,
+          "end": 310.84
+        },
+        {
+          "start": 313.32,
+          "end": 313.9
+        },
+        {
+          "start": 319.42,
+          "end": 320.46
+        },
+        {
+          "start": 321.44,
+          "end": 321.98
+        },
+        {
+          "start": 325.76,
+          "end": 326.24
+        },
+        {
+          "start": 331.34,
+          "end": 331.82
+        },
+        {
+          "start": 342.76,
+          "end": 343.44
+        },
+        {
+          "start": 352.74,
+          "end": 353.14
+        },
+        {
+          "start": 356.3,
+          "end": 357.1
+        },
+        {
+          "start": 357.5,
+          "end": 358.88
+        },
+        {
+          "start": 360.64,
+          "end": 361.38
+        },
+        {
+          "start": 377.28,
+          "end": 378.6
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 299.94,
+        "end": 381.26,
+        "answer": {
+          "start": 306.1,
+          "end": 381.26
+        },
+        "question": {
+          "start": 299.94,
+          "end": 305.04
+        },
+        "waiting": {
+          "start": 305.04,
+          "end": 306.1
+        },
+        "source_question_start": 299.94,
+        "source_question_end": 305.04,
+        "question_turn_ids": [
+          "cc58d7-t0090",
+          "cc58d7-t0091",
+          "cc58d7-t0092"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a014",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 394.58,
+      "end": 413.58,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0138",
+        "cc58d7-t0139",
+        "cc58d7-t0140",
+        "cc58d7-t0141",
+        "cc58d7-t0142",
+        "cc58d7-t0143",
+        "cc58d7-t0144",
+        "cc58d7-t0145",
+        "cc58d7-t0146",
+        "cc58d7-t0147"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0132",
+        "cc58d7-t0133",
+        "cc58d7-t0134",
+        "cc58d7-t0135",
+        "cc58d7-t0136",
+        "cc58d7-t0137"
+      ],
+      "question_start": 382.28,
+      "question_end": 393.78,
+      "source_annotation_ids": [
+        "cc58d7-source002"
+      ],
+      "internal_pauses": [
+        {
+          "start": 395.68,
+          "end": 396.47
+        },
+        {
+          "start": 398.06,
+          "end": 398.7
+        },
+        {
+          "start": 401.9,
+          "end": 402.84
+        },
+        {
+          "start": 406.12,
+          "end": 406.44
+        },
+        {
+          "start": 407.22,
+          "end": 407.92
+        },
+        {
+          "start": 411.84,
+          "end": 412.24
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 382.28,
+        "end": 413.58,
+        "answer": {
+          "start": 394.58,
+          "end": 413.58
+        },
+        "question": {
+          "start": 382.28,
+          "end": 393.78
+        },
+        "waiting": {
+          "start": 393.78,
+          "end": 394.58
+        },
+        "source_question_start": 382.28,
+        "source_question_end": 393.78,
+        "question_turn_ids": [
+          "cc58d7-t0132",
+          "cc58d7-t0133",
+          "cc58d7-t0134",
+          "cc58d7-t0135",
+          "cc58d7-t0136",
+          "cc58d7-t0137"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a015",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 420.4,
+      "end": 443.78,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0150",
+        "cc58d7-t0151",
+        "cc58d7-t0152",
+        "cc58d7-t0153",
+        "cc58d7-t0154",
+        "cc58d7-t0155",
+        "cc58d7-t0156",
+        "cc58d7-t0157",
+        "cc58d7-t0158",
+        "cc58d7-t0159",
+        "cc58d7-t0160",
+        "cc58d7-t0161"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0148",
+        "cc58d7-t0149"
+      ],
+      "question_start": 413.8,
+      "question_end": 418.32,
+      "source_annotation_ids": [
+        "cc58d7-source002"
+      ],
+      "internal_pauses": [
+        {
+          "start": 423.54,
+          "end": 424.18
+        },
+        {
+          "start": 430.46,
+          "end": 431.02
+        },
+        {
+          "start": 434.26,
+          "end": 434.6
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 413.8,
+        "end": 443.78,
+        "answer": {
+          "start": 420.4,
+          "end": 443.78
+        },
+        "question": {
+          "start": 413.8,
+          "end": 418.32
+        },
+        "waiting": {
+          "start": 418.32,
+          "end": 420.4
+        },
+        "source_question_start": 413.8,
+        "source_question_end": 418.32,
+        "question_turn_ids": [
+          "cc58d7-t0148",
+          "cc58d7-t0149"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a016",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 448.7,
+      "end": 490.1,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0164",
+        "cc58d7-t0165",
+        "cc58d7-t0166",
+        "cc58d7-t0167",
+        "cc58d7-t0168",
+        "cc58d7-t0169",
+        "cc58d7-t0170",
+        "cc58d7-t0171",
+        "cc58d7-t0172",
+        "cc58d7-t0173",
+        "cc58d7-t0174",
+        "cc58d7-t0175",
+        "cc58d7-t0176",
+        "cc58d7-t0177",
+        "cc58d7-t0178",
+        "cc58d7-t0179",
+        "cc58d7-t0180",
+        "cc58d7-t0181",
+        "cc58d7-t0182",
+        "cc58d7-t0183",
+        "cc58d7-t0184"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0162",
+        "cc58d7-t0163"
+      ],
+      "question_start": 444.46,
+      "question_end": 448.16,
+      "source_annotation_ids": [
+        "cc58d7-source002"
+      ],
+      "internal_pauses": [
+        {
+          "start": 450.42,
+          "end": 451.18
+        },
+        {
+          "start": 451.8,
+          "end": 452.56
+        },
+        {
+          "start": 453.22,
+          "end": 454.58
+        },
+        {
+          "start": 457.72,
+          "end": 458.16
+        },
+        {
+          "start": 466.24,
+          "end": 466.6
+        },
+        {
+          "start": 472.16,
+          "end": 472.64
+        },
+        {
+          "start": 482.0,
+          "end": 482.7
+        },
+        {
+          "start": 486.24,
+          "end": 486.52
+        },
+        {
+          "start": 487.6,
+          "end": 488.0
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 444.46,
+        "end": 490.1,
+        "answer": {
+          "start": 448.7,
+          "end": 490.1
+        },
+        "question": {
+          "start": 444.46,
+          "end": 448.16
+        },
+        "waiting": {
+          "start": 448.16,
+          "end": 448.7
+        },
+        "source_question_start": 444.46,
+        "source_question_end": 448.16,
+        "question_turn_ids": [
+          "cc58d7-t0162",
+          "cc58d7-t0163"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a017",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 496.96,
+      "end": 524.58,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0188",
+        "cc58d7-t0189",
+        "cc58d7-t0190",
+        "cc58d7-t0191",
+        "cc58d7-t0192",
+        "cc58d7-t0193",
+        "cc58d7-t0194",
+        "cc58d7-t0195",
+        "cc58d7-t0196",
+        "cc58d7-t0197",
+        "cc58d7-t0198",
+        "cc58d7-t0199",
+        "cc58d7-t0200",
+        "cc58d7-t0201"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0185",
+        "cc58d7-t0186",
+        "cc58d7-t0187"
+      ],
+      "question_start": 490.92,
+      "question_end": 496.46,
+      "source_annotation_ids": [
+        "cc58d7-source002"
+      ],
+      "internal_pauses": [
+        {
+          "start": 498.28,
+          "end": 498.72
+        },
+        {
+          "start": 499.04,
+          "end": 499.84
+        },
+        {
+          "start": 504.38,
+          "end": 504.92
+        },
+        {
+          "start": 505.18,
+          "end": 507.18
+        },
+        {
+          "start": 509.48,
+          "end": 509.94
+        },
+        {
+          "start": 516.86,
+          "end": 517.34
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 490.92,
+        "end": 524.58,
+        "answer": {
+          "start": 496.96,
+          "end": 524.58
+        },
+        "question": {
+          "start": 490.92,
+          "end": 496.46
+        },
+        "waiting": {
+          "start": 496.46,
+          "end": 496.96
+        },
+        "source_question_start": 490.92,
+        "source_question_end": 496.46,
+        "question_turn_ids": [
+          "cc58d7-t0185",
+          "cc58d7-t0186",
+          "cc58d7-t0187"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a018",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 532.26,
+      "end": 536.72,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0206",
+        "cc58d7-t0207"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0202",
+        "cc58d7-t0203",
+        "cc58d7-t0204",
+        "cc58d7-t0205"
+      ],
+      "question_start": 525.58,
+      "question_end": 531.56,
+      "source_annotation_ids": [
+        "cc58d7-source002"
+      ],
+      "internal_pauses": [
+        {
+          "start": 534.58,
+          "end": 535.18
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 525.58,
+        "end": 536.72,
+        "answer": {
+          "start": 532.26,
+          "end": 536.72
+        },
+        "question": {
+          "start": 525.58,
+          "end": 531.56
+        },
+        "waiting": {
+          "start": 531.56,
+          "end": 532.26
+        },
+        "source_question_start": 525.58,
+        "source_question_end": 531.56,
+        "question_turn_ids": [
+          "cc58d7-t0202",
+          "cc58d7-t0203",
+          "cc58d7-t0204",
+          "cc58d7-t0205"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a019",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 540.92,
+      "end": 543.84,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0210",
+        "cc58d7-t0211"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0208",
+        "cc58d7-t0209"
+      ],
+      "question_start": 537.92,
+      "question_end": 539.76,
+      "source_annotation_ids": [
+        "cc58d7-source002"
+      ],
+      "internal_pauses": [
+        {
+          "start": 542.54,
+          "end": 543.58
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 537.92,
+        "end": 543.84,
+        "answer": {
+          "start": 540.92,
+          "end": 543.84
+        },
+        "question": {
+          "start": 537.92,
+          "end": 539.76
+        },
+        "waiting": {
+          "start": 539.76,
+          "end": 540.92
+        },
+        "source_question_start": 537.92,
+        "source_question_end": 539.76,
+        "question_turn_ids": [
+          "cc58d7-t0208",
+          "cc58d7-t0209"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a020",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 545.88,
+      "end": 560.38,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0213",
+        "cc58d7-t0214",
+        "cc58d7-t0215",
+        "cc58d7-t0216",
+        "cc58d7-t0217",
+        "cc58d7-t0218",
+        "cc58d7-t0219",
+        "cc58d7-t0220",
+        "cc58d7-t0221"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0212"
+      ],
+      "question_start": 544.1,
+      "question_end": 545.48,
+      "source_annotation_ids": [
+        "cc58d7-source002"
+      ],
+      "internal_pauses": [
+        {
+          "start": 548.76,
+          "end": 549.46
+        },
+        {
+          "start": 551.28,
+          "end": 553.56
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 544.1,
+        "end": 560.38,
+        "answer": {
+          "start": 545.88,
+          "end": 560.38
+        },
+        "question": {
+          "start": 544.1,
+          "end": 545.48
+        },
+        "waiting": {
+          "start": 545.48,
+          "end": 545.88
+        },
+        "source_question_start": 544.1,
+        "source_question_end": 545.48,
+        "question_turn_ids": [
+          "cc58d7-t0212"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a021",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 565.82,
+      "end": 569.3,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0224",
+        "cc58d7-t0225"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0222",
+        "cc58d7-t0223"
+      ],
+      "question_start": 563.08,
+      "question_end": 565.5,
+      "source_annotation_ids": [
+        "cc58d7-source003"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 563.08,
+        "end": 569.3,
+        "answer": {
+          "start": 565.82,
+          "end": 569.3
+        },
+        "question": {
+          "start": 563.08,
+          "end": 565.5
+        },
+        "waiting": {
+          "start": 565.5,
+          "end": 565.82
+        },
+        "source_question_start": 563.08,
+        "source_question_end": 565.5,
+        "question_turn_ids": [
+          "cc58d7-t0222",
+          "cc58d7-t0223"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a022",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 573.08,
+      "end": 573.5,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0227"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0226"
+      ],
+      "question_start": 570.06,
+      "question_end": 572.24,
+      "source_annotation_ids": [
+        "cc58d7-source003"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 570.06,
+        "end": 573.5,
+        "answer": {
+          "start": 573.08,
+          "end": 573.5
+        },
+        "question": {
+          "start": 570.06,
+          "end": 572.24
+        },
+        "waiting": {
+          "start": 572.24,
+          "end": 573.08
+        },
+        "source_question_start": 570.06,
+        "source_question_end": 572.24,
+        "question_turn_ids": [
+          "cc58d7-t0226"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a023",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 582.64,
+      "end": 622.8,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0231",
+        "cc58d7-t0232",
+        "cc58d7-t0233",
+        "cc58d7-t0234",
+        "cc58d7-t0235",
+        "cc58d7-t0236",
+        "cc58d7-t0237",
+        "cc58d7-t0238",
+        "cc58d7-t0239",
+        "cc58d7-t0240",
+        "cc58d7-t0241",
+        "cc58d7-t0242",
+        "cc58d7-t0243",
+        "cc58d7-t0244",
+        "cc58d7-t0245",
+        "cc58d7-t0246",
+        "cc58d7-t0247",
+        "cc58d7-t0248",
+        "cc58d7-t0249"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0228",
+        "cc58d7-t0229",
+        "cc58d7-t0230"
+      ],
+      "question_start": 574.1,
+      "question_end": 580.6,
+      "source_annotation_ids": [
+        "cc58d7-source004"
+      ],
+      "internal_pauses": [
+        {
+          "start": 587.74,
+          "end": 590.15
+        },
+        {
+          "start": 593.56,
+          "end": 594.34
+        },
+        {
+          "start": 597.58,
+          "end": 598.04
+        },
+        {
+          "start": 599.14,
+          "end": 599.5
+        },
+        {
+          "start": 613.64,
+          "end": 615.32
+        },
+        {
+          "start": 619.82,
+          "end": 620.76
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 574.1,
+        "end": 622.8,
+        "answer": {
+          "start": 582.64,
+          "end": 622.8
+        },
+        "question": {
+          "start": 574.1,
+          "end": 580.6
+        },
+        "waiting": {
+          "start": 580.6,
+          "end": 582.64
+        },
+        "source_question_start": 574.1,
+        "source_question_end": 580.6,
+        "question_turn_ids": [
+          "cc58d7-t0228",
+          "cc58d7-t0229",
+          "cc58d7-t0230"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a024",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 628.64,
+      "end": 651.6,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0253",
+        "cc58d7-t0254",
+        "cc58d7-t0255",
+        "cc58d7-t0256",
+        "cc58d7-t0257",
+        "cc58d7-t0258",
+        "cc58d7-t0259",
+        "cc58d7-t0260",
+        "cc58d7-t0261",
+        "cc58d7-t0262",
+        "cc58d7-t0263",
+        "cc58d7-t0264"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0250",
+        "cc58d7-t0251",
+        "cc58d7-t0252"
+      ],
+      "question_start": 622.8,
+      "question_end": 628.1,
+      "source_annotation_ids": [
+        "cc58d7-source004"
+      ],
+      "internal_pauses": [
+        {
+          "start": 631.92,
+          "end": 632.6
+        },
+        {
+          "start": 634.04,
+          "end": 634.72
+        },
+        {
+          "start": 639.68,
+          "end": 640.04
+        },
+        {
+          "start": 641.06,
+          "end": 641.32
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 622.8,
+        "end": 651.6,
+        "answer": {
+          "start": 628.64,
+          "end": 651.6
+        },
+        "question": {
+          "start": 622.8,
+          "end": 628.1
+        },
+        "waiting": {
+          "start": 628.1,
+          "end": 628.64
+        },
+        "source_question_start": 622.8,
+        "source_question_end": 628.1,
+        "question_turn_ids": [
+          "cc58d7-t0250",
+          "cc58d7-t0251",
+          "cc58d7-t0252"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a025",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 657.84,
+      "end": 658.94,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0268"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0265",
+        "cc58d7-t0266",
+        "cc58d7-t0267"
+      ],
+      "question_start": 651.92,
+      "question_end": 657.78,
+      "source_annotation_ids": [
+        "cc58d7-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 651.92,
+        "end": 658.94,
+        "answer": {
+          "start": 657.84,
+          "end": 658.94
+        },
+        "question": {
+          "start": 651.92,
+          "end": 657.78
+        },
+        "waiting": {
+          "start": 657.78,
+          "end": 657.84
+        },
+        "source_question_start": 651.92,
+        "source_question_end": 657.78,
+        "question_turn_ids": [
+          "cc58d7-t0265",
+          "cc58d7-t0266",
+          "cc58d7-t0267"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a026",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 668.9,
+      "end": 670.74,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0272"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0269",
+        "cc58d7-t0270",
+        "cc58d7-t0271"
+      ],
+      "question_start": 659.52,
+      "question_end": 665.38,
+      "source_annotation_ids": [
+        "cc58d7-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 659.52,
+        "end": 670.74,
+        "answer": {
+          "start": 668.9,
+          "end": 670.74
+        },
+        "question": {
+          "start": 659.52,
+          "end": 665.38
+        },
+        "waiting": {
+          "start": 665.38,
+          "end": 668.9
+        },
+        "source_question_start": 659.52,
+        "source_question_end": 665.38,
+        "question_turn_ids": [
+          "cc58d7-t0269",
+          "cc58d7-t0270",
+          "cc58d7-t0271"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a027",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 675.76,
+      "end": 694.28,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0275",
+        "cc58d7-t0276",
+        "cc58d7-t0277",
+        "cc58d7-t0278",
+        "cc58d7-t0279",
+        "cc58d7-t0280",
+        "cc58d7-t0281",
+        "cc58d7-t0282",
+        "cc58d7-t0283",
+        "cc58d7-t0284",
+        "cc58d7-t0285"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0273",
+        "cc58d7-t0274"
+      ],
+      "question_start": 671.54,
+      "question_end": 674.22,
+      "source_annotation_ids": [
+        "cc58d7-source004"
+      ],
+      "internal_pauses": [
+        {
+          "start": 681.0,
+          "end": 681.26
+        },
+        {
+          "start": 681.8,
+          "end": 683.32
+        },
+        {
+          "start": 687.26,
+          "end": 687.8
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 671.54,
+        "end": 694.28,
+        "answer": {
+          "start": 675.76,
+          "end": 694.28
+        },
+        "question": {
+          "start": 671.54,
+          "end": 674.22
+        },
+        "waiting": {
+          "start": 674.22,
+          "end": 675.76
+        },
+        "source_question_start": 671.54,
+        "source_question_end": 674.22,
+        "question_turn_ids": [
+          "cc58d7-t0273",
+          "cc58d7-t0274"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a028",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 702.7,
+      "end": 703.66,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0289"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0286",
+        "cc58d7-t0287",
+        "cc58d7-t0288"
+      ],
+      "question_start": 694.56,
+      "question_end": 699.72,
+      "source_annotation_ids": [
+        "cc58d7-source004"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 694.56,
+        "end": 703.66,
+        "answer": {
+          "start": 702.7,
+          "end": 703.66
+        },
+        "question": {
+          "start": 694.56,
+          "end": 699.72
+        },
+        "waiting": {
+          "start": 699.72,
+          "end": 702.7
+        },
+        "source_question_start": 694.56,
+        "source_question_end": 699.72,
+        "question_turn_ids": [
+          "cc58d7-t0286",
+          "cc58d7-t0287",
+          "cc58d7-t0288"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a029",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 709.12,
+      "end": 711.32,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0293"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0290",
+        "cc58d7-t0291",
+        "cc58d7-t0292"
+      ],
+      "question_start": 704.64,
+      "question_end": 709.02,
+      "source_annotation_ids": [
+        "cc58d7-source005"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 704.64,
+        "end": 711.32,
+        "answer": {
+          "start": 709.12,
+          "end": 711.32
+        },
+        "question": {
+          "start": 704.64,
+          "end": 709.02
+        },
+        "waiting": {
+          "start": 709.02,
+          "end": 709.12
+        },
+        "source_question_start": 704.64,
+        "source_question_end": 709.02,
+        "question_turn_ids": [
+          "cc58d7-t0290",
+          "cc58d7-t0291",
+          "cc58d7-t0292"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a030",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 719.86,
+      "end": 726.46,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0298",
+        "cc58d7-t0299",
+        "cc58d7-t0300",
+        "cc58d7-t0301"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0294",
+        "cc58d7-t0295",
+        "cc58d7-t0296",
+        "cc58d7-t0297"
+      ],
+      "question_start": 711.52,
+      "question_end": 718.58,
+      "source_annotation_ids": [
+        "cc58d7-source006"
+      ],
+      "internal_pauses": [
+        {
+          "start": 722.84,
+          "end": 723.18
+        },
+        {
+          "start": 724.48,
+          "end": 725.44
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 711.52,
+        "end": 726.46,
+        "answer": {
+          "start": 719.86,
+          "end": 726.46
+        },
+        "question": {
+          "start": 711.52,
+          "end": 718.58
+        },
+        "waiting": {
+          "start": 718.58,
+          "end": 719.86
+        },
+        "source_question_start": 711.52,
+        "source_question_end": 718.58,
+        "question_turn_ids": [
+          "cc58d7-t0294",
+          "cc58d7-t0295",
+          "cc58d7-t0296",
+          "cc58d7-t0297"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a031",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 735.76,
+      "end": 738.86,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0305",
+        "cc58d7-t0306"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0302",
+        "cc58d7-t0303",
+        "cc58d7-t0304"
+      ],
+      "question_start": 727.02,
+      "question_end": 733.3,
+      "source_annotation_ids": [
+        "cc58d7-source006"
+      ],
+      "internal_pauses": [
+        {
+          "start": 736.58,
+          "end": 737.98
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 727.02,
+        "end": 738.86,
+        "answer": {
+          "start": 735.76,
+          "end": 738.86
+        },
+        "question": {
+          "start": 727.02,
+          "end": 733.3
+        },
+        "waiting": {
+          "start": 733.3,
+          "end": 735.76
+        },
+        "source_question_start": 727.02,
+        "source_question_end": 733.3,
+        "question_turn_ids": [
+          "cc58d7-t0302",
+          "cc58d7-t0303",
+          "cc58d7-t0304"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a032",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 747.74,
+      "end": 810.02,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0311",
+        "cc58d7-t0312",
+        "cc58d7-t0313",
+        "cc58d7-t0314",
+        "cc58d7-t0315",
+        "cc58d7-t0316",
+        "cc58d7-t0317",
+        "cc58d7-t0318",
+        "cc58d7-t0319",
+        "cc58d7-t0320",
+        "cc58d7-t0321",
+        "cc58d7-t0322",
+        "cc58d7-t0323",
+        "cc58d7-t0324",
+        "cc58d7-t0325",
+        "cc58d7-t0326",
+        "cc58d7-t0327",
+        "cc58d7-t0328",
+        "cc58d7-t0329",
+        "cc58d7-t0330",
+        "cc58d7-t0331",
+        "cc58d7-t0332",
+        "cc58d7-t0333",
+        "cc58d7-t0334",
+        "cc58d7-t0335",
+        "cc58d7-t0336",
+        "cc58d7-t0337",
+        "cc58d7-t0338",
+        "cc58d7-t0339",
+        "cc58d7-t0340"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0307",
+        "cc58d7-t0308",
+        "cc58d7-t0309",
+        "cc58d7-t0310"
+      ],
+      "question_start": 739.58,
+      "question_end": 746.0,
+      "source_annotation_ids": [
+        "cc58d7-source006"
+      ],
+      "internal_pauses": [
+        {
+          "start": 752.06,
+          "end": 755.96
+        },
+        {
+          "start": 757.98,
+          "end": 758.54
+        },
+        {
+          "start": 763.34,
+          "end": 763.62
+        },
+        {
+          "start": 765.46,
+          "end": 766.2
+        },
+        {
+          "start": 769.48,
+          "end": 771.94
+        },
+        {
+          "start": 782.92,
+          "end": 784.48
+        },
+        {
+          "start": 791.94,
+          "end": 793.22
+        },
+        {
+          "start": 795.52,
+          "end": 796.12
+        },
+        {
+          "start": 799.24,
+          "end": 799.92
+        },
+        {
+          "start": 804.04,
+          "end": 804.5
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 739.58,
+        "end": 810.02,
+        "answer": {
+          "start": 747.74,
+          "end": 810.02
+        },
+        "question": {
+          "start": 739.58,
+          "end": 746.0
+        },
+        "waiting": {
+          "start": 746.0,
+          "end": 747.74
+        },
+        "source_question_start": 739.58,
+        "source_question_end": 746.0,
+        "question_turn_ids": [
+          "cc58d7-t0307",
+          "cc58d7-t0308",
+          "cc58d7-t0309",
+          "cc58d7-t0310"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a033",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 817.63,
+      "end": 828.48,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0343",
+        "cc58d7-t0344",
+        "cc58d7-t0345",
+        "cc58d7-t0346",
+        "cc58d7-t0347"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0341",
+        "cc58d7-t0342"
+      ],
+      "question_start": 810.46,
+      "question_end": 813.78,
+      "source_annotation_ids": [
+        "cc58d7-source006"
+      ],
+      "internal_pauses": [
+        {
+          "start": 818.45,
+          "end": 820.81
+        },
+        {
+          "start": 821.77,
+          "end": 824.08
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 810.46,
+        "end": 828.48,
+        "answer": {
+          "start": 817.63,
+          "end": 828.48
+        },
+        "question": {
+          "start": 810.46,
+          "end": 813.78
+        },
+        "waiting": {
+          "start": 813.78,
+          "end": 817.63
+        },
+        "source_question_start": 810.46,
+        "source_question_end": 813.78,
+        "question_turn_ids": [
+          "cc58d7-t0341",
+          "cc58d7-t0342"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a034",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 834.32,
+      "end": 839.74,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0351",
+        "cc58d7-t0352",
+        "cc58d7-t0353"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0348",
+        "cc58d7-t0349",
+        "cc58d7-t0350"
+      ],
+      "question_start": 829.34,
+      "question_end": 833.18,
+      "source_annotation_ids": [
+        "cc58d7-source006"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 829.34,
+        "end": 839.74,
+        "answer": {
+          "start": 834.32,
+          "end": 839.74
+        },
+        "question": {
+          "start": 829.34,
+          "end": 833.18
+        },
+        "waiting": {
+          "start": 833.18,
+          "end": 834.32
+        },
+        "source_question_start": 829.34,
+        "source_question_end": 833.18,
+        "question_turn_ids": [
+          "cc58d7-t0348",
+          "cc58d7-t0349",
+          "cc58d7-t0350"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a035",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 841.84,
+      "end": 842.48,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0355"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0354"
+      ],
+      "question_start": 840.0,
+      "question_end": 841.84,
+      "source_annotation_ids": [
+        "cc58d7-source007"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 840.0,
+        "end": 842.48,
+        "answer": {
+          "start": 841.84,
+          "end": 842.48
+        },
+        "question": {
+          "start": 840.0,
+          "end": 841.84
+        },
+        "waiting": {
+          "start": 841.84,
+          "end": 841.84
+        },
+        "source_question_start": 840.0,
+        "source_question_end": 841.84,
+        "question_turn_ids": [
+          "cc58d7-t0354"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a036",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 847.84,
+      "end": 852.68,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0358",
+        "cc58d7-t0359",
+        "cc58d7-t0360"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0356",
+        "cc58d7-t0357"
+      ],
+      "question_start": 843.84,
+      "question_end": 846.96,
+      "source_annotation_ids": [
+        "cc58d7-source007"
+      ],
+      "internal_pauses": [
+        {
+          "start": 851.0,
+          "end": 852.08
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 843.84,
+        "end": 852.68,
+        "answer": {
+          "start": 847.84,
+          "end": 852.68
+        },
+        "question": {
+          "start": 843.84,
+          "end": 846.96
+        },
+        "waiting": {
+          "start": 846.96,
+          "end": 847.84
+        },
+        "source_question_start": 843.84,
+        "source_question_end": 846.96,
+        "question_turn_ids": [
+          "cc58d7-t0356",
+          "cc58d7-t0357"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a037",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 856.06,
+      "end": 864.28,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0363",
+        "cc58d7-t0364",
+        "cc58d7-t0365",
+        "cc58d7-t0366"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0361",
+        "cc58d7-t0362"
+      ],
+      "question_start": 853.44,
+      "question_end": 855.76,
+      "source_annotation_ids": [
+        "cc58d7-source007"
+      ],
+      "internal_pauses": [
+        {
+          "start": 860.04,
+          "end": 861.12
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 853.44,
+        "end": 864.28,
+        "answer": {
+          "start": 856.06,
+          "end": 864.28
+        },
+        "question": {
+          "start": 853.44,
+          "end": 855.76
+        },
+        "waiting": {
+          "start": 855.76,
+          "end": 856.06
+        },
+        "source_question_start": 853.44,
+        "source_question_end": 855.76,
+        "question_turn_ids": [
+          "cc58d7-t0361",
+          "cc58d7-t0362"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a038",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 871.4,
+      "end": 875.58,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0370",
+        "cc58d7-t0371",
+        "cc58d7-t0372"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0367",
+        "cc58d7-t0368",
+        "cc58d7-t0369"
+      ],
+      "question_start": 864.82,
+      "question_end": 870.54,
+      "source_annotation_ids": [
+        "cc58d7-source007"
+      ],
+      "internal_pauses": [
+        {
+          "start": 871.9,
+          "end": 872.56
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 864.82,
+        "end": 875.58,
+        "answer": {
+          "start": 871.4,
+          "end": 875.58
+        },
+        "question": {
+          "start": 864.82,
+          "end": 870.54
+        },
+        "waiting": {
+          "start": 870.54,
+          "end": 871.4
+        },
+        "source_question_start": 864.82,
+        "source_question_end": 870.54,
+        "question_turn_ids": [
+          "cc58d7-t0367",
+          "cc58d7-t0368",
+          "cc58d7-t0369"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a039",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 886.27,
+      "end": 894.73,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0377",
+        "cc58d7-t0378",
+        "cc58d7-t0379",
+        "cc58d7-t0380",
+        "cc58d7-t0381"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0373",
+        "cc58d7-t0374",
+        "cc58d7-t0375",
+        "cc58d7-t0376"
+      ],
+      "question_start": 878.27,
+      "question_end": 884.29,
+      "source_annotation_ids": [
+        "cc58d7-source007"
+      ],
+      "internal_pauses": [
+        {
+          "start": 889.85,
+          "end": 890.55
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 878.27,
+        "end": 894.73,
+        "answer": {
+          "start": 886.27,
+          "end": 894.73
+        },
+        "question": {
+          "start": 878.27,
+          "end": 884.29
+        },
+        "waiting": {
+          "start": 884.29,
+          "end": 886.27
+        },
+        "source_question_start": 878.27,
+        "source_question_end": 884.29,
+        "question_turn_ids": [
+          "cc58d7-t0373",
+          "cc58d7-t0374",
+          "cc58d7-t0375",
+          "cc58d7-t0376"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a040",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 900.53,
+      "end": 941.04,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0384",
+        "cc58d7-t0385",
+        "cc58d7-t0386",
+        "cc58d7-t0387",
+        "cc58d7-t0388",
+        "cc58d7-t0389",
+        "cc58d7-t0390",
+        "cc58d7-t0391",
+        "cc58d7-t0392",
+        "cc58d7-t0393",
+        "cc58d7-t0394",
+        "cc58d7-t0395",
+        "cc58d7-t0396",
+        "cc58d7-t0397",
+        "cc58d7-t0398",
+        "cc58d7-t0399",
+        "cc58d7-t0400",
+        "cc58d7-t0401",
+        "cc58d7-t0402",
+        "cc58d7-t0403"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0382",
+        "cc58d7-t0383"
+      ],
+      "question_start": 895.39,
+      "question_end": 899.29,
+      "source_annotation_ids": [
+        "cc58d7-source008"
+      ],
+      "internal_pauses": [
+        {
+          "start": 902.61,
+          "end": 905.14
+        },
+        {
+          "start": 906.36,
+          "end": 906.74
+        },
+        {
+          "start": 917.28,
+          "end": 918.42
+        },
+        {
+          "start": 926.72,
+          "end": 927.38
+        },
+        {
+          "start": 930.84,
+          "end": 931.22
+        },
+        {
+          "start": 932.34,
+          "end": 932.9
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 895.39,
+        "end": 941.04,
+        "answer": {
+          "start": 900.53,
+          "end": 941.04
+        },
+        "question": {
+          "start": 895.39,
+          "end": 899.29
+        },
+        "waiting": {
+          "start": 899.29,
+          "end": 900.53
+        },
+        "source_question_start": 895.39,
+        "source_question_end": 899.29,
+        "question_turn_ids": [
+          "cc58d7-t0382",
+          "cc58d7-t0383"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a041",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 948.04,
+      "end": 949.8,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0407"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0404",
+        "cc58d7-t0405",
+        "cc58d7-t0406"
+      ],
+      "question_start": 942.76,
+      "question_end": 945.1,
+      "source_annotation_ids": [
+        "cc58d7-source008"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 942.76,
+        "end": 949.8,
+        "answer": {
+          "start": 948.04,
+          "end": 949.8
+        },
+        "question": {
+          "start": 942.76,
+          "end": 945.1
+        },
+        "waiting": {
+          "start": 945.1,
+          "end": 948.04
+        },
+        "source_question_start": 942.76,
+        "source_question_end": 945.1,
+        "question_turn_ids": [
+          "cc58d7-t0404",
+          "cc58d7-t0405",
+          "cc58d7-t0406"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a042",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 955.56,
+      "end": 957.48,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0409"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0408"
+      ],
+      "question_start": 950.6,
+      "question_end": 951.82,
+      "source_annotation_ids": [
+        "cc58d7-source008"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 950.6,
+        "end": 957.48,
+        "answer": {
+          "start": 955.56,
+          "end": 957.48
+        },
+        "question": {
+          "start": 950.6,
+          "end": 951.82
+        },
+        "waiting": {
+          "start": 951.82,
+          "end": 955.56
+        },
+        "source_question_start": 950.6,
+        "source_question_end": 951.82,
+        "question_turn_ids": [
+          "cc58d7-t0408"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a043",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 962.34,
+      "end": 962.9,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0412"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0410",
+        "cc58d7-t0411"
+      ],
+      "question_start": 958.38,
+      "question_end": 961.98,
+      "source_annotation_ids": [
+        "cc58d7-source008"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 958.38,
+        "end": 962.9,
+        "answer": {
+          "start": 962.34,
+          "end": 962.9
+        },
+        "question": {
+          "start": 958.38,
+          "end": 961.98
+        },
+        "waiting": {
+          "start": 961.98,
+          "end": 962.34
+        },
+        "source_question_start": 958.38,
+        "source_question_end": 961.98,
+        "question_turn_ids": [
+          "cc58d7-t0410",
+          "cc58d7-t0411"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a044",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 972.83,
+      "end": 977.93,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0416",
+        "cc58d7-t0417",
+        "cc58d7-t0418"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0413",
+        "cc58d7-t0414",
+        "cc58d7-t0415"
+      ],
+      "question_start": 964.24,
+      "question_end": 969.92,
+      "source_annotation_ids": [
+        "cc58d7-source009"
+      ],
+      "internal_pauses": [
+        {
+          "start": 973.91,
+          "end": 975.75
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 964.24,
+        "end": 977.93,
+        "answer": {
+          "start": 972.83,
+          "end": 977.93
+        },
+        "question": {
+          "start": 964.24,
+          "end": 969.92
+        },
+        "waiting": {
+          "start": 969.92,
+          "end": 972.83
+        },
+        "source_question_start": 964.24,
+        "source_question_end": 969.92,
+        "question_turn_ids": [
+          "cc58d7-t0413",
+          "cc58d7-t0414",
+          "cc58d7-t0415"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a045",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 982.81,
+      "end": 984.35,
+      "label": "lie",
+      "turn_ids": [
+        "cc58d7-t0421"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0419",
+        "cc58d7-t0420"
+      ],
+      "question_start": 978.25,
+      "question_end": 982.21,
+      "source_annotation_ids": [
+        "cc58d7-source009"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 978.25,
+        "end": 984.35,
+        "answer": {
+          "start": 982.81,
+          "end": 984.35
+        },
+        "question": {
+          "start": 978.25,
+          "end": 982.21
+        },
+        "waiting": {
+          "start": 982.21,
+          "end": 982.81
+        },
+        "source_question_start": 978.25,
+        "source_question_end": 982.21,
+        "question_turn_ids": [
+          "cc58d7-t0419",
+          "cc58d7-t0420"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a046",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 993.05,
+      "end": 994.01,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0426"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0422",
+        "cc58d7-t0423",
+        "cc58d7-t0424",
+        "cc58d7-t0425"
+      ],
+      "question_start": 985.17,
+      "question_end": 991.73,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 985.17,
+        "end": 994.01,
+        "answer": {
+          "start": 993.05,
+          "end": 994.01
+        },
+        "question": {
+          "start": 985.17,
+          "end": 991.73
+        },
+        "waiting": {
+          "start": 991.73,
+          "end": 993.05
+        },
+        "source_question_start": 985.17,
+        "source_question_end": 991.73,
+        "question_turn_ids": [
+          "cc58d7-t0422",
+          "cc58d7-t0423",
+          "cc58d7-t0424",
+          "cc58d7-t0425"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a047",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 998.63,
+      "end": 998.83,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0429"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0427",
+        "cc58d7-t0428"
+      ],
+      "question_start": 994.53,
+      "question_end": 998.33,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 994.53,
+        "end": 998.83,
+        "answer": {
+          "start": 998.63,
+          "end": 998.83
+        },
+        "question": {
+          "start": 994.53,
+          "end": 998.33
+        },
+        "waiting": {
+          "start": 998.33,
+          "end": 998.63
+        },
+        "source_question_start": 994.53,
+        "source_question_end": 998.33,
+        "question_turn_ids": [
+          "cc58d7-t0427",
+          "cc58d7-t0428"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a048",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1004.75,
+      "end": 1011.65,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0433",
+        "cc58d7-t0434",
+        "cc58d7-t0435",
+        "cc58d7-t0436"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0430",
+        "cc58d7-t0431",
+        "cc58d7-t0432"
+      ],
+      "question_start": 1000.51,
+      "question_end": 1004.21,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1005.89,
+          "end": 1008.27
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1000.51,
+        "end": 1011.65,
+        "answer": {
+          "start": 1004.75,
+          "end": 1011.65
+        },
+        "question": {
+          "start": 1000.51,
+          "end": 1004.21
+        },
+        "waiting": {
+          "start": 1004.21,
+          "end": 1004.75
+        },
+        "source_question_start": 1000.51,
+        "source_question_end": 1004.21,
+        "question_turn_ids": [
+          "cc58d7-t0430",
+          "cc58d7-t0431",
+          "cc58d7-t0432"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a049",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1018.14,
+      "end": 1025.62,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0440",
+        "cc58d7-t0441",
+        "cc58d7-t0442"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0437",
+        "cc58d7-t0438",
+        "cc58d7-t0439"
+      ],
+      "question_start": 1012.07,
+      "question_end": 1015.87,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1022.14,
+          "end": 1024.02
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1012.07,
+        "end": 1025.62,
+        "answer": {
+          "start": 1018.14,
+          "end": 1025.62
+        },
+        "question": {
+          "start": 1012.07,
+          "end": 1015.87
+        },
+        "waiting": {
+          "start": 1015.87,
+          "end": 1018.14
+        },
+        "source_question_start": 1012.07,
+        "source_question_end": 1015.87,
+        "question_turn_ids": [
+          "cc58d7-t0437",
+          "cc58d7-t0438",
+          "cc58d7-t0439"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a050",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1030.36,
+      "end": 1054.54,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0445",
+        "cc58d7-t0446",
+        "cc58d7-t0447",
+        "cc58d7-t0448",
+        "cc58d7-t0449",
+        "cc58d7-t0450",
+        "cc58d7-t0451",
+        "cc58d7-t0452",
+        "cc58d7-t0453",
+        "cc58d7-t0454",
+        "cc58d7-t0455",
+        "cc58d7-t0456",
+        "cc58d7-t0457"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0443",
+        "cc58d7-t0444"
+      ],
+      "question_start": 1025.92,
+      "question_end": 1028.34,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1030.76,
+          "end": 1031.46
+        },
+        {
+          "start": 1041.2,
+          "end": 1042.48
+        },
+        {
+          "start": 1044.18,
+          "end": 1044.84
+        },
+        {
+          "start": 1047.36,
+          "end": 1048.0
+        },
+        {
+          "start": 1050.76,
+          "end": 1052.02
+        },
+        {
+          "start": 1053.26,
+          "end": 1053.68
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1025.92,
+        "end": 1054.54,
+        "answer": {
+          "start": 1030.36,
+          "end": 1054.54
+        },
+        "question": {
+          "start": 1025.92,
+          "end": 1028.34
+        },
+        "waiting": {
+          "start": 1028.34,
+          "end": 1030.36
+        },
+        "source_question_start": 1025.92,
+        "source_question_end": 1028.34,
+        "question_turn_ids": [
+          "cc58d7-t0443",
+          "cc58d7-t0444"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a051",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1058.58,
+      "end": 1078.98,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0460",
+        "cc58d7-t0461",
+        "cc58d7-t0462",
+        "cc58d7-t0463",
+        "cc58d7-t0464",
+        "cc58d7-t0465",
+        "cc58d7-t0466",
+        "cc58d7-t0467",
+        "cc58d7-t0468",
+        "cc58d7-t0469"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0458",
+        "cc58d7-t0459"
+      ],
+      "question_start": 1054.54,
+      "question_end": 1057.84,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1059.98,
+          "end": 1061.12
+        },
+        {
+          "start": 1062.32,
+          "end": 1062.62
+        },
+        {
+          "start": 1064.12,
+          "end": 1064.44
+        },
+        {
+          "start": 1070.18,
+          "end": 1070.64
+        },
+        {
+          "start": 1074.06,
+          "end": 1074.5
+        },
+        {
+          "start": 1076.9,
+          "end": 1077.52
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1054.54,
+        "end": 1078.98,
+        "answer": {
+          "start": 1058.58,
+          "end": 1078.98
+        },
+        "question": {
+          "start": 1054.54,
+          "end": 1057.84
+        },
+        "waiting": {
+          "start": 1057.84,
+          "end": 1058.58
+        },
+        "source_question_start": 1054.54,
+        "source_question_end": 1057.84,
+        "question_turn_ids": [
+          "cc58d7-t0458",
+          "cc58d7-t0459"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a052",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1085.38,
+      "end": 1085.56,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0472"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0470",
+        "cc58d7-t0471",
+        "cc58d7-t0473"
+      ],
+      "question_start": 1079.6,
+      "question_end": 1085.32,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1079.6,
+        "end": 1085.56,
+        "answer": {
+          "start": 1085.38,
+          "end": 1085.56
+        },
+        "question": {
+          "start": 1079.6,
+          "end": 1085.32
+        },
+        "waiting": {
+          "start": 1085.32,
+          "end": 1085.38
+        },
+        "source_question_start": 1079.6,
+        "source_question_end": 1085.32,
+        "question_turn_ids": [
+          "cc58d7-t0470",
+          "cc58d7-t0471",
+          "cc58d7-t0473"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a053",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1093.5,
+      "end": 1095.54,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-new000",
+        "cc58d7-t0477"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0474",
+        "cc58d7-t0475",
+        "cc58d7-t0476"
+      ],
+      "question_start": 1086.94,
+      "question_end": 1090.7,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1094.06,
+          "end": 1094.79
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1086.94,
+        "end": 1095.54,
+        "answer": {
+          "start": 1093.5,
+          "end": 1095.54
+        },
+        "question": {
+          "start": 1086.94,
+          "end": 1090.7
+        },
+        "waiting": {
+          "start": 1090.7,
+          "end": 1093.5
+        },
+        "source_question_start": 1086.94,
+        "source_question_end": 1090.7,
+        "question_turn_ids": [
+          "cc58d7-t0474",
+          "cc58d7-t0475",
+          "cc58d7-t0476"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a054",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1103.23,
+      "end": 1112.57,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0480",
+        "cc58d7-t0481",
+        "cc58d7-t0482",
+        "cc58d7-t0483",
+        "cc58d7-t0484"
+      ],
+      "question_turn_ids": [
+        "cc58d7-new001",
+        "cc58d7-t0478",
+        "cc58d7-t0479"
+      ],
+      "question_start": 1096.14,
+      "question_end": 1100.81,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1108.11,
+          "end": 1108.37
+        },
+        {
+          "start": 1109.37,
+          "end": 1109.79
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1096.14,
+        "end": 1112.57,
+        "answer": {
+          "start": 1103.23,
+          "end": 1112.57
+        },
+        "question": {
+          "start": 1096.14,
+          "end": 1100.81
+        },
+        "waiting": {
+          "start": 1100.81,
+          "end": 1103.23
+        },
+        "source_question_start": 1096.14,
+        "source_question_end": 1100.81,
+        "question_turn_ids": [
+          "cc58d7-new001",
+          "cc58d7-t0478",
+          "cc58d7-t0479"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a055",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1120.35,
+      "end": 1160.11,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0488",
+        "cc58d7-t0489",
+        "cc58d7-t0490",
+        "cc58d7-t0491",
+        "cc58d7-t0492",
+        "cc58d7-t0493",
+        "cc58d7-t0494",
+        "cc58d7-t0495",
+        "cc58d7-t0496",
+        "cc58d7-t0497",
+        "cc58d7-t0498",
+        "cc58d7-t0499",
+        "cc58d7-t0500",
+        "cc58d7-t0501",
+        "cc58d7-t0502",
+        "cc58d7-t0503",
+        "cc58d7-t0504",
+        "cc58d7-t0505",
+        "cc58d7-t0506",
+        "cc58d7-t0507",
+        "cc58d7-t0508"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0485",
+        "cc58d7-t0486",
+        "cc58d7-t0487"
+      ],
+      "question_start": 1113.63,
+      "question_end": 1118.33,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1122.63,
+          "end": 1124.43
+        },
+        {
+          "start": 1129.85,
+          "end": 1130.41
+        },
+        {
+          "start": 1133.35,
+          "end": 1133.73
+        },
+        {
+          "start": 1136.87,
+          "end": 1137.59
+        },
+        {
+          "start": 1147.01,
+          "end": 1147.45
+        },
+        {
+          "start": 1150.69,
+          "end": 1151.05
+        },
+        {
+          "start": 1153.11,
+          "end": 1153.41
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1113.63,
+        "end": 1160.11,
+        "answer": {
+          "start": 1120.35,
+          "end": 1160.11
+        },
+        "question": {
+          "start": 1113.63,
+          "end": 1118.33
+        },
+        "waiting": {
+          "start": 1118.33,
+          "end": 1120.35
+        },
+        "source_question_start": 1113.63,
+        "source_question_end": 1118.33,
+        "question_turn_ids": [
+          "cc58d7-t0485",
+          "cc58d7-t0486",
+          "cc58d7-t0487"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a056",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1166.21,
+      "end": 1195.83,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0513",
+        "cc58d7-t0514",
+        "cc58d7-t0515",
+        "cc58d7-t0516",
+        "cc58d7-t0517",
+        "cc58d7-t0518",
+        "cc58d7-t0519",
+        "cc58d7-t0520",
+        "cc58d7-t0521",
+        "cc58d7-t0522",
+        "cc58d7-t0523",
+        "cc58d7-t0524",
+        "cc58d7-t0525",
+        "cc58d7-t0526",
+        "cc58d7-t0527"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0509",
+        "cc58d7-t0510",
+        "cc58d7-t0511",
+        "cc58d7-t0512"
+      ],
+      "question_start": 1160.31,
+      "question_end": 1166.21,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1169.13,
+          "end": 1169.77
+        },
+        {
+          "start": 1172.47,
+          "end": 1172.97
+        },
+        {
+          "start": 1174.35,
+          "end": 1175.33
+        },
+        {
+          "start": 1176.44,
+          "end": 1176.91
+        },
+        {
+          "start": 1179.77,
+          "end": 1180.49
+        },
+        {
+          "start": 1182.81,
+          "end": 1184.05
+        },
+        {
+          "start": 1187.27,
+          "end": 1187.73
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1160.31,
+        "end": 1195.83,
+        "answer": {
+          "start": 1166.21,
+          "end": 1195.83
+        },
+        "question": {
+          "start": 1160.31,
+          "end": 1166.21
+        },
+        "waiting": {
+          "start": 1166.21,
+          "end": 1166.21
+        },
+        "source_question_start": 1160.31,
+        "source_question_end": 1166.21,
+        "question_turn_ids": [
+          "cc58d7-t0509",
+          "cc58d7-t0510",
+          "cc58d7-t0511",
+          "cc58d7-t0512"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a057",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1205.49,
+      "end": 1221.63,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0532",
+        "cc58d7-t0533",
+        "cc58d7-t0534",
+        "cc58d7-t0535",
+        "cc58d7-t0536",
+        "cc58d7-t0537",
+        "cc58d7-t0538",
+        "cc58d7-t0539"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0528",
+        "cc58d7-t0529",
+        "cc58d7-t0530",
+        "cc58d7-t0531"
+      ],
+      "question_start": 1197.39,
+      "question_end": 1204.47,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1208.91,
+          "end": 1209.19
+        },
+        {
+          "start": 1210.01,
+          "end": 1212.49
+        },
+        {
+          "start": 1213.47,
+          "end": 1214.31
+        },
+        {
+          "start": 1217.69,
+          "end": 1217.97
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1197.39,
+        "end": 1221.63,
+        "answer": {
+          "start": 1205.49,
+          "end": 1221.63
+        },
+        "question": {
+          "start": 1197.39,
+          "end": 1204.47
+        },
+        "waiting": {
+          "start": 1204.47,
+          "end": 1205.49
+        },
+        "source_question_start": 1197.39,
+        "source_question_end": 1204.47,
+        "question_turn_ids": [
+          "cc58d7-t0528",
+          "cc58d7-t0529",
+          "cc58d7-t0530",
+          "cc58d7-t0531"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a058",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1226.48,
+      "end": 1248.64,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0541",
+        "cc58d7-t0542",
+        "cc58d7-t0543",
+        "cc58d7-t0544",
+        "cc58d7-t0545",
+        "cc58d7-t0546",
+        "cc58d7-t0547",
+        "cc58d7-t0548",
+        "cc58d7-t0549",
+        "cc58d7-t0550",
+        "cc58d7-t0551",
+        "cc58d7-t0552"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0540"
+      ],
+      "question_start": 1221.97,
+      "question_end": 1223.65,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1227.94,
+          "end": 1228.4
+        },
+        {
+          "start": 1229.48,
+          "end": 1230.64
+        },
+        {
+          "start": 1232.52,
+          "end": 1233.0
+        },
+        {
+          "start": 1234.68,
+          "end": 1235.38
+        },
+        {
+          "start": 1236.2,
+          "end": 1236.46
+        },
+        {
+          "start": 1238.04,
+          "end": 1238.48
+        },
+        {
+          "start": 1239.38,
+          "end": 1239.86
+        },
+        {
+          "start": 1244.58,
+          "end": 1246.28
+        },
+        {
+          "start": 1246.58,
+          "end": 1247.84
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1221.97,
+        "end": 1248.64,
+        "answer": {
+          "start": 1226.48,
+          "end": 1248.64
+        },
+        "question": {
+          "start": 1221.97,
+          "end": 1223.65
+        },
+        "waiting": {
+          "start": 1223.65,
+          "end": 1226.48
+        },
+        "source_question_start": 1221.97,
+        "source_question_end": 1223.65,
+        "question_turn_ids": [
+          "cc58d7-t0540"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a059",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1258.3,
+      "end": 1286.82,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0556",
+        "cc58d7-t0557",
+        "cc58d7-t0558",
+        "cc58d7-t0559",
+        "cc58d7-t0560",
+        "cc58d7-t0561",
+        "cc58d7-t0562",
+        "cc58d7-t0563",
+        "cc58d7-t0564",
+        "cc58d7-t0565",
+        "cc58d7-t0566",
+        "cc58d7-t0567",
+        "cc58d7-t0568",
+        "cc58d7-t0569",
+        "cc58d7-t0570",
+        "cc58d7-t0571"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0553",
+        "cc58d7-t0554",
+        "cc58d7-t0555"
+      ],
+      "question_start": 1250.0,
+      "question_end": 1257.28,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1262.52,
+          "end": 1263.26
+        },
+        {
+          "start": 1264.92,
+          "end": 1265.5
+        },
+        {
+          "start": 1268.7,
+          "end": 1269.56
+        },
+        {
+          "start": 1275.08,
+          "end": 1275.48
+        },
+        {
+          "start": 1282.76,
+          "end": 1283.16
+        },
+        {
+          "start": 1284.18,
+          "end": 1284.7
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1250.0,
+        "end": 1286.82,
+        "answer": {
+          "start": 1258.3,
+          "end": 1286.82
+        },
+        "question": {
+          "start": 1250.0,
+          "end": 1257.28
+        },
+        "waiting": {
+          "start": 1257.28,
+          "end": 1258.3
+        },
+        "source_question_start": 1250.0,
+        "source_question_end": 1257.28,
+        "question_turn_ids": [
+          "cc58d7-t0553",
+          "cc58d7-t0554",
+          "cc58d7-t0555"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a060",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1298.0,
+      "end": 1300.32,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0576",
+        "cc58d7-t0577"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0572",
+        "cc58d7-t0573",
+        "cc58d7-t0574",
+        "cc58d7-t0575"
+      ],
+      "question_start": 1287.84,
+      "question_end": 1294.52,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1287.84,
+        "end": 1300.32,
+        "answer": {
+          "start": 1298.0,
+          "end": 1300.32
+        },
+        "question": {
+          "start": 1287.84,
+          "end": 1294.52
+        },
+        "waiting": {
+          "start": 1294.52,
+          "end": 1298.0
+        },
+        "source_question_start": 1287.84,
+        "source_question_end": 1294.52,
+        "question_turn_ids": [
+          "cc58d7-t0572",
+          "cc58d7-t0573",
+          "cc58d7-t0574",
+          "cc58d7-t0575"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a061",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1308.31,
+      "end": 1315.45,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0581",
+        "cc58d7-t0582",
+        "cc58d7-t0583",
+        "cc58d7-t0584"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0578",
+        "cc58d7-t0579",
+        "cc58d7-t0580"
+      ],
+      "question_start": 1300.78,
+      "question_end": 1306.28,
+      "source_annotation_ids": [
+        "cc58d7-source010"
+      ],
+      "internal_pauses": [
+        {
+          "start": 1313.65,
+          "end": 1314.31
+        }
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1300.78,
+        "end": 1315.45,
+        "answer": {
+          "start": 1308.31,
+          "end": 1315.45
+        },
+        "question": {
+          "start": 1300.78,
+          "end": 1306.28
+        },
+        "waiting": {
+          "start": 1306.28,
+          "end": 1308.31
+        },
+        "source_question_start": 1300.78,
+        "source_question_end": 1306.28,
+        "question_turn_ids": [
+          "cc58d7-t0578",
+          "cc58d7-t0579",
+          "cc58d7-t0580"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a062",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1327.55,
+      "end": 1333.33,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0590",
+        "cc58d7-t0591",
+        "cc58d7-t0592",
+        "cc58d7-t0593"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0585",
+        "cc58d7-t0586",
+        "cc58d7-t0587",
+        "cc58d7-t0588",
+        "cc58d7-t0589"
+      ],
+      "question_start": 1315.63,
+      "question_end": 1326.57,
+      "source_annotation_ids": [
+        "cc58d7-source011"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1315.63,
+        "end": 1333.33,
+        "answer": {
+          "start": 1327.55,
+          "end": 1333.33
+        },
+        "question": {
+          "start": 1315.63,
+          "end": 1326.57
+        },
+        "waiting": {
+          "start": 1326.57,
+          "end": 1327.55
+        },
+        "source_question_start": 1315.63,
+        "source_question_end": 1326.57,
+        "question_turn_ids": [
+          "cc58d7-t0585",
+          "cc58d7-t0586",
+          "cc58d7-t0587",
+          "cc58d7-t0588",
+          "cc58d7-t0589"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "cc58d7-a063",
+      "participant_id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+      "start": 1337.53,
+      "end": 1339.71,
+      "label": "truth",
+      "turn_ids": [
+        "cc58d7-t0596"
+      ],
+      "question_turn_ids": [
+        "cc58d7-t0594",
+        "cc58d7-t0595"
+      ],
+      "question_start": 1333.81,
+      "question_end": 1337.25,
+      "source_annotation_ids": [
+        "cc58d7-source011"
+      ],
+      "internal_pauses": [],
+      "dataset_eligible": true,
+      "review_required": false,
+      "episode": {
+        "version": 1,
+        "start": 1333.81,
+        "end": 1339.71,
+        "answer": {
+          "start": 1337.53,
+          "end": 1339.71
+        },
+        "question": {
+          "start": 1333.81,
+          "end": 1337.25
+        },
+        "waiting": {
+          "start": 1337.25,
+          "end": 1337.53
+        },
+        "source_question_start": 1333.81,
+        "source_question_end": 1337.25,
+        "question_turn_ids": [
+          "cc58d7-t0594",
+          "cc58d7-t0595"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    }
+  ],
+  "annotation_sources": [
+    {
+      "start": 0.0,
+      "end": 120.98,
+      "name": "Начальный покой",
+      "label": "base",
+      "id": "cc58d7-source000"
+    },
+    {
+      "start": 120.98,
+      "end": 379.56,
+      "name": "Вступительный блок",
+      "label": "truth",
+      "id": "cc58d7-source001"
+    },
+    {
+      "start": 382.28,
+      "end": 560.38,
+      "name": "Правда про Алкоголь",
+      "label": "truth",
+      "id": "cc58d7-source002"
+    },
+    {
+      "start": 563.08,
+      "end": 573.5,
+      "name": "Ложь про Алкоголь",
+      "label": "lie",
+      "id": "cc58d7-source003"
+    },
+    {
+      "start": 574.1,
+      "end": 703.66,
+      "name": "Правда про Алкоголь",
+      "label": "truth",
+      "id": "cc58d7-source004"
+    },
+    {
+      "start": 704.64,
+      "end": 711.32,
+      "name": "Ложь про Алкоголь",
+      "label": "lie",
+      "id": "cc58d7-source005"
+    },
+    {
+      "start": 711.52,
+      "end": 839.74,
+      "name": "Правда про конфликты",
+      "label": "truth",
+      "id": "cc58d7-source006"
+    },
+    {
+      "start": 840.0,
+      "end": 894.73,
+      "name": "Ложь про конфликты о себе",
+      "label": "lie",
+      "id": "cc58d7-source007"
+    },
+    {
+      "start": 895.39,
+      "end": 962.9,
+      "name": "Правда про конфликты",
+      "label": "truth",
+      "id": "cc58d7-source008"
+    },
+    {
+      "start": 964.24,
+      "end": 986.61,
+      "name": "Ложь про конфликты о себе",
+      "label": "lie",
+      "id": "cc58d7-source009"
+    },
+    {
+      "start": 987.21,
+      "end": 1315.45,
+      "name": "Правда про обман",
+      "label": "truth",
+      "id": "cc58d7-source010"
+    },
+    {
+      "start": 1315.63,
+      "end": 1340.85,
+      "name": "Правда про конец интервью",
+      "label": "truth",
+      "id": "cc58d7-source011"
+    },
+    {
+      "start": 1342.35,
+      "end": 1495.59,
+      "name": "Конечный покой",
+      "label": "base",
+      "id": "cc58d7-source012"
+    },
+    {
+      "start": 1495.59,
+      "end": 1520.83,
+      "name": "Финальный разговор",
+      "label": "base",
+      "id": "cc58d7-source013"
+    }
+  ],
+  "columns": [
+    "dataset_schema_version",
+    "calculation_version",
+    "participant_id",
+    "session_id",
+    "session_name",
+    "answer_id",
+    "target",
+    "label",
+    "video_start_seconds",
+    "video_end_seconds",
+    "answer_duration_seconds",
+    "signal_start_seconds",
+    "signal_end_seconds",
+    "question_start_seconds",
+    "question_end_seconds",
+    "respondent_text",
+    "question_text",
+    "turn_ids",
+    "source_annotation_ids",
+    "internal_pauses",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_sample_count",
+    "signal_time_coverage",
+    "contact_heart_rate_monitor_bpm",
+    "contact_spo2_percent",
+    "contact_respiration_bpm",
+    "contact_gsr_mean",
+    "contact_ecg_heart_rate_bpm",
+    "contact_ecg_sdnn_ms",
+    "contact_ecg_rmssd_ms",
+    "contact_ecg_lf_power",
+    "contact_ecg_hf_power",
+    "contact_ecg_total_power",
+    "contact_ecg_lf_hf",
+    "contact_ppg_heart_rate_bpm",
+    "contact_ppg_sdnn_ms",
+    "contact_ppg_rmssd_ms",
+    "contact_ppg_lf_power",
+    "contact_ppg_hf_power",
+    "contact_ppg_total_power",
+    "contact_ppg_lf_hf",
+    "speech_respondent_words",
+    "speech_words_per_minute",
+    "speech_syllables_per_second",
+    "speech_response_latency_seconds",
+    "speech_response_duration_seconds",
+    "speech_internal_pause_seconds",
+    "speech_pause_ratio",
+    "speech_voice_rms",
+    "speech_pitch_hz",
+    "speech_pitch_iqr_hz",
+    "speech_spectral_centroid_hz",
+    "video_rppg_heart_rate_bpm",
+    "video_head_motion",
+    "video_hand_motion",
+    "video_leg_motion",
+    "video_trunk_tilt_degrees",
+    "comparison_ecg_ppg_delta_bpm",
+    "comparison_ecg_rppg_delta_bpm",
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "notes"
+  ],
+  "numeric_feature_columns": {
+    "contact_heart_rate_monitor_bpm": "bpm",
+    "contact_spo2_percent": "%",
+    "contact_respiration_bpm": "breaths/min",
+    "contact_gsr_mean": "BioRadio source units",
+    "contact_ecg_heart_rate_bpm": "bpm",
+    "contact_ecg_sdnn_ms": "ms",
+    "contact_ecg_rmssd_ms": "ms",
+    "contact_ecg_lf_power": "ms²",
+    "contact_ecg_hf_power": "ms²",
+    "contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ecg_lf_hf": "ratio",
+    "contact_ppg_heart_rate_bpm": "bpm",
+    "contact_ppg_sdnn_ms": "ms",
+    "contact_ppg_rmssd_ms": "ms",
+    "contact_ppg_lf_power": "ms²",
+    "contact_ppg_hf_power": "ms²",
+    "contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ppg_lf_hf": "ratio",
+    "speech_respondent_words": "count",
+    "speech_words_per_minute": "words/min",
+    "speech_syllables_per_second": "syllables/s",
+    "speech_response_latency_seconds": "s",
+    "speech_response_duration_seconds": "s",
+    "speech_internal_pause_seconds": "s",
+    "speech_pause_ratio": "ratio",
+    "speech_voice_rms": "normalized audio amplitude",
+    "speech_pitch_hz": "Hz",
+    "speech_pitch_iqr_hz": "Hz",
+    "speech_spectral_centroid_hz": "Hz",
+    "video_rppg_heart_rate_bpm": "bpm; complete window inside answer",
+    "video_head_motion": "face widths/s",
+    "video_hand_motion": "image heights/s; see motion_units",
+    "video_leg_motion": "image heights/s; see motion_units",
+    "video_trunk_tilt_degrees": "degrees",
+    "comparison_ecg_ppg_delta_bpm": "bpm",
+    "comparison_ecg_rppg_delta_bpm": "bpm"
+  },
+  "quality_columns": [
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_time_coverage",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "notes"
+  ],
+  "research_notes": [
+    "Split training and evaluation by participant_id. IDs, labels, source_annotation_ids and timing are not predictive features.",
+    "Text and question content can disclose the interview protocol; assess text features separately to avoid target leakage.",
+    "dataset_eligible means a reviewed target, not validated physiology. Filter features by sync_status and coverage.",
+    "HRV requires at least 120 seconds and sufficient usable beats. Short answers retain missing HRV.",
+    "Primary rPPG only uses windows fully inside the answer; context rPPG is deliberately excluded.",
+    "GSR=100000 throughout the interval is unavailable. Channel coverage counts finite usable samples, not detector accuracy.",
+    "Pauses may be incompletely annotated. Full answer duration always includes elapsed internal silence.",
+    "Values are unrounded and not normalized to baseline. Baseline intervals and markers are in this metadata."
+  ],
+  "rest_intervals": [
+    {
+      "start": 0.0,
+      "end": 120.98
+    },
+    {
+      "start": 1347.43,
+      "end": 1495.59
+    }
+  ],
+  "baseline_annotations": [
+    {
+      "start": 0,
+      "end": 120.98,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой до беседы",
+      "id": "cc58d7-v000"
+    },
+    {
+      "start": 120.98,
+      "end": 123.8,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v001"
+    },
+    {
+      "start": 124.0,
+      "end": 127.0,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v003"
+    },
+    {
+      "start": 128.0,
+      "end": 129.24,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v005"
+    },
+    {
+      "start": 130.44,
+      "end": 135.24,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v007"
+    },
+    {
+      "start": 136.02,
+      "end": 138.38,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v009"
+    },
+    {
+      "start": 145.22,
+      "end": 147.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v011"
+    },
+    {
+      "start": 148.36,
+      "end": 155.0,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v013"
+    },
+    {
+      "start": 155.86,
+      "end": 159.94,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v015"
+    },
+    {
+      "start": 181.36,
+      "end": 187.38,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v017"
+    },
+    {
+      "start": 214.46,
+      "end": 226.18,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v019"
+    },
+    {
+      "start": 260.38,
+      "end": 264.38,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v021"
+    },
+    {
+      "start": 296.02,
+      "end": 297.68,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v023"
+    },
+    {
+      "start": 299.94,
+      "end": 306.1,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v025"
+    },
+    {
+      "start": 381.26,
+      "end": 394.58,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v027"
+    },
+    {
+      "start": 413.58,
+      "end": 420.4,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v029"
+    },
+    {
+      "start": 443.78,
+      "end": 448.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v031"
+    },
+    {
+      "start": 490.1,
+      "end": 496.96,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v033"
+    },
+    {
+      "start": 505.18,
+      "end": 507.18,
+      "label": "base",
+      "answer_id": "cc58d7-a017",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v035"
+    },
+    {
+      "start": 524.58,
+      "end": 532.26,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v037"
+    },
+    {
+      "start": 536.72,
+      "end": 540.92,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v039"
+    },
+    {
+      "start": 543.84,
+      "end": 545.88,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v041"
+    },
+    {
+      "start": 551.28,
+      "end": 553.56,
+      "label": "base",
+      "answer_id": "cc58d7-a020",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v043"
+    },
+    {
+      "start": 560.38,
+      "end": 565.82,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v045"
+    },
+    {
+      "start": 569.3,
+      "end": 573.08,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v047"
+    },
+    {
+      "start": 573.5,
+      "end": 582.64,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v049"
+    },
+    {
+      "start": 587.74,
+      "end": 590.15,
+      "label": "base",
+      "answer_id": "cc58d7-a023",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v051"
+    },
+    {
+      "start": 622.8,
+      "end": 628.64,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v053"
+    },
+    {
+      "start": 651.6,
+      "end": 657.84,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v055"
+    },
+    {
+      "start": 658.94,
+      "end": 668.9,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v057"
+    },
+    {
+      "start": 670.74,
+      "end": 675.76,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v059"
+    },
+    {
+      "start": 694.28,
+      "end": 702.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v061"
+    },
+    {
+      "start": 703.66,
+      "end": 709.12,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v063"
+    },
+    {
+      "start": 711.32,
+      "end": 719.86,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v065"
+    },
+    {
+      "start": 726.46,
+      "end": 735.76,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v067"
+    },
+    {
+      "start": 738.86,
+      "end": 747.74,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v069"
+    },
+    {
+      "start": 752.06,
+      "end": 755.96,
+      "label": "base",
+      "answer_id": "cc58d7-a032",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v071"
+    },
+    {
+      "start": 769.48,
+      "end": 771.94,
+      "label": "base",
+      "answer_id": "cc58d7-a032",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v073"
+    },
+    {
+      "start": 810.02,
+      "end": 817.63,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v075"
+    },
+    {
+      "start": 818.45,
+      "end": 820.81,
+      "label": "base",
+      "answer_id": "cc58d7-a033",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v077"
+    },
+    {
+      "start": 821.77,
+      "end": 824.08,
+      "label": "base",
+      "answer_id": "cc58d7-a033",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v079"
+    },
+    {
+      "start": 828.48,
+      "end": 834.32,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v081"
+    },
+    {
+      "start": 839.74,
+      "end": 841.84,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v083"
+    },
+    {
+      "start": 842.48,
+      "end": 847.84,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v085"
+    },
+    {
+      "start": 852.68,
+      "end": 856.06,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v087"
+    },
+    {
+      "start": 864.28,
+      "end": 871.4,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v089"
+    },
+    {
+      "start": 875.58,
+      "end": 886.27,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v091"
+    },
+    {
+      "start": 894.73,
+      "end": 900.53,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v093"
+    },
+    {
+      "start": 902.61,
+      "end": 905.14,
+      "label": "base",
+      "answer_id": "cc58d7-a040",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v095"
+    },
+    {
+      "start": 941.04,
+      "end": 948.04,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v097"
+    },
+    {
+      "start": 949.8,
+      "end": 955.56,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v099"
+    },
+    {
+      "start": 957.48,
+      "end": 962.34,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v101"
+    },
+    {
+      "start": 962.9,
+      "end": 972.83,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v103"
+    },
+    {
+      "start": 977.93,
+      "end": 982.81,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v105"
+    },
+    {
+      "start": 984.35,
+      "end": 993.05,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v107"
+    },
+    {
+      "start": 994.01,
+      "end": 998.63,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v109"
+    },
+    {
+      "start": 998.83,
+      "end": 1004.75,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v111"
+    },
+    {
+      "start": 1005.89,
+      "end": 1008.27,
+      "label": "base",
+      "answer_id": "cc58d7-a048",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v113"
+    },
+    {
+      "start": 1011.65,
+      "end": 1018.14,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v115"
+    },
+    {
+      "start": 1025.62,
+      "end": 1030.36,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v117"
+    },
+    {
+      "start": 1054.54,
+      "end": 1058.58,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v119"
+    },
+    {
+      "start": 1078.98,
+      "end": 1085.38,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v121"
+    },
+    {
+      "start": 1085.56,
+      "end": 1093.5,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v123"
+    },
+    {
+      "start": 1095.54,
+      "end": 1103.23,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v125"
+    },
+    {
+      "start": 1112.57,
+      "end": 1120.35,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v127"
+    },
+    {
+      "start": 1160.11,
+      "end": 1166.21,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v129"
+    },
+    {
+      "start": 1195.83,
+      "end": 1205.49,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v131"
+    },
+    {
+      "start": 1210.01,
+      "end": 1212.49,
+      "label": "base",
+      "answer_id": "cc58d7-a057",
+      "answer_label": "truth",
+      "kind": "internal_pause",
+      "name": "Пауза внутри ответа",
+      "id": "cc58d7-v133"
+    },
+    {
+      "start": 1221.63,
+      "end": 1226.48,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v135"
+    },
+    {
+      "start": 1248.64,
+      "end": 1258.3,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v137"
+    },
+    {
+      "start": 1286.82,
+      "end": 1298.0,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v139"
+    },
+    {
+      "start": 1300.32,
+      "end": 1308.31,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v141"
+    },
+    {
+      "start": 1315.45,
+      "end": 1327.55,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v143"
+    },
+    {
+      "start": 1333.33,
+      "end": 1337.53,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v145"
+    },
+    {
+      "start": 1339.71,
+      "end": 1347.43,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v147"
+    },
+    {
+      "start": 1347.43,
+      "end": 1495.59,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой после беседы",
+      "id": "cc58d7-v148"
+    },
+    {
+      "start": 1495.59,
+      "end": 1514.13,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / пауза респондента",
+      "id": "cc58d7-v149"
+    },
+    {
+      "start": 1514.13,
+      "end": 1515.89,
+      "label": "base",
+      "answer_id": "cc58d7-a064",
+      "kind": "response",
+      "name": "Ответ респондента · Финальный разговор",
+      "id": "cc58d7-v150",
+      "review_required": true
+    },
+    {
+      "start": 1515.89,
+      "end": 1522.144,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / покой после беседы",
+      "id": "cc58d7-v151"
+    }
+  ]
+}

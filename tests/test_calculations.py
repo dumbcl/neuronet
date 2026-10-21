@@ -64,6 +64,59 @@ class ImportRegressionTests(unittest.TestCase):
             self.assertTrue(np.isnan(values[0]).all())
             self.assertEqual(values[1, 5], 80.5)
 
+    def test_pulseox_sensor_names_and_integer_gsr(self):
+        header = "Elapsed Time,ECG,RIP,GSR,Flow Rate Sensor 1,Heart Rate PulseOx1,PPG PulseOx1,SpO2 PulseOx1,BioRadio Event,\n"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            source = path / "margaryan.csv"
+            source.write_text(header + "00:00:00,-0,0172061063349247,-0,0107475062832236,100000,-5,84263038635254,100,80,2795486450195,100,0,\n")
+            meta = import_csv(source, path / "parsed")
+            _, _, values = load_arrays(path / "parsed")
+            self.assertEqual(meta["channels"], ["ECG", "RIP", "GSR", "Flow", "HeartRate", "PPG", "SpO2", "Event"])
+            self.assertEqual(meta["malformed_rows"], 0)
+            np.testing.assert_allclose(values[0], [-.0172061063349247, -.0107475062832236, 100000, -5.84263038635254, 100, 80.2795486450195, 100, 0])
+            self.assertEqual(meta["source_file"], "margaryan.csv")
+            self.assertIn("PPG PulseOx1", meta["source_headers"])
+
+    def test_empty_event_and_invalid_device_values_keep_other_channels(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            source = path / "input.csv"
+            source.write_text(self.header +
+                "0,0,0275430530309677,-0,414534449577332,100000,-13,4402265548706,110,80,6555252075195,95,\n" +
+                "0.001,0,0275430530309677,-0,414534449577332,100000,-13,4402265548706,511,80,6555252075195,127,0,\n")
+            meta = import_csv(source, path / "parsed")
+            _, _, values = load_arrays(path / "parsed")
+            self.assertEqual(meta["malformed_rows"], 0)
+            self.assertAlmostEqual(values[0, 0], .0275430530309677)
+            self.assertTrue(np.isnan(values[0, 7]))
+            self.assertAlmostEqual(values[1, 0], .0275430530309677)
+            self.assertTrue(np.isnan(values[1, 4]))
+            self.assertTrue(np.isnan(values[1, 6]))
+            self.assertEqual(meta["invalid_device_values"], {"HeartRate": 1, "SpO2": 1})
+
+    def test_failed_import_does_not_overwrite_existing_arrays(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            source = path / "input.csv"
+            source.write_text("Elapsed Time,ECG\n0,0.125\n")
+            output = path / "parsed"
+            import_csv(source, output)
+            saved = {name: (output / name).read_bytes() for name in ("time.npy", "signals.npy", "signal_meta.json")}
+            source.write_text(self.header + "0,1,2,3,4,5,72,80,97,0,\n")
+            with self.assertRaisesRegex(ValueError, "Прежние данные"):
+                import_csv(source, output)
+            for name, contents in saved.items():
+                self.assertEqual((output / name).read_bytes(), contents)
+
+    def test_duplicate_sensor_aliases_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)
+            source = path / "input.csv"
+            source.write_text("Elapsed Time,PPG PulseOx1,PPG PulseOx2\n0,80.5,81.5\n")
+            with self.assertRaisesRegex(ValueError, "несколько датчиков"):
+                import_csv(source, path / "parsed")
+
     def test_semicolon_and_quoted_decimal_values(self):
         for content in ('Elapsed Time;ECG;PPG pulse\n0;0,125;80,5\n', 'Elapsed Time,ECG,PPG pulse\n0,"0,125","80,5"\n'):
             with tempfile.TemporaryDirectory() as tmp:
@@ -122,6 +175,20 @@ class SpeechRegressionTests(unittest.TestCase):
         cleaned = validate_turns(turns)
         self.assertEqual(cleaned[0]["acoustic"]["version"], 2)
 
+    def test_negative_autocorrelation_peaks_leave_pitch_unavailable(self):
+        fs = 16000
+        t = np.arange(fs) / fs
+        # Low-frequency rumble plus noise produces frames whose local maxima
+        # in the pitch search band are all negative (as in Margaryan's audio).
+        audio = .01 * (np.sin(2 * np.pi * 30 * t) + .2 * np.random.default_rng(0).normal(size=len(t)))
+        frames = _acoustic_frames(audio, fs)
+        self.assertEqual(len(frames["start"]), 48)
+        self.assertTrue(np.isfinite(frames["rms"]).all())
+        self.assertTrue(np.isfinite(frames["spectral_centroid_hz"]).all())
+        self.assertTrue(np.isnan(frames["pitch_hz"][26]))
+        isolated = _acoustic_frames(audio[8320:9120], fs)
+        self.assertTrue(np.isnan(isolated["pitch_hz"][0]))
+
     def test_reprocessing_preserves_manual_session_and_saves_frames(self):
         with tempfile.TemporaryDirectory() as tmp:
             store = SessionStore(Path(tmp))
@@ -144,6 +211,51 @@ class SpeechRegressionTests(unittest.TestCase):
             self.assertAlmostEqual(stats["speech"]["pitch_hz"], 180, delta=1)
             self.assertGreater(stats["speech"]["acoustic_coverage"], .95)
             self.assertIsNone(stats["speech"]["words_per_minute"])
+
+
+class AnswerDatasetTests(unittest.TestCase):
+    def setUp(self):
+        self.turns = [dict(id="q", start=0, end=1, speaker="interviewer", text="Вопрос?"),
+                      dict(id="r1", start=2, end=4, speaker="respondent", text="Первое предложение", pause_seconds=0),
+                      dict(id="r2", start=7, end=9, speaker="respondent", text="Второе предложение", pause_seconds=0)]
+        self.answers = [dict(id="a", start=2, end=9, label="truth", turn_ids=["r1", "r2"],
+                             question_turn_ids=["q"], internal_pauses=[dict(start=4, end=7)])]
+
+    def test_full_answer_includes_pause_without_double_counting(self):
+        stats = speech_stats(self.turns, 2, 9, answer_spans=self.answers)
+        self.assertEqual(stats["answer_count"], 1)
+        self.assertEqual(stats["answer_ids"], ["a"])
+        self.assertEqual(stats["response_duration_seconds"], 7)
+        self.assertEqual(stats["internal_pause_seconds"], 3)
+        self.assertAlmostEqual(stats["words_per_minute"], 4 * 60 / 7)
+        self.assertEqual(stats["response_latency_seconds"], 1)
+        pause = speech_stats(self.turns, 4.5, 6.5, answer_spans=self.answers)
+        self.assertEqual(pause["answer_ids"], ["a"])
+        self.assertEqual(pause["internal_pause_seconds"], 2)
+        self.assertEqual(pause["response_duration_seconds"], 7)
+
+    def test_internal_pause_inside_single_turn(self):
+        turns = [dict(id="r", start=2, end=12, speaker="respondent", text="Ответ", pause_seconds=4)]
+        answers = [dict(id="a", turn_ids=["r"], internal_pauses=[dict(start=5, end=8)])]
+        stats = speech_stats(turns, 2, 12, answer_spans=answers)
+        self.assertEqual(stats["internal_pause_seconds"], 4)
+
+    def test_ids_survive_save_and_changed_labels_require_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            store = SessionStore(Path(tmp))
+            sid = store.create("Dataset")['id']
+            annotations = [dict(start=2, end=9, label="truth")]
+            store.update(sid, turns=self.turns, answers=self.answers, annotations=annotations, answer_review_required=False)
+            saved = store.update(sid, turns=validate_turns(self.turns))
+            self.assertFalse(saved["answer_review_required"])
+            self.assertEqual(saved["turns"][1]["id"], "r1")
+            changed = store.update(sid, annotations=[dict(start=2, end=9, label="lie")])
+            self.assertTrue(changed["answer_review_required"])
+            store.update(sid, answers=self.answers, answer_review_required=False)
+            turns = [dict(t) for t in self.turns]
+            turns[1]["end"] = 4.5
+            changed = store.update(sid, turns=turns)
+            self.assertTrue(changed["answer_review_required"])
 
 
 class PhysiologyRegressionTests(unittest.TestCase):

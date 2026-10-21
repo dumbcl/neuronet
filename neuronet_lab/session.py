@@ -75,6 +75,7 @@ def validate_turns(turns: list[dict]) -> list[dict]:
             raise ValueError("Неизвестный говорящий")
         acoustic = turn.get("acoustic") or {}
         cleaned.append({
+            **{key: turn[key] for key in ("id", "review_kind") if turn.get(key) is not None},
             "start": start, "end": end, "speaker": speaker,
             "text": str(turn.get("text", ""))[:10000],
             "pause_seconds": turn.get("pause_seconds"),
@@ -132,6 +133,14 @@ class SessionStore:
         with LOCK:
             directory = self.directory(sid)
             meta = self.read(sid)
+            if "turns" in changes and meta.get("answers") and "answers" not in changes:
+                signature = lambda items: sorted([(t.get("id"), t["start"], t["end"], t.get("speaker")) for t in items], key=lambda t: (t[1], t[2], str(t[0])))
+                if signature(meta.get("turns", [])) != signature(changes["turns"]):
+                    changes["answer_review_required"] = True
+            if "annotations" in changes and meta.get("answers") and "answers" not in changes:
+                signature = lambda items: [(a["start"], a["end"], a.get("label")) for a in items]
+                if signature(meta.get("annotations", [])) != signature(changes["annotations"]):
+                    changes["answer_review_required"] = True
             meta.update(changes)
             self._write(directory, meta)
             return meta
@@ -204,4 +213,18 @@ class SessionStore:
         markers = meta["markers"]
         left = map_time(start, markers["video"], markers["signal"])
         right = map_time(end, markers["video"], markers["signal"])
-        return interval_stats(self.directory(sid), start, end, left, right, meta.get("turns", []))
+        answers = meta.get("answers") if not meta.get("answer_review_required") else None
+        result = interval_stats(self.directory(sid), start, end, left, right, meta.get("turns", []), answers)
+        if meta.get("answer_review_required"):
+            result["notes"].append("После изменения границ, говорящих или меток требуется проверить связи и классы полных ответов перед выгрузкой датасета.")
+        if not any(meta["markers"]["signal"].get(key) is not None for key in MARKER_NAMES):
+            result["notes"].append("Синхронизация BioRadio с видео не задана: сравнение по времени предварительное.")
+        return result
+
+    def export_dataset(self, sid: str, name: str, progress=lambda value: None) -> dict:
+        from .dataset import export_dataset
+
+        with LOCK:
+            directory = self.directory(sid)
+            snapshot = self.read(sid)
+        return export_dataset(directory, snapshot, name, progress)

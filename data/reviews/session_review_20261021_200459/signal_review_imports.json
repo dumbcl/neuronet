@@ -1,0 +1,104 @@
+[
+  {
+    "sid": "6c64e7e5588141c1a31d6876cefda2c0",
+    "meta": {
+      "channels": [
+        "ECG",
+        "RIP",
+        "GSR",
+        "Flow",
+        "HeartRate",
+        "PPG",
+        "SpO2",
+        "Event"
+      ],
+      "sample_count": 1111590,
+      "sample_rate_hz": 1000.0,
+      "start": 0.0,
+      "end": 1111.589,
+      "duration": 1111.589,
+      "malformed_rows": 148,
+      "format": "decimal_comma",
+      "import_version": 4,
+      "source_file": "komarov.csv",
+      "source_headers": [
+        "Elapsed Time",
+        "ECG",
+        "RIP",
+        "GSR",
+        "Flow Rate temp",
+        "Heart Rate pulse",
+        "PPG pulse",
+        "SpO2 pulse",
+        "BioRadio Event",
+        ""
+      ],
+      "invalid_device_values": {
+        "HeartRate": 18266,
+        "SpO2": 18266
+      },
+      "recovered_decimal_rows": 1111442,
+      "nonfinite_samples": {
+        "ECG": 148,
+        "RIP": 148,
+        "GSR": 148,
+        "Flow": 148,
+        "HeartRate": 18414,
+        "PPG": 148,
+        "SpO2": 18414,
+        "Event": 148
+      }
+    }
+  },
+  {
+    "sid": "cc58d79df96a4f8c9d74e5e7114a9df4",
+    "meta": {
+      "channels": [
+        "ECG",
+        "RIP",
+        "GSR",
+        "Flow",
+        "HeartRate",
+        "PPG",
+        "SpO2",
+        "Event"
+      ],
+      "sample_count": 1616040,
+      "sample_rate_hz": 1000.0,
+      "start": 0.0,
+      "end": 1616.039,
+      "duration": 1616.039,
+      "malformed_rows": 99,
+      "format": "decimal_comma",
+      "import_version": 4,
+      "source_file": "yahayev.csv",
+      "source_headers": [
+        "Elapsed Time",
+        "ECG",
+        "RIP",
+        "GSR",
+        "Flow Rate temp",
+        "Heart Rate pulse",
+        "PPG pulse",
+        "SpO2 pulse",
+        "BioRadio Event",
+        ""
+      ],
+      "invalid_device_values": {
+        "HeartRate": 0,
+        "SpO2": 0
+      },
+      "recovered_decimal_rows": 1615941,
+      "nonfinite_samples": {
+        "ECG": 99,
+        "RIP": 99,
+        "GSR": 99,
+        "Flow": 99,
+        "HeartRate": 99,
+        "PPG": 99,
+        "SpO2": 99,
+        "Event": 100
+      }
+    }
+  }
+]

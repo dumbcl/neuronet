@@ -214,11 +214,16 @@ def _acoustic_frames(audio: np.ndarray, sample_rate: int) -> dict:
             peaks = np.flatnonzero((corr[lo:hi] > corr[lo - 1:hi - 1]) & (corr[lo:hi] >= corr[lo + 1:hi + 1])) + lo
             if not len(peaks):
                 continue
-            best = corr[peaks].max()
-            # Prefer the fundamental over autocorrelation peaks at multiples of its period.
-            lag = int(peaks[np.flatnonzero(corr[peaks] >= 0.9 * best)[0]])
-            if corr[lag] / corr[0] < 0.6:
+            strengths = corr[peaks]
+            # Unvoiced frames can have only negative local maxima. For a
+            # negative best, 0.9 * best exceeds every peak, yielding an empty
+            # selection. Apply the periodicity gate before choosing a lag.
+            voiced = np.isfinite(strengths) & (strengths >= 0.6 * corr[0])
+            if not voiced.any():
                 continue
+            best = strengths[voiced].max()
+            # Prefer the fundamental over autocorrelation peaks at multiples of its period.
+            lag = int(peaks[np.flatnonzero(voiced & (strengths >= 0.9 * best))[0]])
             denominator = corr[lag - 1] - 2 * corr[lag] + corr[lag + 1]
             offset = 0.5 * (corr[lag - 1] - corr[lag + 1]) / denominator if denominator else 0
             estimate = sample_rate / (lag + np.clip(offset, -0.5, 0.5))

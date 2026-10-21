@@ -1,0 +1,26 @@
+[
+  {
+    "id": "6c64e7e5588141c1a31d6876cefda2c0",
+    "name": "00012 — komarov",
+    "turns": 385,
+    "status": "ok"
+  },
+  {
+    "id": "a7c62a956399449a8dac43d749761e67",
+    "name": "Маргарян — 07.10.2026 — проверить синхронизацию",
+    "turns": 342,
+    "status": "ok"
+  },
+  {
+    "id": "5dba1945a17d42268d2bb7a07ed67d59",
+    "name": "Дубров Степан",
+    "turns": 110,
+    "status": "ok"
+  },
+  {
+    "id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+    "name": "Яхяев",
+    "turns": 616,
+    "status": "ok"
+  }
+]

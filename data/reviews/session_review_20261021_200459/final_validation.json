@@ -1,0 +1,47 @@
+[
+  {
+    "id": "5dba1945a17d42268d2bb7a07ed67d59",
+    "name": "Дубров Степан",
+    "sample_count": 245735,
+    "sample_rate_hz": 250.0,
+    "dataset_candidates": 53,
+    "answer_links_valid": true,
+    "sync_markers_unchanged": true
+  },
+  {
+    "id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+    "name": "Яхяев",
+    "sample_count": 1616040,
+    "sample_rate_hz": 1000.0,
+    "dataset_candidates": 63,
+    "answer_links_valid": true,
+    "sync_markers_unchanged": true
+  },
+  {
+    "id": "105116c550ad455a88376c54ff667e11",
+    "name": "Фокин",
+    "sample_count": 1548395,
+    "sample_rate_hz": 1000.0,
+    "dataset_candidates": 60,
+    "answer_links_valid": true,
+    "sync_markers_unchanged": true
+  },
+  {
+    "id": "6c64e7e5588141c1a31d6876cefda2c0",
+    "name": "00012 — komarov",
+    "sample_count": 1111590,
+    "sample_rate_hz": 1000.0,
+    "dataset_candidates": 54,
+    "answer_links_valid": true,
+    "sync_markers_unchanged": true
+  },
+  {
+    "id": "a7c62a956399449a8dac43d749761e67",
+    "name": "Маргарян — 07.10.2026 — проверить синхронизацию",
+    "sample_count": 269778,
+    "sample_rate_hz": 250.0,
+    "dataset_candidates": 54,
+    "answer_links_valid": true,
+    "sync_markers_unchanged": true
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Фокин",
+    "id": "105116c550ad455a88376c54ff667e11",
+    "csv_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/105116c550ad455a88376c54ff667e11/fokin_episodes.csv",
+    "metadata_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/105116c550ad455a88376c54ff667e11/fokin_episodes.metadata.json",
+    "row_count": 60,
+    "excluded_count": 0,
+    "sync_status": "markers_aligned",
+    "episode_status_counts": {
+      "context_trimmed": 1,
+      "complete": 59
+    }
+  },
+  {
+    "name": "00012 — komarov",
+    "id": "6c64e7e5588141c1a31d6876cefda2c0",
+    "csv_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/6c64e7e5588141c1a31d6876cefda2c0/komarov_episodes.csv",
+    "metadata_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/6c64e7e5588141c1a31d6876cefda2c0/komarov_episodes.metadata.json",
+    "row_count": 54,
+    "excluded_count": 4,
+    "sync_status": "estimated_needs_review",
+    "episode_status_counts": {
+      "complete": 54
+    }
+  },
+  {
+    "name": "Маргарян — 07.10.2026 — проверить синхронизацию",
+    "id": "a7c62a956399449a8dac43d749761e67",
+    "csv_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/a7c62a956399449a8dac43d749761e67/margaryan_episodes.csv",
+    "metadata_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/a7c62a956399449a8dac43d749761e67/margaryan_episodes.metadata.json",
+    "row_count": 54,
+    "excluded_count": 1,
+    "sync_status": "markers_aligned",
+    "episode_status_counts": {
+      "context_trimmed": 1,
+      "complete": 52,
+      "question_overlap_clipped": 1
+    }
+  },
+  {
+    "name": "Дубров Степан",
+    "id": "5dba1945a17d42268d2bb7a07ed67d59",
+    "csv_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/5dba1945a17d42268d2bb7a07ed67d59/dubrov_episodes.csv",
+    "metadata_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/5dba1945a17d42268d2bb7a07ed67d59/dubrov_episodes.metadata.json",
+    "row_count": 53,
+    "excluded_count": 2,
+    "sync_status": "markers_aligned",
+    "episode_status_counts": {
+      "complete": 53
+    }
+  },
+  {
+    "name": "Яхяев",
+    "id": "cc58d79df96a4f8c9d74e5e7114a9df4",
+    "csv_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/cc58d79df96a4f8c9d74e5e7114a9df4/yahaev_episodes.csv",
+    "metadata_path": "/Users/dumbcl/neuronet/neuronet_lab/data/sessions/cc58d79df96a4f8c9d74e5e7114a9df4/yahaev_episodes.metadata.json",
+    "row_count": 63,
+    "excluded_count": 1,
+    "sync_status": "markers_aligned",
+    "episode_status_counts": {
+      "question_overlap_clipped": 1,
+      "complete": 62
+    }
+  }
+]
