@@ -23,6 +23,7 @@ from PySide6.QtWidgets import (
 )
 
 from .session import MARKER_NAMES, SessionStore, validate_markers, validate_turns
+from .video_features import load_video_points
 
 
 STAGE_LABELS = ("Начало покоя", "Начало разговора", "Конец разговора", "Конец записи")
@@ -34,6 +35,7 @@ METRICS = (
     ("ЧСС по ЭКГ", "contact.ecg.heart_rate_bpm", "уд/мин"),
     ("ЧСС по контактной ФПГ", "contact.ppg.heart_rate_bpm", "уд/мин"),
     ("ЧСС по видео rPPG", "video.rppg_heart_rate_bpm", "уд/мин"),
+    ("rPPG с учётом предыстории", "video.rppg_context_heart_rate_bpm", "уд/мин"),
     ("Разница ЭКГ / ФПГ", "comparison.ecg_ppg_delta_bpm", "уд/мин"),
     ("Разница ЭКГ / rPPG", "comparison.ecg_rppg_delta_bpm", "уд/мин"),
     ("Дыхание RIP", "contact.respiration_bpm", "/мин"),
@@ -41,9 +43,9 @@ METRICS = (
     ("GSR, среднее", "contact.gsr_mean", ""),
     ("ВСР SDNN по ЭКГ", "contact.ecg.sdnn_ms", "мс"),
     ("ВСР RMSSD по ЭКГ", "contact.ecg.rmssd_ms", "мс"),
-    ("ВСР VLF по ЭКГ", "contact.ecg.vlf_power", ""),
-    ("ВСР LF по ЭКГ", "contact.ecg.lf_power", ""),
-    ("ВСР HF по ЭКГ", "contact.ecg.hf_power", ""),
+    ("ВСР VLF по ЭКГ", "contact.ecg.vlf_power", "мс²"),
+    ("ВСР LF по ЭКГ", "contact.ecg.lf_power", "мс²"),
+    ("ВСР HF по ЭКГ", "contact.ecg.hf_power", "мс²"),
     ("LF/HF по ЭКГ", "contact.ecg.lf_hf", ""),
     ("ВСР SDNN по ФПГ", "contact.ppg.sdnn_ms", "мс"),
     ("ВСР RMSSD по ФПГ", "contact.ppg.rmssd_ms", "мс"),
@@ -52,10 +54,12 @@ METRICS = (
     ("Длительность ответа", "speech.response_duration_seconds", "с"),
     ("Скорость речи", "speech.words_per_minute", "слов/мин"),
     ("Слоги в секунду", "speech.syllables_per_second", ""),
+    ("Паузы внутри выбранного ответа", "speech.internal_pause_seconds", "с"),
     ("Основной тон", "speech.pitch_hz", "Гц"),
+    ("Разброс основного тона (IQR)", "speech.pitch_iqr_hz", "Гц"),
     ("Энергия речи", "speech.voice_rms", ""),
     ("Наклон корпуса", "video.trunk_tilt_degrees", "°"),
-    ("Движение головы", "video.head_motion", ""),
+    ("Скорость смещения рамки лица", "video.head_motion", "ширин лица/с"),
     ("Движение рук", "video.hand_motion", ""),
     ("Движение ног", "video.leg_motion", ""),
     ("Вероятность лжи", "lie_probability", ""),
@@ -263,6 +267,7 @@ class MainWindow(QMainWindow):
         layout.addLayout(buttons)
         self.audio_button = self._button("Автоматическая расшифровка", self.analyze_audio)
         layout.addWidget(self.audio_button)
+        layout.addWidget(self._button("Пересчитать акустику по видео", self.refresh_acoustics))
         layout.addWidget(QLabel("Говорящий определяется приблизительно; проверьте текст и метки вручную."))
         return tab
 
@@ -373,7 +378,7 @@ class MainWindow(QMainWindow):
         self.current_bio_text = ""
         source = self.store.directory(sid) / "video_features.json"
         if source.is_file():
-            self.video_features = json.loads(source.read_text(encoding="utf-8"))
+            self.video_features = load_video_points(source, source.stat().st_mtime_ns)
             self.video_feature_times = [point.get("time", 0) for point in self.video_features]
         path = self.store.video_path(sid)
         self.player.setSource(QUrl.fromLocalFile(str(path)) if path else QUrl())
@@ -451,6 +456,14 @@ class MainWindow(QMainWindow):
         sid = self.sid
         self._run_task("Расшифровка речи", lambda progress: self.store.transcribe(sid, progress), lambda result: self.load_session(sid))
 
+    def refresh_acoustics(self):
+        if not self.sid:
+            return self._error("Сначала создайте сессию")
+        if not self.save_turns():
+            return
+        sid = self.sid
+        self._run_task("Пересчёт акустики", lambda progress: self.store.refresh_acoustics(sid, progress), lambda result: self.load_session(sid))
+
     def set_video_marker(self, name: str):
         self.marker_edits["video"][name].setText(str(round(self.position(), 2)))
 
@@ -524,9 +537,11 @@ class MainWindow(QMainWindow):
             self.current.setText("Для текущего кадра нет рассчитанных признаков." + self.current_bio_text)
             return
         bits = []
-        for label, key, unit in (("rPPG", "rppg_bpm", "уд/мин"), ("Корпус", "trunk_tilt", "°"), ("Голова", "head_motion", ""), ("Руки", "hand_motion", ""), ("Ноги", "leg_motion", "")):
+        for label, key, unit in (("rPPG (скользящее окно)", "rppg_bpm", "уд/мин"), ("Корпус", "trunk_tilt", "°"), ("Смещение лица", "head_motion", "ширин/с"), ("Руки", "hand_motion", ""), ("Ноги", "leg_motion", "")):
             if near.get(key) is not None:
-                bits.append(f"{label}: {near[key]} {unit}")
+                bits.append(f"{label}: {near[key]:.5g} {unit}")
+        if near.get("rppg_window_start") is not None:
+            bits.append(f"Окно rPPG: {near['rppg_window_start']:.1f}–{near['rppg_window_end']:.1f} с")
         self.current.setText(("  ·  ".join(bits) or "Признаки текущего кадра недоступны") + self.current_bio_text)
 
     def update_current(self):
@@ -597,6 +612,8 @@ class MainWindow(QMainWindow):
             self.turn_table.setItem(row, column, item)
         self.turn_table.item(row, 0).setData(Qt.ItemDataRole.UserRole, {
             "pause_seconds": turn.get("pause_seconds"), "acoustic": turn.get("acoustic") or {},
+            "words": turn.get("words", []), "_source_text": turn.get("text", ""),
+            "_source_bounds": [turn["start"], turn["end"]],
         })
 
     def add_turn(self):
@@ -622,11 +639,20 @@ class MainWindow(QMainWindow):
                 if speaker not in {"интервьюер", "респондент", "interviewer", "respondent"}:
                     raise ValueError(f"Строка {row + 1}: говорящий — Интервьюер или Респондент")
                 extra = self.turn_table.item(row, 0).data(Qt.ItemDataRole.UserRole) or {}
-                turns.append({"start": parse_time(cells[0]), "end": parse_time(cells[1]), "speaker": "interviewer" if speaker in {"интервьюер", "interviewer"} else "respondent", "text": cells[3], **extra})
+                extra = dict(extra)
+                bounds = [parse_time(cells[0]), parse_time(cells[1])]
+                text_changed = extra.pop("_source_text", cells[3]) != cells[3]
+                bounds_changed = extra.pop("_source_bounds", bounds) != bounds
+                if text_changed or bounds_changed:
+                    extra.update(words=[], pause_seconds=None)
+                if bounds_changed:
+                    extra["acoustic"] = {}
+                turns.append({"start": bounds[0], "end": bounds[1], "speaker": "interviewer" if speaker in {"интервьюер", "interviewer"} else "respondent", "text": cells[3], **extra})
             self.meta = self.store.update(self.sid, turns=validate_turns(turns))
             self._render_turns()
             self.statusBar().showMessage("Стенограмма сохранена", 5000)
-        self._guard(action)
+            return True
+        return self._guard(action)
 
     def _highlight_turn(self, time: float):
         for row in range(self.turn_table.rowCount()):
@@ -665,6 +691,9 @@ class MainWindow(QMainWindow):
         self.metrics.setRowCount(len(METRICS))
         for row, (label, path, unit) in enumerate(METRICS):
             value = nested(result, path)
+            if isinstance(value, float):
+                # Keep calculation precision; only format the displayed value.
+                value = f"{value:.6g}"
             display = "—" if value is None else f"{value} {unit}".strip()
             self.metrics.setItem(row, 0, QTableWidgetItem(label))
             self.metrics.setItem(row, 1, QTableWidgetItem(display))

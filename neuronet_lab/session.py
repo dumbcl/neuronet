@@ -11,7 +11,7 @@ from pathlib import Path
 
 from .analytics import clear_hrv_cache, interval_stats
 from .bioradio import import_csv, plot_data
-from .media import analyze_video, transcribe_and_diarize
+from .media import analyze_video, refresh_acoustics, transcribe_and_diarize
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -78,7 +78,8 @@ def validate_turns(turns: list[dict]) -> list[dict]:
             "start": start, "end": end, "speaker": speaker,
             "text": str(turn.get("text", ""))[:10000],
             "pause_seconds": turn.get("pause_seconds"),
-            "acoustic": {key: acoustic.get(key) for key in ("rms", "pitch_hz", "spectral_centroid_hz")},
+            "acoustic": {key: acoustic.get(key) for key in ("rms", "pitch_hz", "pitch_iqr_hz", "spectral_centroid_hz", "voiced_fraction", "version", "scope", "duration_seconds") if key in acoustic},
+            "words": [{"start": float(w["start"]), "end": float(w["end"]), "word": str(w.get("word", ""))} for w in turn.get("words", []) if start <= float(w["start"]) < float(w["end"]) <= end + 0.001],
         })
     return sorted(cleaned, key=lambda item: item["start"])
 
@@ -152,6 +153,7 @@ class SessionStore:
         shutil.copyfile(source, temporary)
         temporary.replace(target)
         (directory / "video_features.json").unlink(missing_ok=True)
+        (directory / "audio_features.npz").unlink(missing_ok=True)
         return self.update(sid, video={"filename": target.name, "size": target.stat().st_size, "duration": None}, video_analysis=None)
 
     def import_bioradio(self, sid: str, source: Path) -> dict:
@@ -173,7 +175,18 @@ class SessionStore:
         if video is None:
             raise ValueError("Сначала добавьте видео")
         turns = transcribe_and_diarize(video, progress)
-        return self.update(sid, turns=validate_turns(turns))
+        turns = refresh_acoustics(video, turns, self.directory(sid) / "audio_features.npz", progress)
+        return self.update(sid, turns=validate_turns(turns), audio_analysis={"version": 2})
+
+    def refresh_acoustics(self, sid: str, progress) -> dict:
+        video = self.video_path(sid)
+        if video is None:
+            raise ValueError("Сначала добавьте видео")
+        meta = self.read(sid)
+        if not meta.get("turns"):
+            raise ValueError("Сначала добавьте стенограмму")
+        turns = refresh_acoustics(video, meta["turns"], self.directory(sid) / "audio_features.npz", progress)
+        return self.update(sid, turns=validate_turns(turns), audio_analysis={"version": 2})
 
     def signals(self, sid: str, start: float, end: float) -> dict:
         meta = self.read(sid)
