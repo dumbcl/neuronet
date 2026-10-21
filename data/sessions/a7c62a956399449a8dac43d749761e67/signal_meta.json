@@ -1,0 +1,1 @@
+{"channels": ["ECG", "RIP", "GSR", "Flow", "HeartRate", "PPG", "SpO2"], "sample_count": 269778, "sample_rate_hz": 250.0, "start": 0.0, "end": 1079.108, "duration": 1079.108, "malformed_rows": 0, "format": "regular"}
