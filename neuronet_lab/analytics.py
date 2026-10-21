@@ -17,9 +17,9 @@ def _finite(values):
     return values[np.isfinite(values)]
 
 
-def _mean(values):
+def _mean(values, digits=2):
     values = _finite(values)
-    return round(float(np.mean(values)), 2) if len(values) else None
+    return round(float(np.mean(values)), digits) if len(values) else None
 
 
 def _smooth(values: np.ndarray, width: int) -> np.ndarray:
@@ -133,7 +133,7 @@ def _speech_stats(turns: list[dict], start: float, end: float) -> dict:
         "turn_count": len(selected),
         "response_duration_seconds": _mean([t["end"] - t["start"] for t in respondent]),
         "internal_pause_seconds": _mean([t.get("pause_seconds") for t in respondent]),
-        "voice_rms": _mean([t.get("acoustic", {}).get("rms") for t in respondent]),
+        "voice_rms": _mean([t.get("acoustic", {}).get("rms") for t in respondent], digits=5),
         "pitch_hz": _mean([t.get("acoustic", {}).get("pitch_hz") for t in respondent]),
         "spectral_centroid_hz": _mean([t.get("acoustic", {}).get("spectral_centroid_hz") for t in respondent]),
     }

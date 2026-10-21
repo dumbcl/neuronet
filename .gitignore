@@ -2,6 +2,5 @@
 __pycache__/
 *.pyc
 .DS_Store
-# Сессии: в git только разметка (session.json); видео и массивы BioRadio остаются локально
-data/sessions/*/*
-!data/sessions/*/session.json
+.idea
+/data/sessions/**/*.mp4
