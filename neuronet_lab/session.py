@@ -228,3 +228,23 @@ class SessionStore:
             directory = self.directory(sid)
             snapshot = self.read(sid)
         return export_dataset(directory, snapshot, name, progress)
+
+    def build_answers(self, sid: str) -> dict:
+        from .answers import build_full_answers
+
+        with LOCK:
+            directory = self.directory(sid)
+            snapshot = self.read(sid)
+            changes, report = build_full_answers(snapshot)
+            stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+            review_dir = directory / "reviews"
+            review_dir.mkdir(exist_ok=True)
+            backup = review_dir / f"before_answers_{stamp}.json"
+            backup.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2), encoding="utf-8")
+            report_path = review_dir / f"answers_report_{stamp}.json"
+            report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+            result = self.update(sid, **changes, answers_build={
+                **report, "created_utc": datetime.now(timezone.utc).isoformat(),
+                "backup": str(backup.relative_to(directory)), "report": str(report_path.relative_to(directory)),
+            })
+            return {"session": result, "report": report, "backup_path": str(backup), "report_path": str(report_path)}

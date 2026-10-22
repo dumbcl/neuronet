@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (
     QApplication, QComboBox, QFileDialog, QGridLayout, QGroupBox, QHBoxLayout,
     QInputDialog, QLabel, QLineEdit, QMainWindow, QMessageBox, QPushButton,
     QScrollArea, QSlider, QSplitter, QTableWidget, QTableWidgetItem, QTabWidget,
-    QVBoxLayout, QWidget, QAbstractItemView, QSizePolicy,
+    QVBoxLayout, QWidget, QAbstractItemView, QSizePolicy, QLayout,
 )
 
 from .session import MARKER_NAMES, SessionStore, validate_markers, validate_turns
@@ -302,6 +302,7 @@ class MainWindow(QMainWindow):
     def _annotation_tab(self) -> QWidget:
         tab = QWidget()
         layout = QVBoxLayout(tab)
+        layout.setSizeConstraint(QLayout.SizeConstraint.SetMinimumSize)
         annotation_hint = QLabel("Экспертные метки для выбранного интервала. Они не являются предсказанием модели.")
         annotation_hint.setWordWrap(True)
         layout.addWidget(annotation_hint)
@@ -327,6 +328,13 @@ class MainWindow(QMainWindow):
         hint.setWordWrap(True)
         hint.setSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Minimum)
         export_layout.addWidget(hint)
+        self.answers_button = self._button("Сформировать полные ответы из интервалов", self.build_answers)
+        self.answers_button.setToolTip("Связать реплики, паузы и вопросы с текущими экспертными метками. Неоднозначные ответы будут исключены из экспорта.")
+        export_layout.addWidget(self.answers_button)
+        self.answers_status = QLabel("Сначала сохраните интервалы и проверьте роли говорящих.")
+        self.answers_status.setWordWrap(True)
+        self.answers_status.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        export_layout.addWidget(self.answers_status)
         export_controls = QHBoxLayout()
         self.dataset_name = QLineEdit("dataset")
         self.dataset_name.setPlaceholderText("Имя датасета, например fokin")
@@ -342,7 +350,11 @@ class MainWindow(QMainWindow):
         self.dataset_status.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
         export_layout.addWidget(self.dataset_status)
         layout.addWidget(export_box)
-        return tab
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        scroll.setWidget(tab)
+        return scroll
 
     def _connect(self):
         self.sessions.currentIndexChanged.connect(self.on_session_changed)
@@ -409,6 +421,7 @@ class MainWindow(QMainWindow):
         self._render_meta()
         self._render_turns()
         self._render_annotations()
+        self._render_answers_status()
         self.dataset_status.setText("CSV с показателями + JSON с описанием полей и качеством данных. Недоступные значения останутся пустыми.")
         self.dataset_status.setToolTip("")
         self.metrics.setRowCount(0)
@@ -438,7 +451,7 @@ class MainWindow(QMainWindow):
         thread = TaskThread(action, self)
         self.active_task = thread
         self.statusBar().showMessage(label)
-        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button, self.dataset_button, self.dataset_name):
+        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button, self.dataset_button, self.dataset_name, self.answers_button):
             button.setEnabled(False)
         self.sessions.setEnabled(False)
         thread.progress.connect(lambda value: self.statusBar().showMessage(f"{label}: {value}%"))
@@ -449,7 +462,7 @@ class MainWindow(QMainWindow):
 
     def _task_finished(self):
         self.active_task = None
-        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button, self.dataset_button, self.dataset_name):
+        for button in (self.new_button, self.video_button, self.csv_button, self.audio_button, self.video_analysis_button, self.stats_button, self.dataset_button, self.dataset_name, self.answers_button):
             button.setEnabled(True)
         self.sessions.setEnabled(True)
         self.statusBar().showMessage("Готово", 4000)
@@ -680,6 +693,7 @@ class MainWindow(QMainWindow):
                 turns.append({"start": bounds[0], "end": bounds[1], "speaker": "interviewer" if speaker in {"интервьюер", "interviewer"} else "respondent", "text": cells[3], **extra})
             self.meta = self.store.update(self.sid, turns=validate_turns(turns))
             self._render_turns()
+            self._render_answers_status()
             self.statusBar().showMessage("Стенограмма сохранена", 5000)
             return True
         return self._guard(action)
@@ -753,6 +767,7 @@ class MainWindow(QMainWindow):
             entries.append({"start": start, "end": end, "name": self.annotation_name.text().strip(), "label": self.annotation_type.currentData()})
             self.meta = self.store.update(self.sid, annotations=sorted(entries, key=lambda item: item["start"]))
             self._render_annotations()
+            self._render_answers_status()
             self.statusBar().showMessage("Экспертная метка сохранена", 5000)
         self._guard(action)
 
@@ -762,12 +777,75 @@ class MainWindow(QMainWindow):
             entries = [item for index, item in enumerate(self.meta.get("annotations", [])) if index != row]
             self.meta = self.store.update(self.sid, annotations=entries)
             self._render_annotations()
+            self._render_answers_status()
 
     def seek_to_annotation(self, row: int, column: int):
         item = self.meta["annotations"][row]
         self.start_edit.setText(str(item["start"]))
         self.end_edit.setText(str(item["end"]))
         self.player.setPosition(int(item["start"] * 1000))
+
+    def _render_answers_status(self):
+        meta = self.meta or {}
+        self.answers_status.setToolTip("")
+        if meta.get("answer_review_required"):
+            self.answers_status.setText("Разметка или роли изменены. Сформируйте полные ответы заново перед выгрузкой.")
+            return
+        answers = meta.get("answers") or []
+        if not answers:
+            self.answers_status.setText("Полные ответы ещё не сформированы. Сохраните интервалы и проверьте роли говорящих.")
+            return
+        eligible = sum(bool(a.get("dataset_eligible")) for a in answers)
+        review = sum(bool(a.get("review_required")) for a in answers)
+        text = f"Полных ответов: {len(answers)}. Доступно для экспорта: {eligible}. Требуют проверки: {review}."
+        report = meta.get("answers_build") or {}
+        unlinked = report.get("unlinked_intervals", [])
+        if unlinked:
+            text += f" Интервалов без реплики респондента: {len(unlinked)}."
+        problems = report.get("issues", []) + unlinked
+        for issue in problems[:4]:
+            text += f"\n{issue['start']:.2f}–{issue['end']:.2f} с: {issue['reason']}"
+        if len(problems) > 4:
+            text += f"\nЕщё замечаний: {len(problems)-4}. Полный список в отчёте."
+        self.answers_status.setText(text)
+        if report.get("report") and self.sid:
+            self.answers_status.setToolTip(str(self.store.directory(self.sid) / report["report"]))
+
+    def build_answers(self):
+        if not self.sid:
+            return self._error("Сначала выберите сессию")
+        if self.active_task is not None:
+            return self._error("Дождитесь завершения текущей обработки")
+        if not self.save_turns() or not self.save_markers():
+            return
+
+        def action():
+            # Honour edits visible in the interval table, retaining source IDs.
+            labels = {"правда":"truth", "ложь":"lie", "база":"base", "без метки":"unlabeled",
+                      "truth":"truth", "lie":"lie", "base":"base", "unlabeled":"unlabeled"}
+            entries = []
+            for row in range(self.annotation_table.rowCount()):
+                cells = [self.annotation_table.item(row,col).text().strip() for col in range(4)]
+                if cells[2].lower() not in labels:
+                    raise ValueError(f"Интервал {row+1}: укажите База, Правда, Ложь или Без метки.")
+                start, end = parse_time(cells[0]), parse_time(cells[1])
+                if start is None or end is None or end <= start:
+                    raise ValueError(f"Интервал {row+1}: конец должен быть позже начала.")
+                item = dict(self.meta["annotations"][row], start=start, end=end, label=labels[cells[2].lower()], name=cells[3])
+                entries.append(item)
+            self.meta = self.store.update(self.sid, annotations=sorted(entries,key=lambda a:a["start"]))
+            result = self.store.build_answers(self.sid)
+            self.meta = result["session"]
+            self._render_turns()
+            self._render_annotations()
+            self._render_answers_status()
+            next_step = ("Теперь можно сформировать датасет." if result["report"]["eligible_count"]
+                         else "Для экспорта уточните метки и замечания, затем сформируйте ответы повторно.")
+            self.dataset_status.setText(f"Полные ответы сохранены. {next_step}\nРезервная копия и отчёт находятся в подпапке reviews сессии.")
+            self.dataset_status.setToolTip(f"{result['backup_path']}\n{result['report_path']}")
+            self.statusBar().showMessage("Полные ответы сформированы", 5000)
+            return result
+        return self._guard(action)
 
     def export_dataset(self):
         if not self.sid:
