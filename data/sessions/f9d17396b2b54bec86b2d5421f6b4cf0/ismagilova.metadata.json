@@ -1,0 +1,3366 @@
+{
+  "dataset_schema_version": 1,
+  "created_utc": "2026-10-25T11:04:55.044214+00:00",
+  "csv_file": "ismagilova.csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "decimal_separator": ".",
+  "missing_values": "empty CSV cells; never replaced with zero",
+  "row_unit": "one full respondent answer including internal pauses",
+  "target_mapping": {
+    "truth": 0,
+    "lie": 1
+  },
+  "row_count": 36,
+  "excluded_answers": [
+    {
+      "answer_id": "f9d17396-answer-000",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-001",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-002",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-003",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-004",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-005",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-006",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-007",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-020",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-021",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-022",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-049",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-023",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-024",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-050",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-025",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-051",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-052",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-033",
+      "reason": "Нет бинарного класса правда/ложь"
+    },
+    {
+      "answer_id": "f9d17396-answer-034",
+      "reason": "Нет бинарного класса правда/ложь"
+    }
+  ],
+  "session_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+  "session_name": "исмагилова",
+  "session_sha256": "6511350091302fbdc09f6babb0aedcd1d45e76ce45563784783dc79aafa71ac6",
+  "markers": {
+    "video": {
+      "baseline_start": 16.84,
+      "dialog_start": 142.24,
+      "dialog_end": 904.2,
+      "post_end": null
+    },
+    "signal": {
+      "baseline_start": 33.2,
+      "dialog_start": 158.6,
+      "dialog_end": 920.56,
+      "post_end": null
+    }
+  },
+  "sync_status": "estimated_needs_review",
+  "sync_estimate": {
+    "method": "visible_computer_clock_matched_to_bcrx_recording_start",
+    "offset_seconds": 16.36,
+    "scale": 1.0,
+    "uncertainty_seconds": 1.0,
+    "review_required": true,
+    "uncertainty_basis": "Conservative estimate for displayed OS clock refresh, recording-start timestamp and ASR phase boundaries; not hardware-trigger validation.",
+    "recording_start_time": "2026-10-07T20:10:43.5038859+03:00",
+    "clock_observations": [
+      {
+        "video_before": 0.12,
+        "video_after": 0.16,
+        "computer_clock_after": "20:11:00"
+      },
+      {
+        "video_before": 120.12,
+        "video_after": 120.16,
+        "computer_clock_after": "20:13:00"
+      },
+      {
+        "video_before": 900.12,
+        "video_after": 900.16,
+        "computer_clock_after": "20:26:00"
+      },
+      {
+        "video_before": 1030.12,
+        "video_after": 1030.16,
+        "computer_clock_after": "20:28:10"
+      }
+    ],
+    "unrounded_clock_offset_seconds": 16.3561141,
+    "phase_definitions": {
+      "baseline_start": "End of initial instruction; start of quiet rest (local ASR estimate).",
+      "dialog_start": "Start of first interview question after rest (local ASR estimate).",
+      "dialog_end": "End of instruction to sit quietly after interview (local ASR estimate).",
+      "post_end": "Unset: video EOF and BioRadio recording stop are different events; do not align their endpoints."
+    },
+    "created_utc": "2026-10-25T09:12:02.897410+00:00",
+    "review_directory": "reviews/sync_20261025T091202Z"
+  },
+  "signal_import": {
+    "channels": [
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow",
+      "HeartRate",
+      "PPG",
+      "SpO2"
+    ],
+    "sample_count": 264624,
+    "sample_rate_hz": 250.0,
+    "start": 0.0,
+    "end": 1058.492,
+    "duration": 1058.492,
+    "malformed_rows": 0,
+    "format": "regular",
+    "import_version": 4,
+    "source_file": "исмагилова.csv",
+    "source_headers": [
+      "Elapsed Time",
+      "ECG",
+      "RIP",
+      "GSR",
+      "Flow Rate Sensor 1",
+      "Heart Rate PulseOx1",
+      "PPG PulseOx1",
+      "SpO2 PulseOx1"
+    ],
+    "invalid_device_values": {
+      "HeartRate": 0,
+      "SpO2": 0
+    },
+    "recovered_decimal_rows": 0,
+    "nonfinite_samples": {
+      "ECG": 0,
+      "RIP": 0,
+      "GSR": 0,
+      "Flow": 0,
+      "HeartRate": 0,
+      "PPG": 0,
+      "SpO2": 0
+    }
+  },
+  "audio_analysis": {
+    "version": 2
+  },
+  "video_analysis": {
+    "duration": 1038.44,
+    "frames_analyzed": 12980,
+    "pose_available": true,
+    "rppg_points": 9036,
+    "feature_version": 2,
+    "declared_fps": 50.0,
+    "decoded_fps": 24.999999999999996,
+    "analysis_fps": 12.499999999999998,
+    "time_source": "decoded_frame_timestamps",
+    "last_analyzed_time": 1038.32
+  },
+  "answer_snapshot": [
+    {
+      "id": "f9d17396-answer-008",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 278.09,
+      "end": 280.95,
+      "label": "truth",
+      "name": "Алкоголь: отношение",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-054"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-053"
+      ],
+      "question_start": 274.71,
+      "question_end": 276.51,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-008"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-054",
+        "f9d17396-turn-055"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 274.71,
+        "end": 280.95,
+        "answer": {
+          "start": 278.09,
+          "end": 280.95
+        },
+        "question": {
+          "start": 274.71,
+          "end": 276.51
+        },
+        "waiting": {
+          "start": 276.51,
+          "end": 278.09
+        },
+        "source_question_start": 274.71,
+        "source_question_end": 276.51,
+        "question_turn_ids": [
+          "f9d17396-turn-053"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-009",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 286.39,
+      "end": 308.35,
+      "label": "truth",
+      "name": "Алкоголь: возможные плюсы",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-058"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-056",
+        "f9d17396-turn-057"
+      ],
+      "question_start": 281.39,
+      "question_end": 285.17,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-009"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-058",
+        "f9d17396-turn-059",
+        "f9d17396-turn-060",
+        "f9d17396-turn-061",
+        "f9d17396-turn-062",
+        "f9d17396-turn-063",
+        "f9d17396-turn-064",
+        "f9d17396-turn-065",
+        "f9d17396-turn-066",
+        "f9d17396-turn-067"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 281.39,
+        "end": 308.35,
+        "answer": {
+          "start": 286.39,
+          "end": 308.35
+        },
+        "question": {
+          "start": 281.39,
+          "end": 285.17
+        },
+        "waiting": {
+          "start": 285.17,
+          "end": 286.39
+        },
+        "source_question_start": 281.39,
+        "source_question_end": 285.17,
+        "question_turn_ids": [
+          "f9d17396-turn-056",
+          "f9d17396-turn-057"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-010",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 313.97,
+      "end": 326.47,
+      "label": "truth",
+      "name": "Алкоголь: минусы",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-070"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-068",
+        "f9d17396-turn-069"
+      ],
+      "question_start": 309.27,
+      "question_end": 312.37,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-010"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-070",
+        "f9d17396-turn-071",
+        "f9d17396-turn-072",
+        "f9d17396-turn-073",
+        "f9d17396-turn-074",
+        "f9d17396-turn-075",
+        "f9d17396-turn-076"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 309.27,
+        "end": 326.47,
+        "answer": {
+          "start": 313.97,
+          "end": 326.47
+        },
+        "question": {
+          "start": 309.27,
+          "end": 312.37
+        },
+        "waiting": {
+          "start": 312.37,
+          "end": 313.97
+        },
+        "source_question_start": 309.27,
+        "source_question_end": 312.37,
+        "question_turn_ids": [
+          "f9d17396-turn-068",
+          "f9d17396-turn-069"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-011",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 333.38,
+      "end": 352.26,
+      "label": "truth",
+      "name": "Алкоголь: эмоции пьяного человека",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-080"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-077",
+        "f9d17396-turn-078",
+        "f9d17396-turn-079"
+      ],
+      "question_start": 327.27,
+      "question_end": 331.43,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-011"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-080",
+        "f9d17396-turn-081",
+        "f9d17396-turn-082",
+        "f9d17396-turn-083",
+        "f9d17396-turn-084",
+        "f9d17396-turn-085",
+        "f9d17396-turn-086",
+        "f9d17396-turn-087",
+        "f9d17396-turn-088",
+        "f9d17396-turn-089"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 327.27,
+        "end": 352.26,
+        "answer": {
+          "start": 333.38,
+          "end": 352.26
+        },
+        "question": {
+          "start": 327.27,
+          "end": 331.43
+        },
+        "waiting": {
+          "start": 331.43,
+          "end": 333.38
+        },
+        "source_question_start": 327.27,
+        "source_question_end": 331.43,
+        "question_turn_ids": [
+          "f9d17396-turn-077",
+          "f9d17396-turn-078",
+          "f9d17396-turn-079"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      },
+      "verification_method": "participant_text_confirmation; ASR timings",
+      "participant_confirmation": {
+        "source": "user_message",
+        "correction_number": 1
+      }
+    },
+    {
+      "id": "f9d17396-answer-012",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 362.17,
+      "end": 368.89,
+      "label": "truth",
+      "name": "Алкоголь: эмоции окружающих",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-092"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-090",
+        "f9d17396-turn-091"
+      ],
+      "question_start": 354.2,
+      "question_end": 358.02,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-012"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-092",
+        "f9d17396-turn-093",
+        "f9d17396-turn-094",
+        "f9d17396-turn-095"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 354.2,
+        "end": 368.89,
+        "answer": {
+          "start": 362.17,
+          "end": 368.89
+        },
+        "question": {
+          "start": 354.2,
+          "end": 358.02
+        },
+        "waiting": {
+          "start": 358.02,
+          "end": 362.17
+        },
+        "source_question_start": 354.2,
+        "source_question_end": 358.02,
+        "question_turn_ids": [
+          "f9d17396-turn-090",
+          "f9d17396-turn-091"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-013",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 373.02,
+      "end": 373.14,
+      "label": "truth",
+      "name": "Алкоголь: видела знакомых пьяными",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-097"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-096"
+      ],
+      "question_start": 370.24,
+      "question_end": 372.76,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-013"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 370.24,
+        "end": 373.14,
+        "answer": {
+          "start": 373.02,
+          "end": 373.14
+        },
+        "question": {
+          "start": 370.24,
+          "end": 372.76
+        },
+        "waiting": {
+          "start": 372.76,
+          "end": 373.02
+        },
+        "source_question_start": 370.24,
+        "source_question_end": 372.76,
+        "question_turn_ids": [
+          "f9d17396-turn-096"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-014",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 382.34,
+      "end": 388.88,
+      "label": "truth",
+      "name": "Алкоголь: чувства при виде пьяного знакомого",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-099"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-098"
+      ],
+      "question_start": 374.81,
+      "question_end": 376.09,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-014"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-099",
+        "f9d17396-turn-100",
+        "f9d17396-turn-101",
+        "f9d17396-turn-102"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 374.81,
+        "end": 388.88,
+        "answer": {
+          "start": 382.34,
+          "end": 388.88
+        },
+        "question": {
+          "start": 374.81,
+          "end": 376.09
+        },
+        "waiting": {
+          "start": 376.09,
+          "end": 382.34
+        },
+        "source_question_start": 374.81,
+        "source_question_end": 376.09,
+        "question_turn_ids": [
+          "f9d17396-turn-098"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-015",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 392.64,
+      "end": 392.94,
+      "label": "truth",
+      "name": "Алкоголь: употребление с друзьями",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-105"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-103",
+        "f9d17396-turn-104"
+      ],
+      "question_start": 389.5,
+      "question_end": 392.22,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-015"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 389.5,
+        "end": 392.94,
+        "answer": {
+          "start": 392.64,
+          "end": 392.94
+        },
+        "question": {
+          "start": 389.5,
+          "end": 392.22
+        },
+        "waiting": {
+          "start": 392.22,
+          "end": 392.64
+        },
+        "source_question_start": 389.5,
+        "source_question_end": 392.22,
+        "question_turn_ids": [
+          "f9d17396-turn-103",
+          "f9d17396-turn-104"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-016",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 396.2,
+      "end": 396.4,
+      "label": "truth",
+      "name": "Алкоголь: собственное употребление",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-107"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-106"
+      ],
+      "question_start": 393.98,
+      "question_end": 396.1,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-016"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 393.98,
+        "end": 396.4,
+        "answer": {
+          "start": 396.2,
+          "end": 396.4
+        },
+        "question": {
+          "start": 393.98,
+          "end": 396.1
+        },
+        "waiting": {
+          "start": 396.1,
+          "end": 396.2
+        },
+        "source_question_start": 393.98,
+        "source_question_end": 396.1,
+        "question_turn_ids": [
+          "f9d17396-turn-106"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-046",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 406.96,
+      "end": 407.58,
+      "label": "truth",
+      "name": "Алкоголь: запрет употребления в странах",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-alcohol-ban"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-109",
+        "f9d17396-turn-110",
+        "f9d17396-turn-111"
+      ],
+      "question_start": 398.66,
+      "question_end": 402.52,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-046"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 398.66,
+        "end": 407.58,
+        "answer": {
+          "start": 406.96,
+          "end": 407.58
+        },
+        "question": {
+          "start": 398.66,
+          "end": 402.52
+        },
+        "waiting": {
+          "start": 402.52,
+          "end": 406.96
+        },
+        "source_question_start": 398.66,
+        "source_question_end": 402.52,
+        "question_turn_ids": [
+          "f9d17396-turn-109",
+          "f9d17396-turn-110",
+          "f9d17396-turn-111"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-017",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 418.32,
+      "end": 432.57,
+      "label": "truth",
+      "name": "Алкоголь: запрет продажи ночью",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-113"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-112"
+      ],
+      "question_start": 408.84,
+      "question_end": 410.78,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-017"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-113",
+        "f9d17396-turn-114",
+        "f9d17396-turn-115",
+        "f9d17396-turn-116",
+        "f9d17396-turn-117",
+        "f9d17396-turn-118"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 408.84,
+        "end": 432.57,
+        "answer": {
+          "start": 418.32,
+          "end": 432.57
+        },
+        "question": {
+          "start": 408.84,
+          "end": 410.78
+        },
+        "waiting": {
+          "start": 410.78,
+          "end": 418.32
+        },
+        "source_question_start": 408.84,
+        "source_question_end": 410.78,
+        "question_turn_ids": [
+          "f9d17396-turn-112"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      },
+      "verification_method": "participant_text_confirmation; ASR timings",
+      "participant_confirmation": {
+        "source": "user_message",
+        "correction_number": 2
+      }
+    },
+    {
+      "id": "f9d17396-answer-047",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 438.1,
+      "end": 439.36,
+      "label": "truth",
+      "name": "Алкоголь: ужесточение наказания",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-alcohol-punishment"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-119",
+        "f9d17396-turn-120",
+        "f9d17396-turn-121"
+      ],
+      "question_start": 432.73,
+      "question_end": 438.07,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-047"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 432.73,
+        "end": 439.36,
+        "answer": {
+          "start": 438.1,
+          "end": 439.36
+        },
+        "question": {
+          "start": 432.73,
+          "end": 438.07
+        },
+        "waiting": {
+          "start": 438.07,
+          "end": 438.1
+        },
+        "source_question_start": 432.73,
+        "source_question_end": 438.07,
+        "question_turn_ids": [
+          "f9d17396-turn-119",
+          "f9d17396-turn-120",
+          "f9d17396-turn-121"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      },
+      "verification_method": "participant_text_confirmation; ASR timings",
+      "participant_confirmation": {
+        "source": "user_message",
+        "correction_number": 3
+      }
+    },
+    {
+      "id": "f9d17396-answer-018",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 445.61,
+      "end": 445.83,
+      "label": "truth",
+      "name": "Алкоголь: негативный опыт знакомых",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-125"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-122",
+        "f9d17396-turn-123",
+        "f9d17396-turn-124"
+      ],
+      "question_start": 440.95,
+      "question_end": 445.33,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-018"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 440.95,
+        "end": 445.83,
+        "answer": {
+          "start": 445.61,
+          "end": 445.83
+        },
+        "question": {
+          "start": 440.95,
+          "end": 445.33
+        },
+        "waiting": {
+          "start": 445.33,
+          "end": 445.61
+        },
+        "source_question_start": 440.95,
+        "source_question_end": 445.33,
+        "question_turn_ids": [
+          "f9d17396-turn-122",
+          "f9d17396-turn-123",
+          "f9d17396-turn-124"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-048",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 454.78,
+      "end": 455.74,
+      "label": "truth",
+      "name": "Алкоголь: сожаление знакомых",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-alcohol-friends-regret"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-126",
+        "f9d17396-turn-127",
+        "f9d17396-turn-128"
+      ],
+      "question_start": 446.97,
+      "question_end": 450.57,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-048"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 446.97,
+        "end": 455.74,
+        "answer": {
+          "start": 454.78,
+          "end": 455.74
+        },
+        "question": {
+          "start": 446.97,
+          "end": 450.57
+        },
+        "waiting": {
+          "start": 450.57,
+          "end": 454.78
+        },
+        "source_question_start": 446.97,
+        "source_question_end": 450.57,
+        "question_turn_ids": [
+          "f9d17396-turn-126",
+          "f9d17396-turn-127",
+          "f9d17396-turn-128"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      },
+      "verification_method": "participant_text_confirmation; ASR timings",
+      "participant_confirmation": {
+        "source": "user_message",
+        "correction_number": 4
+      }
+    },
+    {
+      "id": "f9d17396-answer-019",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 461.05,
+      "end": 461.31,
+      "label": "truth",
+      "name": "Алкоголь: собственные ситуации, за которые стыдно",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-131"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-question-alcohol-shame",
+        "f9d17396-turn-129",
+        "f9d17396-turn-130"
+      ],
+      "question_start": 457.19,
+      "question_end": 460.69,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-019"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 457.19,
+        "end": 461.31,
+        "answer": {
+          "start": 461.05,
+          "end": 461.31
+        },
+        "question": {
+          "start": 457.19,
+          "end": 460.69
+        },
+        "waiting": {
+          "start": 460.69,
+          "end": 461.05
+        },
+        "source_question_start": 457.19,
+        "source_question_end": 460.69,
+        "question_turn_ids": [
+          "f9d17396-turn-question-alcohol-shame",
+          "f9d17396-turn-129",
+          "f9d17396-turn-130"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-035",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 526.66,
+      "end": 527.11,
+      "label": "lie",
+      "name": "Конфликт: собственная конфликтность",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-conflict-self"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-152",
+        "f9d17396-turn-153"
+      ],
+      "question_start": 519.95,
+      "question_end": 523.57,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-035"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 519.95,
+        "end": 527.11,
+        "answer": {
+          "start": 526.66,
+          "end": 527.11
+        },
+        "question": {
+          "start": 519.95,
+          "end": 523.57
+        },
+        "waiting": {
+          "start": 523.57,
+          "end": 526.66
+        },
+        "source_question_start": 519.95,
+        "source_question_end": 523.57,
+        "question_turn_ids": [
+          "f9d17396-turn-152",
+          "f9d17396-turn-153"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-036",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 534.16,
+      "end": 534.54,
+      "label": "lie",
+      "name": "Конфликт: инициатор конфликта",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-conflict-initiate"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-154",
+        "f9d17396-turn-155"
+      ],
+      "question_start": 528.31,
+      "question_end": 531.01,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-036"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 528.31,
+        "end": 534.54,
+        "answer": {
+          "start": 534.16,
+          "end": 534.54
+        },
+        "question": {
+          "start": 528.31,
+          "end": 531.01
+        },
+        "waiting": {
+          "start": 531.01,
+          "end": 534.16
+        },
+        "source_question_start": 528.31,
+        "source_question_end": 531.01,
+        "question_turn_ids": [
+          "f9d17396-turn-154",
+          "f9d17396-turn-155"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-037",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 541.2,
+      "end": 541.58,
+      "label": "lie",
+      "name": "Конфликт: собственное участие",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-conflict-ever"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-156",
+        "f9d17396-turn-157"
+      ],
+      "question_start": 535.99,
+      "question_end": 537.99,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-037"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 535.99,
+        "end": 541.58,
+        "answer": {
+          "start": 541.2,
+          "end": 541.58
+        },
+        "question": {
+          "start": 535.99,
+          "end": 537.99
+        },
+        "waiting": {
+          "start": 537.99,
+          "end": 541.2
+        },
+        "source_question_start": 535.99,
+        "source_question_end": 537.99,
+        "question_turn_ids": [
+          "f9d17396-turn-156",
+          "f9d17396-turn-157"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-038",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 631.54,
+      "end": 632.0,
+      "label": "lie",
+      "name": "Конфликт: сожаление о сказанном",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-conflict-regret"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-179",
+        "f9d17396-turn-180",
+        "f9d17396-turn-181"
+      ],
+      "question_start": 613.86,
+      "question_end": 619.78,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-038"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 613.86,
+        "end": 632.0,
+        "answer": {
+          "start": 631.54,
+          "end": 632.0
+        },
+        "question": {
+          "start": 613.86,
+          "end": 619.78
+        },
+        "waiting": {
+          "start": 619.78,
+          "end": 631.54
+        },
+        "source_question_start": 613.86,
+        "source_question_end": 619.78,
+        "question_turn_ids": [
+          "f9d17396-turn-179",
+          "f9d17396-turn-180",
+          "f9d17396-turn-181"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-039",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 637.49,
+      "end": 637.9,
+      "label": "lie",
+      "name": "Конфликт: обижала знакомых",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-conflict-hurt"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-182",
+        "f9d17396-turn-183"
+      ],
+      "question_start": 632.82,
+      "question_end": 635.86,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-039"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 632.82,
+        "end": 637.9,
+        "answer": {
+          "start": 637.49,
+          "end": 637.9
+        },
+        "question": {
+          "start": 632.82,
+          "end": 635.86
+        },
+        "waiting": {
+          "start": 635.86,
+          "end": 637.49
+        },
+        "source_question_start": 632.82,
+        "source_question_end": 635.86,
+        "question_turn_ids": [
+          "f9d17396-turn-182",
+          "f9d17396-turn-183"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-026",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 654.19,
+      "end": 656.31,
+      "label": "truth",
+      "name": "Обман: определение лжи",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-187"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-186"
+      ],
+      "question_start": 644.42,
+      "question_end": 645.8,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-026"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 644.42,
+        "end": 656.31,
+        "answer": {
+          "start": 654.19,
+          "end": 656.31
+        },
+        "question": {
+          "start": 644.42,
+          "end": 645.8
+        },
+        "waiting": {
+          "start": 645.8,
+          "end": 654.19
+        },
+        "source_question_start": 644.42,
+        "source_question_end": 645.8,
+        "question_turn_ids": [
+          "f9d17396-turn-186"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-053",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 666.6,
+      "end": 667.21,
+      "label": "truth",
+      "name": "Обман: можно ли оправдать ложь",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-justify"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-188",
+        "f9d17396-turn-189"
+      ],
+      "question_start": 657.85,
+      "question_end": 660.79,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-053"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 657.85,
+        "end": 667.21,
+        "answer": {
+          "start": 666.6,
+          "end": 667.21
+        },
+        "question": {
+          "start": 657.85,
+          "end": 660.79
+        },
+        "waiting": {
+          "start": 660.79,
+          "end": 666.6
+        },
+        "source_question_start": 657.85,
+        "source_question_end": 660.79,
+        "question_turn_ids": [
+          "f9d17396-turn-188",
+          "f9d17396-turn-189"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-054",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 675.51,
+      "end": 675.94,
+      "label": "truth",
+      "name": "Обман: была свидетелем лжи знакомых",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-witness"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-190",
+        "f9d17396-turn-191",
+        "f9d17396-turn-192"
+      ],
+      "question_start": 668.28,
+      "question_end": 671.92,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-054"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 668.28,
+        "end": 675.94,
+        "answer": {
+          "start": 675.51,
+          "end": 675.94
+        },
+        "question": {
+          "start": 668.28,
+          "end": 671.92
+        },
+        "waiting": {
+          "start": 671.92,
+          "end": 675.51
+        },
+        "source_question_start": 668.28,
+        "source_question_end": 671.92,
+        "question_turn_ids": [
+          "f9d17396-turn-190",
+          "f9d17396-turn-191",
+          "f9d17396-turn-192"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-027",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 689.24,
+      "end": 695.9,
+      "label": "truth",
+      "name": "Обман: чувства человека, вынужденного лгать",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-195"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-question-lying-feelings",
+        "f9d17396-turn-193",
+        "f9d17396-turn-194"
+      ],
+      "question_start": 676.95,
+      "question_end": 680.29,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-027"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-195",
+        "f9d17396-turn-196"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 676.95,
+        "end": 695.9,
+        "answer": {
+          "start": 689.24,
+          "end": 695.9
+        },
+        "question": {
+          "start": 676.95,
+          "end": 680.29
+        },
+        "waiting": {
+          "start": 680.29,
+          "end": 689.24
+        },
+        "source_question_start": 676.95,
+        "source_question_end": 680.29,
+        "question_turn_ids": [
+          "f9d17396-turn-question-lying-feelings",
+          "f9d17396-turn-193",
+          "f9d17396-turn-194"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-028",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 711.03,
+      "end": 712.69,
+      "label": "truth",
+      "name": "Обман: кто из знакомых чаще лжёт",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-198"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-197"
+      ],
+      "question_start": 698.41,
+      "question_end": 700.31,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-028"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "episode": {
+        "version": 1,
+        "start": 698.41,
+        "end": 712.69,
+        "answer": {
+          "start": 711.03,
+          "end": 712.69
+        },
+        "question": {
+          "start": 698.41,
+          "end": 700.31
+        },
+        "waiting": {
+          "start": 700.31,
+          "end": 711.03
+        },
+        "source_question_start": 698.41,
+        "source_question_end": 700.31,
+        "question_turn_ids": [
+          "f9d17396-turn-197"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-029",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 723.23,
+      "end": 730.24,
+      "label": "truth",
+      "name": "Обман: почему знакомые лгут",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-201"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-199",
+        "f9d17396-turn-200"
+      ],
+      "question_start": 713.87,
+      "question_end": 716.35,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-029",
+        "f9d17396-source-participant-fifth-ending"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-201",
+        "f9d17396-turn-202",
+        "f9d17396-turn-203"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 713.87,
+        "end": 730.24,
+        "answer": {
+          "start": 723.23,
+          "end": 730.24
+        },
+        "question": {
+          "start": 713.87,
+          "end": 716.35
+        },
+        "waiting": {
+          "start": 716.35,
+          "end": 723.23
+        },
+        "source_question_start": 713.87,
+        "source_question_end": 716.35,
+        "question_turn_ids": [
+          "f9d17396-turn-199",
+          "f9d17396-turn-200"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      },
+      "verification_method": "participant_text_confirmation; ASR timings",
+      "participant_confirmation": {
+        "source": "user_message",
+        "correction_number": 5
+      }
+    },
+    {
+      "id": "f9d17396-answer-040",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 737.51,
+      "end": 737.99,
+      "label": "lie",
+      "name": "Обман: умолчать, прикрывая знакомого",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-cover"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-204",
+        "f9d17396-turn-205"
+      ],
+      "question_start": 731.04,
+      "question_end": 734.52,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-040"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 731.04,
+        "end": 737.99,
+        "answer": {
+          "start": 737.51,
+          "end": 737.99
+        },
+        "question": {
+          "start": 731.04,
+          "end": 734.52
+        },
+        "waiting": {
+          "start": 734.52,
+          "end": 737.51
+        },
+        "source_question_start": 731.04,
+        "source_question_end": 734.52,
+        "question_turn_ids": [
+          "f9d17396-turn-204",
+          "f9d17396-turn-205"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-041",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 744.83,
+      "end": 745.29,
+      "label": "lie",
+      "name": "Обман: избежать последствий",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-avoid"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-206",
+        "f9d17396-turn-207"
+      ],
+      "question_start": 739.12,
+      "question_end": 742.36,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-041"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 739.12,
+        "end": 745.29,
+        "answer": {
+          "start": 744.83,
+          "end": 745.29
+        },
+        "question": {
+          "start": 739.12,
+          "end": 742.36
+        },
+        "waiting": {
+          "start": 742.36,
+          "end": 744.83
+        },
+        "source_question_start": 739.12,
+        "source_question_end": 742.36,
+        "question_turn_ids": [
+          "f9d17396-turn-206",
+          "f9d17396-turn-207"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-042",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 751.34,
+      "end": 751.8,
+      "label": "lie",
+      "name": "Обман: обманывала знакомых",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-friends"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-208",
+        "f9d17396-turn-209"
+      ],
+      "question_start": 746.32,
+      "question_end": 748.84,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-042"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 746.32,
+        "end": 751.8,
+        "answer": {
+          "start": 751.34,
+          "end": 751.8
+        },
+        "question": {
+          "start": 746.32,
+          "end": 748.84
+        },
+        "waiting": {
+          "start": 748.84,
+          "end": 751.34
+        },
+        "source_question_start": 746.32,
+        "source_question_end": 748.84,
+        "question_turn_ids": [
+          "f9d17396-turn-208",
+          "f9d17396-turn-209"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-030",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 765.58,
+      "end": 775.92,
+      "label": "truth",
+      "name": "Обман: лживый человек",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-211"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-210"
+      ],
+      "question_start": 753.8,
+      "question_end": 756.26,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-030"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-211",
+        "f9d17396-turn-212",
+        "f9d17396-turn-213",
+        "f9d17396-turn-214",
+        "f9d17396-turn-215"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 753.8,
+        "end": 775.92,
+        "answer": {
+          "start": 765.58,
+          "end": 775.92
+        },
+        "question": {
+          "start": 753.8,
+          "end": 756.26
+        },
+        "waiting": {
+          "start": 756.26,
+          "end": 765.58
+        },
+        "source_question_start": 753.8,
+        "source_question_end": 756.26,
+        "question_turn_ids": [
+          "f9d17396-turn-210"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-031",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 789.11,
+      "end": 800.95,
+      "label": "truth",
+      "name": "Обман: признаки человека, которому нельзя доверять",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-218"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-216",
+        "f9d17396-turn-217"
+      ],
+      "question_start": 777.36,
+      "question_end": 780.48,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-031"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-218",
+        "f9d17396-turn-219",
+        "f9d17396-turn-220",
+        "f9d17396-turn-221",
+        "f9d17396-turn-222",
+        "f9d17396-turn-223"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 777.36,
+        "end": 800.95,
+        "answer": {
+          "start": 789.11,
+          "end": 800.95
+        },
+        "question": {
+          "start": 777.36,
+          "end": 780.48
+        },
+        "waiting": {
+          "start": 780.48,
+          "end": 789.11
+        },
+        "source_question_start": 777.36,
+        "source_question_end": 780.48,
+        "question_turn_ids": [
+          "f9d17396-turn-216",
+          "f9d17396-turn-217"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-055",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 807.99,
+      "end": 808.58,
+      "label": "truth",
+      "name": "Обман: нечестные знакомые",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-dishonest"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-224",
+        "f9d17396-turn-225"
+      ],
+      "question_start": 802.19,
+      "question_end": 805.63,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-055"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 802.19,
+        "end": 808.58,
+        "answer": {
+          "start": 807.99,
+          "end": 808.58
+        },
+        "question": {
+          "start": 802.19,
+          "end": 805.63
+        },
+        "waiting": {
+          "start": 805.63,
+          "end": 807.99
+        },
+        "source_question_start": 802.19,
+        "source_question_end": 805.63,
+        "question_turn_ids": [
+          "f9d17396-turn-224",
+          "f9d17396-turn-225"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-032",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 818.73,
+      "end": 823.21,
+      "label": "truth",
+      "name": "Обман: отношение к нечестному человеку",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-228"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-226",
+        "f9d17396-turn-227"
+      ],
+      "question_start": 809.88,
+      "question_end": 812.28,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-032"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "source_turn_ids": [
+        "f9d17396-turn-228",
+        "f9d17396-turn-229"
+      ],
+      "episode": {
+        "version": 1,
+        "start": 809.88,
+        "end": 823.21,
+        "answer": {
+          "start": 818.73,
+          "end": 823.21
+        },
+        "question": {
+          "start": 809.88,
+          "end": 812.28
+        },
+        "waiting": {
+          "start": 812.28,
+          "end": 818.73
+        },
+        "source_question_start": 809.88,
+        "source_question_end": 812.28,
+        "question_turn_ids": [
+          "f9d17396-turn-226",
+          "f9d17396-turn-227"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-043",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 833.58,
+      "end": 834.17,
+      "label": "lie",
+      "name": "Обман: отдалялась от человека из-за лжи",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-distance"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-230",
+        "f9d17396-turn-231",
+        "f9d17396-turn-232"
+      ],
+      "question_start": 825.51,
+      "question_end": 829.01,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-043"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 825.51,
+        "end": 834.17,
+        "answer": {
+          "start": 833.58,
+          "end": 834.17
+        },
+        "question": {
+          "start": 825.51,
+          "end": 829.01
+        },
+        "waiting": {
+          "start": 829.01,
+          "end": 833.58
+        },
+        "source_question_start": 825.51,
+        "source_question_end": 829.01,
+        "question_turn_ids": [
+          "f9d17396-turn-230",
+          "f9d17396-turn-231",
+          "f9d17396-turn-232"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-044",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 842.68,
+      "end": 843.17,
+      "label": "lie",
+      "name": "Обман: поступки, вызывающие сомнения в честности",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-honesty"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-233",
+        "f9d17396-turn-234",
+        "f9d17396-turn-235"
+      ],
+      "question_start": 835.75,
+      "question_end": 839.65,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-044"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 835.75,
+        "end": 843.17,
+        "answer": {
+          "start": 842.68,
+          "end": 843.17
+        },
+        "question": {
+          "start": 835.75,
+          "end": 839.65
+        },
+        "waiting": {
+          "start": 839.65,
+          "end": 842.68
+        },
+        "source_question_start": 835.75,
+        "source_question_end": 839.65,
+        "question_turn_ids": [
+          "f9d17396-turn-233",
+          "f9d17396-turn-234",
+          "f9d17396-turn-235"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    },
+    {
+      "id": "f9d17396-answer-045",
+      "participant_id": "f9d17396b2b54bec86b2d5421f6b4cf0",
+      "start": 856.61,
+      "end": 857.23,
+      "label": "lie",
+      "name": "Обман: сожаление о собственном обмане",
+      "dataset_eligible": true,
+      "review_required": false,
+      "turn_ids": [
+        "f9d17396-turn-deception-regret"
+      ],
+      "question_turn_ids": [
+        "f9d17396-turn-236",
+        "f9d17396-turn-237"
+      ],
+      "question_start": 844.27,
+      "question_end": 847.45,
+      "source_annotation_ids": [
+        "f9d17396-protocol-source-045"
+      ],
+      "internal_pauses": [],
+      "review_method": "contextual_turn_review_and_local_ASR; no_manual_listening",
+      "timing_uncertainty_seconds": 0.2,
+      "verification_method": "contextual_ASR_consensus_and_audio_activity",
+      "episode": {
+        "version": 1,
+        "start": 844.27,
+        "end": 857.23,
+        "answer": {
+          "start": 856.61,
+          "end": 857.23
+        },
+        "question": {
+          "start": 844.27,
+          "end": 847.45
+        },
+        "waiting": {
+          "start": 847.45,
+          "end": 856.61
+        },
+        "source_question_start": 844.27,
+        "source_question_end": 847.45,
+        "question_turn_ids": [
+          "f9d17396-turn-236",
+          "f9d17396-turn-237"
+        ],
+        "question_overlap_seconds": 0.0,
+        "status": "complete",
+        "notes": []
+      }
+    }
+  ],
+  "annotation_sources": [
+    {
+      "id": "f9d17396-protocol-source-000",
+      "start": 7.1,
+      "end": 10.48,
+      "label": "unlabeled",
+      "name": "Представление",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-001",
+      "start": 148.92,
+      "end": 161.7,
+      "label": "unlabeled",
+      "name": "О себе",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-002",
+      "start": 170.98,
+      "end": 182.76,
+      "label": "unlabeled",
+      "name": "Специализация и планы",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-003",
+      "start": 197.3,
+      "end": 212.16,
+      "label": "unlabeled",
+      "name": "Увлечения и знакомые",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-004",
+      "start": 222.03,
+      "end": 222.67,
+      "label": "unlabeled",
+      "name": "Уточнение вопроса о достижениях",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-005",
+      "start": 232.14,
+      "end": 236.26,
+      "label": "unlabeled",
+      "name": "Достижения",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-006",
+      "start": 262.79,
+      "end": 263.53,
+      "label": "unlabeled",
+      "name": "Технические реплики о позе и дыхании",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-007",
+      "start": 268.65,
+      "end": 269.01,
+      "label": "unlabeled",
+      "name": "Техническое подтверждение",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-008",
+      "start": 278.09,
+      "end": 280.95,
+      "label": "truth",
+      "name": "Алкоголь: отношение",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-009",
+      "start": 286.39,
+      "end": 308.35,
+      "label": "truth",
+      "name": "Алкоголь: возможные плюсы",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-010",
+      "start": 313.97,
+      "end": 326.47,
+      "label": "truth",
+      "name": "Алкоголь: минусы",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-011",
+      "start": 333.38,
+      "end": 352.26,
+      "label": "truth",
+      "name": "Алкоголь: эмоции пьяного человека",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-012",
+      "start": 362.17,
+      "end": 368.89,
+      "label": "truth",
+      "name": "Алкоголь: эмоции окружающих",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-013",
+      "start": 373.02,
+      "end": 373.14,
+      "label": "truth",
+      "name": "Алкоголь: видела знакомых пьяными",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-014",
+      "start": 382.34,
+      "end": 388.88,
+      "label": "truth",
+      "name": "Алкоголь: чувства при виде пьяного знакомого",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-015",
+      "start": 392.64,
+      "end": 392.94,
+      "label": "truth",
+      "name": "Алкоголь: употребление с друзьями",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-016",
+      "start": 396.2,
+      "end": 396.4,
+      "label": "truth",
+      "name": "Алкоголь: собственное употребление",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-017",
+      "start": 418.32,
+      "end": 432.57,
+      "label": "truth",
+      "name": "Алкоголь: запрет продажи ночью",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-018",
+      "start": 445.61,
+      "end": 445.83,
+      "label": "truth",
+      "name": "Алкоголь: негативный опыт знакомых",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-019",
+      "start": 461.05,
+      "end": 461.31,
+      "label": "truth",
+      "name": "Алкоголь: собственные ситуации, за которые стыдно",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-020",
+      "start": 470.49,
+      "end": 475.99,
+      "label": "unlabeled",
+      "name": "Конфликт: определение",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-021",
+      "start": 483.61,
+      "end": 485.09,
+      "label": "unlabeled",
+      "name": "Конфликт: противоположные точки зрения",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-022",
+      "start": 493.2,
+      "end": 501.16,
+      "label": "unlabeled",
+      "name": "Конфликт: признаки конфликтного человека",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-023",
+      "start": 517.09,
+      "end": 518.69,
+      "label": "unlabeled",
+      "name": "Конфликт: провоцирующие обстоятельства",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-024",
+      "start": 550.84,
+      "end": 557.5,
+      "label": "unlabeled",
+      "name": "Конфликт: эмоции",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-025",
+      "start": 577.54,
+      "end": 593.98,
+      "label": "unlabeled",
+      "name": "Конфликт: поведение друзей",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-026",
+      "start": 654.19,
+      "end": 656.31,
+      "label": "truth",
+      "name": "Обман: определение лжи",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-027",
+      "start": 689.24,
+      "end": 695.9,
+      "label": "truth",
+      "name": "Обман: чувства человека, вынужденного лгать",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-028",
+      "start": 711.03,
+      "end": 712.69,
+      "label": "truth",
+      "name": "Обман: кто из знакомых чаще лжёт",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-029",
+      "start": 723.23,
+      "end": 727.77,
+      "label": "truth",
+      "name": "Обман: почему знакомые лгут",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-030",
+      "start": 765.58,
+      "end": 775.92,
+      "label": "truth",
+      "name": "Обман: лживый человек",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-031",
+      "start": 789.11,
+      "end": 800.95,
+      "label": "truth",
+      "name": "Обман: признаки человека, которому нельзя доверять",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-032",
+      "start": 818.73,
+      "end": 823.21,
+      "label": "truth",
+      "name": "Обман: отношение к нечестному человеку",
+      "origin": "participant_protocol",
+      "basis": "Условия участницы: алкоголь — честно; в теме обмана окружение и убеждения — честно."
+    },
+    {
+      "id": "f9d17396-protocol-source-033",
+      "start": 869.84,
+      "end": 881.94,
+      "label": "unlabeled",
+      "name": "Самочувствие во время беседы",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-034",
+      "start": 890.12,
+      "end": 898.1,
+      "label": "unlabeled",
+      "name": "Самочувствие после беседы",
+      "origin": "participant_protocol",
+      "basis": "Вне однозначных условий участница помнит только преимущественно правду и не помнит исключений."
+    },
+    {
+      "id": "f9d17396-protocol-source-035",
+      "start": 526.66,
+      "end": 527.11,
+      "label": "lie",
+      "name": "Конфликт: собственная конфликтность",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-036",
+      "start": 534.16,
+      "end": 534.54,
+      "label": "lie",
+      "name": "Конфликт: инициатор конфликта",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-037",
+      "start": 541.2,
+      "end": 541.58,
+      "label": "lie",
+      "name": "Конфликт: собственное участие",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-038",
+      "start": 631.54,
+      "end": 632.0,
+      "label": "lie",
+      "name": "Конфликт: сожаление о сказанном",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-039",
+      "start": 637.49,
+      "end": 637.9,
+      "label": "lie",
+      "name": "Конфликт: обижала знакомых",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-040",
+      "start": 737.51,
+      "end": 737.99,
+      "label": "lie",
+      "name": "Обман: умолчать, прикрывая знакомого",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-041",
+      "start": 744.83,
+      "end": 745.29,
+      "label": "lie",
+      "name": "Обман: избежать последствий",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-042",
+      "start": 751.34,
+      "end": 751.8,
+      "label": "lie",
+      "name": "Обман: обманывала знакомых",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-043",
+      "start": 833.58,
+      "end": 834.17,
+      "label": "lie",
+      "name": "Обман: отдалялась от человека из-за лжи",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-044",
+      "start": 842.68,
+      "end": 843.17,
+      "label": "lie",
+      "name": "Обман: поступки, вызывающие сомнения в честности",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-045",
+      "start": 856.61,
+      "end": 857.23,
+      "label": "lie",
+      "name": "Обман: сожаление о собственном обмане",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-046",
+      "start": 406.96,
+      "end": 407.58,
+      "label": "truth",
+      "name": "Алкоголь: запрет употребления в странах",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-047",
+      "start": 438.1,
+      "end": 439.36,
+      "label": "truth",
+      "name": "Алкоголь: ужесточение наказания",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-048",
+      "start": 454.78,
+      "end": 455.74,
+      "label": "truth",
+      "name": "Алкоголь: сожаление знакомых",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-049",
+      "start": 508.76,
+      "end": 509.54,
+      "label": "unlabeled",
+      "name": "Конфликт: конфликтные знакомые",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-050",
+      "start": 567.7,
+      "end": 568.12,
+      "label": "unlabeled",
+      "name": "Конфликт: истинное лицо человека",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-051",
+      "start": 604.46,
+      "end": 605.02,
+      "label": "unlabeled",
+      "name": "Конфликт: отличие от обычного поведения",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-052",
+      "start": 611.36,
+      "end": 612.7,
+      "label": "unlabeled",
+      "name": "Конфликт: импульсивность знакомых",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-053",
+      "start": 666.6,
+      "end": 667.21,
+      "label": "truth",
+      "name": "Обман: можно ли оправдать ложь",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-054",
+      "start": 675.51,
+      "end": 675.94,
+      "label": "truth",
+      "name": "Обман: была свидетелем лжи знакомых",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-protocol-source-055",
+      "start": 807.99,
+      "end": 808.58,
+      "label": "truth",
+      "name": "Обман: нечестные знакомые",
+      "origin": "participant_protocol",
+      "basis": "Индивидуальный протокол участницы; класс не зависит от распознанного «да/нет». Вне однозначных условий — unlabeled."
+    },
+    {
+      "id": "f9d17396-source-participant-fifth-ending",
+      "start": 723.23,
+      "end": 730.24,
+      "label": "truth",
+      "name": "Обман: почему знакомые лгут",
+      "origin": "participant_confirmation",
+      "basis": "Участница дословно уточнила окончание: «и это такой выученный паттерн».",
+      "supersedes": [
+        "f9d17396-protocol-source-029"
+      ]
+    }
+  ],
+  "columns": [
+    "dataset_schema_version",
+    "calculation_version",
+    "participant_id",
+    "session_id",
+    "session_name",
+    "answer_id",
+    "target",
+    "label",
+    "video_start_seconds",
+    "video_end_seconds",
+    "answer_duration_seconds",
+    "signal_start_seconds",
+    "signal_end_seconds",
+    "question_start_seconds",
+    "question_end_seconds",
+    "respondent_text",
+    "question_text",
+    "turn_ids",
+    "source_annotation_ids",
+    "internal_pauses",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_sample_count",
+    "signal_time_coverage",
+    "contact_heart_rate_monitor_bpm",
+    "contact_spo2_percent",
+    "contact_respiration_bpm",
+    "contact_gsr_mean",
+    "contact_ecg_heart_rate_bpm",
+    "contact_ecg_sdnn_ms",
+    "contact_ecg_rmssd_ms",
+    "contact_ecg_lf_power",
+    "contact_ecg_hf_power",
+    "contact_ecg_total_power",
+    "contact_ecg_lf_hf",
+    "contact_ppg_heart_rate_bpm",
+    "contact_ppg_sdnn_ms",
+    "contact_ppg_rmssd_ms",
+    "contact_ppg_lf_power",
+    "contact_ppg_hf_power",
+    "contact_ppg_total_power",
+    "contact_ppg_lf_hf",
+    "speech_respondent_words",
+    "speech_words_per_minute",
+    "speech_syllables_per_second",
+    "speech_response_latency_seconds",
+    "speech_response_duration_seconds",
+    "speech_internal_pause_seconds",
+    "speech_pause_ratio",
+    "speech_voice_rms",
+    "speech_pitch_hz",
+    "speech_pitch_iqr_hz",
+    "speech_spectral_centroid_hz",
+    "video_rppg_heart_rate_bpm",
+    "video_head_motion",
+    "video_hand_motion",
+    "video_leg_motion",
+    "video_trunk_tilt_degrees",
+    "comparison_ecg_ppg_delta_bpm",
+    "comparison_ecg_rppg_delta_bpm",
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "notes"
+  ],
+  "numeric_feature_columns": {
+    "contact_heart_rate_monitor_bpm": "bpm",
+    "contact_spo2_percent": "%",
+    "contact_respiration_bpm": "breaths/min",
+    "contact_gsr_mean": "BioRadio source units",
+    "contact_ecg_heart_rate_bpm": "bpm",
+    "contact_ecg_sdnn_ms": "ms",
+    "contact_ecg_rmssd_ms": "ms",
+    "contact_ecg_lf_power": "ms²",
+    "contact_ecg_hf_power": "ms²",
+    "contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ecg_lf_hf": "ratio",
+    "contact_ppg_heart_rate_bpm": "bpm",
+    "contact_ppg_sdnn_ms": "ms",
+    "contact_ppg_rmssd_ms": "ms",
+    "contact_ppg_lf_power": "ms²",
+    "contact_ppg_hf_power": "ms²",
+    "contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ppg_lf_hf": "ratio",
+    "speech_respondent_words": "count",
+    "speech_words_per_minute": "words/min",
+    "speech_syllables_per_second": "syllables/s",
+    "speech_response_latency_seconds": "s",
+    "speech_response_duration_seconds": "s",
+    "speech_internal_pause_seconds": "s",
+    "speech_pause_ratio": "ratio",
+    "speech_voice_rms": "normalized audio amplitude",
+    "speech_pitch_hz": "Hz",
+    "speech_pitch_iqr_hz": "Hz",
+    "speech_spectral_centroid_hz": "Hz",
+    "video_rppg_heart_rate_bpm": "bpm; complete window inside answer",
+    "video_head_motion": "face widths/s",
+    "video_hand_motion": "image heights/s; see motion_units",
+    "video_leg_motion": "image heights/s; see motion_units",
+    "video_trunk_tilt_degrees": "degrees",
+    "comparison_ecg_ppg_delta_bpm": "bpm",
+    "comparison_ecg_rppg_delta_bpm": "bpm"
+  },
+  "quality_columns": [
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_time_coverage",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "notes"
+  ],
+  "research_notes": [
+    "Split training and evaluation by participant_id. IDs, labels, source_annotation_ids and timing are not predictive features.",
+    "Text and question content can disclose the interview protocol; assess text features separately to avoid target leakage.",
+    "dataset_eligible means a reviewed target, not validated physiology. Filter features by sync_status and coverage.",
+    "HRV requires at least 120 seconds and sufficient usable beats. Short answers retain missing HRV.",
+    "Primary rPPG only uses windows fully inside the answer; context rPPG is deliberately excluded.",
+    "GSR=100000 throughout the interval is unavailable. Channel coverage counts finite usable samples, not detector accuracy.",
+    "Pauses may be incompletely annotated. Full answer duration always includes elapsed internal silence.",
+    "Values are unrounded and not normalized to baseline. Baseline intervals and markers are in this metadata."
+  ],
+  "rest_intervals": [
+    {
+      "start": 16.84,
+      "end": 142.24,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой до беседы",
+      "id": "f9d17396-interval-003"
+    },
+    {
+      "start": 904.58,
+      "end": 1030.89,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой после беседы",
+      "id": "f9d17396-interval-115"
+    }
+  ],
+  "baseline_annotations": [
+    {
+      "start": 0.0,
+      "end": 7.1,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-000"
+    },
+    {
+      "start": 10.48,
+      "end": 16.84,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-002"
+    },
+    {
+      "start": 16.84,
+      "end": 142.24,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой до беседы",
+      "id": "f9d17396-interval-003"
+    },
+    {
+      "start": 142.24,
+      "end": 148.92,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-004"
+    },
+    {
+      "start": 161.7,
+      "end": 170.98,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-006"
+    },
+    {
+      "start": 182.76,
+      "end": 197.3,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-008"
+    },
+    {
+      "start": 212.16,
+      "end": 222.03,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-010"
+    },
+    {
+      "start": 222.67,
+      "end": 232.14,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-012"
+    },
+    {
+      "start": 236.26,
+      "end": 262.79,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-014"
+    },
+    {
+      "start": 263.53,
+      "end": 268.65,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-016"
+    },
+    {
+      "start": 269.01,
+      "end": 278.09,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-018"
+    },
+    {
+      "start": 280.95,
+      "end": 286.39,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-020"
+    },
+    {
+      "start": 308.35,
+      "end": 313.97,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-022"
+    },
+    {
+      "start": 326.47,
+      "end": 333.38,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-024"
+    },
+    {
+      "start": 352.26,
+      "end": 362.17,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-026"
+    },
+    {
+      "start": 368.89,
+      "end": 373.02,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-028"
+    },
+    {
+      "start": 373.14,
+      "end": 382.34,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-030"
+    },
+    {
+      "start": 388.88,
+      "end": 392.64,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-032"
+    },
+    {
+      "start": 392.94,
+      "end": 396.2,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-034"
+    },
+    {
+      "start": 396.4,
+      "end": 406.96,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-036"
+    },
+    {
+      "start": 407.58,
+      "end": 418.32,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-038"
+    },
+    {
+      "start": 432.57,
+      "end": 438.1,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-040"
+    },
+    {
+      "start": 439.36,
+      "end": 445.61,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-042"
+    },
+    {
+      "start": 445.83,
+      "end": 454.78,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-044"
+    },
+    {
+      "start": 455.74,
+      "end": 461.05,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-046"
+    },
+    {
+      "start": 461.31,
+      "end": 470.49,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-048"
+    },
+    {
+      "start": 475.99,
+      "end": 483.61,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-050"
+    },
+    {
+      "start": 485.09,
+      "end": 493.2,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-052"
+    },
+    {
+      "start": 501.16,
+      "end": 508.76,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-054"
+    },
+    {
+      "start": 509.54,
+      "end": 517.09,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-056"
+    },
+    {
+      "start": 518.69,
+      "end": 526.66,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-058"
+    },
+    {
+      "start": 527.11,
+      "end": 534.16,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-060"
+    },
+    {
+      "start": 534.54,
+      "end": 541.2,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-062"
+    },
+    {
+      "start": 541.58,
+      "end": 550.84,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-064"
+    },
+    {
+      "start": 557.5,
+      "end": 567.7,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-066"
+    },
+    {
+      "start": 568.12,
+      "end": 577.54,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-068"
+    },
+    {
+      "start": 593.98,
+      "end": 604.46,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-070"
+    },
+    {
+      "start": 605.02,
+      "end": 611.36,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-072"
+    },
+    {
+      "start": 612.7,
+      "end": 631.54,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-074"
+    },
+    {
+      "start": 632.0,
+      "end": 637.49,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-076"
+    },
+    {
+      "start": 637.9,
+      "end": 654.19,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-078"
+    },
+    {
+      "start": 656.31,
+      "end": 666.6,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-080"
+    },
+    {
+      "start": 667.21,
+      "end": 675.51,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-082"
+    },
+    {
+      "start": 675.94,
+      "end": 689.24,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-084"
+    },
+    {
+      "start": 695.9,
+      "end": 711.03,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-086"
+    },
+    {
+      "start": 712.69,
+      "end": 723.23,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-088"
+    },
+    {
+      "start": 730.24,
+      "end": 737.51,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-090"
+    },
+    {
+      "start": 737.99,
+      "end": 744.83,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-092"
+    },
+    {
+      "start": 745.29,
+      "end": 751.34,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-094"
+    },
+    {
+      "start": 751.8,
+      "end": 765.58,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-096"
+    },
+    {
+      "start": 775.92,
+      "end": 789.11,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-098"
+    },
+    {
+      "start": 800.95,
+      "end": 807.99,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-100"
+    },
+    {
+      "start": 808.58,
+      "end": 818.73,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-102"
+    },
+    {
+      "start": 823.21,
+      "end": 833.58,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-104"
+    },
+    {
+      "start": 834.17,
+      "end": 842.68,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-106"
+    },
+    {
+      "start": 843.17,
+      "end": 856.61,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-108"
+    },
+    {
+      "start": 857.23,
+      "end": 869.84,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-110"
+    },
+    {
+      "start": 881.94,
+      "end": 890.12,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-112"
+    },
+    {
+      "start": 898.1,
+      "end": 904.58,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Интервьюер / ожидание",
+      "id": "f9d17396-interval-114"
+    },
+    {
+      "start": 904.58,
+      "end": 1030.89,
+      "label": "base",
+      "kind": "rest",
+      "name": "Покой после беседы",
+      "id": "f9d17396-interval-115"
+    },
+    {
+      "start": 1030.89,
+      "end": 1038.485,
+      "label": "base",
+      "kind": "listening_or_rest",
+      "name": "Завершение записи",
+      "id": "f9d17396-interval-116"
+    }
+  ],
+  "compatibility_export": {
+    "source_dataset_schema_version": 2,
+    "source_column_count": 276,
+    "source_csv_sha256": "5b8bab9435c00c1e3f4b5e5aa8b18c218513f069464e9c91d647ebdccca81ac9",
+    "source_commit": "70de3ba5901b0634e9da46ac0da5b8da7360dacc",
+    "method": "Select and order the 87 schema-1 columns. Only dataset_schema_version changed; all other retained cell values, rows and labels are identical. Calculation version remains 2. Notes may retain observations about omitted phase features.",
+    "template": "data/sessions/105116c550ad455a88376c54ff667e11/fokin.csv"
+  }
+}
