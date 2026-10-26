@@ -265,8 +265,8 @@
     {
       "start": 67.54,
       "end": 68.3,
-      "speaker": "respondent",
-      "text": "Какие у вас уничтожены?",
+      "speaker": "interviewer",
+      "text": "Какие у вас увлечения?",
       "pause_seconds": 0,
       "acoustic": {
         "rms": 0.02414,
@@ -457,7 +457,7 @@
     {
       "start": 127.41,
       "end": 133.81,
-      "speaker": "respondent",
+      "speaker": "interviewer",
       "text": "А если мы говорим о жизни, опять же,",
       "pause_seconds": 3.26,
       "acoustic": {
@@ -469,7 +469,7 @@
     {
       "start": 134.89,
       "end": 137.01,
-      "speaker": "respondent",
+      "speaker": "interviewer",
       "text": "о самом серьезном вызове?",
       "pause_seconds": 0,
       "acoustic": {
@@ -539,21 +539,9 @@
       }
     },
     {
-      "start": 151.29,
-      "end": 151.97,
-      "speaker": "respondent",
-      "text": "Салам.",
-      "pause_seconds": 0,
-      "acoustic": {
-        "rms": 0.0164,
-        "pitch_hz": 129.0,
-        "spectral_centroid_hz": 2401.8
-      }
-    },
-    {
       "start": 152.57,
       "end": 155.69,
-      "speaker": "interviewer",
+      "speaker": "respondent",
       "text": "Все первые взрослые датисты, которые появлялись,",
       "pause_seconds": 0,
       "acoustic": {
@@ -614,7 +602,7 @@
       "start": 162.75,
       "end": 167.12,
       "speaker": "interviewer",
-      "text": "Как вы относитесь к уголову?",
+      "text": "Как вы относитесь к алкоголю?",
       "pause_seconds": 1.83,
       "acoustic": {
         "rms": 0.01532,
@@ -625,7 +613,7 @@
     {
       "start": 167.68,
       "end": 168.94,
-      "speaker": "interviewer",
+      "speaker": "respondent",
       "text": "Скорее позитивно.",
       "pause_seconds": 0,
       "acoustic": {
@@ -3527,7 +3515,50 @@
       }
     }
   ],
-  "annotations": [],
+  "annotations": [
+    {
+      "start": 68.3,
+      "end": 92.62,
+      "name": "Какие у вас увлечения?",
+      "label": "truth"
+    },
+    {
+      "start": 95.9,
+      "end": 158.55,
+      "name": "Если мы говорим о достижениях?",
+      "label": "truth"
+    },
+    {
+      "start": 167.12,
+      "end": 387.32,
+      "name": "Как вы относитесь к алкоголю?",
+      "label": "truth"
+    },
+    {
+      "start": 401.68,
+      "end": 689.73,
+      "name": "А по вашей оценке верны ли утверждение, что конфликты – это две противоположные точки зрения на произошедшее?",
+      "label": "lie"
+    },
+    {
+      "start": 666.97,
+      "end": 700.79,
+      "name": "Как вы понимаете, что человек обманывает?",
+      "label": "lie"
+    },
+    {
+      "start": 691.77,
+      "end": 711.26,
+      "name": "кого из ваших знакомых можно отрезывать как нечестного человека?",
+      "label": "truth"
+    },
+    {
+      "start": 711.58,
+      "end": 741.12,
+      "name": "были ситуации, что вы кого-то обманули раньше?",
+      "label": "lie"
+    }
+  ],
   "jobs": {},
   "video_analysis": {
     "duration": 766.12,
