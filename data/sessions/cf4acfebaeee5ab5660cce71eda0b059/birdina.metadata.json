@@ -1,0 +1,2685 @@
+{
+  "dataset_schema_version": 2,
+  "created_utc": "2026-10-27T15:32:25.874650+00:00",
+  "csv_file": "birdina.csv",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "decimal_separator": ".",
+  "missing_values": "empty CSV cells; never replaced with zero",
+  "row_unit": "one question → waiting → full answer episode; target belongs to the answer",
+  "target_mapping": {
+    "truth": 0,
+    "lie": 1
+  },
+  "row_count": 32,
+  "excluded_answers": [],
+  "session_id": "cf4acfebaeee5ab5660cce71eda0b059",
+  "session_name": "00014 — birdina",
+  "session_sha256": "1ada788a77c80c5481d93350fac27adbe6873361b6875eea8aa4fcadfdcdd0a6",
+  "markers": {
+    "video": {
+      "baseline_start": null,
+      "dialog_start": 145.44,
+      "dialog_end": null,
+      "post_end": null
+    },
+    "signal": {
+      "baseline_start": null,
+      "dialog_start": 145.0,
+      "dialog_end": null,
+      "post_end": null
+    }
+  },
+  "sync_status": "estimated_needs_review",
+  "sync_estimate": {
+    "method": "single approximate anchor at rest/dialog transition",
+    "video_anchor_seconds": 145.44,
+    "signal_anchor_seconds": 145.0,
+    "offset_seconds": -0.44,
+    "uncertainty_seconds": 2.0,
+    "review_required": true,
+    "note": "Only one approximate correspondence is available; constant offset assumed, drift not tested."
+  },
+  "signal_import": {
+    "filename": "Бирдина raw.csv",
+    "duration_seconds": 1090.56,
+    "sample_rate_hz": 250
+  },
+  "audio_analysis": {
+    "source": "ezyZip.mts",
+    "features_file": "audio_features.npz",
+    "method": "project _acoustic_frames, 50 ms windows/20 ms hop"
+  },
+  "video_analysis": {
+    "status": "not_used_for_model",
+    "note": "Tracked video feature extraction could not be completed reliably in this environment. An experimental static-ROI rPPG file exists but was excluded from training CSV because it is not method-equivalent to tracked results."
+  },
+  "answer_snapshot": [
+    {
+      "id": "cf4acfeb-a001",
+      "participant_id": "birdina",
+      "start": 207.25,
+      "end": 251.2,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t001"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q001"
+      ],
+      "question_start": 200.0,
+      "question_end": 202.6315789473684,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src001"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Внутри ответа есть уточнения интервьюера; границы ориентировочные. Включает пользовательский ориентир 216.42 с. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a002",
+      "participant_id": "birdina",
+      "start": 267.25,
+      "end": 287.5,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t002"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q002"
+      ],
+      "question_start": 262.0,
+      "question_end": 264.10526315789474,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src002"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Конец реплики оценён по следующему вопросу. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a003",
+      "participant_id": "birdina",
+      "start": 297.2,
+      "end": 309.7,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t003"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q003"
+      ],
+      "question_start": 288.0,
+      "question_end": 290.63157894736844,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src003"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Текст и границы восстановлены по неточной стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a004",
+      "participant_id": "birdina",
+      "start": 318.2,
+      "end": 342.4,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t004"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q004"
+      ],
+      "question_start": 310.0,
+      "question_end": 312.63157894736844,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src004"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Текст стенограммы частично повреждён. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a005",
+      "participant_id": "birdina",
+      "start": 350.2,
+      "end": 354.8,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t005"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q005"
+      ],
+      "question_start": 346.0,
+      "question_end": 347.3157894736842,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src005"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "low",
+      "timing_note": "Короткая первая часть ответа; ответ продолжается после следующего вопроса интервьюера. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a006",
+      "participant_id": "birdina",
+      "start": 359.2,
+      "end": 394.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t006"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q006"
+      ],
+      "question_start": 355.0,
+      "question_end": 357.63157894736844,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src006"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "В транскрипции есть перекрытия речи интервьюера и респондента. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a007",
+      "participant_id": "birdina",
+      "start": 407.2,
+      "end": 417.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t007"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q007"
+      ],
+      "question_start": 394.0,
+      "question_end": 396.10526315789474,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src007"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Текст восстановлен из фрагментов транскрипции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a008",
+      "participant_id": "birdina",
+      "start": 424.2,
+      "end": 428.8,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t008"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q008"
+      ],
+      "question_start": 417.0,
+      "question_end": 419.63157894736844,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src008"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "low",
+      "timing_note": "Фрагмент транскрипции короткий и возможно распознан неверно. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a009",
+      "participant_id": "birdina",
+      "start": 432.2,
+      "end": 434.8,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t009"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q009"
+      ],
+      "question_start": 429.0,
+      "question_end": 430.8421052631579,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src009"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a010",
+      "participant_id": "birdina",
+      "start": 437.2,
+      "end": 439.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t010"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q010"
+      ],
+      "question_start": 435.0,
+      "question_end": 436.57894736842104,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src010"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a011",
+      "participant_id": "birdina",
+      "start": 447.2,
+      "end": 477.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t011"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q011"
+      ],
+      "question_start": 443.0,
+      "question_end": 445.89473684210526,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src011"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Текст и границы ответа оценены по неполной стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a012",
+      "participant_id": "birdina",
+      "start": 481.2,
+      "end": 484.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t012"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q012"
+      ],
+      "question_start": 478.0,
+      "question_end": 480.84999999999997,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src012"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a013",
+      "participant_id": "birdina",
+      "start": 490.2,
+      "end": 500.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t013"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q013"
+      ],
+      "question_start": 484.2,
+      "question_end": 486.56842105263155,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src013"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "low",
+      "timing_note": "В стенограмме вопрос и ответ частично перемешаны. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a014",
+      "participant_id": "birdina",
+      "start": 506.2,
+      "end": 510.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t014"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q014"
+      ],
+      "question_start": 501.0,
+      "question_end": 504.1578947368421,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src014"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a015",
+      "participant_id": "birdina",
+      "start": 521.2,
+      "end": 539.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t015"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q015"
+      ],
+      "question_start": 513.0,
+      "question_end": 514.2,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src015"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Текст определения восстановлен из транскрипции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a016",
+      "participant_id": "birdina",
+      "start": 567.2,
+      "end": 571.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t016"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q016"
+      ],
+      "question_start": 556.0,
+      "question_end": 557.8421052631579,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src016"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Фрагмент речи неполный. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a017",
+      "participant_id": "birdina",
+      "start": 578.2,
+      "end": 603.5,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t017"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q017"
+      ],
+      "question_start": 571.0,
+      "question_end": 573.3684210526316,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src017"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Граница конца ответа приблизительная. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a018",
+      "participant_id": "birdina",
+      "start": 615.2,
+      "end": 621.0,
+      "label": "lie",
+      "turn_ids": [
+        "cf4acfeb-t018"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q018"
+      ],
+      "question_start": 606.0,
+      "question_end": 607.578947368421,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src018"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила намеренное искажение ответа. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a019",
+      "participant_id": "birdina",
+      "start": 626.2,
+      "end": 629.0,
+      "label": "lie",
+      "turn_ids": [
+        "cf4acfeb-t019"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q019"
+      ],
+      "question_start": 621.0,
+      "question_end": 622.8421052631579,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src019"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила намеренную ложь; транскрипция повреждена. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a020",
+      "participant_id": "birdina",
+      "start": 635.2,
+      "end": 638.8,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t020"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q020"
+      ],
+      "question_start": 629.0,
+      "question_end": 631.1052631578947,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src020"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "low",
+      "timing_note": "Метка подтверждена пользователем; временная граница ответа приблизительна. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a021",
+      "participant_id": "birdina",
+      "start": 644.2,
+      "end": 654.8,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t021"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q021"
+      ],
+      "question_start": 639.0,
+      "question_end": 641.1052631578947,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src021"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "low",
+      "timing_note": "Текст в транскрипции частично перепутан между говорящими. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a022",
+      "participant_id": "birdina",
+      "start": 661.2,
+      "end": 663.2,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t022"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q022"
+      ],
+      "question_start": 655.0,
+      "question_end": 657.6315789473684,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src022"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a023",
+      "participant_id": "birdina",
+      "start": 741.2,
+      "end": 744.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t023"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q023"
+      ],
+      "question_start": 737.0,
+      "question_end": 739.1052631578947,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src023"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Вопрос и ответ отмечены в транскрипции, но порядок фрагментов нарушен. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a024",
+      "participant_id": "birdina",
+      "start": 757.2,
+      "end": 762.0,
+      "label": "lie",
+      "turn_ids": [
+        "cf4acfeb-t024"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q024"
+      ],
+      "question_start": 751.0,
+      "question_end": 753.6315789473684,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src024"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Пользователь подтвердила намеренное искажение; конец ответа ориентировочный. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a025",
+      "participant_id": "birdina",
+      "start": 786.2,
+      "end": 790.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t025"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q025"
+      ],
+      "question_start": 783.0,
+      "question_end": 784.2,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src025"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Пользователь подтвердила, что отвечала искренне. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a026",
+      "participant_id": "birdina",
+      "start": 818.2,
+      "end": 839.5,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t026"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q026"
+      ],
+      "question_start": 803.0,
+      "question_end": 807.4736842105264,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src026"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "low",
+      "timing_note": "Распознавание говорящих в транскрипции ненадёжно. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a027",
+      "participant_id": "birdina",
+      "start": 856.2,
+      "end": 866.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t027"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q027"
+      ],
+      "question_start": 848.0,
+      "question_end": 849.8421052631579,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src027"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Ответ восстановлен по повреждённой стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a028",
+      "participant_id": "birdina",
+      "start": 874.2,
+      "end": 879.0,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t028"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q028"
+      ],
+      "question_start": 866.0,
+      "question_end": 868.6315789473684,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src028"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила, что отвечала искренне. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a029",
+      "participant_id": "birdina",
+      "start": 899.2,
+      "end": 904.0,
+      "label": "lie",
+      "turn_ids": [
+        "cf4acfeb-t029"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q029"
+      ],
+      "question_start": 895.0,
+      "question_end": 898.85,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src029"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила намеренную ложь. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a030",
+      "participant_id": "birdina",
+      "start": 910.2,
+      "end": 913.5,
+      "label": "truth",
+      "turn_ids": [
+        "cf4acfeb-t030"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q030"
+      ],
+      "question_start": 905.0,
+      "question_end": 907.1052631578947,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src030"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила, что в этот раз ответила честно вопреки инструкции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a031",
+      "participant_id": "birdina",
+      "start": 921.2,
+      "end": 928.5,
+      "label": "lie",
+      "turn_ids": [
+        "cf4acfeb-t031"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q031"
+      ],
+      "question_start": 914.0,
+      "question_end": 915.8421052631579,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src031"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "medium",
+      "timing_note": "Формулировка ответа восстановлена со слов пользователя; границы приблизительные. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-a032",
+      "participant_id": "birdina",
+      "start": 934.2,
+      "end": 937.0,
+      "label": "lie",
+      "turn_ids": [
+        "cf4acfeb-t032"
+      ],
+      "question_turn_ids": [
+        "cf4acfeb-q032"
+      ],
+      "question_start": 930.0,
+      "question_end": 931.8421052631579,
+      "internal_pauses": [],
+      "source_annotation_ids": [
+        "cf4acfeb-src032"
+      ],
+      "dataset_eligible": true,
+      "review_required": false,
+      "timing_confidence": "low",
+      "timing_note": "В конце транскрипции роли и порядок реплик перепутаны; временная граница нуждается в ручной проверке. End of question estimated from text length; response latency is not considered reliable."
+    }
+  ],
+  "episode_version": 1,
+  "episode_snapshot": [
+    {
+      "answer_id": "cf4acfeb-a001",
+      "version": 1,
+      "start": 200.0,
+      "end": 251.2,
+      "answer": {
+        "start": 207.25,
+        "end": 251.2
+      },
+      "question": {
+        "start": 200.0,
+        "end": 202.6315789473684
+      },
+      "waiting": {
+        "start": 202.6315789473684,
+        "end": 207.25
+      },
+      "source_question_start": 200.0,
+      "source_question_end": 202.6315789473684,
+      "question_turn_ids": [
+        "cf4acfeb-q001"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a002",
+      "version": 1,
+      "start": 262.0,
+      "end": 287.5,
+      "answer": {
+        "start": 267.25,
+        "end": 287.5
+      },
+      "question": {
+        "start": 262.0,
+        "end": 264.10526315789474
+      },
+      "waiting": {
+        "start": 264.10526315789474,
+        "end": 267.25
+      },
+      "source_question_start": 262.0,
+      "source_question_end": 264.10526315789474,
+      "question_turn_ids": [
+        "cf4acfeb-q002"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a003",
+      "version": 1,
+      "start": 288.0,
+      "end": 309.7,
+      "answer": {
+        "start": 297.2,
+        "end": 309.7
+      },
+      "question": {
+        "start": 288.0,
+        "end": 290.63157894736844
+      },
+      "waiting": {
+        "start": 290.63157894736844,
+        "end": 297.2
+      },
+      "source_question_start": 288.0,
+      "source_question_end": 290.63157894736844,
+      "question_turn_ids": [
+        "cf4acfeb-q003"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a004",
+      "version": 1,
+      "start": 310.0,
+      "end": 342.4,
+      "answer": {
+        "start": 318.2,
+        "end": 342.4
+      },
+      "question": {
+        "start": 310.0,
+        "end": 312.63157894736844
+      },
+      "waiting": {
+        "start": 312.63157894736844,
+        "end": 318.2
+      },
+      "source_question_start": 310.0,
+      "source_question_end": 312.63157894736844,
+      "question_turn_ids": [
+        "cf4acfeb-q004"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a005",
+      "version": 1,
+      "start": 346.0,
+      "end": 354.8,
+      "answer": {
+        "start": 350.2,
+        "end": 354.8
+      },
+      "question": {
+        "start": 346.0,
+        "end": 347.3157894736842
+      },
+      "waiting": {
+        "start": 347.3157894736842,
+        "end": 350.2
+      },
+      "source_question_start": 346.0,
+      "source_question_end": 347.3157894736842,
+      "question_turn_ids": [
+        "cf4acfeb-q005"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a006",
+      "version": 1,
+      "start": 355.0,
+      "end": 394.0,
+      "answer": {
+        "start": 359.2,
+        "end": 394.0
+      },
+      "question": {
+        "start": 355.0,
+        "end": 357.63157894736844
+      },
+      "waiting": {
+        "start": 357.63157894736844,
+        "end": 359.2
+      },
+      "source_question_start": 355.0,
+      "source_question_end": 357.63157894736844,
+      "question_turn_ids": [
+        "cf4acfeb-q006"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a007",
+      "version": 1,
+      "start": 394.0,
+      "end": 417.0,
+      "answer": {
+        "start": 407.2,
+        "end": 417.0
+      },
+      "question": {
+        "start": 394.0,
+        "end": 396.10526315789474
+      },
+      "waiting": {
+        "start": 396.10526315789474,
+        "end": 407.2
+      },
+      "source_question_start": 394.0,
+      "source_question_end": 396.10526315789474,
+      "question_turn_ids": [
+        "cf4acfeb-q007"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a008",
+      "version": 1,
+      "start": 417.0,
+      "end": 428.8,
+      "answer": {
+        "start": 424.2,
+        "end": 428.8
+      },
+      "question": {
+        "start": 417.0,
+        "end": 419.63157894736844
+      },
+      "waiting": {
+        "start": 419.63157894736844,
+        "end": 424.2
+      },
+      "source_question_start": 417.0,
+      "source_question_end": 419.63157894736844,
+      "question_turn_ids": [
+        "cf4acfeb-q008"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a009",
+      "version": 1,
+      "start": 429.0,
+      "end": 434.8,
+      "answer": {
+        "start": 432.2,
+        "end": 434.8
+      },
+      "question": {
+        "start": 429.0,
+        "end": 430.8421052631579
+      },
+      "waiting": {
+        "start": 430.8421052631579,
+        "end": 432.2
+      },
+      "source_question_start": 429.0,
+      "source_question_end": 430.8421052631579,
+      "question_turn_ids": [
+        "cf4acfeb-q009"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a010",
+      "version": 1,
+      "start": 435.0,
+      "end": 439.0,
+      "answer": {
+        "start": 437.2,
+        "end": 439.0
+      },
+      "question": {
+        "start": 435.0,
+        "end": 436.57894736842104
+      },
+      "waiting": {
+        "start": 436.57894736842104,
+        "end": 437.2
+      },
+      "source_question_start": 435.0,
+      "source_question_end": 436.57894736842104,
+      "question_turn_ids": [
+        "cf4acfeb-q010"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a011",
+      "version": 1,
+      "start": 443.0,
+      "end": 477.0,
+      "answer": {
+        "start": 447.2,
+        "end": 477.0
+      },
+      "question": {
+        "start": 443.0,
+        "end": 445.89473684210526
+      },
+      "waiting": {
+        "start": 445.89473684210526,
+        "end": 447.2
+      },
+      "source_question_start": 443.0,
+      "source_question_end": 445.89473684210526,
+      "question_turn_ids": [
+        "cf4acfeb-q011"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a012",
+      "version": 1,
+      "start": 478.0,
+      "end": 484.0,
+      "answer": {
+        "start": 481.2,
+        "end": 484.0
+      },
+      "question": {
+        "start": 478.0,
+        "end": 480.84999999999997
+      },
+      "waiting": {
+        "start": 480.84999999999997,
+        "end": 481.2
+      },
+      "source_question_start": 478.0,
+      "source_question_end": 480.84999999999997,
+      "question_turn_ids": [
+        "cf4acfeb-q012"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a013",
+      "version": 1,
+      "start": 484.2,
+      "end": 500.0,
+      "answer": {
+        "start": 490.2,
+        "end": 500.0
+      },
+      "question": {
+        "start": 484.2,
+        "end": 486.56842105263155
+      },
+      "waiting": {
+        "start": 486.56842105263155,
+        "end": 490.2
+      },
+      "source_question_start": 484.2,
+      "source_question_end": 486.56842105263155,
+      "question_turn_ids": [
+        "cf4acfeb-q013"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a014",
+      "version": 1,
+      "start": 501.0,
+      "end": 510.0,
+      "answer": {
+        "start": 506.2,
+        "end": 510.0
+      },
+      "question": {
+        "start": 501.0,
+        "end": 504.1578947368421
+      },
+      "waiting": {
+        "start": 504.1578947368421,
+        "end": 506.2
+      },
+      "source_question_start": 501.0,
+      "source_question_end": 504.1578947368421,
+      "question_turn_ids": [
+        "cf4acfeb-q014"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a015",
+      "version": 1,
+      "start": 513.0,
+      "end": 539.0,
+      "answer": {
+        "start": 521.2,
+        "end": 539.0
+      },
+      "question": {
+        "start": 513.0,
+        "end": 514.2
+      },
+      "waiting": {
+        "start": 514.2,
+        "end": 521.2
+      },
+      "source_question_start": 513.0,
+      "source_question_end": 514.2,
+      "question_turn_ids": [
+        "cf4acfeb-q015"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a016",
+      "version": 1,
+      "start": 556.0,
+      "end": 571.0,
+      "answer": {
+        "start": 567.2,
+        "end": 571.0
+      },
+      "question": {
+        "start": 556.0,
+        "end": 557.8421052631579
+      },
+      "waiting": {
+        "start": 557.8421052631579,
+        "end": 567.2
+      },
+      "source_question_start": 556.0,
+      "source_question_end": 557.8421052631579,
+      "question_turn_ids": [
+        "cf4acfeb-q016"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a017",
+      "version": 1,
+      "start": 571.0,
+      "end": 603.5,
+      "answer": {
+        "start": 578.2,
+        "end": 603.5
+      },
+      "question": {
+        "start": 571.0,
+        "end": 573.3684210526316
+      },
+      "waiting": {
+        "start": 573.3684210526316,
+        "end": 578.2
+      },
+      "source_question_start": 571.0,
+      "source_question_end": 573.3684210526316,
+      "question_turn_ids": [
+        "cf4acfeb-q017"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a018",
+      "version": 1,
+      "start": 606.0,
+      "end": 621.0,
+      "answer": {
+        "start": 615.2,
+        "end": 621.0
+      },
+      "question": {
+        "start": 606.0,
+        "end": 607.578947368421
+      },
+      "waiting": {
+        "start": 607.578947368421,
+        "end": 615.2
+      },
+      "source_question_start": 606.0,
+      "source_question_end": 607.578947368421,
+      "question_turn_ids": [
+        "cf4acfeb-q018"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a019",
+      "version": 1,
+      "start": 621.0,
+      "end": 629.0,
+      "answer": {
+        "start": 626.2,
+        "end": 629.0
+      },
+      "question": {
+        "start": 621.0,
+        "end": 622.8421052631579
+      },
+      "waiting": {
+        "start": 622.8421052631579,
+        "end": 626.2
+      },
+      "source_question_start": 621.0,
+      "source_question_end": 622.8421052631579,
+      "question_turn_ids": [
+        "cf4acfeb-q019"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a020",
+      "version": 1,
+      "start": 629.0,
+      "end": 638.8,
+      "answer": {
+        "start": 635.2,
+        "end": 638.8
+      },
+      "question": {
+        "start": 629.0,
+        "end": 631.1052631578947
+      },
+      "waiting": {
+        "start": 631.1052631578947,
+        "end": 635.2
+      },
+      "source_question_start": 629.0,
+      "source_question_end": 631.1052631578947,
+      "question_turn_ids": [
+        "cf4acfeb-q020"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a021",
+      "version": 1,
+      "start": 639.0,
+      "end": 654.8,
+      "answer": {
+        "start": 644.2,
+        "end": 654.8
+      },
+      "question": {
+        "start": 639.0,
+        "end": 641.1052631578947
+      },
+      "waiting": {
+        "start": 641.1052631578947,
+        "end": 644.2
+      },
+      "source_question_start": 639.0,
+      "source_question_end": 641.1052631578947,
+      "question_turn_ids": [
+        "cf4acfeb-q021"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a022",
+      "version": 1,
+      "start": 655.0,
+      "end": 663.2,
+      "answer": {
+        "start": 661.2,
+        "end": 663.2
+      },
+      "question": {
+        "start": 655.0,
+        "end": 657.6315789473684
+      },
+      "waiting": {
+        "start": 657.6315789473684,
+        "end": 661.2
+      },
+      "source_question_start": 655.0,
+      "source_question_end": 657.6315789473684,
+      "question_turn_ids": [
+        "cf4acfeb-q022"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a023",
+      "version": 1,
+      "start": 737.0,
+      "end": 744.0,
+      "answer": {
+        "start": 741.2,
+        "end": 744.0
+      },
+      "question": {
+        "start": 737.0,
+        "end": 739.1052631578947
+      },
+      "waiting": {
+        "start": 739.1052631578947,
+        "end": 741.2
+      },
+      "source_question_start": 737.0,
+      "source_question_end": 739.1052631578947,
+      "question_turn_ids": [
+        "cf4acfeb-q023"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a024",
+      "version": 1,
+      "start": 751.0,
+      "end": 762.0,
+      "answer": {
+        "start": 757.2,
+        "end": 762.0
+      },
+      "question": {
+        "start": 751.0,
+        "end": 753.6315789473684
+      },
+      "waiting": {
+        "start": 753.6315789473684,
+        "end": 757.2
+      },
+      "source_question_start": 751.0,
+      "source_question_end": 753.6315789473684,
+      "question_turn_ids": [
+        "cf4acfeb-q024"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a025",
+      "version": 1,
+      "start": 783.0,
+      "end": 790.0,
+      "answer": {
+        "start": 786.2,
+        "end": 790.0
+      },
+      "question": {
+        "start": 783.0,
+        "end": 784.2
+      },
+      "waiting": {
+        "start": 784.2,
+        "end": 786.2
+      },
+      "source_question_start": 783.0,
+      "source_question_end": 784.2,
+      "question_turn_ids": [
+        "cf4acfeb-q025"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a026",
+      "version": 1,
+      "start": 803.0,
+      "end": 839.5,
+      "answer": {
+        "start": 818.2,
+        "end": 839.5
+      },
+      "question": {
+        "start": 803.0,
+        "end": 807.4736842105264
+      },
+      "waiting": {
+        "start": 807.4736842105264,
+        "end": 818.2
+      },
+      "source_question_start": 803.0,
+      "source_question_end": 807.4736842105264,
+      "question_turn_ids": [
+        "cf4acfeb-q026"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a027",
+      "version": 1,
+      "start": 848.0,
+      "end": 866.0,
+      "answer": {
+        "start": 856.2,
+        "end": 866.0
+      },
+      "question": {
+        "start": 848.0,
+        "end": 849.8421052631579
+      },
+      "waiting": {
+        "start": 849.8421052631579,
+        "end": 856.2
+      },
+      "source_question_start": 848.0,
+      "source_question_end": 849.8421052631579,
+      "question_turn_ids": [
+        "cf4acfeb-q027"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a028",
+      "version": 1,
+      "start": 866.0,
+      "end": 879.0,
+      "answer": {
+        "start": 874.2,
+        "end": 879.0
+      },
+      "question": {
+        "start": 866.0,
+        "end": 868.6315789473684
+      },
+      "waiting": {
+        "start": 868.6315789473684,
+        "end": 874.2
+      },
+      "source_question_start": 866.0,
+      "source_question_end": 868.6315789473684,
+      "question_turn_ids": [
+        "cf4acfeb-q028"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a029",
+      "version": 1,
+      "start": 895.0,
+      "end": 904.0,
+      "answer": {
+        "start": 899.2,
+        "end": 904.0
+      },
+      "question": {
+        "start": 895.0,
+        "end": 898.85
+      },
+      "waiting": {
+        "start": 898.85,
+        "end": 899.2
+      },
+      "source_question_start": 895.0,
+      "source_question_end": 898.85,
+      "question_turn_ids": [
+        "cf4acfeb-q029"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a030",
+      "version": 1,
+      "start": 905.0,
+      "end": 913.5,
+      "answer": {
+        "start": 910.2,
+        "end": 913.5
+      },
+      "question": {
+        "start": 905.0,
+        "end": 907.1052631578947
+      },
+      "waiting": {
+        "start": 907.1052631578947,
+        "end": 910.2
+      },
+      "source_question_start": 905.0,
+      "source_question_end": 907.1052631578947,
+      "question_turn_ids": [
+        "cf4acfeb-q030"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a031",
+      "version": 1,
+      "start": 914.0,
+      "end": 928.5,
+      "answer": {
+        "start": 921.2,
+        "end": 928.5
+      },
+      "question": {
+        "start": 914.0,
+        "end": 915.8421052631579
+      },
+      "waiting": {
+        "start": 915.8421052631579,
+        "end": 921.2
+      },
+      "source_question_start": 914.0,
+      "source_question_end": 915.8421052631579,
+      "question_turn_ids": [
+        "cf4acfeb-q031"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    },
+    {
+      "answer_id": "cf4acfeb-a032",
+      "version": 1,
+      "start": 930.0,
+      "end": 937.0,
+      "answer": {
+        "start": 934.2,
+        "end": 937.0
+      },
+      "question": {
+        "start": 930.0,
+        "end": 931.8421052631579
+      },
+      "waiting": {
+        "start": 931.8421052631579,
+        "end": 934.2
+      },
+      "source_question_start": 930.0,
+      "source_question_end": 931.8421052631579,
+      "question_turn_ids": [
+        "cf4acfeb-q032"
+      ],
+      "question_overlap_seconds": 0.0,
+      "status": "complete",
+      "notes": []
+    }
+  ],
+  "annotation_sources": [
+    {
+      "id": "cf4acfeb-src001",
+      "start": 207.25,
+      "end": 251.2,
+      "label": "truth",
+      "name": "Расскажите о своей специализации, целях и планах в будущей профессии.",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Внутри ответа есть уточнения интервьюера; границы ориентировочные. Включает пользовательский ориентир 216.42 с. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src002",
+      "start": 267.25,
+      "end": 287.5,
+      "label": "truth",
+      "name": "У вас есть увлечения? Чем вам нравится заниматься?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Конец реплики оценён по следующему вопросу. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src003",
+      "start": 297.2,
+      "end": 309.7,
+      "label": "truth",
+      "name": "Из увлечений завели каких-то знакомых, о которых можете рассказать?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Текст и границы восстановлены по неточной стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src004",
+      "start": 318.2,
+      "end": 342.4,
+      "label": "truth",
+      "name": "Можете сказать о каком-нибудь личном положительном опыте или достижении?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Текст стенограммы частично повреждён. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src005",
+      "start": 350.2,
+      "end": 354.8,
+      "label": "truth",
+      "name": "Как вы относитесь к алкоголю?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "low",
+      "note": "Короткая первая часть ответа; ответ продолжается после следующего вопроса интервьюера. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src006",
+      "start": 359.2,
+      "end": 394.0,
+      "label": "truth",
+      "name": "В чём, по вашему мнению, могут быть плюсы употребления алкоголя?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "В транскрипции есть перекрытия речи интервьюера и респондента. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src007",
+      "start": 407.2,
+      "end": 417.0,
+      "label": "truth",
+      "name": "Какие эмоции вызывает человек, находящийся под воздействием алкоголя?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Текст восстановлен из фрагментов транскрипции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src008",
+      "start": 424.2,
+      "end": 428.8,
+      "label": "truth",
+      "name": "Вы видели знакомых пьяными? Что вы почувствовали в тот момент?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "low",
+      "note": "Фрагмент транскрипции короткий и возможно распознан неверно. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src009",
+      "start": 432.2,
+      "end": 434.8,
+      "label": "truth",
+      "name": "Вы употребляли алкоголь в компании своих друзей?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src010",
+      "start": 437.2,
+      "end": 439.0,
+      "label": "truth",
+      "name": "Вы вообще когда-либо употребляли алкоголь?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src011",
+      "start": 447.2,
+      "end": 477.0,
+      "label": "truth",
+      "name": "Считаете ли вы правильным запрет на употребление алкоголя в некоторых странах?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Текст и границы ответа оценены по неполной стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src012",
+      "start": 481.2,
+      "end": 484.0,
+      "label": "truth",
+      "name": "У кого-то из ваших знакомых был негативный опыт из-за злоупотребления алкоголем?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src013",
+      "start": 490.2,
+      "end": 500.0,
+      "label": "truth",
+      "name": "Может быть, кто-то, вспоминая произошедшее, сожалел о сделанном?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "low",
+      "note": "В стенограмме вопрос и ответ частично перемешаны. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src014",
+      "start": 506.2,
+      "end": 510.0,
+      "label": "truth",
+      "name": "Были ли у вас поступки, связанные с алкоголем, которые теперь стыдно вспоминать?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src015",
+      "start": 521.2,
+      "end": 539.0,
+      "label": "truth",
+      "name": "Что такое конфликт?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Текст определения восстановлен из транскрипции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src016",
+      "start": 567.2,
+      "end": 571.0,
+      "label": "truth",
+      "name": "Есть ли среди ваших знакомых конфликтные люди?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Фрагмент речи неполный. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src017",
+      "start": 578.2,
+      "end": 603.5,
+      "label": "truth",
+      "name": "Что может спровоцировать ссору, если бы такие люди были?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Граница конца ответа приблизительная. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src018",
+      "start": 615.2,
+      "end": 621.0,
+      "label": "lie",
+      "name": "Вас саму можно назвать конфликтным человеком?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Пользователь подтвердила намеренное искажение ответа. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src019",
+      "start": 626.2,
+      "end": 629.0,
+      "label": "lie",
+      "name": "Вы когда-либо сами становились инициатором конфликта?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Пользователь подтвердила намеренную ложь; транскрипция повреждена. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src020",
+      "start": 635.2,
+      "end": 638.8,
+      "label": "truth",
+      "name": "Вы сами когда-либо конфликтовали с кем-либо?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "low",
+      "note": "Метка подтверждена пользователем; временная граница ответа приблизительна. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src021",
+      "start": 644.2,
+      "end": 654.8,
+      "label": "truth",
+      "name": "Какие эмоции человек может испытывать в конфликтной ситуации?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "low",
+      "note": "Текст в транскрипции частично перепутан между говорящими. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src022",
+      "start": 661.2,
+      "end": 663.2,
+      "label": "truth",
+      "name": "Считаете ли вы, что в конфликте проявляется истинное лицо человека?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src023",
+      "start": 741.2,
+      "end": 744.0,
+      "label": "truth",
+      "name": "По вашему мнению, есть ложь, которую можно оправдать?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Вопрос и ответ отмечены в транскрипции, но порядок фрагментов нарушен. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src024",
+      "start": 757.2,
+      "end": 762.0,
+      "label": "lie",
+      "name": "В ходе конфликтов вы обижали кого-то из своих знакомых?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Пользователь подтвердила намеренное искажение; конец ответа ориентировочный. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src025",
+      "start": 786.2,
+      "end": 790.0,
+      "label": "truth",
+      "name": "Что такое ложь?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Пользователь подтвердила, что отвечала искренне. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src026",
+      "start": 818.2,
+      "end": 839.5,
+      "label": "truth",
+      "name": "Как, по вашему мнению, чувствует себя человек, если его вынудили лгать и он не может поступить иначе?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "low",
+      "note": "Распознавание говорящих в транскрипции ненадёжно. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src027",
+      "start": 856.2,
+      "end": 866.0,
+      "label": "truth",
+      "name": "Как вы понимаете, что человеку нельзя доверять?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Ответ восстановлен по повреждённой стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src028",
+      "start": 874.2,
+      "end": 879.0,
+      "label": "truth",
+      "name": "Кого-либо из ваших знакомых можно охарактеризовать как нечестного человека?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Пользователь подтвердила, что отвечала искренне. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src029",
+      "start": 899.2,
+      "end": 904.0,
+      "label": "lie",
+      "name": "Были ли случаи, когда вы лгали, чтобы не задавали лишних вопросов и не приходилось оправдываться в своей честности?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Пользователь подтвердила намеренную ложь. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src030",
+      "start": 910.2,
+      "end": 913.5,
+      "label": "truth",
+      "name": "Вы когда-либо лгали, чтобы избежать негативных последствий?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "high",
+      "note": "Пользователь подтвердила, что в этот раз ответила честно вопреки инструкции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src031",
+      "start": 921.2,
+      "end": 928.5,
+      "label": "lie",
+      "name": "Вы сами когда-то обманывали своих знакомых?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "medium",
+      "note": "Формулировка ответа восстановлена со слов пользователя; границы приблизительные. End of question estimated from text length; response latency is not considered reliable."
+    },
+    {
+      "id": "cf4acfeb-src032",
+      "start": 934.2,
+      "end": 937.0,
+      "label": "lie",
+      "name": "Вы совершали поступки, о которых впоследствии сожалели?",
+      "origin": "user-confirmed/manual-reconstruction",
+      "timing_confidence": "low",
+      "note": "В конце транскрипции роли и порядок реплик перепутаны; временная граница нуждается в ручной проверке. End of question estimated from text length; response latency is not considered reliable."
+    }
+  ],
+  "columns": [
+    "dataset_schema_version",
+    "calculation_version",
+    "participant_id",
+    "session_id",
+    "session_name",
+    "answer_id",
+    "target",
+    "label",
+    "episode_start_seconds",
+    "episode_end_seconds",
+    "episode_duration_seconds",
+    "episode_status",
+    "answer_start_seconds",
+    "answer_end_seconds",
+    "question_phase_start_seconds",
+    "question_phase_end_seconds",
+    "question_duration_seconds",
+    "waiting_start_seconds",
+    "waiting_end_seconds",
+    "waiting_duration_seconds",
+    "question_overlap_seconds",
+    "episode_question_turn_ids",
+    "video_start_seconds",
+    "video_end_seconds",
+    "answer_duration_seconds",
+    "signal_start_seconds",
+    "signal_end_seconds",
+    "question_start_seconds",
+    "question_end_seconds",
+    "respondent_text",
+    "question_text",
+    "turn_ids",
+    "source_annotation_ids",
+    "internal_pauses",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_sample_count",
+    "signal_time_coverage",
+    "contact_heart_rate_monitor_bpm",
+    "contact_spo2_percent",
+    "contact_respiration_bpm",
+    "contact_gsr_mean",
+    "contact_ecg_heart_rate_bpm",
+    "contact_ecg_sdnn_ms",
+    "contact_ecg_rmssd_ms",
+    "contact_ecg_lf_power",
+    "contact_ecg_hf_power",
+    "contact_ecg_total_power",
+    "contact_ecg_lf_hf",
+    "contact_ppg_heart_rate_bpm",
+    "contact_ppg_sdnn_ms",
+    "contact_ppg_rmssd_ms",
+    "contact_ppg_lf_power",
+    "contact_ppg_hf_power",
+    "contact_ppg_total_power",
+    "contact_ppg_lf_hf",
+    "speech_respondent_words",
+    "speech_words_per_minute",
+    "speech_syllables_per_second",
+    "speech_response_latency_seconds",
+    "speech_response_duration_seconds",
+    "speech_internal_pause_seconds",
+    "speech_pause_ratio",
+    "speech_voice_rms",
+    "speech_pitch_hz",
+    "speech_pitch_iqr_hz",
+    "speech_spectral_centroid_hz",
+    "video_rppg_heart_rate_bpm",
+    "video_head_motion",
+    "video_hand_motion",
+    "video_leg_motion",
+    "video_trunk_tilt_degrees",
+    "comparison_ecg_ppg_delta_bpm",
+    "comparison_ecg_rppg_delta_bpm",
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "question_signal_start_seconds",
+    "question_signal_end_seconds",
+    "question_signal_sample_count",
+    "question_signal_time_coverage",
+    "question_contact_heart_rate_monitor_bpm",
+    "question_contact_spo2_percent",
+    "question_contact_respiration_bpm",
+    "question_contact_gsr_mean",
+    "question_contact_ecg_heart_rate_bpm",
+    "question_contact_ecg_sdnn_ms",
+    "question_contact_ecg_rmssd_ms",
+    "question_contact_ecg_lf_power",
+    "question_contact_ecg_hf_power",
+    "question_contact_ecg_total_power",
+    "question_contact_ecg_lf_hf",
+    "question_contact_ppg_heart_rate_bpm",
+    "question_contact_ppg_sdnn_ms",
+    "question_contact_ppg_rmssd_ms",
+    "question_contact_ppg_lf_power",
+    "question_contact_ppg_hf_power",
+    "question_contact_ppg_total_power",
+    "question_contact_ppg_lf_hf",
+    "question_video_rppg_heart_rate_bpm",
+    "question_video_head_motion",
+    "question_video_hand_motion",
+    "question_video_leg_motion",
+    "question_video_trunk_tilt_degrees",
+    "question_comparison_ecg_ppg_delta_bpm",
+    "question_comparison_ecg_rppg_delta_bpm",
+    "question_contact_ecg_quality",
+    "question_contact_ecg_rr_count",
+    "question_contact_ecg_rejected_rr_count",
+    "question_contact_ppg_quality",
+    "question_contact_ppg_rr_count",
+    "question_contact_ppg_rejected_rr_count",
+    "question_video_quality",
+    "question_video_rppg_coverage",
+    "question_video_rppg_window_count",
+    "question_video_motion_units",
+    "question_video_landmark_coverage_head_motion",
+    "question_video_landmark_coverage_hand_motion",
+    "question_video_landmark_coverage_leg_motion",
+    "question_video_landmark_coverage_trunk_tilt",
+    "question_signal_ecg_valid_coverage",
+    "question_signal_ppg_valid_coverage",
+    "question_signal_rip_valid_coverage",
+    "question_signal_gsr_valid_coverage",
+    "question_signal_flow_valid_coverage",
+    "question_signal_heartrate_valid_coverage",
+    "question_signal_spo2_valid_coverage",
+    "waiting_signal_start_seconds",
+    "waiting_signal_end_seconds",
+    "waiting_signal_sample_count",
+    "waiting_signal_time_coverage",
+    "waiting_contact_heart_rate_monitor_bpm",
+    "waiting_contact_spo2_percent",
+    "waiting_contact_respiration_bpm",
+    "waiting_contact_gsr_mean",
+    "waiting_contact_ecg_heart_rate_bpm",
+    "waiting_contact_ecg_sdnn_ms",
+    "waiting_contact_ecg_rmssd_ms",
+    "waiting_contact_ecg_lf_power",
+    "waiting_contact_ecg_hf_power",
+    "waiting_contact_ecg_total_power",
+    "waiting_contact_ecg_lf_hf",
+    "waiting_contact_ppg_heart_rate_bpm",
+    "waiting_contact_ppg_sdnn_ms",
+    "waiting_contact_ppg_rmssd_ms",
+    "waiting_contact_ppg_lf_power",
+    "waiting_contact_ppg_hf_power",
+    "waiting_contact_ppg_total_power",
+    "waiting_contact_ppg_lf_hf",
+    "waiting_video_rppg_heart_rate_bpm",
+    "waiting_video_head_motion",
+    "waiting_video_hand_motion",
+    "waiting_video_leg_motion",
+    "waiting_video_trunk_tilt_degrees",
+    "waiting_comparison_ecg_ppg_delta_bpm",
+    "waiting_comparison_ecg_rppg_delta_bpm",
+    "waiting_contact_ecg_quality",
+    "waiting_contact_ecg_rr_count",
+    "waiting_contact_ecg_rejected_rr_count",
+    "waiting_contact_ppg_quality",
+    "waiting_contact_ppg_rr_count",
+    "waiting_contact_ppg_rejected_rr_count",
+    "waiting_video_quality",
+    "waiting_video_rppg_coverage",
+    "waiting_video_rppg_window_count",
+    "waiting_video_motion_units",
+    "waiting_video_landmark_coverage_head_motion",
+    "waiting_video_landmark_coverage_hand_motion",
+    "waiting_video_landmark_coverage_leg_motion",
+    "waiting_video_landmark_coverage_trunk_tilt",
+    "waiting_signal_ecg_valid_coverage",
+    "waiting_signal_ppg_valid_coverage",
+    "waiting_signal_rip_valid_coverage",
+    "waiting_signal_gsr_valid_coverage",
+    "waiting_signal_flow_valid_coverage",
+    "waiting_signal_heartrate_valid_coverage",
+    "waiting_signal_spo2_valid_coverage",
+    "episode_signal_start_seconds",
+    "episode_signal_end_seconds",
+    "episode_signal_sample_count",
+    "episode_signal_time_coverage",
+    "episode_contact_heart_rate_monitor_bpm",
+    "episode_contact_spo2_percent",
+    "episode_contact_respiration_bpm",
+    "episode_contact_gsr_mean",
+    "episode_contact_ecg_heart_rate_bpm",
+    "episode_contact_ecg_sdnn_ms",
+    "episode_contact_ecg_rmssd_ms",
+    "episode_contact_ecg_lf_power",
+    "episode_contact_ecg_hf_power",
+    "episode_contact_ecg_total_power",
+    "episode_contact_ecg_lf_hf",
+    "episode_contact_ppg_heart_rate_bpm",
+    "episode_contact_ppg_sdnn_ms",
+    "episode_contact_ppg_rmssd_ms",
+    "episode_contact_ppg_lf_power",
+    "episode_contact_ppg_hf_power",
+    "episode_contact_ppg_total_power",
+    "episode_contact_ppg_lf_hf",
+    "episode_video_rppg_heart_rate_bpm",
+    "episode_video_head_motion",
+    "episode_video_hand_motion",
+    "episode_video_leg_motion",
+    "episode_video_trunk_tilt_degrees",
+    "episode_comparison_ecg_ppg_delta_bpm",
+    "episode_comparison_ecg_rppg_delta_bpm",
+    "episode_contact_ecg_quality",
+    "episode_contact_ecg_rr_count",
+    "episode_contact_ecg_rejected_rr_count",
+    "episode_contact_ppg_quality",
+    "episode_contact_ppg_rr_count",
+    "episode_contact_ppg_rejected_rr_count",
+    "episode_video_quality",
+    "episode_video_rppg_coverage",
+    "episode_video_rppg_window_count",
+    "episode_video_motion_units",
+    "episode_video_landmark_coverage_head_motion",
+    "episode_video_landmark_coverage_hand_motion",
+    "episode_video_landmark_coverage_leg_motion",
+    "episode_video_landmark_coverage_trunk_tilt",
+    "episode_signal_ecg_valid_coverage",
+    "episode_signal_ppg_valid_coverage",
+    "episode_signal_rip_valid_coverage",
+    "episode_signal_gsr_valid_coverage",
+    "episode_signal_flow_valid_coverage",
+    "episode_signal_heartrate_valid_coverage",
+    "episode_signal_spo2_valid_coverage",
+    "delta_answer_minus_question_contact_heart_rate_monitor_bpm",
+    "delta_answer_minus_question_contact_spo2_percent",
+    "delta_answer_minus_question_contact_respiration_bpm",
+    "delta_answer_minus_question_contact_gsr_mean",
+    "delta_answer_minus_question_contact_ecg_heart_rate_bpm",
+    "delta_answer_minus_question_contact_ecg_sdnn_ms",
+    "delta_answer_minus_question_contact_ecg_rmssd_ms",
+    "delta_answer_minus_question_contact_ecg_lf_power",
+    "delta_answer_minus_question_contact_ecg_hf_power",
+    "delta_answer_minus_question_contact_ecg_total_power",
+    "delta_answer_minus_question_contact_ecg_lf_hf",
+    "delta_answer_minus_question_contact_ppg_heart_rate_bpm",
+    "delta_answer_minus_question_contact_ppg_sdnn_ms",
+    "delta_answer_minus_question_contact_ppg_rmssd_ms",
+    "delta_answer_minus_question_contact_ppg_lf_power",
+    "delta_answer_minus_question_contact_ppg_hf_power",
+    "delta_answer_minus_question_contact_ppg_total_power",
+    "delta_answer_minus_question_contact_ppg_lf_hf",
+    "delta_answer_minus_question_video_rppg_heart_rate_bpm",
+    "delta_answer_minus_question_video_head_motion",
+    "delta_answer_minus_question_video_hand_motion",
+    "delta_answer_minus_question_video_leg_motion",
+    "delta_answer_minus_question_video_trunk_tilt_degrees",
+    "delta_answer_minus_question_comparison_ecg_ppg_delta_bpm",
+    "delta_answer_minus_question_comparison_ecg_rppg_delta_bpm",
+    "notes"
+  ],
+  "numeric_feature_columns": {
+    "contact_heart_rate_monitor_bpm": "bpm",
+    "contact_spo2_percent": "%",
+    "contact_respiration_bpm": "breaths/min",
+    "contact_gsr_mean": "BioRadio source units",
+    "contact_ecg_heart_rate_bpm": "bpm",
+    "contact_ecg_sdnn_ms": "ms",
+    "contact_ecg_rmssd_ms": "ms",
+    "contact_ecg_lf_power": "ms²",
+    "contact_ecg_hf_power": "ms²",
+    "contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ecg_lf_hf": "ratio",
+    "contact_ppg_heart_rate_bpm": "bpm",
+    "contact_ppg_sdnn_ms": "ms",
+    "contact_ppg_rmssd_ms": "ms",
+    "contact_ppg_lf_power": "ms²",
+    "contact_ppg_hf_power": "ms²",
+    "contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "contact_ppg_lf_hf": "ratio",
+    "speech_respondent_words": "count",
+    "speech_words_per_minute": "words/min",
+    "speech_syllables_per_second": "syllables/s",
+    "speech_response_latency_seconds": "s",
+    "speech_response_duration_seconds": "s",
+    "speech_internal_pause_seconds": "s",
+    "speech_pause_ratio": "ratio",
+    "speech_voice_rms": "normalized audio amplitude",
+    "speech_pitch_hz": "Hz",
+    "speech_pitch_iqr_hz": "Hz",
+    "speech_spectral_centroid_hz": "Hz",
+    "video_rppg_heart_rate_bpm": "bpm; complete window inside answer",
+    "video_head_motion": "face widths/s",
+    "video_hand_motion": "image heights/s; see motion_units",
+    "video_leg_motion": "image heights/s; see motion_units",
+    "video_trunk_tilt_degrees": "degrees",
+    "comparison_ecg_ppg_delta_bpm": "bpm",
+    "comparison_ecg_rppg_delta_bpm": "bpm",
+    "question_contact_heart_rate_monitor_bpm": "bpm",
+    "question_contact_spo2_percent": "%",
+    "question_contact_respiration_bpm": "breaths/min",
+    "question_contact_gsr_mean": "BioRadio source units",
+    "question_contact_ecg_heart_rate_bpm": "bpm",
+    "question_contact_ecg_sdnn_ms": "ms",
+    "question_contact_ecg_rmssd_ms": "ms",
+    "question_contact_ecg_lf_power": "ms²",
+    "question_contact_ecg_hf_power": "ms²",
+    "question_contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "question_contact_ecg_lf_hf": "ratio",
+    "question_contact_ppg_heart_rate_bpm": "bpm",
+    "question_contact_ppg_sdnn_ms": "ms",
+    "question_contact_ppg_rmssd_ms": "ms",
+    "question_contact_ppg_lf_power": "ms²",
+    "question_contact_ppg_hf_power": "ms²",
+    "question_contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "question_contact_ppg_lf_hf": "ratio",
+    "question_video_rppg_heart_rate_bpm": "bpm; complete window inside this phase",
+    "question_video_head_motion": "face widths/s",
+    "question_video_hand_motion": "image heights/s; see motion_units",
+    "question_video_leg_motion": "image heights/s; see motion_units",
+    "question_video_trunk_tilt_degrees": "degrees",
+    "question_comparison_ecg_ppg_delta_bpm": "bpm",
+    "question_comparison_ecg_rppg_delta_bpm": "bpm",
+    "waiting_contact_heart_rate_monitor_bpm": "bpm",
+    "waiting_contact_spo2_percent": "%",
+    "waiting_contact_respiration_bpm": "breaths/min",
+    "waiting_contact_gsr_mean": "BioRadio source units",
+    "waiting_contact_ecg_heart_rate_bpm": "bpm",
+    "waiting_contact_ecg_sdnn_ms": "ms",
+    "waiting_contact_ecg_rmssd_ms": "ms",
+    "waiting_contact_ecg_lf_power": "ms²",
+    "waiting_contact_ecg_hf_power": "ms²",
+    "waiting_contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "waiting_contact_ecg_lf_hf": "ratio",
+    "waiting_contact_ppg_heart_rate_bpm": "bpm",
+    "waiting_contact_ppg_sdnn_ms": "ms",
+    "waiting_contact_ppg_rmssd_ms": "ms",
+    "waiting_contact_ppg_lf_power": "ms²",
+    "waiting_contact_ppg_hf_power": "ms²",
+    "waiting_contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "waiting_contact_ppg_lf_hf": "ratio",
+    "waiting_video_rppg_heart_rate_bpm": "bpm; complete window inside this phase",
+    "waiting_video_head_motion": "face widths/s",
+    "waiting_video_hand_motion": "image heights/s; see motion_units",
+    "waiting_video_leg_motion": "image heights/s; see motion_units",
+    "waiting_video_trunk_tilt_degrees": "degrees",
+    "waiting_comparison_ecg_ppg_delta_bpm": "bpm",
+    "waiting_comparison_ecg_rppg_delta_bpm": "bpm",
+    "episode_contact_heart_rate_monitor_bpm": "bpm",
+    "episode_contact_spo2_percent": "%",
+    "episode_contact_respiration_bpm": "breaths/min",
+    "episode_contact_gsr_mean": "BioRadio source units",
+    "episode_contact_ecg_heart_rate_bpm": "bpm",
+    "episode_contact_ecg_sdnn_ms": "ms",
+    "episode_contact_ecg_rmssd_ms": "ms",
+    "episode_contact_ecg_lf_power": "ms²",
+    "episode_contact_ecg_hf_power": "ms²",
+    "episode_contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "episode_contact_ecg_lf_hf": "ratio",
+    "episode_contact_ppg_heart_rate_bpm": "bpm",
+    "episode_contact_ppg_sdnn_ms": "ms",
+    "episode_contact_ppg_rmssd_ms": "ms",
+    "episode_contact_ppg_lf_power": "ms²",
+    "episode_contact_ppg_hf_power": "ms²",
+    "episode_contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "episode_contact_ppg_lf_hf": "ratio",
+    "episode_video_rppg_heart_rate_bpm": "bpm; complete window inside this phase",
+    "episode_video_head_motion": "face widths/s",
+    "episode_video_hand_motion": "image heights/s; see motion_units",
+    "episode_video_leg_motion": "image heights/s; see motion_units",
+    "episode_video_trunk_tilt_degrees": "degrees",
+    "episode_comparison_ecg_ppg_delta_bpm": "bpm",
+    "episode_comparison_ecg_rppg_delta_bpm": "bpm",
+    "delta_answer_minus_question_contact_heart_rate_monitor_bpm": "bpm",
+    "delta_answer_minus_question_contact_spo2_percent": "%",
+    "delta_answer_minus_question_contact_respiration_bpm": "breaths/min",
+    "delta_answer_minus_question_contact_gsr_mean": "BioRadio source units",
+    "delta_answer_minus_question_contact_ecg_heart_rate_bpm": "bpm",
+    "delta_answer_minus_question_contact_ecg_sdnn_ms": "ms",
+    "delta_answer_minus_question_contact_ecg_rmssd_ms": "ms",
+    "delta_answer_minus_question_contact_ecg_lf_power": "ms²",
+    "delta_answer_minus_question_contact_ecg_hf_power": "ms²",
+    "delta_answer_minus_question_contact_ecg_total_power": "ms², 0.04–0.4 Hz",
+    "delta_answer_minus_question_contact_ecg_lf_hf": "ratio",
+    "delta_answer_minus_question_contact_ppg_heart_rate_bpm": "bpm",
+    "delta_answer_minus_question_contact_ppg_sdnn_ms": "ms",
+    "delta_answer_minus_question_contact_ppg_rmssd_ms": "ms",
+    "delta_answer_minus_question_contact_ppg_lf_power": "ms²",
+    "delta_answer_minus_question_contact_ppg_hf_power": "ms²",
+    "delta_answer_minus_question_contact_ppg_total_power": "ms², 0.04–0.4 Hz",
+    "delta_answer_minus_question_contact_ppg_lf_hf": "ratio",
+    "delta_answer_minus_question_video_rppg_heart_rate_bpm": "bpm; complete window inside this phase",
+    "delta_answer_minus_question_video_head_motion": "face widths/s",
+    "delta_answer_minus_question_video_hand_motion": "image heights/s; see motion_units",
+    "delta_answer_minus_question_video_leg_motion": "image heights/s; see motion_units",
+    "delta_answer_minus_question_video_trunk_tilt_degrees": "degrees",
+    "delta_answer_minus_question_comparison_ecg_ppg_delta_bpm": "bpm",
+    "delta_answer_minus_question_comparison_ecg_rppg_delta_bpm": "bpm"
+  },
+  "window_scopes": {
+    "unprefixed_features_and_video_start_end": "full answer only, retained from schema 1; answer_start/end are explicit aliases",
+    "episode_": "question start through answer end, excluding earlier rest and earlier answers",
+    "question_": "linked interviewer question, clipped before answer onset and after earlier rest/respondent speech",
+    "waiting_": "question end to answer onset; absent when timings overlap, zero duration when immediately adjacent",
+    "speech_": "respondent speech in the full answer only; internal pauses included in answer duration",
+    "delta_answer_minus_question_": "answer feature minus question feature, only when both are available",
+    "question_start_end_seconds": "original linked question bounds; question_phase_start/end are actual measured bounds"
+  },
+  "quality_columns": [
+    "contact_ecg_quality",
+    "contact_ecg_rr_count",
+    "contact_ecg_rejected_rr_count",
+    "contact_ppg_quality",
+    "contact_ppg_rr_count",
+    "contact_ppg_rejected_rr_count",
+    "speech_word_count_method",
+    "speech_latency_method",
+    "speech_pause_measurement",
+    "speech_acoustic_method",
+    "speech_acoustic_coverage",
+    "video_quality",
+    "video_rppg_coverage",
+    "video_rppg_window_count",
+    "video_motion_units",
+    "video_landmark_coverage_head_motion",
+    "video_landmark_coverage_hand_motion",
+    "video_landmark_coverage_leg_motion",
+    "video_landmark_coverage_trunk_tilt",
+    "sync_status",
+    "sync_uncertainty_seconds",
+    "signal_time_coverage",
+    "signal_ecg_valid_coverage",
+    "signal_ppg_valid_coverage",
+    "signal_rip_valid_coverage",
+    "signal_gsr_valid_coverage",
+    "signal_flow_valid_coverage",
+    "signal_heartrate_valid_coverage",
+    "signal_spo2_valid_coverage",
+    "episode_status",
+    "question_overlap_seconds",
+    "question_signal_start_seconds",
+    "question_signal_end_seconds",
+    "question_signal_sample_count",
+    "question_signal_time_coverage",
+    "question_contact_ecg_quality",
+    "question_contact_ecg_rr_count",
+    "question_contact_ecg_rejected_rr_count",
+    "question_contact_ppg_quality",
+    "question_contact_ppg_rr_count",
+    "question_contact_ppg_rejected_rr_count",
+    "question_video_quality",
+    "question_video_rppg_coverage",
+    "question_video_rppg_window_count",
+    "question_video_motion_units",
+    "question_video_landmark_coverage_head_motion",
+    "question_video_landmark_coverage_hand_motion",
+    "question_video_landmark_coverage_leg_motion",
+    "question_video_landmark_coverage_trunk_tilt",
+    "question_signal_ecg_valid_coverage",
+    "question_signal_ppg_valid_coverage",
+    "question_signal_rip_valid_coverage",
+    "question_signal_gsr_valid_coverage",
+    "question_signal_flow_valid_coverage",
+    "question_signal_heartrate_valid_coverage",
+    "question_signal_spo2_valid_coverage",
+    "waiting_signal_start_seconds",
+    "waiting_signal_end_seconds",
+    "waiting_signal_sample_count",
+    "waiting_signal_time_coverage",
+    "waiting_contact_ecg_quality",
+    "waiting_contact_ecg_rr_count",
+    "waiting_contact_ecg_rejected_rr_count",
+    "waiting_contact_ppg_quality",
+    "waiting_contact_ppg_rr_count",
+    "waiting_contact_ppg_rejected_rr_count",
+    "waiting_video_quality",
+    "waiting_video_rppg_coverage",
+    "waiting_video_rppg_window_count",
+    "waiting_video_motion_units",
+    "waiting_video_landmark_coverage_head_motion",
+    "waiting_video_landmark_coverage_hand_motion",
+    "waiting_video_landmark_coverage_leg_motion",
+    "waiting_video_landmark_coverage_trunk_tilt",
+    "waiting_signal_ecg_valid_coverage",
+    "waiting_signal_ppg_valid_coverage",
+    "waiting_signal_rip_valid_coverage",
+    "waiting_signal_gsr_valid_coverage",
+    "waiting_signal_flow_valid_coverage",
+    "waiting_signal_heartrate_valid_coverage",
+    "waiting_signal_spo2_valid_coverage",
+    "episode_signal_start_seconds",
+    "episode_signal_end_seconds",
+    "episode_signal_sample_count",
+    "episode_signal_time_coverage",
+    "episode_contact_ecg_quality",
+    "episode_contact_ecg_rr_count",
+    "episode_contact_ecg_rejected_rr_count",
+    "episode_contact_ppg_quality",
+    "episode_contact_ppg_rr_count",
+    "episode_contact_ppg_rejected_rr_count",
+    "episode_video_quality",
+    "episode_video_rppg_coverage",
+    "episode_video_rppg_window_count",
+    "episode_video_motion_units",
+    "episode_video_landmark_coverage_head_motion",
+    "episode_video_landmark_coverage_hand_motion",
+    "episode_video_landmark_coverage_leg_motion",
+    "episode_video_landmark_coverage_trunk_tilt",
+    "episode_signal_ecg_valid_coverage",
+    "episode_signal_ppg_valid_coverage",
+    "episode_signal_rip_valid_coverage",
+    "episode_signal_gsr_valid_coverage",
+    "episode_signal_flow_valid_coverage",
+    "episode_signal_heartrate_valid_coverage",
+    "episode_signal_spo2_valid_coverage",
+    "notes"
+  ],
+  "research_notes": [
+    "Split training and evaluation by participant_id. IDs, labels, source_annotation_ids and timing are not predictive features.",
+    "Text and question content can disclose the interview protocol; assess text features separately to avoid target leakage.",
+    "dataset_eligible means a reviewed target, not validated physiology. Filter features by sync_status and coverage.",
+    "HRV requires at least 120 seconds and sufficient usable beats. Short answers retain missing HRV.",
+    "Each rPPG value only uses windows fully inside its own phase; unrestricted context rPPG is excluded.",
+    "GSR=100000 throughout the interval is unavailable. Channel coverage counts finite usable samples, not detector accuracy.",
+    "Pauses may be incompletely annotated. Full answer duration always includes elapsed internal silence.",
+    "Values are unrounded and not normalized to baseline. Baseline intervals and markers are in this metadata.",
+    "Question/waiting physiology describes context associated with the answer; the interviewer and waiting are not independently labelled truth/lie.",
+    "Epochs end at answer end. Post-answer silence and the next question are not added. Earlier rest is excluded."
+  ],
+  "rest_intervals": [
+    {
+      "start": 16.6,
+      "end": 145.44,
+      "name": "Покой с закрытыми глазами; границы приблизительные"
+    }
+  ],
+  "baseline_annotations": [],
+  "participant_id": "birdina",
+  "sync_assessment": {
+    "method": "single approximate anchor at rest/dialog transition",
+    "video_anchor_seconds": 145.44,
+    "signal_anchor_seconds": 145.0,
+    "offset_seconds": -0.44,
+    "uncertainty_seconds": 2.0,
+    "review_required": true,
+    "note": "Only one approximate correspondence is available; constant offset assumed, drift not tested."
+  },
+  "manual_timing_review": {
+    "cf4acfeb-a001": {
+      "timing_confidence": "medium",
+      "timing_note": "Внутри ответа есть уточнения интервьюера; границы ориентировочные. Включает пользовательский ориентир 216.42 с. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a002": {
+      "timing_confidence": "medium",
+      "timing_note": "Конец реплики оценён по следующему вопросу. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a003": {
+      "timing_confidence": "medium",
+      "timing_note": "Текст и границы восстановлены по неточной стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a004": {
+      "timing_confidence": "medium",
+      "timing_note": "Текст стенограммы частично повреждён. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a005": {
+      "timing_confidence": "low",
+      "timing_note": "Короткая первая часть ответа; ответ продолжается после следующего вопроса интервьюера. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a006": {
+      "timing_confidence": "medium",
+      "timing_note": "В транскрипции есть перекрытия речи интервьюера и респондента. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a007": {
+      "timing_confidence": "medium",
+      "timing_note": "Текст восстановлен из фрагментов транскрипции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a008": {
+      "timing_confidence": "low",
+      "timing_note": "Фрагмент транскрипции короткий и возможно распознан неверно. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a009": {
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a010": {
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a011": {
+      "timing_confidence": "medium",
+      "timing_note": "Текст и границы ответа оценены по неполной стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a012": {
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a013": {
+      "timing_confidence": "low",
+      "timing_note": "В стенограмме вопрос и ответ частично перемешаны. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a014": {
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a015": {
+      "timing_confidence": "medium",
+      "timing_note": "Текст определения восстановлен из транскрипции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a016": {
+      "timing_confidence": "medium",
+      "timing_note": "Фрагмент речи неполный. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a017": {
+      "timing_confidence": "medium",
+      "timing_note": "Граница конца ответа приблизительная. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a018": {
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила намеренное искажение ответа. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a019": {
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила намеренную ложь; транскрипция повреждена. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a020": {
+      "timing_confidence": "low",
+      "timing_note": "Метка подтверждена пользователем; временная граница ответа приблизительна. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a021": {
+      "timing_confidence": "low",
+      "timing_note": "Текст в транскрипции частично перепутан между говорящими. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a022": {
+      "timing_confidence": "high",
+      "timing_note": "Короткий ответ. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a023": {
+      "timing_confidence": "medium",
+      "timing_note": "Вопрос и ответ отмечены в транскрипции, но порядок фрагментов нарушен. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a024": {
+      "timing_confidence": "medium",
+      "timing_note": "Пользователь подтвердила намеренное искажение; конец ответа ориентировочный. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a025": {
+      "timing_confidence": "medium",
+      "timing_note": "Пользователь подтвердила, что отвечала искренне. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a026": {
+      "timing_confidence": "low",
+      "timing_note": "Распознавание говорящих в транскрипции ненадёжно. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a027": {
+      "timing_confidence": "medium",
+      "timing_note": "Ответ восстановлен по повреждённой стенограмме. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a028": {
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила, что отвечала искренне. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a029": {
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила намеренную ложь. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a030": {
+      "timing_confidence": "high",
+      "timing_note": "Пользователь подтвердила, что в этот раз ответила честно вопреки инструкции. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a031": {
+      "timing_confidence": "medium",
+      "timing_note": "Формулировка ответа восстановлена со слов пользователя; границы приблизительные. End of question estimated from text length; response latency is not considered reliable."
+    },
+    "cf4acfeb-a032": {
+      "timing_confidence": "low",
+      "timing_note": "В конце транскрипции роли и порядок реплик перепутаны; временная граница нуждается в ручной проверке. End of question estimated from text length; response latency is not considered reliable."
+    }
+  },
+  "excluded_or_unresolved_items": [
+    {
+      "item": "Вводный вопрос «Представьтесь, пожалуйста» около 5.58 с",
+      "label": "truth",
+      "status": "not included",
+      "reason": "До периода покоя; точная граница ответа и текст отсутствуют в стенограмме."
+    },
+    {
+      "item": "«Вы были свидетелем того, когда кто-то из ваших знакомых лгал?»",
+      "label": "truth",
+      "status": "not included",
+      "reason": "Текст ответа и его границы не удаётся надёжно сопоставить из-за дублированной/перемешанной транскрипции."
+    },
+    {
+      "item": "«Кто из ваших знакомых чаще всего лжёт?»",
+      "label": "truth",
+      "status": "not included",
+      "reason": "Фраза «сестра регулярно» в транскрипции стоит в несогласованном временном месте; нужна проверка по видео."
+    },
+    {
+      "item": "«В ходе конфликта вы сами когда-нибудь говорили что-то, о чём впоследствии сожалели?»",
+      "label": "lie",
+      "status": "not included",
+      "reason": "Пользователь подтверждает ответ «не жалела» (ложь), но место ответа в транскрипции смещено относительно вопроса; не назначать временную границу без проверки."
+    },
+    {
+      "item": "«Вы испытываете сожаление из-за того, что обманули кого-то ранее?»",
+      "label": "lie",
+      "status": "not included",
+      "reason": "Пользователь подтверждает ответ «нет» (ложь), но точное время ответа в транскрипции не восстановлено."
+    }
+  ],
+  "important_limitations": [
+    "Ответы и границы частично восстановлены из транскрипции с ошибками; вручную перепроверить интервалы по видео.",
+    "BioRadio синхронизирован по одной приблизительной опорной точке с предполагаемым постоянным сдвигом -0.44 с; возможный дрейф часов неизвестен.",
+    "GSR постоянно равен 100000 и правильно отражён как недоступный; 10 повреждённых строк импорта и отдельные коды невалидных HR/SpO2 требуют внимания.",
+    "Видео/движения/rPPG не включены в итоговые признаки, потому что точная tracked обработка не завершилась, а статический ROI-метод не эквивалентен алгоритму остальных участников.",
+    "Эта выгрузка является предварительной; не использовать как окончательно валидированную выборку без проверки временных границ."
+  ]
+}
